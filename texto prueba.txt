@@ -1,1 +1,6 @@
+<<<<<<< HEAD
 matias a.m. en la tarde
+=======
+matias a m es abarquez y mendoza
+Pablo es pablito
+>>>>>>> ba02a371b15e27239599a0d6847ecf8733f7b10c
