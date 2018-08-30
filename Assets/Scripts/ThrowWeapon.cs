@@ -24,32 +24,35 @@ public class ThrowWeapon : MonoBehaviour {
 			rid.isKinematic = true;
 			Destroy (this);
 		}
+        
 	}
 
-
+    
 	public void setDirection(Vector3 dir)
 	{
 		direction = dir;
 	}
-
+    
 	void OnTriggerEnter2D(Collider2D col)
 	{
 		if (col.gameObject.tag == "Enemy") {
 			attacked = col.gameObject.GetComponent<EnemyAttacked> ();
 			attacked.knockDownEnemy();
-			rid.isKinematic = true;
-			Destroy (this);
-		}
+            rid.isKinematic = true;
+            Destroy (this);
+            
+        }
 		else if(col.gameObject.tag=="Player")
 		{
-
-		}
+            
+        }
 		else if (col.gameObject.tag == "Dog") {
 			col.gameObject.GetComponent<DogHealth> ().killDog ();
 		}
 		else {
 			rid.isKinematic = true;
 			Destroy (this);
+
 		}
 	}
 }

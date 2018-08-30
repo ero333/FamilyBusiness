@@ -11,10 +11,10 @@ public class MenuScreen : MonoBehaviour {
 	Vector3 scale;
 	public bool display = false;
 
-	public GUIStyle text,titleText,titleShadow;
-	public Texture2D bg;
+    public GUIStyle text, titleText, titleShadow; // ELIMINAR titleShadow o cambiar por otro formato en caso de necesidad
+	public Texture2D bg; //  ELIMINAR SI NO SE APLICA BACKGROUND NEGRO AL SER SELECCIONADO
 
-	bool playSelect=true,exitSelect=false,play=false,menu=true;
+    bool playSelect=true,exitSelect=false,play=false,menu=true;
 	public LevelStore[] levels;
 	int levelSelectCount = 0;
 
@@ -145,56 +145,80 @@ public class MenuScreen : MonoBehaviour {
 			Rect titlePos = new Rect (originalWidth / 2 - 400, originalHeight - originalHeight, 800, 300);
 			if (menu == true) {
 				play = false;
-				titlePos = new Rect (originalWidth / 2 - 400, originalHeight - originalHeight, 800, 300);
-				GUI.Box (titlePos, "Cloneline Miami", titleShadow);
+				//titlePos = new Rect (originalWidth / 2 - 400, originalHeight - originalHeight, 800, 300); ELIMINAR 
+				//GUI.Box (titlePos, "Cloneline Miami", titleShadow); ELIMINAR
 
 
-				titlePos = new Rect (originalWidth / 2 - 405, originalHeight - originalHeight - 5, 800, 300);
-				GUI.Box (titlePos, "Cloneline Miami", titleText);
+				//titlePos = new Rect (originalWidth / 2 - 405, originalHeight - originalHeight - 5, 800, 300); ELIMINAR
+				//GUI.Box (titlePos, "Cloneline Miami", titleText); ELIMINAR
 
-				Rect menuPos = new Rect (originalWidth / 2 - 400, originalHeight - originalHeight + 400, 800, 200);
+				Rect menuPos = new Rect (originalWidth / 2 - 230, originalHeight - originalHeight + 600, 500, 100);
 				if (playSelect == true) {
-					GUI.DrawTexture (menuPos, bg);
-					GUI.Box (menuPos, "Play", text);
+					//GUI.DrawTexture (menuPos, bg); ELIMINAR SI NO SE APLICA BACKGROUND NEGRO AL SER SELECCIONADO
+					GUI.Box (menuPos, "NEW GAME", titleText);
 				} else if (playSelect == false) {
-					GUI.Box (menuPos, "Play", text);
+					GUI.Box (menuPos, "NEW GAME", text);
 				}
 
 
-				Rect exitPos = new Rect (originalWidth / 2 - 400, originalHeight - originalHeight + 700, 800, 200);
+				Rect exitPos = new Rect (originalWidth / 2 - 230, originalHeight - originalHeight + 750, 500, 100);
 				if (exitSelect == true) {
-					GUI.DrawTexture (exitPos, bg);
-					GUI.Box (exitPos, "Exit", text);
+                    //GUI.DrawTexture (exitPos, bg);  ELIMINAR SI NO SE APLICA BACKGROUND NEGRO AL SER SELECCIONADO
+                    GUI.Box (exitPos, "EXIT", titleText);
 				} else if (exitSelect == false) {
-					GUI.Box (exitPos, "Exit", text);
+					GUI.Box (exitPos, "EXIT", text);
 				}
+
+                // Este es el segundo menu que aparece
 
 			} else if (play == true) {
-				Rect backToRet = new Rect (originalWidth - originalWidth + 200, originalHeight - 200, 800, 200);
-				GUI.DrawTexture (backToRet, bg);
-				GUI.Box (backToRet, "Press backspace to return to menu", text);
 
-				titlePos = new Rect (originalWidth / 2 - 400, originalHeight - originalHeight, 800, 300);
-				GUI.Box (titlePos, "Cloneline Miami", titleShadow);
+                // Comienza título de regresar menú
+
+                Rect backToRet = new Rect (originalWidth - originalWidth + 900, originalHeight - 220, 500, 100);
+                //GUI.DrawTexture (backToRet, bg); ELIMINAR SI NO SE APLICA BACKGROUND NEGRO AL SER SELECCIONADO                
+                GUI.Box (backToRet, "Press backspace to return to menu", titleShadow);
+
+                // Termina título de regresar menú
+
+                //titlePos = new Rect (originalWidth / 2 - 400, originalHeight - originalHeight, 800, 300);
+                //GUI.Box (titlePos, "Cloneline Miami", titleShadow);
 
 
-				titlePos = new Rect (originalWidth / 2 - 405, originalHeight - originalHeight - 5, 800, 300);
-				GUI.Box (titlePos, "Cloneline Miami", titleText);
+                //titlePos = new Rect (originalWidth / 2 - 405, originalHeight - originalHeight - 5, 800, 300);
+                //GUI.Box (titlePos, "Cloneline Miami", titleText);
 
-				if (levels [levelSelectCount].unlocked == true) {
-					Rect levelTitlePos = new Rect (originalWidth / 2 - 400, originalHeight - originalHeight + 200, 800, 200);
+                if (levels [levelSelectCount].unlocked == true) {
+
+                    // Comienza título de Nivel 1
+
+					Rect levelTitlePos = new Rect (originalWidth / 2 - 50, originalHeight - originalHeight + 600, 500, 100);
 					GUI.Box (levelTitlePos, levels [levelSelectCount].levelName, text);
 
-					levelTitlePos = new Rect (originalWidth / 2 - 400, originalHeight - originalHeight + 300, 800, 200);
-					GUI.Box (levelTitlePos, "High Score : " + levels [levelSelectCount].highScore, text);
+                    // Termina título de nivel
 
-					levelTitlePos = new Rect (originalWidth / 2 - 250, originalHeight - originalHeight + 400, 500, 500);
+                    //Comienza titulo de High Score
+
+                    levelTitlePos = new Rect (originalWidth / 2 - 50, originalHeight - originalHeight + 725, 500, 100);
+                    GUI.Box (levelTitlePos, "High Score : " + levels [levelSelectCount].highScore, text);
+
+                    // Termina titulo de High Score
+
+                    // comienza MAPA
+
+                    levelTitlePos = new Rect (originalWidth / 2 - 700, originalHeight - originalHeight + 500, 500, 500);
 					GUI.DrawTexture (levelTitlePos, levels [levelSelectCount].levelIcon);
+
+                    // Termina MAPA
+
 				} else {
-					Rect levelTitlePos = new Rect (originalWidth / 2 - 400, originalHeight - originalHeight + 200, 800, 200);
-					GUI.Box (levelTitlePos, "Level Locked", text);
-					levelTitlePos = new Rect (originalWidth / 2 - 250, originalHeight - originalHeight + 400, 500, 500);
+                    
+                    Rect levelTitlePos = new Rect (originalWidth / 2 - 400, originalHeight - originalHeight + 200, 800, 200);
+					GUI.Box (levelTitlePos, "Level Locked", text);                    
+
+                    levelTitlePos = new Rect (originalWidth / 2 - 250, originalHeight - originalHeight + 400, 500, 500);
 					GUI.DrawTexture (levelTitlePos, bg);
+                    
 				}
 
 			}
