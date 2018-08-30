@@ -1,0 +1,12 @@
+Guión tutorial cutscene
+
+"Muevete por las habitaciones con las teclas  W (up), A(left), S(down) y D(right) de tu teclado"
+
+"Para agarrar un arma del suelo haz click derecho del mouse"
+ "Puedes fijar tu objetivo moviendo el mouse en la dirección que deseas."
+
+"Tira tu arma para intercambiarla por otra mejor haciendo click en botón derecho"
+
+"Ataca a tus oponentes con click izquierdo del mouse"
+ 
+"Presiona R para reiniciar"
