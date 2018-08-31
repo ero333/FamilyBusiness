@@ -57,6 +57,8 @@ public class CutsceneDisplay : MonoBehaviour {
 		}
 	}
 
+    //el siguiente collider hay que moverlo en la escena
+
 	void OnTriggerEnter2D(Collider2D other)
 	{
 		if (other.gameObject.tag == "Player") {
@@ -75,8 +77,8 @@ public class CutsceneDisplay : MonoBehaviour {
 		var svMat = GUI.matrix;
 		GUI.matrix = Matrix4x4.TRS(Vector3.zero,Quaternion.identity,scale);
 		if (display == true) {
-			GUI.DrawTexture (new Rect (0, 0, originalWidth, originalHeight), bg);
-			GUI.DrawTexture (new Rect (originalWidth - 500, originalHeight / 2-400, 500, 500), activeFace);
+			GUI.DrawTexture (new Rect (0, 0, originalWidth, originalHeight), bg); // agrega el fondo negro
+			GUI.DrawTexture (new Rect (originalWidth - 500, originalHeight / 2-400, 500, 500), activeFace); // Activa la cara de la persona hablando
 			GUI.Box (new Rect (originalWidth / 2-500, originalHeight - 150, 1000, 100), activeCutscene.Text,text);
 		}
 		GUI.matrix = svMat;

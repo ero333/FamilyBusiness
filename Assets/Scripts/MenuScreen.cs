@@ -175,7 +175,7 @@ public class MenuScreen : MonoBehaviour {
 
                 // Comienza título de regresar menú
 
-                Rect backToRet = new Rect (originalWidth - originalWidth + 900, originalHeight - 220, 500, 100);
+                Rect backToRet = new Rect (originalWidth - originalWidth + 900, originalHeight - 250, 500, 100);
                 //GUI.DrawTexture (backToRet, bg); ELIMINAR SI NO SE APLICA BACKGROUND NEGRO AL SER SELECCIONADO                
                 GUI.Box (backToRet, "Press backspace to return to menu", titleShadow);
 

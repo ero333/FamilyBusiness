@@ -84,8 +84,8 @@ public class ScoreController : MonoBehaviour {
 				GUI.Box (scorePos, "Score: " + score, text);
 				GUI.Box (multiPos, "Combo: " + currentMultiplier + " * " + tempScoreHold + " - " + (int)comboTimer, text);
 			} else if (PlayerHealth.dead == true) {
-				GUI.Box (scorePos, "You Died", text);
-			}
+                GUI.Box (scorePos, "You Died", text);                
+            }
 		}
 		GUI.matrix = svMat;
 	}

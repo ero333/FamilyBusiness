@@ -181,7 +181,7 @@ public class EnemyWeaponController : MonoBehaviour {
 			dir.y = mousePos.y - this.transform.position.y;
 			dir.z = 0;
 			curWeapon.GetComponent<Rigidbody2D> ().isKinematic = false;
-			curWeapon.GetComponent<ThrowWeapon> ().setDirection (dir);
+			//curWeapon.GetComponent<ThrowWeapon> ().setDirection (dir); Para que los enemigos dropeen las armas pero no puedan arrojarte sus armas
 			curWeapon.transform.position = oneHandSpawn.transform.position;
 			curWeapon.transform.eulerAngles = this.transform.eulerAngles;
 			curWeapon.SetActive (true);
