@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: fb4f6d73417597e4381e3c0dbfa31366
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Haarlem Deco DEMO
+  fontNames:
+  - Haarlem Deco DEMO
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 2bea02f848587a844a6d72885d54d5f6, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
