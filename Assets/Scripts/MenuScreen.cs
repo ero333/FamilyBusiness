@@ -93,7 +93,7 @@ public class MenuScreen : MonoBehaviour {
 				playSelect = true;
 			}
 
-			if (Input.GetKeyDown (KeyCode.Return) && playSelect == true) {
+			if (Input.GetKeyDown (KeyCode.Return)  && playSelect == true) {
 				menu = false;
 				play = true;
 			}
@@ -145,6 +145,7 @@ public class MenuScreen : MonoBehaviour {
 			Rect titlePos = new Rect (originalWidth / 2 - 400, originalHeight - originalHeight, 800, 300);
 			if (menu == true) {
 				play = false;
+                
 				//titlePos = new Rect (originalWidth / 2 - 400, originalHeight - originalHeight, 800, 300); ELIMINAR 
 				//GUI.Box (titlePos, "Cloneline Miami", titleShadow); ELIMINAR
 
@@ -154,8 +155,9 @@ public class MenuScreen : MonoBehaviour {
 
 				Rect menuPos = new Rect (originalWidth / 2 - 230, originalHeight - originalHeight + 600, 500, 100);
 				if (playSelect == true) {
-					//GUI.DrawTexture (menuPos, bg); ELIMINAR SI NO SE APLICA BACKGROUND NEGRO AL SER SELECCIONADO
-					GUI.Box (menuPos, "NEW GAME", titleText);
+                    //GUI.DrawTexture (menuPos, bg); ELIMINAR SI NO SE APLICA BACKGROUND NEGRO AL SER SELECCIONADO
+                    
+                    GUI.Box (menuPos, "NEW GAME", titleText);
 				} else if (playSelect == false) {
 					GUI.Box (menuPos, "NEW GAME", text);
 				}
@@ -225,4 +227,5 @@ public class MenuScreen : MonoBehaviour {
 		}
 		GUI.matrix = svMat;
 	}
+    
 }

@@ -12,10 +12,8 @@ public class VideoPlay : MonoBehaviour {
     void Start()
     {
         var videoPlayer = gameObject.AddComponent<VideoPlayer>();
-        videoPlayer.clip = videoClip;
-        Debug.Log(videoClip.frameCount);
-        videoPlayer.isLooping = true;
-        
+        videoPlayer.clip = videoClip;       
+        videoPlayer.isLooping = true;            
         
     }
 
@@ -23,14 +21,20 @@ public class VideoPlay : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        if (cont <= 2000)
+        if (cont <= 2100)
         {
             cont += 1;
         }
-
-        else
+       
+        else 
         {
-            SceneManager.LoadScene("Testing");
+
+            SceneManager.LoadScene("Tutorial");
+        }
+
+        if ((Input.GetKeyDown(KeyCode.Return)) || (Input.GetKeyDown(KeyCode.Mouse0)))
+        {
+            SceneManager.LoadScene("Tutorial");
         }
 
     }

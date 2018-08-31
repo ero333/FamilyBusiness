@@ -123,7 +123,7 @@ public class WeaponAttack : MonoBehaviour {
 						Instantiate (shotgunBullet, oneHandSpawn.transform.position, this.transform.rotation);
 					}
 					curWeapon.GetComponent<WeaponPickup> ().ammo--;
-					FindObjectOfType<LevelEscapeController> ().shotFired ();
+					//FindObjectOfType<LevelEscapeController> ().shotFired (); Comentado para que se pueda disparar
 				} else {
 					if (Shotgun == false) {//new for new weapons
 						Instantiate (bullet, twoHandSpawn.transform.position, this.transform.rotation);
