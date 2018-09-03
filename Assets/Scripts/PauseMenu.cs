@@ -3,14 +3,16 @@ using System.Collections;
 using System;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
+using UnityEngine.SceneManagement;
 public class PauseMenu : MonoBehaviour {
 
 	float originalWidth = 1920.0f; //turn these to floats to fix placement issue
 	float originalHeight = 1080.0f;
 	Vector3 scale;
-	bool paused = false;
-	public GUIStyle text;
-	SettingsWriter sw;
+    bool paused = false;
+	public GUIStyle text, menu, exit;
+    public static bool Button;
+    SettingsWriter sw;
 	public static float sfxVal = 0.5f,musicVal=0.5f;
 	// Use this for initialization
 	void awake()
@@ -43,6 +45,8 @@ public class PauseMenu : MonoBehaviour {
 				paused = false;
 				setVolumes ();
 				sw.saveSettings ();
+                
+
 			}
 
 		}
@@ -74,17 +78,33 @@ public class PauseMenu : MonoBehaviour {
 		var svMat = GUI.matrix;
 		GUI.matrix = Matrix4x4.TRS(Vector3.zero, Quaternion.identity, scale);
 		if (paused == true) {
+            
 			GUI.Box(new Rect ((originalWidth / 2)-500, (originalHeight / 2) - (500), 200 * 5, 200 * 5),"");
 			GUI.Label (new Rect (originalWidth / 2-250, originalHeight / 2-150, 150, 50), "SFX Vol",text);
 			sfxVal = GUI.HorizontalSlider (new Rect (originalWidth / 2 - 50, originalHeight / 2 - 150, 350, 50), sfxVal, 0.0f, 1.0f);
 			GUI.Label (new Rect (originalWidth / 2-250, originalHeight / 2-100, 250, 50), "Music Vol",text);
 			musicVal = GUI.HorizontalSlider (new Rect (originalWidth / 2 - 50, originalHeight / 2 - 100, 350, 50), musicVal, 0.0f, 1.0f);
 
-		}
+            // Botones de menu
+
+            if (GUI.Button(new Rect(originalWidth / 2 - 230, originalHeight - originalHeight + 600, 500, 100), "Menu", menu))
+            {
+                SceneManager.LoadScene("Menu");
+            }
+
+            if (GUI.Button(new Rect(originalWidth / 2 - 230, originalHeight - originalHeight + 750, 500, 100), "Exit", exit))
+            {
+                Application.Quit();
+            }
+
+            // Cierra botones de menu
+        }
 
 		GUI.matrix = svMat;
 	}
 }
+
+
 
 class SettingsWriter
 {
@@ -123,6 +143,7 @@ class SettingsWriter
 		}
 	}
 }
+
 
 [Serializable]
 class settingsData

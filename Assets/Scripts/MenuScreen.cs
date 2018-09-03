@@ -10,11 +10,11 @@ public class MenuScreen : MonoBehaviour {
 	float originalHeight = 1080.0f;
 	Vector3 scale;
 	public bool display = false;
-
-    public GUIStyle text, titleText, titleShadow; // ELIMINAR titleShadow o cambiar por otro formato en caso de necesidad
+    public static bool Button;
+    public GUIStyle text, boton;
 	public Texture2D bg; //  ELIMINAR SI NO SE APLICA BACKGROUND NEGRO AL SER SELECCIONADO
-
-    bool playSelect=true,exitSelect=false,play=false,menu=true;
+    //bool playSelect=true, exitSelect=false;
+    bool play=false,menu=true;
 	public LevelStore[] levels;
 	int levelSelectCount = 0;
 
@@ -83,9 +83,10 @@ public class MenuScreen : MonoBehaviour {
 	}
 
 	void inputController()
-	{
+    {/*
 		if (menu == true) {
-			if (Input.GetKeyDown (KeyCode.S) && playSelect == true || Input.GetKeyDown (KeyCode.W) && playSelect == true) {
+            
+            if (Input.GetKeyDown (KeyCode.S) && playSelect == true || Input.GetKeyDown (KeyCode.W) && playSelect == true) {
 				exitSelect = true;
 				playSelect = false;
 			} else if (Input.GetKeyDown (KeyCode.S) && exitSelect == true || Input.GetKeyDown (KeyCode.W) && exitSelect == true) {
@@ -93,18 +94,24 @@ public class MenuScreen : MonoBehaviour {
 				playSelect = true;
 			}
 
+            
 			if (Input.GetKeyDown (KeyCode.Return)  && playSelect == true) {
 				menu = false;
 				play = true;
 			}
+            
+            
 			else if(Input.GetKeyDown (KeyCode.Return) && exitSelect==true)
 			{
 				Application.Quit ();
 			}
 
-		} else if (play == true) {
+        }
+        else */
+        if (play == true) {
 			curLevel = levels [levelSelectCount].levelName;
-			if (Input.GetKeyDown (KeyCode.Backspace)) {
+            
+			if (Input.GetKeyDown (KeyCode.Escape)) {
 				play = false;
 				menu = true;
 			}
@@ -142,45 +149,59 @@ public class MenuScreen : MonoBehaviour {
 		GUI.matrix = Matrix4x4.TRS(Vector3.zero,Quaternion.identity,scale);
 
 		if (display == true) {
-			Rect titlePos = new Rect (originalWidth / 2 - 400, originalHeight - originalHeight, 800, 300);
+			//Rect titlePos = new Rect (originalWidth / 2 - 400, originalHeight - originalHeight, 800, 300);
 			if (menu == true) {
 				play = false;
-                
-				//titlePos = new Rect (originalWidth / 2 - 400, originalHeight - originalHeight, 800, 300); ELIMINAR 
-				//GUI.Box (titlePos, "Cloneline Miami", titleShadow); ELIMINAR
+
+                //titlePos = new Rect (originalWidth / 2 - 400, originalHeight - originalHeight, 800, 300); ELIMINAR 
+                //GUI.Box (titlePos, "Cloneline Miami", titleShadow); ELIMINAR
 
 
-				//titlePos = new Rect (originalWidth / 2 - 405, originalHeight - originalHeight - 5, 800, 300); ELIMINAR
-				//GUI.Box (titlePos, "Cloneline Miami", titleText); ELIMINAR
+                //titlePos = new Rect (originalWidth / 2 - 405, originalHeight - originalHeight - 5, 800, 300); ELIMINAR
+                //GUI.Box (titlePos, "Cloneline Miami", titleText); ELIMINAR
 
-				Rect menuPos = new Rect (originalWidth / 2 - 230, originalHeight - originalHeight + 600, 500, 100);
-				if (playSelect == true) {
-                    //GUI.DrawTexture (menuPos, bg); ELIMINAR SI NO SE APLICA BACKGROUND NEGRO AL SER SELECCIONADO
+                if (GUI.Button(new Rect(originalWidth / 2 - 230, originalHeight - originalHeight + 600, 500, 100), "Menu", boton))
+                {
+                    menu = false;
+                    play = true;
+                }
+
+                /*
+                Rect menuPos = new Rect (originalWidth / 2 - 230, originalHeight - originalHeight + 600, 500, 100);
+				if (playSelect == true) {                    
                     
                     GUI.Box (menuPos, "NEW GAME", titleText);
 				} else if (playSelect == false) {
 					GUI.Box (menuPos, "NEW GAME", text);
-				}
+				}*/
 
-
-				Rect exitPos = new Rect (originalWidth / 2 - 230, originalHeight - originalHeight + 750, 500, 100);
-				if (exitSelect == true) {
-                    //GUI.DrawTexture (exitPos, bg);  ELIMINAR SI NO SE APLICA BACKGROUND NEGRO AL SER SELECCIONADO
+                if (GUI.Button(new Rect(originalWidth / 2 - 230, originalHeight - originalHeight + 750, 500, 100), "Exit", boton))
+                {
+                    Application.Quit();
+                }
+                /*
+                Rect exitPos = new Rect (originalWidth / 2 - 230, originalHeight - originalHeight + 750, 500, 100);
+				if (exitSelect == true) {                  
                     GUI.Box (exitPos, "EXIT", titleText);
 				} else if (exitSelect == false) {
 					GUI.Box (exitPos, "EXIT", text);
-				}
+				}*/
 
                 // Este es el segundo menu que aparece
 
 			} else if (play == true) {
 
                 // Comienza título de regresar menú
+                if (GUI.Button(new Rect(originalWidth - originalWidth + 900, originalHeight - 250, 500, 100), "Volver", boton))
+                {
+                    play = false;
+                    menu = true;
+                }
 
-                Rect backToRet = new Rect (originalWidth - originalWidth + 900, originalHeight - 250, 500, 100);
+                /*Rect backToRet = new Rect (originalWidth - originalWidth + 900, originalHeight - 250, 500, 100);
                 //GUI.DrawTexture (backToRet, bg); ELIMINAR SI NO SE APLICA BACKGROUND NEGRO AL SER SELECCIONADO                
-                GUI.Box (backToRet, "Press backspace to return to menu", titleShadow);
-
+                GUI.Box (backToRet, "Volver", boton);
+                */
                 // Termina título de regresar menú
 
                 //titlePos = new Rect (originalWidth / 2 - 400, originalHeight - originalHeight, 800, 300);
