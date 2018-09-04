@@ -9,17 +9,13 @@ public class MenuScreen : MonoBehaviour {
 	float originalWidth = 1920.0f; //turn these to floats to fix placement issue
 	float originalHeight = 1080.0f;
 	Vector3 scale;
-	public bool display = false;
-    public static bool Button;
-    public GUIStyle text, boton;
-	public Texture2D bg; //  ELIMINAR SI NO SE APLICA BACKGROUND NEGRO AL SER SELECCIONADO
+	public bool display = false;    
+    public GUIStyle text, boton;    
+    public Texture2D bg; //  ELIMINAR SI NO SE APLICA BACKGROUND NEGRO AL SER SELECCIONADO
     //bool playSelect=true, exitSelect=false;
     bool play=false,menu=true;
 	public LevelStore[] levels;
 	int levelSelectCount = 0;
-
-
-
 	static public string curLevel; //new for menu 2
 	// Use this for initialization
 
@@ -35,13 +31,16 @@ public class MenuScreen : MonoBehaviour {
 	
 	}
 
-	void Start () {
-		if (SceneManager.GetActiveScene ().name.Equals ("Menu")) {
+	void Start () {        
+
+        if (SceneManager.GetActiveScene ().name.Equals ("Menu")) {
 			display = true;
 		} else {
 			display = false;
 		}
 		checkForLevelUnlocked ();
+
+
 	}
 
 	public void saveHighScore()//new for menu 2
@@ -110,11 +109,11 @@ public class MenuScreen : MonoBehaviour {
         else */
         if (play == true) {
 			curLevel = levels [levelSelectCount].levelName;
-            
+            /*
 			if (Input.GetKeyDown (KeyCode.Escape)) {
 				play = false;
 				menu = true;
-			}
+			}*/
 
 			if (Input.GetKeyDown (KeyCode.D) && levelSelectCount < levels.Length - 1) {
 				levelSelectCount++;
@@ -124,8 +123,10 @@ public class MenuScreen : MonoBehaviour {
 			if (Input.GetKeyDown (KeyCode.A) && levelSelectCount > 0) {
 				levelSelectCount--;
 				checkForLevelUnlocked ();
-			}
+			}      
+                        
 
+           
 			if (Input.GetKeyDown (KeyCode.Return) && levels [levelSelectCount].unlocked == true) {
 				
 				SceneManager.LoadScene (levels [levelSelectCount].sceneManagerName);
@@ -159,9 +160,10 @@ public class MenuScreen : MonoBehaviour {
 
                 //titlePos = new Rect (originalWidth / 2 - 405, originalHeight - originalHeight - 5, 800, 300); ELIMINAR
                 //GUI.Box (titlePos, "Cloneline Miami", titleText); ELIMINAR
+                
 
-                if (GUI.Button(new Rect(originalWidth / 2 - 230, originalHeight - originalHeight + 600, 500, 100), "Menu", boton))
-                {
+                if (GUI.Button(new Rect(originalWidth / 2 - 230, originalHeight - originalHeight + 600, 500, 100), "Jugar", boton))
+                {                    
                     menu = false;
                     play = true;
                 }
@@ -175,7 +177,7 @@ public class MenuScreen : MonoBehaviour {
 					GUI.Box (menuPos, "NEW GAME", text);
 				}*/
 
-                if (GUI.Button(new Rect(originalWidth / 2 - 230, originalHeight - originalHeight + 750, 500, 100), "Exit", boton))
+                if (GUI.Button(new Rect(originalWidth / 2 - 230, originalHeight - originalHeight + 750, 500, 100), "Salir", boton))
                 {
                     Application.Quit();
                 }
@@ -190,18 +192,21 @@ public class MenuScreen : MonoBehaviour {
                 // Este es el segundo menu que aparece
 
 			} else if (play == true) {
-
+                
                 // Comienza título de regresar menú
-                if (GUI.Button(new Rect(originalWidth - originalWidth + 900, originalHeight - 250, 500, 100), "Volver", boton))
+                if ((GUI.Button(new Rect(originalWidth - originalWidth + 900, originalHeight - 250, 500, 100), "Volver", boton)) || (Input.GetKeyDown(KeyCode.Escape)))
                 {
                     play = false;
                     menu = true;
+                    
                 }
-
+                               
+                
                 /*Rect backToRet = new Rect (originalWidth - originalWidth + 900, originalHeight - 250, 500, 100);
                 //GUI.DrawTexture (backToRet, bg); ELIMINAR SI NO SE APLICA BACKGROUND NEGRO AL SER SELECCIONADO                
                 GUI.Box (backToRet, "Volver", boton);
                 */
+
                 // Termina título de regresar menú
 
                 //titlePos = new Rect (originalWidth / 2 - 400, originalHeight - originalHeight, 800, 300);
@@ -216,6 +221,7 @@ public class MenuScreen : MonoBehaviour {
                     // Comienza título de Nivel 1
 
 					Rect levelTitlePos = new Rect (originalWidth / 2 - 50, originalHeight - originalHeight + 600, 500, 100);
+
 					GUI.Box (levelTitlePos, levels [levelSelectCount].levelName, text);
 
                     // Termina título de nivel
@@ -227,12 +233,17 @@ public class MenuScreen : MonoBehaviour {
 
                     // Termina titulo de High Score
 
+                    /*
                     // comienza MAPA
+
+                    
 
                     levelTitlePos = new Rect (originalWidth / 2 - 700, originalHeight - originalHeight + 500, 500, 500);
 					GUI.DrawTexture (levelTitlePos, levels [levelSelectCount].levelIcon);
 
                     // Termina MAPA
+
+                    */
 
 				} else {
                     

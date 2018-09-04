@@ -1,43 +1,12 @@
 fileFormatVersion: 2
-guid: c62b33a7ec3ede94b82f4ed71a682c44
+guid: 67a610168b9f9ba429640e618b8b2985
 TextureImporter:
   fileIDToRecycleName:
-    21300000: weapons_spritesheet_02_0
-    21300002: weapons_spritesheet_02_1
-    21300004: weapons_spritesheet_02_2
-    21300006: weapons_spritesheet_02_3
-    21300008: weapons_spritesheet_02_4
-    21300010: weapons_spritesheet_02_5
-    21300012: weapons_spritesheet_02_6
-    21300014: weapons_spritesheet_02_7
-    21300016: weapons_spritesheet_02_8
-    21300018: weapons_spritesheet_02_9
-    21300020: weapons_spritesheet_02_10
-    21300022: weapons_spritesheet_02_11
-    21300024: weapons_spritesheet_02_12
-    21300026: weapons_spritesheet_02_13
-    21300028: weapons_spritesheet_02_14
-    21300030: weapons_spritesheet_02_15
-    21300032: weapons_spritesheet_02_16
-    21300034: weapons_spritesheet_02_17
-    21300036: weapons_spritesheet_02_18
-    21300038: weapons_spritesheet_02_19
-    21300040: weapons_spritesheet_02_20
-    21300042: weapons_spritesheet_02_21
-    21300044: weapons_spritesheet_02_22
-    21300046: weapons_spritesheet_02_23
-    21300048: weapons_spritesheet_02_24
-    21300050: weapons_spritesheet_02_25
-    21300052: weapons_spritesheet_02_26
-    21300054: weapons_spritesheet_02_27
-    21300056: weapons_spritesheet_02_28
-    21300058: weapons_spritesheet_02_29
-    21300060: weapons_spritesheet_02_30
-    21300062: weapons_spritesheet_02_31
-    21300064: weapons_spritesheet_02_32
-    21300066: weapons_spritesheet_02_33
-    21300068: weapons_spritesheet_02_34
-    21300070: weapons_spritesheet_02_35
+    21300000: tiles pisos_0
+    21300002: tiles pisos_1
+    21300004: tiles pisos_2
+    21300006: tiles pisos_3
+    21300008: tiles pisos_4
   externalObjects: {}
   serializedVersion: 6
   mipmaps:
@@ -81,7 +50,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 306
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -142,101 +111,101 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: weapons_spritesheet_02_30
+      name: tiles pisos_0
       rect:
         serializedVersion: 2
-        x: 152
-        y: 508
-        width: 212
-        height: 32
+        x: 18
+        y: 146
+        width: 100
+        height: 100
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c3f504de058d4734f80307f002bf9e09
+      spriteID: edbb39b13c492d7489293900aa42e20e
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: weapons_spritesheet_02_31
+      name: tiles pisos_1
       rect:
         serializedVersion: 2
-        x: 612
-        y: 479
-        width: 200
-        height: 61
+        x: 146
+        y: 146
+        width: 100
+        height: 100
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: acf716a40e1bd8a4993eb6b3d4d09880
+      spriteID: bd8e45cbacda1654a8777f00b5b4d5c6
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: weapons_spritesheet_02_32
+      name: tiles pisos_2
       rect:
         serializedVersion: 2
-        x: 1064
-        y: 451
-        width: 60
-        height: 145
+        x: 274
+        y: 146
+        width: 100
+        height: 100
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 06ca0c6bac5c2764bb9f237777d7bbbc
+      spriteID: 06a4610d104c52a4394db66486d49adf
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: weapons_spritesheet_02_33
+      name: tiles pisos_3
       rect:
         serializedVersion: 2
-        x: 1388
-        y: 483
-        width: 253
-        height: 26
+        x: 18
+        y: 25
+        width: 100
+        height: 100
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 204c10dee23f37f45ac8c7a6c46fa5e4
+      spriteID: 20b2015a978048e4eb1244da96b1ffd4
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: weapons_spritesheet_02_34
+      name: tiles pisos_4
       rect:
         serializedVersion: 2
-        x: 1132
-        y: 494
-        width: 5
-        height: 6
+        x: 146
+        y: 25
+        width: 100
+        height: 100
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8f959b9bbd202ef45b6d5f509b2fe377
+      spriteID: b1e304e23a37319459e5d5d230e2fb4f
       vertices: []
       indices: 
       edges: []
@@ -244,7 +213,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 43c08e3ba9a70ba4c9bfe3f9de428d8f
+    spriteID: 449168cfdeab88e4eb1a5c276b54b91a
     vertices: []
     indices: 
     edges: []

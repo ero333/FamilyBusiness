@@ -92,7 +92,7 @@ public class PauseMenu : MonoBehaviour {
                 SceneManager.LoadScene("Menu");
             }
 
-            if (GUI.Button(new Rect(originalWidth / 2 - 230, originalHeight - originalHeight + 750, 500, 100), "Exit", exit))
+            if (GUI.Button(new Rect(originalWidth / 2 - 230, originalHeight - originalHeight + 750, 500, 100), "Salir", exit))
             {
                 Application.Quit();
             }

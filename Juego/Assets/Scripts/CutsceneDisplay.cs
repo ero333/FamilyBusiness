@@ -7,24 +7,29 @@ public class CutsceneDisplay : MonoBehaviour {
 	public Texture2D activeFace;
 	int faceAnimCounter = 0;
 	int cutsceneCounter = 0;
+    int conten1, conten2;
 	float faceAnimateTimer=0.15f,faceReturn=0.15f;
 	public Texture2D bg;
 	public GUIStyle text;
-
-	float originalWidth = 1920.0f; //turn these to floats to fix placement issue
+    public SpriteRenderer en1, en2;
+    float originalWidth = 1920.0f; //turn these to floats to fix placement issue
 	float originalHeight = 1080.0f;
 	Vector3 scale;
-	bool display = false;
+    bool display = false;
 	public static bool anyCutsceneDisplaying = false;
+
 	// Use this for initialization
 	void Start () {
-	
-	}
+     
+    }
 	
 	// Update is called once per frame
 	void Update () {
 		inputControl ();
 		animateFace ();
+
+
+
 	}
 
 	void animateFace()
@@ -43,19 +48,24 @@ public class CutsceneDisplay : MonoBehaviour {
 	void inputControl()
 	{
 		activeCutscene = cutsceneBits [cutsceneCounter];
-		if (Input.GetKeyDown (KeyCode.Return)) {
-			if (cutsceneCounter < cutsceneBits.Length-1) {
+		if (Input.GetKeyDown (KeyCode.Return))
+        {
+			if (cutsceneCounter < cutsceneBits.Length-1)
+            {
 				cutsceneCounter++;
-			} else {
-
-				anyCutsceneDisplaying = false;
-				Time.timeScale = 1;
-				Destroy (this.gameObject);
-
-
 			}
-		}
-	}
+
+            else
+            {
+                anyCutsceneDisplaying = false;
+                Time.timeScale = 1;
+                Destroy(this.gameObject);
+            }
+
+                    
+            
+        }
+    }
 
     //el siguiente collider hay que moverlo en la escena
 

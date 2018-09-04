@@ -17,6 +17,7 @@ public class LevelStore : MonoBehaviour {
 	void Start () {
 		path = Application.persistentDataPath+"/"+levelName + "scoreData.dat";
 		load ();
+        
 	}
 	
 	// Update is called once per frame
