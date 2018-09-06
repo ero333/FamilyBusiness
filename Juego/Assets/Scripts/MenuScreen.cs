@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+
+
 public class MenuScreen : MonoBehaviour {
 
 	static public MenuScreen mu;//new menu 2
@@ -12,7 +15,8 @@ public class MenuScreen : MonoBehaviour {
 	public bool display = false;    
     public GUIStyle text, boton;    
     public Texture2D bg; //  ELIMINAR SI NO SE APLICA BACKGROUND NEGRO AL SER SELECCIONADO
-    //bool playSelect=true, exitSelect=false;
+    public GameObject mapTutorial, volver;  
+    public Button volverMenu;
     bool play=false,menu=true;
 	public LevelStore[] levels;
 	int levelSelectCount = 0;
@@ -21,25 +25,28 @@ public class MenuScreen : MonoBehaviour {
 
 	void awake()
 	{
+        
 		if (mu ==null) {//new for menu part 2
 			mu = this;
 			DontDestroyOnLoad (gameObject);
 		} else {
 			Destroy(this);
 		}
-
 	
 	}
 
-	void Start () {        
+	void Start () {
 
+        
         if (SceneManager.GetActiveScene ().name.Equals ("Menu")) {
 			display = true;
 		} else {
 			display = false;
 		}
 		checkForLevelUnlocked ();
-
+        mapTutorial.SetActive(false);
+        volver.SetActive(false);
+        volverMenu.onClick.AddListener(volverM);               
 
 	}
 
@@ -50,7 +57,6 @@ public class MenuScreen : MonoBehaviour {
 		for (int x = 0; x < levels.Length; x++) {
 			if (levels [x].levelName==curLevel) {
 				ls = levels [x];
-
 
 			}
 		}
@@ -67,9 +73,6 @@ public class MenuScreen : MonoBehaviour {
 			inputController ();
 		}
 
-
-
-
 	}
 
 	void checkForLevelUnlocked()
@@ -82,40 +85,13 @@ public class MenuScreen : MonoBehaviour {
 	}
 
 	void inputController()
-    {/*
-		if (menu == true) {
-            
-            if (Input.GetKeyDown (KeyCode.S) && playSelect == true || Input.GetKeyDown (KeyCode.W) && playSelect == true) {
-				exitSelect = true;
-				playSelect = false;
-			} else if (Input.GetKeyDown (KeyCode.S) && exitSelect == true || Input.GetKeyDown (KeyCode.W) && exitSelect == true) {
-				exitSelect = false;
-				playSelect = true;
-			}
-
-            
-			if (Input.GetKeyDown (KeyCode.Return)  && playSelect == true) {
-				menu = false;
-				play = true;
-			}
-            
-            
-			else if(Input.GetKeyDown (KeyCode.Return) && exitSelect==true)
-			{
-				Application.Quit ();
-			}
-
-        }
-        else */
+    {
         if (play == true) {
 			curLevel = levels [levelSelectCount].levelName;
-            /*
-			if (Input.GetKeyDown (KeyCode.Escape)) {
-				play = false;
-				menu = true;
-			}*/
+            mapTutorial.SetActive(true);
+            volver.SetActive(true);            
 
-			if (Input.GetKeyDown (KeyCode.D) && levelSelectCount < levels.Length - 1) {
+            if (Input.GetKeyDown (KeyCode.D) && levelSelectCount < levels.Length - 1) {
 				levelSelectCount++;
 				checkForLevelUnlocked ();
 			}
@@ -124,21 +100,25 @@ public class MenuScreen : MonoBehaviour {
 				levelSelectCount--;
 				checkForLevelUnlocked ();
 			}      
-                        
-
-           
-			if (Input.GetKeyDown (KeyCode.Return) && levels [levelSelectCount].unlocked == true) {
-				
+                                   
+			if (Input.GetKeyDown (KeyCode.Mouse0) && levels [levelSelectCount].unlocked == true && Hover.onhover == false) {
+                
 				SceneManager.LoadScene (levels [levelSelectCount].sceneManagerName);
 				display = false;
 			}
 		}
 
-
-
-
 	}
 
+
+    void volverM()
+    {
+        play = false;
+        menu = true;
+        mapTutorial.SetActive(false);
+        volver.SetActive(false);
+    }
+    
 	void OnGUI()
 	{
 		GUI.depth = 0;
@@ -150,71 +130,27 @@ public class MenuScreen : MonoBehaviour {
 		GUI.matrix = Matrix4x4.TRS(Vector3.zero,Quaternion.identity,scale);
 
 		if (display == true) {
-			//Rect titlePos = new Rect (originalWidth / 2 - 400, originalHeight - originalHeight, 800, 300);
+			
 			if (menu == true) {
+
 				play = false;
-
-                //titlePos = new Rect (originalWidth / 2 - 400, originalHeight - originalHeight, 800, 300); ELIMINAR 
-                //GUI.Box (titlePos, "Cloneline Miami", titleShadow); ELIMINAR
-
-
-                //titlePos = new Rect (originalWidth / 2 - 405, originalHeight - originalHeight - 5, 800, 300); ELIMINAR
-                //GUI.Box (titlePos, "Cloneline Miami", titleText); ELIMINAR
-                
-
+                          
                 if (GUI.Button(new Rect(originalWidth / 2 - 230, originalHeight - originalHeight + 600, 500, 100), "Jugar", boton))
                 {                    
                     menu = false;
                     play = true;
                 }
 
-                /*
-                Rect menuPos = new Rect (originalWidth / 2 - 230, originalHeight - originalHeight + 600, 500, 100);
-				if (playSelect == true) {                    
-                    
-                    GUI.Box (menuPos, "NEW GAME", titleText);
-				} else if (playSelect == false) {
-					GUI.Box (menuPos, "NEW GAME", text);
-				}*/
-
                 if (GUI.Button(new Rect(originalWidth / 2 - 230, originalHeight - originalHeight + 750, 500, 100), "Salir", boton))
                 {
                     Application.Quit();
                 }
-                /*
-                Rect exitPos = new Rect (originalWidth / 2 - 230, originalHeight - originalHeight + 750, 500, 100);
-				if (exitSelect == true) {                  
-                    GUI.Box (exitPos, "EXIT", titleText);
-				} else if (exitSelect == false) {
-					GUI.Box (exitPos, "EXIT", text);
-				}*/
 
                 // Este es el segundo menu que aparece
 
 			} else if (play == true) {
                 
-                // Comienza título de regresar menú
-                if ((GUI.Button(new Rect(originalWidth - originalWidth + 900, originalHeight - 250, 500, 100), "Volver", boton)) || (Input.GetKeyDown(KeyCode.Escape)))
-                {
-                    play = false;
-                    menu = true;
-                    
-                }
-                               
-                
-                /*Rect backToRet = new Rect (originalWidth - originalWidth + 900, originalHeight - 250, 500, 100);
-                //GUI.DrawTexture (backToRet, bg); ELIMINAR SI NO SE APLICA BACKGROUND NEGRO AL SER SELECCIONADO                
-                GUI.Box (backToRet, "Volver", boton);
-                */
-
-                // Termina título de regresar menú
-
-                //titlePos = new Rect (originalWidth / 2 - 400, originalHeight - originalHeight, 800, 300);
-                //GUI.Box (titlePos, "Cloneline Miami", titleShadow);
-
-
-                //titlePos = new Rect (originalWidth / 2 - 405, originalHeight - originalHeight - 5, 800, 300);
-                //GUI.Box (titlePos, "Cloneline Miami", titleText);
+               
 
                 if (levels [levelSelectCount].unlocked == true) {
 
@@ -233,18 +169,6 @@ public class MenuScreen : MonoBehaviour {
 
                     // Termina titulo de High Score
 
-                    /*
-                    // comienza MAPA
-
-                    
-
-                    levelTitlePos = new Rect (originalWidth / 2 - 700, originalHeight - originalHeight + 500, 500, 500);
-					GUI.DrawTexture (levelTitlePos, levels [levelSelectCount].levelIcon);
-
-                    // Termina MAPA
-
-                    */
-
 				} else {
                     
                     Rect levelTitlePos = new Rect (originalWidth / 2 - 400, originalHeight - originalHeight + 200, 800, 200);
@@ -258,6 +182,7 @@ public class MenuScreen : MonoBehaviour {
 			}
 		}
 		GUI.matrix = svMat;
+    
 	}
     
 }

@@ -22,7 +22,19 @@ public class LevelStore : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+	    if (levelName == "Nivel_Tutorial")
+        {
+            unlocked = true;
+        }
+        else if ((WinLevel.ganoTuto == true) && (levelName == "Nivel_1"))
+        {
+            unlocked = true;
+        }
+
+        else
+        {
+            unlocked = false;
+        }
 	}
 
 	public void save(int newHighScore)

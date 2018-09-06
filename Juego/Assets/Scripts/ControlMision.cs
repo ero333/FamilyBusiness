@@ -6,15 +6,7 @@ public class ControlMision : MonoBehaviour {
 
     public SpriteRenderer enemy;
     public static int cont = 0;
-   
-
-	// Use this for initialization
-	void Start () {
-        Debug.Log(enemy.name);
-
-    }
-
-
+       
 	// Update is called once per frame
 	void Update () {
 

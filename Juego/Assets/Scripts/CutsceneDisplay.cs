@@ -28,8 +28,6 @@ public class CutsceneDisplay : MonoBehaviour {
 		inputControl ();
 		animateFace ();
 
-
-
 	}
 
 	void animateFace()
@@ -48,7 +46,7 @@ public class CutsceneDisplay : MonoBehaviour {
 	void inputControl()
 	{
 		activeCutscene = cutsceneBits [cutsceneCounter];
-		if (Input.GetKeyDown (KeyCode.Return))
+		if (Input.GetKeyDown (KeyCode.Mouse0) && display == true)
         {
 			if (cutsceneCounter < cutsceneBits.Length-1)
             {

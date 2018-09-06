@@ -14,24 +14,18 @@ public class WinLevel : MonoBehaviour {
 	void Start () {
         canvas.enabled = false;
         menu.onClick.AddListener(cargarMenu);
-        quit.onClick.AddListener(salir);
-	}
-	
-	// Update is called once per frame
-	void Update () {
-
-
-                
+        quit.onClick.AddListener(salir);        
 	}
 
     void cargarMenu()
     {
-        SceneManager.LoadScene("Menu");
+        SceneManager.LoadScene("Menu");        
+
     }
 
     void salir()
     {
-        Application.Quit()
+        Application.Quit();
     }
 
     void OnTriggerEnter2D(Collider2D other)

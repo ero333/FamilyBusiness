@@ -18,10 +18,12 @@ public class PauseMenu : MonoBehaviour {
 	void awake()
 	{
 		Environment.SetEnvironmentVariable("MONO_REFLECTION_SERIALIZER", "yes");
+        
 	}
 
 	void Start () {
-		sw = new SettingsWriter ();
+        
+        sw = new SettingsWriter ();
 		Debug.LogError (File.Exists (Application.persistentDataPath + "/settings.dat") + " " + Application.persistentDataPath + "/settings.dat");
 		if (File.Exists (Application.persistentDataPath + "/settings.dat") == true) {
 			sw.loadSettings ();
