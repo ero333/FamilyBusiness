@@ -19,7 +19,7 @@ public class WinLevel : MonoBehaviour {
 
     void cargarMenu()
     {
-        SceneManager.LoadScene("Menu");        
+        SceneManager.LoadScene("Testing");        
 
     }
 
