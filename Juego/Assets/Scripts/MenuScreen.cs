@@ -13,8 +13,7 @@ public class MenuScreen : MonoBehaviour {
 	float originalHeight = 1080.0f;
 	Vector3 scale;
 	public bool display = false;    
-    public GUIStyle text, boton;    
-    public Texture2D bg; //  ELIMINAR SI NO SE APLICA BACKGROUND NEGRO AL SER SELECCIONADO
+    public GUIStyle text, boton;       
     public GameObject mapTutorial, volver;  
     public Button volverMenu;
     bool play=false,menu=true;
@@ -156,7 +155,7 @@ public class MenuScreen : MonoBehaviour {
 
                     // Comienza título de Nivel 1
 
-					Rect levelTitlePos = new Rect (originalWidth / 2 - 50, originalHeight - originalHeight + 600, 500, 100);
+					Rect levelTitlePos = new Rect (originalWidth / 2 - 50, originalHeight - originalHeight + 600, 800, 100);
 
 					GUI.Box (levelTitlePos, levels [levelSelectCount].levelName, text);
 
@@ -164,22 +163,19 @@ public class MenuScreen : MonoBehaviour {
 
                     //Comienza titulo de High Score
 
-                    levelTitlePos = new Rect (originalWidth / 2 - 50, originalHeight - originalHeight + 725, 500, 100);
+                    levelTitlePos = new Rect (originalWidth / 2 - 50, originalHeight - originalHeight + 675, 800, 100);
                     GUI.Box (levelTitlePos, "High Score : " + levels [levelSelectCount].highScore, text);
 
                     // Termina titulo de High Score
 
 				} else {
-                    
-                    Rect levelTitlePos = new Rect (originalWidth / 2 - 400, originalHeight - originalHeight + 200, 800, 200);
-					GUI.Box (levelTitlePos, "Level Locked", text);                    
 
-                    levelTitlePos = new Rect (originalWidth / 2 - 250, originalHeight - originalHeight + 400, 500, 500);
-					GUI.DrawTexture (levelTitlePos, bg);
-                    
-				}
+                    Rect levelTitlePos = new Rect (originalWidth / 2 - 50, originalHeight - originalHeight + 600, 800, 100);
+                    GUI.Box (levelTitlePos, "Level Locked", text);                    
+                   
+                }
 
-			}
+            }
 		}
 		GUI.matrix = svMat;
     
