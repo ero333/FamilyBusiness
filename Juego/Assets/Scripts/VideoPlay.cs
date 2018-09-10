@@ -4,23 +4,27 @@ using UnityEngine;
 using UnityEngine.Video;
 using UnityEngine.SceneManagement;
 
-public class VideoPlay : MonoBehaviour {
-    public VideoClip videoClip;    
-    public int cont = 0;
+public class VideoPlay : MonoBehaviour {    
+    public VideoPlayer videoInicial;
+    public static int cont = 0;
 
     // Use this for initialization
     void Start()
     {
         var videoPlayer = gameObject.AddComponent<VideoPlayer>();
-        videoPlayer.clip = videoClip;       
-        videoPlayer.isLooping = true;            
-        
+        videoInicial.url = System.IO.Path.Combine(Application.streamingAssetsPath, "Cutscene 1.mp4");
+        videoInicial.Play();
+
     }
 
 
     // Update is called once per frame
     void Update()
     {
+        
+        
+
+
         if (cont <= 2100)
         {
             cont += 1;
@@ -32,7 +36,7 @@ public class VideoPlay : MonoBehaviour {
             SceneManager.LoadScene("Tutorial");
         }
 
-        if ((Input.GetKeyDown(KeyCode.Return)) || (Input.GetKeyDown(KeyCode.Mouse0)))
+        if (Input.GetKeyDown(KeyCode.Mouse0))
         {
             SceneManager.LoadScene("Tutorial");
         }

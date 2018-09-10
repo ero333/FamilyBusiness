@@ -8,7 +8,7 @@ public class Hover : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler {
 
     public static bool onhover = false;
     public Text text;
-
+   
 
     public void OnPointerEnter(PointerEventData eventData)
     {

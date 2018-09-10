@@ -62,7 +62,8 @@ public class LevelEscapeController : MonoBehaviour {
 			
 			MenuScreen menu = GameObject.FindGameObjectWithTag("Menu").GetComponent<MenuScreen>();
 			menu.saveHighScore ();
-			menu.display = true;
+            //menu.display = true;           
+            MenuScreen.display = true;
 			SceneManager.LoadScene ("Menu");
 
 

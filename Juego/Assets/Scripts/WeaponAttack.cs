@@ -39,8 +39,9 @@ public class WeaponAttack : MonoBehaviour {
 		}
 
 		if(Input.GetMouseButton(0) && timer<=0)
-		{
-			attack ();
+		{           
+                attack();
+            
 		}
 		if(Input.GetMouseButtonDown(0))
 		{
@@ -53,7 +54,7 @@ public class WeaponAttack : MonoBehaviour {
 
 		} else {
 			if (curWeapon.activeInHierarchy == false) {
-				if (Input.GetMouseButtonDown (1) && changingWeapon == false) {
+				if (Input.GetMouseButtonDown (1) && changingWeapon == false && CutsceneDisplay.anyCutsceneDisplaying == false) {
 					dropWeapon ();
 				}
 			}

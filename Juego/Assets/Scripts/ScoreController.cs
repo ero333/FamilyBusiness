@@ -76,15 +76,16 @@ public class ScoreController : MonoBehaviour {
 		var svMat = GUI.matrix;
 		GUI.matrix = Matrix4x4.TRS(Vector3.zero,Quaternion.identity,scale);
 		if (CutsceneDisplay.anyCutsceneDisplaying == false) {
-			Rect scorePos = new Rect (originalWidth - 500, (originalHeight - originalHeight) + 50, 200, 100);
-			Rect multiPos = new Rect (originalWidth - 500, (originalHeight - originalHeight) + 100, 200, 100);
-			Rect bgPos = new Rect (originalWidth - 750, (originalHeight - originalHeight) + 50, 700, 150);
+			Rect scorePos = new Rect (originalWidth - 500, (originalHeight - originalHeight) + 25, 200, 100);
+			Rect multiPos = new Rect (originalWidth - 500, (originalHeight - originalHeight) + 75, 200, 100);
+            Rect diePos = new Rect(originalWidth - 500, (originalHeight - originalHeight) + 50, 200, 100);
+            Rect bgPos = new Rect (originalWidth - 750, (originalHeight - originalHeight) + 50, 700, 150);
 			GUI.DrawTexture (bgPos, bg);
 			if (PlayerHealth.dead == false) {//changed for ep on cutscenes
 				GUI.Box (scorePos, "Score: " + score, text);
 				GUI.Box (multiPos, "Combo: " + currentMultiplier + " * " + tempScoreHold + " - " + (int)comboTimer, text);
 			} else if (PlayerHealth.dead == true) {
-                GUI.Box (scorePos, "You Died", text);                
+                GUI.Box (diePos, "You Died", text);                
             }
 		}
 		GUI.matrix = svMat;

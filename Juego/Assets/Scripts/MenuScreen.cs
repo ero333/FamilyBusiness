@@ -12,11 +12,9 @@ public class MenuScreen : MonoBehaviour {
 	float originalWidth = 1920.0f; //turn these to floats to fix placement issue
 	float originalHeight = 1080.0f;
 	Vector3 scale;
-	public bool display = false;    
-    public GUIStyle text, boton;       
-    public GameObject mapTutorial, volver;  
-    public Button volverMenu;
-    bool play=false,menu=true;
+	public static bool display = false;    
+    public GUIStyle text;       
+    public static bool play=false,menu=true;
 	public LevelStore[] levels;
 	int levelSelectCount = 0;
 	static public string curLevel; //new for menu 2
@@ -43,9 +41,7 @@ public class MenuScreen : MonoBehaviour {
 			display = false;
 		}
 		checkForLevelUnlocked ();
-        mapTutorial.SetActive(false);
-        volver.SetActive(false);
-        volverMenu.onClick.AddListener(volverM);               
+          
 
 	}
 
@@ -87,8 +83,7 @@ public class MenuScreen : MonoBehaviour {
     {
         if (play == true) {
 			curLevel = levels [levelSelectCount].levelName;
-            mapTutorial.SetActive(true);
-            volver.SetActive(true);            
+         
 
             if (Input.GetKeyDown (KeyCode.D) && levelSelectCount < levels.Length - 1) {
 				levelSelectCount++;
@@ -109,15 +104,6 @@ public class MenuScreen : MonoBehaviour {
 
 	}
 
-
-    void volverM()
-    {
-        play = false;
-        menu = true;
-        mapTutorial.SetActive(false);
-        volver.SetActive(false);
-    }
-    
 	void OnGUI()
 	{
 		GUI.depth = 0;
@@ -132,30 +118,17 @@ public class MenuScreen : MonoBehaviour {
 			
 			if (menu == true) {
 
-				play = false;
-                          
-                if (GUI.Button(new Rect(originalWidth / 2 - 230, originalHeight - originalHeight + 600, 500, 100), "Jugar", boton))
-                {                    
-                    menu = false;
-                    play = true;
-                }
-
-                if (GUI.Button(new Rect(originalWidth / 2 - 230, originalHeight - originalHeight + 750, 500, 100), "Salir", boton))
-                {
-                    Application.Quit();
-                }
+				play = false;                                      
 
                 // Este es el segundo menu que aparece
 
-			} else if (play == true) {
-                
-               
+			} else if (play == true) {                               
 
                 if (levels [levelSelectCount].unlocked == true) {
 
                     // Comienza título de Nivel 1
 
-					Rect levelTitlePos = new Rect (originalWidth / 2 - 50, originalHeight - originalHeight + 600, 800, 100);
+					Rect levelTitlePos = new Rect (originalWidth / 2 - 50, originalHeight - originalHeight + 500, 800, 100);
 
 					GUI.Box (levelTitlePos, levels [levelSelectCount].levelName, text);
 
@@ -163,14 +136,14 @@ public class MenuScreen : MonoBehaviour {
 
                     //Comienza titulo de High Score
 
-                    levelTitlePos = new Rect (originalWidth / 2 - 50, originalHeight - originalHeight + 675, 800, 100);
+                    levelTitlePos = new Rect (originalWidth / 2 - 50, originalHeight - originalHeight + 575, 800, 100);
                     GUI.Box (levelTitlePos, "High Score : " + levels [levelSelectCount].highScore, text);
 
                     // Termina titulo de High Score
 
 				} else {
 
-                    Rect levelTitlePos = new Rect (originalWidth / 2 - 50, originalHeight - originalHeight + 600, 800, 100);
+                    Rect levelTitlePos = new Rect (originalWidth / 2 - 50, originalHeight - originalHeight + 500, 800, 100);
                     GUI.Box (levelTitlePos, "Level Locked", text);                    
                    
                 }

@@ -7,25 +7,28 @@ using UnityEngine.SceneManagement;
 public class WinLevel : MonoBehaviour {
 
     public static bool ganoTuto = false;
-    public Canvas canvas;
-    public Button menu, quit;
-    
-	// Use this for initialization
-	void Start () {
-        canvas.enabled = false;
+    public GameObject menuGanar;
+    public Button menu;
+    public Button sigNivel;
+
+    // Use this for initialization
+    void Start () {
+        menuGanar.SetActive(false);
         menu.onClick.AddListener(cargarMenu);
-        quit.onClick.AddListener(salir);        
+        sigNivel.onClick.AddListener(siguienteNivel);
 	}
+
+
 
     void cargarMenu()
     {
-        SceneManager.LoadScene("Testing");        
+        SceneManager.LoadScene("Menu");        
 
-    }
+    }    
 
-    void salir()
+    void siguienteNivel()
     {
-        Application.Quit();
+        SceneManager.LoadScene("Testing");
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -34,7 +37,8 @@ public class WinLevel : MonoBehaviour {
         {
             Time.timeScale = 0;
             ganoTuto = true;
-            canvas.enabled = true;
+            menuGanar.SetActive(true);
+            
         }
     }
 
