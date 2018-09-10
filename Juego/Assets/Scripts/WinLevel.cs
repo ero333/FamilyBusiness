@@ -28,7 +28,7 @@ public class WinLevel : MonoBehaviour {
 
     void siguienteNivel()
     {
-        SceneManager.LoadScene("Testing");
+        SceneManager.LoadScene("Level1");
     }
 
     void OnTriggerEnter2D(Collider2D other)
