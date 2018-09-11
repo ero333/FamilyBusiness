@@ -11,10 +11,12 @@ public class GameManager : MonoBehaviour {
   public Button volverMenu;
   public Button Jugar;
   private string sceneName;
+  public GameObject Scene;
 
     private void Awake()
-    {        
-        Time.timeScale = 1;
+    {
+        Time.timeScale = 1;        
+        
     }
 
     // Use this for initialization
@@ -39,7 +41,6 @@ public class GameManager : MonoBehaviour {
 	void Update () {
         if (sceneName == "Menu")
         {
-
         
             if (objMain.activeSelf == true)
             {
@@ -57,7 +58,13 @@ public class GameManager : MonoBehaviour {
             MenuScreen.play = true;
             
             }
+        }             
+
+        else if (sceneName == "Tutorial")
+        {            
+           
         }
+
     }
 
     void sig()
@@ -74,6 +81,6 @@ public class GameManager : MonoBehaviour {
 
     void empezarJuego()
     {
-        SceneManager.LoadScene("Video");
+        SceneManager.LoadScene("Tutorial");
     }
 }
