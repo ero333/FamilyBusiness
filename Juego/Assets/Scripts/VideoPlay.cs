@@ -12,7 +12,7 @@ public class VideoPlay : MonoBehaviour {
     void Start()
     {
         var videoPlayer = gameObject.AddComponent<VideoPlayer>();
-        videoInicial.url = System.IO.Path.Combine(Application.streamingAssetsPath, "Cutscene 1.mp4");
+        videoInicial.url = System.IO.Path.Combine(Application.streamingAssetsPath, "Escena 1 - Tutorial.mp4");
         videoInicial.Play();
 
     }
@@ -21,26 +21,23 @@ public class VideoPlay : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        
-        
+      
 
-
-        if (cont <= 2100)
+        if (videoInicial.isPlaying == true)
         {
-            cont += 1;
+            
         }
        
         else 
         {
-
             SceneManager.LoadScene("Tutorial");
         }
-
+        
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
             SceneManager.LoadScene("Tutorial");
         }
-
+        
     }
    
 }

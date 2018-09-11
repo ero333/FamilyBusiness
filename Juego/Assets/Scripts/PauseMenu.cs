@@ -10,7 +10,7 @@ public class PauseMenu : MonoBehaviour {
 	float originalHeight = 1080.0f;
 	Vector3 scale;
     bool paused = false;
-	public GUIStyle text, menu, exit;
+	public GUIStyle text, menu;
     public static bool Button;
     SettingsWriter sw;
 	public static float sfxVal = 0.5f,musicVal=0.5f;

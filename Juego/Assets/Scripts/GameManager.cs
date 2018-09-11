@@ -5,27 +5,27 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour {
-    public GameObject objMain;
-    public GameObject objSecondary;
-    public Button inicioJuego;
-    public Button volverMenu;
-    public Button Jugar;
+  public GameObject objMain;
+  public GameObject objSecondary;
+  public Button inicioJuego;
+  public Button volverMenu;
+  public Button Jugar;
+  private string sceneName;
 
     private void Awake()
-    {
-        
+    {        
         Time.timeScale = 1;
     }
 
     // Use this for initialization
-    void Start () {
+    void Start () {                
         Scene currentScene = SceneManager.GetActiveScene();
-        string sceneName = currentScene.name;    
+        sceneName = currentScene.name;    
         
         if (sceneName == "Menu")
         {
-             objMain.SetActive(true);
-            
+             objMain.SetActive(true);          
+
         }
     else if (sceneName == "Tutorial")
         {
@@ -37,23 +37,27 @@ public class GameManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
-        if (objMain.activeSelf == true)
+        if (sceneName == "Menu")
         {
+
+        
+            if (objMain.activeSelf == true)
+            {
             inicioJuego.onClick.AddListener(sig);
- 
-        }
+            MenuScreen.menu = true;
+            MenuScreen.play = false;
+            }
 
-        else
-        {
+            else
+            {
             
             volverMenu.onClick.AddListener(volverMain);
             Jugar.onClick.AddListener(empezarJuego);
             MenuScreen.menu = false;
             MenuScreen.play = true;
             
+            }
         }
-
     }
 
     void sig()
