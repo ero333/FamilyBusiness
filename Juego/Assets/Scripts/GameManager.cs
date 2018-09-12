@@ -10,8 +10,7 @@ public class GameManager : MonoBehaviour {
   public Button inicioJuego;
   public Button volverMenu;
   public Button Jugar;
-  private string sceneName;
-  public GameObject Scene;
+  private string sceneName;  
 
     private void Awake()
     {
@@ -81,6 +80,7 @@ public class GameManager : MonoBehaviour {
 
     void empezarJuego()
     {
-        SceneManager.LoadScene("Tutorial");
+            SceneManager.LoadScene("Tutorial");       
+
     }
 }

@@ -7,7 +7,7 @@ using System.IO;
 
 
 public class LevelStore : MonoBehaviour {
-	public string levelName;
+	public string levelName;    
 	public Texture2D levelIcon;
 	public int highScore = 0;
 	public bool unlocked = false;
@@ -16,8 +16,7 @@ public class LevelStore : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		path = Application.persistentDataPath+"/"+levelName + "scoreData.dat";
-		load ();
-        
+		load ();        
 	}
 	
 	// Update is called once per frame
