@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class SpriteContainer : MonoBehaviour {
-	public Sprite[] pLegs,pUnarmedWalk,pPunch,pMac10Walk,pMac10Attack,pBowieWalk,pBowieAttack,eBowieAttack,eMac10Attack,eUnarmedWalk,ePunch,eMac10Walk,eBowieWalk,eWalk,eshotAttack,eShotWalk,pShotWalk,pShotAttack;//3 arrays at the end are new
+    public Sprite[] pLegs, pUnarmedWalk, pPunch, pMac10Walk, pMac10Attack, pBowieWalk, pBowieAttack, eBowieAttack, eMac10Attack, eUnarmedWalk, ePunch, eMac10Walk, eBowieWalk, eWalk, eshotAttack, eShotWalk, pShotWalk, pShotAttack, pBatWalk, pBatAttack;//3 arrays at the end are new
 	public Sprite enemySMG, enemyKnife, enemyUnarmed;
 	// Use this for initialization
 	void Start () {
@@ -41,6 +41,9 @@ public class SpriteContainer : MonoBehaviour {
 		case "SawnOff":
 			return pShotAttack;
 			break;
+		case "Bat":
+			return pBatAttack;
+			break;
 		default:
 			return getPlayerPunch ();
 			break;
@@ -58,6 +61,9 @@ public class SpriteContainer : MonoBehaviour {
 			break;
 		case "SawnOff"://NEW STUFF FOR 16a
 			return pShotWalk;
+			break;
+		case "Bat"://NEW STUFF FOR 16a
+			return pBatWalk;
 			break;
 		default:
 			return getPlayerUnarmedWalk ();
