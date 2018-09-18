@@ -8,13 +8,27 @@ public class VideoPlay : MonoBehaviour {
 
     public static VideoPlayer videoInicial;
     bool empezar = false;
-    
+    private string sceneName;
+
 
     // Use this for initialization
     void Start()
     {
+        Scene currentScene = SceneManager.GetActiveScene();
+        sceneName = currentScene.name;    
         videoInicial = GameObject.Find("Video Player").GetComponent<VideoPlayer>();
-        videoInicial.url = System.IO.Path.Combine(Application.streamingAssetsPath, "Escena 1 - Tutorial.mp4");
+        if (sceneName == "Tutorial")
+        {
+            videoInicial.url = System.IO.Path.Combine(Application.streamingAssetsPath, "Escena 1 - Tutorial.mp4");
+        }
+
+        else if (sceneName == "Level1")
+        {
+            videoInicial.url = System.IO.Path.Combine(Application.streamingAssetsPath, "Escena 2 - Level 1.mov");
+        }
+
+        
+        
         videoInicial.Play();
         
         

@@ -1,0 +1,602 @@
+fileFormatVersion: 2
+guid: c85fc08bac9a7714c8800a4fde7e1c71
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: ricky-attacking_0
+    21300002: ricky-attacking_1
+    21300004: ricky-attacking_2
+    21300006: ricky-attacking_3
+    21300008: ricky-attacking_4
+    21300010: ricky-attacking_5
+    21300012: ricky-attacking_6
+    21300014: ricky-attacking_7
+    21300016: ricky-attacking_8
+    21300018: ricky-attacking_9
+    21300020: ricky-attacking_10
+    21300022: ricky-attacking_11
+    21300024: ricky-attacking_12
+    21300026: ricky-attacking_13
+    21300028: ricky-attacking_14
+    21300030: ricky-attacking_15
+    21300032: ricky-attacking_16
+    21300034: ricky-attacking_17
+    21300036: ricky-attacking_18
+    21300038: ricky-attacking_19
+    21300040: ricky-attacking_20
+    21300042: ricky-attacking_21
+    21300044: ricky-attacking_22
+  externalObjects: {}
+  serializedVersion: 6
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 25
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ricky-attacking_0
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 182
+        width: 15
+        height: 27
+      alignment: 9
+      pivot: {x: 0.4308539, y: 0.55762225}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b87c86d2d155e042b5b95797ec3296e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ricky-attacking_1
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 183
+        width: 14
+        height: 27
+      alignment: 9
+      pivot: {x: 0.5, y: 0.509604}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf33842f7498cfb40a4612fbb9ed8b71
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ricky-attacking_2
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 184
+        width: 15
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2187c9969d937441b993ccf024e33c4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ricky-attacking_3
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 185
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ce692db012ddc1469ee8398d36e2953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ricky-attacking_4
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 187
+        width: 15
+        height: 27
+      alignment: 9
+      pivot: {x: 0.500001, y: 0.519208}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba0bacde2d8fc394888886cfdde7ccbd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ricky-attacking_5
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 188
+        width: 14
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e971c9710c6dfdb43bc86b7c856d3e9b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ricky-attacking_6
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 136
+        width: 15
+        height: 27
+      alignment: 9
+      pivot: {x: 0.37899426, y: 0.55762225}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1daa2cc171222144a489d18bc941150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ricky-attacking_7
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 136
+        width: 19
+        height: 27
+      alignment: 9
+      pivot: {x: 0.37717557, y: 0.5288114}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec03468257f07fe408f1ef0d1e854a46
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ricky-attacking_8
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 138
+        width: 22
+        height: 26
+      alignment: 9
+      pivot: {x: 0.37035093, y: 0.4900278}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd2f5cd6d2926e943b0e1a7f95b47409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ricky-attacking_9
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 141
+        width: 27
+        height: 26
+      alignment: 9
+      pivot: {x: 0.3655497, y: 0.51994675}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82de1794e73efa5439d23db609a7c5c4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ricky-attacking_10
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 110
+        width: 46
+        height: 14
+      alignment: 9
+      pivot: {x: 0.23506592, y: 0.5926072}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f22b21402c310d445ad7c696e9a84c20
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ricky-attacking_11
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 104
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19c0326f9fb068d45a85684b1fed8270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ricky-attacking_12
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 105
+        width: 12
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75827c628c03f7f4db5af07a0f288f1b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ricky-attacking_13
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 65
+        width: 43
+        height: 14
+      alignment: 9
+      pivot: {x: 0.25879332, y: 0.6296501}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23ed91ae6b19f064793c40199a371008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ricky-attacking_14
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 69
+        width: 45
+        height: 14
+      alignment: 9
+      pivot: {x: 0.25222728, y: 0.62964904}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db46f957c42702b4cafab21e45e49442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ricky-attacking_15
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 73
+        width: 48
+        height: 14
+      alignment: 9
+      pivot: {x: 0.22449684, y: 0.6296496}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1300bc28e0e4d504d8aceaec9c570815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ricky-attacking_16
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 57
+        width: 22
+        height: 26
+      alignment: 9
+      pivot: {x: 0.3703523, y: 0.5000003}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c3944d5fb82bc948a58d2aa3654aefe
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ricky-attacking_17
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 60
+        width: 18
+        height: 26
+      alignment: 9
+      pivot: {x: 0.39916313, y: 0.5000006}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 183949cc177217d468a05690874b1339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ricky-attacking_18
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 11
+        width: 26
+        height: 26
+      alignment: 9
+      pivot: {x: 0.38032442, y: 0.5598379}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01872a09b0a43b04bab889095aa0730a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ricky-attacking_19
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 16
+        width: 29
+        height: 26
+      alignment: 9
+      pivot: {x: 0.36588076, y: 0.52991897}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72f26687cca9211468734bc8bde1fee4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ricky-attacking_20
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 14
+        width: 36
+        height: 25
+      alignment: 9
+      pivot: {x: 0.355946, y: 0.5103722}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa83fea91e7ffa54eba959403767f0c6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ricky-attacking_21
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 26
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f435ddedc6d16864296d192c6db97ff4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ricky-attacking_22
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 18
+        width: 39
+        height: 22
+      alignment: 9
+      pivot: {x: 0.32713515, y: 0.4528551}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e2f95f29ec996d4a879f125ede24aef
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 958feceb19635864284e912276bf3461
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
