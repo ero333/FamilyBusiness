@@ -7,12 +7,18 @@ using UnityEngine.SceneManagement;
 public class WinLevel : MonoBehaviour {
 
     public static bool ganoTuto = false;
+    public static bool ganoNivel1 = false;
+    public static bool ganoNivel2 = false;
+    public static bool ganoNivel3 = false;
     public GameObject menuGanar;
     public Button menu;
     public Button sigNivel;
+    private string sceneName;
 
     // Use this for initialization
     void Start () {
+        Scene currentScene = SceneManager.GetActiveScene();
+        sceneName = currentScene.name;
         menuGanar.SetActive(false);
         menu.onClick.AddListener(cargarMenu);
         sigNivel.onClick.AddListener(siguienteNivel);
@@ -28,7 +34,23 @@ public class WinLevel : MonoBehaviour {
 
     void siguienteNivel()
     {
-        SceneManager.LoadScene("Level1");
+        if (sceneName == "Tutorial")
+        {
+            SceneManager.LoadScene("Level1");
+        }
+        else if (sceneName == "Level1")
+        {
+            SceneManager.LoadScene("Level2");
+        }
+        else if (sceneName == "Level2")
+        {
+            SceneManager.LoadScene("Level3");
+        }
+        else if (sceneName == "Level3")
+        {
+            SceneManager.LoadScene("Level4");
+        }
+        
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -36,8 +58,24 @@ public class WinLevel : MonoBehaviour {
         if (other.gameObject.tag == "Player")
         {
             Time.timeScale = 0;
-            ganoTuto = true;
             menuGanar.SetActive(true);
+            if (sceneName == "Tutorial")
+            {
+                ganoTuto = true;
+            }
+            else if (sceneName == "Level1")
+            {
+                ganoNivel1 = true;
+            }
+            else if (sceneName == "Level2")
+            {
+                ganoNivel2 = true;
+            }
+            else if (sceneName == "Level3")
+            {
+                ganoNivel3 = true;
+            }
+            
             
         }
     }
