@@ -27,12 +27,13 @@ public class ThrowWeapon : MonoBehaviour {
         
 	}
 
-    
-	public void setDirection(Vector3 dir)
+
+    public void setDirection(Vector3 dir)
 	{
 		direction = dir;
 	}
     
+
 	void OnTriggerEnter2D(Collider2D col)
 	{
 		if (col.gameObject.tag == "Enemy") {

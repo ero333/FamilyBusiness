@@ -9,14 +9,16 @@ public class VideoPlay : MonoBehaviour {
     public static VideoPlayer videoInicial;
     bool empezar = false;
     private string sceneName;
-
+    public GameObject camAnimacion;
 
     // Use this for initialization
     void Start()
     {
         Scene currentScene = SceneManager.GetActiveScene();
         sceneName = currentScene.name;    
-        videoInicial = GameObject.Find("Video Player").GetComponent<VideoPlayer>();
+        videoInicial = GameObject.Find("Video Player").GetComponent<VideoPlayer>();        
+        camAnimacion.SetActive(false);
+
         if (sceneName == "Tutorial")
         {
             videoInicial.url = System.IO.Path.Combine(Application.streamingAssetsPath, "Escena 1 - Tutorial.mp4");
@@ -31,11 +33,8 @@ public class VideoPlay : MonoBehaviour {
         {
             videoInicial.url = System.IO.Path.Combine(Application.streamingAssetsPath, "Cutscene - Nivel 2.mp4");
         }
-
-        
-        
-        videoInicial.Play();
-        
+                
+        videoInicial.Play();        
         
     }
 
@@ -47,24 +46,27 @@ public class VideoPlay : MonoBehaviour {
         
         if (videoInicial.isPlaying == true)
         {
+            camAnimacion.SetActive(true);
             Time.timeScale = 0;
             MusicController.aus.mute = true;
 
             if (Input.GetKeyDown(KeyCode.Mouse0))
             {
                 videoInicial.Stop();
+                camAnimacion.SetActive(false);
                 Time.timeScale = 1;
                 MusicController.aus.mute = false;                
             }
         }
         else
         {
-            videoInicial.Stop();            
+            videoInicial.Stop();
+            
             MusicController.aus.mute = false;
 
             if (empezar == false)
             {
-                
+                camAnimacion.SetActive(false);
                 Time.timeScale = 1;                
                 empezar = true;
 
