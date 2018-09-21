@@ -1,0 +1,372 @@
+fileFormatVersion: 2
+guid: b97629a90f0dc8140b84d80541ac922f
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Enemigo Unico _ Colt, Winchester Ricky Colt_0
+    21300002: Enemigo Unico _ Colt, Winchester Ricky Colt_1
+    21300004: Enemigo Unico _ Colt, Winchester Ricky Colt_2
+    21300006: Enemigo Unico _ Colt, Winchester Ricky Colt_3
+    21300008: Winchester_Attack1
+    21300010: Winchester_Attack2
+    21300012: Winchester_Attack3
+    21300014: Winchester_Attack4
+    21300016: Enemigo Unico _ Colt, Winchester Ricky Colt_8
+    21300018: Enemigo Unico _ Colt, Winchester Ricky Colt_9
+    21300020: Enemigo Unico _ Colt, Winchester Ricky Colt_10
+    21300022: Enemigo Unico _ Colt, Winchester Ricky Colt_11
+    21300024: Enemigo Unico _ Colt, Winchester Ricky Colt_12
+  externalObjects: {}
+  serializedVersion: 6
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 25
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Enemigo Unico _ Colt, Winchester Ricky Colt_0
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 193
+        width: 43
+        height: 14
+      alignment: 9
+      pivot: {x: 0.25251263, y: 0.4019165}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5aa9b0b7f3af8546b08e0ed6139e6dd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo Unico _ Colt, Winchester Ricky Colt_1
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 193
+        width: 50
+        height: 16
+      alignment: 9
+      pivot: {x: 0.21163742, y: 0.32835484}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a328195fb104a34d850a8084fb5ebfd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo Unico _ Colt, Winchester Ricky Colt_2
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 192
+        width: 50
+        height: 15
+      alignment: 9
+      pivot: {x: 0.21850373, y: 0.27114055}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b0c173c7716a974089c95d0db6ec2b3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo Unico _ Colt, Winchester Ricky Colt_3
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 192
+        width: 50
+        height: 17
+      alignment: 9
+      pivot: {x: 0.2322351, y: 0.31825885}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e630b41a6b0a6b14d8d1a03c0f21c25e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Winchester_Attack1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 117
+        width: 47
+        height: 15
+      alignment: 9
+      pivot: {x: 0.33200762, y: 0.36268362}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24ed3527ba2fa9b4baf7f4a4eac47558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Winchester_Attack2
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 117
+        width: 53
+        height: 15
+      alignment: 9
+      pivot: {x: 0.2797771, y: 0.38556924}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1c21fd9b472b0b4cb19677031b7d89f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Winchester_Attack3
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 117
+        width: 53
+        height: 15
+      alignment: 9
+      pivot: {x: 0.29273182, y: 0.36268362}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09cb7f2ae77153b4b99e39adaa5b5482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Winchester_Attack4
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 117
+        width: 58
+        height: 15
+      alignment: 9
+      pivot: {x: 0.26916766, y: 0.31691182}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 189735d35ca009a48a762b3b58a3618f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo Unico _ Colt, Winchester Ricky Colt_8
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 50
+        width: 46
+        height: 14
+      alignment: 9
+      pivot: {x: 0.23133934, y: 0.6226033}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c33b7d6f35685b438e209c0f9713471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo Unico _ Colt, Winchester Ricky Colt_9
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 50
+        width: 51
+        height: 14
+      alignment: 9
+      pivot: {x: 0.21729189, y: 0.6226033}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a795303c0bf5a242a5999342886f14c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo Unico _ Colt, Winchester Ricky Colt_10
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 50
+        width: 53
+        height: 14
+      alignment: 9
+      pivot: {x: 0.2425336, y: 0.6716445}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93bfcbea25bdcc64d882df06bb53d7a1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo Unico _ Colt, Winchester Ricky Colt_12
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 49
+        width: 53
+        height: 15
+      alignment: 9
+      pivot: {x: 0.20205142, y: 0.6602005}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c436efcf65ef0a458d5f4df1eb30ace
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 093d10d7f1531454787959f6a28f38ae
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

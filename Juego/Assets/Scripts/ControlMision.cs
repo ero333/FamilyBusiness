@@ -10,24 +10,25 @@ public class ControlMision : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        if (enemy.name == "EnemyAttackTest IZQ")
+        if (enemy.name == "Enemigo Oficial IZQ")
         {
-            if (((enemy.sprite.name == "tut5sprites_13") || (enemy.sprite.name == "tut5sprites_12")) && (cont == 0))
+            if (((enemy.sprite.name == "Apuñalado") || (enemy.sprite.name == "Bala")) && (cont == 0))
             {
                 Destroy(gameObject);
                 cont = 1;
+                Debug.Log("Puerta 1 se abre");
 
             }
         }
 
-        else if (enemy.name == "EnemyAttackTest DER")
+        else if (enemy.name == "Enemigo Oficial DER")
         {
             cont = 0;
-            if (((enemy.sprite.name == "tut5sprites_13") || (enemy.sprite.name == "tut5sprites_12")) && (cont == 0))
+            if (((enemy.sprite.name == "Apuñalado") || (enemy.sprite.name == "Bala")) && (cont == 0))
             {
                 Destroy(gameObject);
                 cont = 1;
-
+                Debug.Log("Puerta 2 se abre");
             }
         }
     }

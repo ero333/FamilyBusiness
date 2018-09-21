@@ -1,0 +1,1862 @@
+fileFormatVersion: 2
+guid: 958bf1f6cbf82c3439f540de4da3358a
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Enemigo Unico _ Colt, Winchester, Cuchillo_0
+    21300002: Enemigo Unico _ Colt, Winchester, Cuchillo_1
+    21300004: Enemigo Unico _ Colt, Winchester, Cuchillo_2
+    21300006: Enemigo Unico _ Colt, Winchester, Cuchillo_3
+    21300008: Enemigo Unico _ Colt, Winchester, Cuchillo_4
+    21300010: Enemigo Unico _ Colt, Winchester, Cuchillo_5
+    21300012: Enemigo Unico _ Colt, Winchester, Cuchillo_6
+    21300014: Enemigo Unico _ Colt, Winchester, Cuchillo_7
+    21300016: Enemigo Unico _ Colt, Winchester, Cuchillo_8
+    21300018: Enemigo Unico _ Colt, Winchester, Cuchillo_9
+    21300020: Enemigo Unico _ Colt, Winchester, Cuchillo_10
+    21300022: Enemigo Unico _ Colt, Winchester, Cuchillo_11
+    21300024: Enemigo Unico _ Colt, Winchester, Cuchillo_12
+    21300026: Enemigo Unico _ Colt, Winchester, Cuchillo_13
+    21300028: Enemigo Unico _ Colt, Winchester, Cuchillo_14
+    21300030: Enemigo Unico _ Colt, Winchester, Cuchillo_15
+    21300032: Enemigo Unico _ Colt, Winchester, Cuchillo_16
+    21300034: Enemigo Unico _ Colt, Winchester, Cuchillo_17
+    21300036: Winchester_walk1
+    21300038: Winchester_walk3
+    21300040: Winchester_walk4
+    21300042: Winchester_walk5
+    21300044: Winchester_walk6
+    21300046: Enemigo Unico _ Colt, Winchester, Cuchillo_23
+    21300048: Enemigo Unico _ Colt, Winchester, Cuchillo_24
+    21300050: Enemigo Unico _ Colt, Winchester, Cuchillo_25
+    21300052: Enemigo Unico _ Colt, Winchester, Cuchillo_26
+    21300054: Enemigo Unico _ Colt, Winchester, Cuchillo_27
+    21300056: Enemigo Unico _ Colt, Winchester, Cuchillo_28
+    21300058: Enemigo Unico _ Colt, Winchester, Cuchillo_29
+    21300060: Enemigo Unico _ Colt, Winchester, Cuchillo_30
+    21300062: Enemigo Unico _ Colt, Winchester, Cuchillo_31
+    21300064: Enemigo Unico _ Colt, Winchester, Cuchillo_32
+    21300066: Enemigo Unico _ Colt, Winchester, Cuchillo_33
+    21300068: Enemigo Unico _ Colt, Winchester, Cuchillo_34
+    21300070: Enemigo Unico _ Colt, Winchester, Cuchillo_35
+    21300072: Enemigo Unico _ Colt, Winchester, Cuchillo_36
+    21300074: Enemigo Unico _ Colt, Winchester, Cuchillo_37
+    21300076: Enemigo Unico _ Colt, Winchester, Cuchillo_38
+    21300078: Enemigo Unico _ Colt, Winchester, Cuchillo_39
+    21300080: Enemigo Unico _ Colt, Winchester, Cuchillo_40
+    21300082: Enemigo Unico _ Colt, Winchester, Cuchillo_41
+    21300084: Enemigo Unico _ Colt, Winchester, Cuchillo_42
+    21300086: Enemigo Unico _ Colt, Winchester, Cuchillo_43
+    21300088: Enemigo Unico _ Colt, Winchester, Cuchillo_44
+    21300090: Enemigo Unico _ Colt, Winchester, Cuchillo_45
+    21300092: Enemigo Unico _ Colt, Winchester, Cuchillo_46
+    21300094: Enemigo Unico _ Colt, Winchester, Cuchillo_47
+    21300096: Enemigo Unico _ Colt, Winchester, Cuchillo_48
+    21300098: Enemigo Unico _ Colt, Winchester, Cuchillo_49
+    21300100: Enemigo Unico _ Colt, Winchester, Cuchillo_50
+    21300102: Enemigo Unico _ Colt, Winchester, Cuchillo_51
+    21300104: Enemigo Unico _ Colt, Winchester, Cuchillo_52
+    21300106: Enemigo Unico _ Colt, Winchester, Cuchillo_53
+    21300108: Enemigo Unico _ Colt, Winchester, Cuchillo_54
+    21300110: Enemigo Unico _ Colt, Winchester, Cuchillo_55
+    21300112: Enemigo Unico _ Colt, Winchester, Cuchillo_56
+    21300114: Enemigo Unico _ Colt, Winchester, Cuchillo_57
+    21300116: Enemigo Unico _ Colt, Winchester, Cuchillo_58
+    21300118: Enemigo Unico _ Colt, Winchester, Cuchillo_59
+    21300120: Enemigo Unico _ Colt, Winchester, Cuchillo_60
+    21300122: Enemigo Unico _ Colt, Winchester, Cuchillo_61
+    21300124: Enemigo Unico _ Colt, Winchester, Cuchillo_62
+    21300126: cuchi_walk1
+    21300128: cuchi_walk2
+    21300130: cuchi_walk3
+    21300132: cuchi_walk4
+    21300134: cuchi_walk5
+    21300136: cuchi_walk6
+    21300138: cuchi_walk7
+    21300140: cuchi_walk8
+    21300142: Enemigo Unico _ Colt, Winchester, Cuchillo_71
+    21300144: cuchi_walk9
+    21300146: cuchi_walk10
+    21300148: cuchi_walk11
+    21300150: cuchi_walk12
+    21300152: Enemigo Unico _ Colt, Winchester, Cuchillo_76
+    21300154: Enemigo Unico _ Colt, Winchester, Cuchillo_77
+    21300156: Enemigo Unico _ Colt, Winchester, Cuchillo_78
+    21300158: Enemigo Unico _ Colt, Winchester, Cuchillo_79
+    21300160: Enemigo Unico _ Colt, Winchester, Cuchillo_80
+    21300162: Enemigo Unico _ Colt, Winchester, Cuchillo_81
+    21300164: Winchester_walk2
+  externalObjects: {}
+  serializedVersion: 6
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 25
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Enemigo Unico _ Colt, Winchester, Cuchillo_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 264
+        width: 11
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dc31399674a3b5448d53896dd9a4cbe
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo Unico _ Colt, Winchester, Cuchillo_1
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 264
+        width: 12
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1b96fd2c7eab3242a75d4c226a0078c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo Unico _ Colt, Winchester, Cuchillo_2
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 264
+        width: 15
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a7bb8876c1834940bd4c28d65251eb0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo Unico _ Colt, Winchester, Cuchillo_3
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 264
+        width: 19
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff91ccb30ebcff24aa386fb5b367e924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo Unico _ Colt, Winchester, Cuchillo_4
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 263
+        width: 15
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7192094f11465854e9bc22bcbd50f2bf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo Unico _ Colt, Winchester, Cuchillo_5
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 264
+        width: 12
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 505d5cb8961d2bb4b9a674bdf15bfdba
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo Unico _ Colt, Winchester, Cuchillo_6
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 263
+        width: 11
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4705b71d0ca62d54c9bd0f866cfe0992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo Unico _ Colt, Winchester, Cuchillo_7
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 264
+        width: 12
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89b9c9719d2a20f49b4ae87c164f62b8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo Unico _ Colt, Winchester, Cuchillo_8
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 264
+        width: 15
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b0293c43911336489f132f299947e68
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo Unico _ Colt, Winchester, Cuchillo_9
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 264
+        width: 19
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60e20e21e1dd1dd4e928395f4be224d8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo Unico _ Colt, Winchester, Cuchillo_10
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 265
+        width: 15
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e254a0ef0da31646ad5e15a40991e34
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo Unico _ Colt, Winchester, Cuchillo_11
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 265
+        width: 12
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2658bd268f2b2cf44a16668a75736e06
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo Unico _ Colt, Winchester, Cuchillo_12
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 243
+        width: 45
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5f0f7d1d62a5884db4b0cd18ab8baac
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo Unico _ Colt, Winchester, Cuchillo_13
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 221
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baa98d63a20659e4b8b6ad91b1ed8f71
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo Unico _ Colt, Winchester, Cuchillo_14
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 218
+        width: 72
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ca7eef1dc90d194b80e9aedfd28760d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo Unico _ Colt, Winchester, Cuchillo_15
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 223
+        width: 72
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06d831be14ff9e44bb4ae890bffa6eae
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo Unico _ Colt, Winchester, Cuchillo_16
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 219
+        width: 51
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe1092121bab11745809dfcd84b69da1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo Unico _ Colt, Winchester, Cuchillo_17
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 217
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09432345fbe6ef747998b243ef7db978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Winchester_walk1
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 177
+        width: 47
+        height: 30
+      alignment: 9
+      pivot: {x: 0.47808805, y: 0.5801005}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d98d44bcf84d9f84bbe5fca4663a81e4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Winchester_walk3
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 177
+        width: 47
+        height: 30
+      alignment: 9
+      pivot: {x: 0.49999985, y: 0.5572144}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e36fe331abc64341983608c99011cac
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Winchester_walk4
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 178
+        width: 47
+        height: 29
+      alignment: 9
+      pivot: {x: 0.47078398, y: 0.5591873}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 321dd2b45019bc144bbade000dc5d47f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Winchester_walk5
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 177
+        width: 45
+        height: 30
+      alignment: 9
+      pivot: {x: 0.40082803, y: 0.5915431}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7a4bb7065413e144b8ada1f0ea38a66
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Winchester_walk6
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 178
+        width: 45
+        height: 30
+      alignment: 9
+      pivot: {x: 0.38557062, y: 0.55721486}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 619ce91f6a28de24b9532691076f803a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo Unico _ Colt, Winchester, Cuchillo_23
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 160
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac63d0d6713d64d4a948f7bd383b0780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo Unico _ Colt, Winchester, Cuchillo_24
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 159
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a17c17c8f0117549a677806e8301d50
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo Unico _ Colt, Winchester, Cuchillo_25
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 159
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c33c5cca1bc1e949b057c0c2f51b657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo Unico _ Colt, Winchester, Cuchillo_26
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 158
+        width: 15
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18f2560bfb29d5b48bcc2f6354477ec9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo Unico _ Colt, Winchester, Cuchillo_27
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 158
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 833b9037a7e22bc499722c0ec8c58954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo Unico _ Colt, Winchester, Cuchillo_28
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 158
+        width: 15
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 945edbbe779b02d4fa6b28ed0fdb259d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo Unico _ Colt, Winchester, Cuchillo_29
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 158
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f77983b7ea7e21e45af8307c6ba8ac9f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo Unico _ Colt, Winchester, Cuchillo_30
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 159
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9832a1b8ac70bb8419edb5df37867179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo Unico _ Colt, Winchester, Cuchillo_31
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 159
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f6dba95e730f8344b0bc12a24348cc3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo Unico _ Colt, Winchester, Cuchillo_32
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 158
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ed47dd8ff71a0b4b8e5af70623c8c29
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo Unico _ Colt, Winchester, Cuchillo_33
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 153
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf07d98a296ef644da9e3c3400d0cfa5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo Unico _ Colt, Winchester, Cuchillo_34
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 152
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04b181ba03e325c42be09c624075dad2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo Unico _ Colt, Winchester, Cuchillo_35
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 151
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 815aaf0115f4ec8448badef7b4c1c933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo Unico _ Colt, Winchester, Cuchillo_36
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 150
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8e9be3f4125fcd498b3c80d37ce92dd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo Unico _ Colt, Winchester, Cuchillo_37
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 150
+        width: 15
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8632efafe213a346bef4d2ee22ba537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo Unico _ Colt, Winchester, Cuchillo_38
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 150
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bbc91220f199564aadaf3c253d852f9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo Unico _ Colt, Winchester, Cuchillo_39
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 150
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cc61cf182c274f42bcc300c19367b4b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo Unico _ Colt, Winchester, Cuchillo_40
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 152
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 137196a3daacde041869fa669fc63356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo Unico _ Colt, Winchester, Cuchillo_41
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 152
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b11be353ed3cdb84f96406759313b337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo Unico _ Colt, Winchester, Cuchillo_42
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 152
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b59dc5ab3d982446b48e97efce9e2e5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo Unico _ Colt, Winchester, Cuchillo_43
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 129
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31f028e0a59996e41bc9852ad28036d3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo Unico _ Colt, Winchester, Cuchillo_44
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 130
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69dfa5ed9b4602543b73bd785b96b956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo Unico _ Colt, Winchester, Cuchillo_45
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 130
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae9e522abc40d504a8a4b7b94cf332e6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo Unico _ Colt, Winchester, Cuchillo_46
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 131
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e735e958aeda9a429647afa80ac8ab1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo Unico _ Colt, Winchester, Cuchillo_47
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 131
+        width: 15
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47f75790a318d414ba0da788ad2058c9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo Unico _ Colt, Winchester, Cuchillo_48
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 131
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: feb6b34b8e3decc4ebc31b08d5c5c715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo Unico _ Colt, Winchester, Cuchillo_49
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 131
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5103d9de70f66f141b006696e9ccbe5b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo Unico _ Colt, Winchester, Cuchillo_50
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 130
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b701dfffd31e61b4b8410fe6933c3dff
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo Unico _ Colt, Winchester, Cuchillo_51
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 130
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef7354a13b330f0429ea88f8286f1414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo Unico _ Colt, Winchester, Cuchillo_52
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 130
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b0caf61c52845c4486c343eb441eca2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo Unico _ Colt, Winchester, Cuchillo_53
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 120
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca0c25fc1d92b8043959538b00633905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo Unico _ Colt, Winchester, Cuchillo_54
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 121
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cf7518a47e81b74ca1c3aa9880dcc57
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo Unico _ Colt, Winchester, Cuchillo_55
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 120
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1771264b2a333624f9e84b6a13fe8b7d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo Unico _ Colt, Winchester, Cuchillo_56
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 121
+        width: 15
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dc93ecf8d666004eb815a6486c0aaa4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo Unico _ Colt, Winchester, Cuchillo_57
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 121
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d59cfdceda8e9604083f2a18e93d2111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo Unico _ Colt, Winchester, Cuchillo_58
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 121
+        width: 15
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3403951c22285546a4c5c9cc3558b99
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo Unico _ Colt, Winchester, Cuchillo_59
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 121
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e08c37f36b11c9498a6b8280ca06361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo Unico _ Colt, Winchester, Cuchillo_60
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 121
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b078cfa4c4b162499063ccd0dc48d24
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo Unico _ Colt, Winchester, Cuchillo_61
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 121
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc6658adf4e6fc24cb7acb07b1d68e3e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo Unico _ Colt, Winchester, Cuchillo_62
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 122
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b24b17390e3957a43a248afdf1a1800f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cuchi_walk1
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 66
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af4a9850dc642984c9f262b72060f56a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cuchi_walk2
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 66
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeec89e4ae136004c8fa3dcac5122338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cuchi_walk3
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 66
+        width: 21
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d1a81b31c0314945a02044c386bfd9f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cuchi_walk4
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 66
+        width: 21
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f6dc73c31c939143aee0cd63be06ab1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cuchi_walk5
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 65
+        width: 21
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8920f010359e42941967aba30144751b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cuchi_walk6
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 66
+        width: 18
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8235f84c5ee6c4c4ba1f330a3987fb09
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cuchi_walk7
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 66
+        width: 20
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1aa54374baf91b34a872950543ba1756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cuchi_walk8
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 66
+        width: 21
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89f2226cf721cde41ba3f83170bd67ba
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo Unico _ Colt, Winchester, Cuchillo_71
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 72
+        width: 20
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 241dd6d27245e244ea740b3835fafb4e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cuchi_walk9
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 22
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 417f7d375251b4441bbdc85b18eab355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cuchi_walk10
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 22
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bc1616497762644d92cd0b08261ddd3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cuchi_walk11
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 22
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8fdaec453cf54e478e6a62eea58aec3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cuchi_walk12
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 23
+        width: 21
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80a74357739aa3247a09290e74971e53
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo Unico _ Colt, Winchester, Cuchillo_76
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 33
+        width: 22
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf99e9d91600716499e28b73540d3b93
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo Unico _ Colt, Winchester, Cuchillo_77
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 39
+        width: 25
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57e22b4a29fcf254c9cc6b364ab878af
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo Unico _ Colt, Winchester, Cuchillo_78
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 33
+        width: 41
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 656750d182dff2443a6b65c8db05077f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo Unico _ Colt, Winchester, Cuchillo_79
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 8
+        width: 22
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac785f23da29482439540480d59cde35
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo Unico _ Colt, Winchester, Cuchillo_80
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 8
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb14fcb54cc9a2c40bc890935229967d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo Unico _ Colt, Winchester, Cuchillo_81
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 8
+        width: 50
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 013355e312eb92d4f996e3f9544bb97a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Winchester_walk2
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 178
+        width: 47
+        height: 29
+      alignment: 9
+      pivot: {x: 0.5584324, y: 0.5118371}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3784f732302712644aaa1404f485759a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 60a0751579d66814cab1963d980314d2
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

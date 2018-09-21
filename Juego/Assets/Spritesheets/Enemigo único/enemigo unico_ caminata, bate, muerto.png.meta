@@ -1,0 +1,1673 @@
+fileFormatVersion: 2
+guid: e1849c5ad02c3134aae7b16052b0af36
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: enemigo unico_ caminata, bate, muerto, thompson_0
+    21300002: enemigo unico_ caminata, bate, muerto, thompson_1
+    21300004: enemigo unico_ caminata, bate, muerto, thompson_2
+    21300006: enemigo unico_ caminata, bate, muerto, thompson_3
+    21300008: enemigo unico_ caminata, bate, muerto, thompson_4
+    21300010: enemigo unico_ caminata, bate, muerto, thompson_5
+    21300012: enemigo unico_ caminata, bate, muerto, thompson_6
+    21300014: enemigo unico_ caminata, bate, muerto, thompson_7
+    21300016: enemigo unico_ caminata, bate, muerto, thompson_8
+    21300018: enemigo unico_ caminata, bate, muerto, thompson_9
+    21300020: enemigo unico_ caminata, bate, muerto, thompson_10
+    21300022: enemigo unico_ caminata, bate, muerto, thompson_11
+    21300024: enemigo unico_ caminata, bate, muerto, thompson_12
+    21300026: enemigo unico_ caminata, bate, muerto, thompson_13
+    21300028: enemigo unico_ caminata, bate, muerto, thompson_14
+    21300030: enemigo unico_ caminata, bate, muerto, thompson_15
+    21300032: enemigo unico_ caminata, bate, muerto, thompson_16
+    21300034: enemigo unico_ caminata, bate, muerto, thompson_17
+    21300036: enemigo unico_ caminata, bate, muerto, thompson_18
+    21300038: enemigo unico_ caminata, bate, muerto, thompson_19
+    21300040: enemigo unico_ caminata, bate, muerto, thompson_20
+    21300042: enemigo unico_ caminata, bate, muerto, thompson_21
+    21300044: enemigo unico_ caminata, bate, muerto, thompson_22
+    21300046: enemigo unico_ caminata, bate, muerto, thompson_23
+    21300048: enemigo unico_ caminata, bate, muerto, thompson_24
+    21300050: enemigo unico_ caminata, bate, muerto, thompson_25
+    21300052: enemigo unico_ caminata, bate, muerto, thompson_26
+    21300054: enemigo unico_ caminata, bate, muerto, thompson_27
+    21300056: enemigo unico_ caminata, bate, muerto, thompson_28
+    21300058: enemigo unico_ caminata, bate, muerto, thompson_29
+    21300060: enemigo unico_ caminata, bate, muerto, thompson_30
+    21300062: enemigo unico_ caminata, bate, muerto, thompson_31
+    21300064: enemigo unico_ caminata, bate, muerto, thompson_32
+    21300066: enemigo unico_ caminata, bate, muerto, thompson_33
+    21300068: enemigo unico_ caminata, bate, muerto, thompson_34
+    21300070: enemigo unico_ caminata, bate, muerto, thompson_35
+    21300072: enemigo unico_ caminata, bate, muerto, thompson_36
+    21300074: enemigo unico_ caminata, bate, muerto, thompson_37
+    21300076: enemigo unico_ caminata, bate, muerto, thompson_38
+    21300078: enemigo unico_ caminata, bate, muerto, thompson_39
+    21300080: enemigo unico_ caminata, bate, muerto, thompson_40
+    21300082: enemigo unico_ caminata, bate, muerto, thompson_41
+    21300084: enemigo unico_ caminata, bate, muerto, thompson_42
+    21300086: enemigo unico_ caminata, bate, muerto, thompson_43
+    21300088: enemigo unico_ caminata, bate, muerto, thompson_44
+    21300090: enemigo unico_ caminata, bate, muerto, thompson_45
+    21300092: enemigo unico_ caminata, bate, muerto, thompson_46
+    21300094: enemigo unico_ caminata, bate, muerto, thompson_47
+    21300096: enemigo unico_ caminata, bate, muerto, thompson_48
+    21300098: enemigo unico_ caminata, bate, muerto, thompson_49
+    21300100: enemigo unico_ caminata, bate, muerto, thompson_50
+    21300102: enemigo unico_ caminata, bate, muerto, thompson_51
+    21300104: enemigo unico_ caminata, bate, muerto, thompson_52
+    21300106: enemigo unico_ caminata, bate, muerto, thompson_53
+    21300108: enemigo unico_ caminata, bate, muerto, thompson_54
+    21300110: enemigo unico_ caminata, bate, muerto, thompson_55
+    21300112: enemigo unico_ caminata, bate, muerto, thompson_56
+    21300114: enemigo unico_ caminata, bate, muerto, thompson_57
+    21300116: enemigo unico_ caminata, bate, muerto, thompson_58
+    21300118: enemigo unico_ caminata, bate, muerto, thompson_59
+    21300120: enemigo unico_ caminata, bate, muerto, thompson_60
+    21300122: enemigo unico_ caminata, bate, muerto, thompson_61
+    21300124: enemigo unico_ caminata, bate, muerto, thompson_62
+    21300126: enemigo unico_ caminata, bate, muerto, thompson_63
+    21300128: enemigo unico_ caminata, bate, muerto, thompson_64
+    21300130: enemigo unico_ caminata, bate, muerto, thompson_65
+    21300132: enemigo unico_ caminata, bate, muerto, thompson_66
+    21300134: enemigo unico_ caminata, bate, muerto, thompson_67
+    21300136: enemigo unico_ caminata, bate, muerto, thompson_68
+    21300138: enemigo unico_ caminata, bate, muerto, thompson_69
+    21300140: enemigo unico_ caminata, bate, muerto, thompson_70
+    21300142: enemigo unico_ caminata, bate, muerto, thompson_71
+    21300144: enemigo unico_ caminata, bate, muerto, thompson_72
+    21300146: enemigo unico_ caminata, bate, muerto, thompson_73
+  externalObjects: {}
+  serializedVersion: 6
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 25
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: enemigo unico_ caminata, bate, muerto, thompson_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 264
+        width: 11
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28f6c6a97612ac04baa474f5e8c6b61e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ caminata, bate, muerto, thompson_1
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 264
+        width: 12
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0bc39f7b7270ba46aca40c49e4bab09
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ caminata, bate, muerto, thompson_2
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 264
+        width: 15
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d65960c6152eeef499160d402c970a52
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ caminata, bate, muerto, thompson_3
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 264
+        width: 19
+        height: 26
+      alignment: 9
+      pivot: {x: 0.46408683, y: 0.4606335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41a6c0d9f8720414a9fe88e2ecae9832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ caminata, bate, muerto, thompson_4
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 263
+        width: 15
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01e7249d2e480574b8f7145da80218fb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ caminata, bate, muerto, thompson_5
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 264
+        width: 12
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70e201c467751a8468b86f5088446848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ caminata, bate, muerto, thompson_6
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 263
+        width: 11
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f43d24d965621af41a4003f82c1a4329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ caminata, bate, muerto, thompson_7
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 264
+        width: 12
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37dde2c326fc872449bbbe2aba787f02
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ caminata, bate, muerto, thompson_8
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 264
+        width: 15
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cd82b3f28dfc094f893c7adae19bd30
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ caminata, bate, muerto, thompson_9
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 264
+        width: 19
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f181949896910f4ea1258b0b02a7af9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ caminata, bate, muerto, thompson_10
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 265
+        width: 15
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01a8893612eb0d04598085a5c080afd3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ caminata, bate, muerto, thompson_11
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 265
+        width: 12
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3830d16010f320499388c1c978a8887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ caminata, bate, muerto, thompson_12
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 243
+        width: 45
+        height: 15
+      alignment: 9
+      pivot: {x: 0.23463716, y: 0.6137268}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fbe0a5866b71dc4eacd885cd80d57ea
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ caminata, bate, muerto, thompson_13
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 221
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5749635f5ea5d641ab23e0ea7af7345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ caminata, bate, muerto, thompson_14
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 221
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a081da9a39d2c564c9798ec9878c2194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ caminata, bate, muerto, thompson_15
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 223
+        width: 72
+        height: 33
+      alignment: 9
+      pivot: {x: 0.10195626, y: 0.541355}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 093da88e4f64ea14d872c7b60ac7e4e0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ caminata, bate, muerto, thompson_16
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 224
+        width: 72
+        height: 33
+      alignment: 9
+      pivot: {x: 0.11143324, y: 0.53101647}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e49045388eeb25044b1abac9de9ec5c7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ caminata, bate, muerto, thompson_17
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 210
+        width: 47
+        height: 15
+      alignment: 9
+      pivot: {x: 0.22415194, y: 0.59098107}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68bc4aedd83723347bfef6a6e2aebaa2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ caminata, bate, muerto, thompson_18
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 182
+        width: 37
+        height: 26
+      alignment: 9
+      pivot: {x: 0.2694729, y: 0.57873416}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 102767dafcd72274fae2900d5c9acb78
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ caminata, bate, muerto, thompson_19
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 181
+        width: 39
+        height: 27
+      alignment: 9
+      pivot: {x: 0.3162873, y: 0.5379085}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 969698baefa5ada4488a7039aa447f45
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ caminata, bate, muerto, thompson_20
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 184
+        width: 47
+        height: 25
+      alignment: 9
+      pivot: {x: 0.2967435, y: 0.52729434}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4aebaf3dfa7833d439c6142b81eeb3f2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ caminata, bate, muerto, thompson_21
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 188
+        width: 50
+        height: 22
+      alignment: 9
+      pivot: {x: 0.26799774, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62efc157f8df70f4e8ca163046ec5e2f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ caminata, bate, muerto, thompson_22
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 160
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb3529e657ffdf84caa04890234d48c3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ caminata, bate, muerto, thompson_23
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 159
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0eb14c6ca0ea0ba4b9b03522339dd570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ caminata, bate, muerto, thompson_24
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 159
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a549dd37125c3c4fa83e827f8247965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ caminata, bate, muerto, thompson_25
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 158
+        width: 15
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1921f6df4e89caa478deb6d26bb25d19
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ caminata, bate, muerto, thompson_26
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 158
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d584bc04eec9e524c9ba0cb083530113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ caminata, bate, muerto, thompson_27
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 158
+        width: 15
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5c797e747d53844abd38a580faa1d03
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ caminata, bate, muerto, thompson_28
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 158
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1e9e01732123ba4798d72e1f3bc6d5f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ caminata, bate, muerto, thompson_29
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 159
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0be0d7b44701914990ad4c0ae35edc7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ caminata, bate, muerto, thompson_30
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 159
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7ddd07e986369d4a94e33fc5e8ae531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ caminata, bate, muerto, thompson_31
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 158
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e69aa4d3f8111074e9fab01208e96624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ caminata, bate, muerto, thompson_32
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 153
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc892dd5165c4fd47806722ec3bb0448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ caminata, bate, muerto, thompson_33
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 152
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4caa4b58f65c4f7428656059ed7c0921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ caminata, bate, muerto, thompson_34
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 151
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fc18dee424151242a1c062d1a684052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ caminata, bate, muerto, thompson_35
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 150
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdff4dd7d28eea544a5970b19a861c70
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ caminata, bate, muerto, thompson_36
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 150
+        width: 15
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff09803392dd17245a4288a37328b32e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ caminata, bate, muerto, thompson_37
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 150
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cf4bd8efd5ed8148b920f1aeb4011af
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ caminata, bate, muerto, thompson_38
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 150
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7ddedd709f395f4f89cff0a89715bb3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ caminata, bate, muerto, thompson_39
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 152
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc2e5398f57020740bfda76fdecdf6d3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ caminata, bate, muerto, thompson_40
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 152
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57930dba7a8c2fe47a8faaddaa848140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ caminata, bate, muerto, thompson_41
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 152
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ff60dc85070ae54ab11df59bb8dfe24
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ caminata, bate, muerto, thompson_42
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 129
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adff261eb3ce9ba49922cfcabe63b64d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ caminata, bate, muerto, thompson_43
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 130
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d0eafbd79cbd9b4b9793e3c12374d09
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ caminata, bate, muerto, thompson_44
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 130
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eef957185a735b940a62d49114ba3a07
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ caminata, bate, muerto, thompson_45
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 131
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76f07fb7c4dbf7e479a35c62013a2c99
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ caminata, bate, muerto, thompson_46
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 131
+        width: 15
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76ef309248f51424481e5c5e44bfd46a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ caminata, bate, muerto, thompson_47
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 131
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 811bcfd78ff94204b8ef80dcf2f9c49d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ caminata, bate, muerto, thompson_48
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 131
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f40dc6ad76b3ffb468d9f06bc266f2b4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ caminata, bate, muerto, thompson_49
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 130
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48c36848cc9a46b469aa2b5da4cb3c0a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ caminata, bate, muerto, thompson_50
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 130
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fea9dd4342fe92b44a8c13f77047bb41
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ caminata, bate, muerto, thompson_51
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 130
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6590e6638f715e44ba975568d63ac33e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ caminata, bate, muerto, thompson_52
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 120
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca785e922bf976b48a51dd4098db3ff0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ caminata, bate, muerto, thompson_53
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 121
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8aca5e7b379df2a468897014f03a0db2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ caminata, bate, muerto, thompson_54
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 120
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4604c59b8161954590b97dd1670a287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ caminata, bate, muerto, thompson_55
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 121
+        width: 15
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 945d61b2b4d932c458d788ad7fbd3222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ caminata, bate, muerto, thompson_56
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 121
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7629d783d432d148b463e31cb5e3c32
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ caminata, bate, muerto, thompson_57
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 121
+        width: 15
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa624518d14450a41acd6adb5cef24ca
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ caminata, bate, muerto, thompson_58
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 121
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86bf8962915b6f947b800c654af630ce
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ caminata, bate, muerto, thompson_59
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 121
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 959b418ebfd765044a4d2b4f4754a0a8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ caminata, bate, muerto, thompson_60
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 121
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 898912ca559bab44c9fb9646f875ef2f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ caminata, bate, muerto, thompson_61
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 122
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8f7d22d5778b30428f563bcf0504a43
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ caminata, bate, muerto, thompson_62
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 85
+        width: 26
+        height: 26
+      alignment: 9
+      pivot: {x: 0.21130903, y: 0.55248845}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04a1ba5e68b8d234cb043b8ba42e22c6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ caminata, bate, muerto, thompson_63
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 83
+        width: 24
+        height: 27
+      alignment: 9
+      pivot: {x: 0.2583302, y: 0.51263595}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4561ff9ea47e2b4da11882e6d6d7770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ caminata, bate, muerto, thompson_64
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 82
+        width: 25
+        height: 27
+      alignment: 9
+      pivot: {x: 0.24070312, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e93c51764a4d6f845875ad4d877cc57e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ caminata, bate, muerto, thompson_65
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 80
+        width: 25
+        height: 27
+      alignment: 9
+      pivot: {x: 0.33623382, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e18aa2428af4f1418d75128a0334dda
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ caminata, bate, muerto, thompson_66
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 79
+        width: 25
+        height: 27
+      alignment: 9
+      pivot: {x: 0.2816449, y: 0.49999943}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b7f33f8f2829ee49af9c04f5a9c7ca1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ caminata, bate, muerto, thompson_67
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 78
+        width: 24
+        height: 27
+      alignment: 9
+      pivot: {x: 0.24411583, y: 0.51263624}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ac797a2fdf1b4d42a055d07861b2484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ caminata, bate, muerto, thompson_68
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 78
+        width: 25
+        height: 27
+      alignment: 9
+      pivot: {x: 0.22705689, y: 0.5379088}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9b187cd7a26fda4995d07eb94d768f8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ caminata, bate, muerto, thompson_69
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 78
+        width: 27
+        height: 26
+      alignment: 9
+      pivot: {x: 0.24727376, y: 0.48687744}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62ad182da78c88246b46a772c46b2c8d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ caminata, bate, muerto, thompson_70
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 79
+        width: 30
+        height: 26
+      alignment: 9
+      pivot: {x: 0.22705689, y: 0.48687685}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3fe925f3560ccc49b8e4b08e3948190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ caminata, bate, muerto, thompson_71
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 45
+        width: 34
+        height: 27
+      alignment: 9
+      pivot: {x: 0.27923602, y: 0.56318116}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0d758f5c6282ed418f6019dcdf9c6f9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ caminata, bate, muerto, thompson_72
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 46
+        width: 30
+        height: 26
+      alignment: 9
+      pivot: {x: 0.26117375, y: 0.4999997}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fc2ead222875f54289dddb5d5a963d7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ caminata, bate, muerto, thompson_73
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 46
+        width: 27
+        height: 26
+      alignment: 9
+      pivot: {x: 0.20936471, y: 0.48687744}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f60a291e16e3204f810a9dd50697d8e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 2ae643aa5e684b543b2f77317e78527a
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

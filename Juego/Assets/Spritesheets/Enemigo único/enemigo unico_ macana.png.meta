@@ -1,0 +1,1379 @@
+fileFormatVersion: 2
+guid: 232ab2a9b289813489f3ba206185adef
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: enemigo unico_ macana_0
+    21300002: enemigo unico_ macana_1
+    21300004: enemigo unico_ macana_2
+    21300006: enemigo unico_ macana_3
+    21300008: enemigo unico_ macana_4
+    21300010: enemigo unico_ macana_5
+    21300012: enemigo unico_ macana_6
+    21300014: enemigo unico_ macana_7
+    21300016: enemigo unico_ macana_8
+    21300018: enemigo unico_ macana_9
+    21300020: enemigo unico_ macana_10
+    21300022: enemigo unico_ macana_11
+    21300024: enemigo unico_ macana_12
+    21300026: enemigo unico_ macana_13
+    21300028: enemigo unico_ macana_14
+    21300030: enemigo unico_ macana_15
+    21300032: enemigo unico_ macana_16
+    21300034: enemigo unico_ macana_17
+    21300036: enemigo unico_ macana_18
+    21300038: enemigo unico_ macana_19
+    21300040: enemigo unico_ macana_20
+    21300042: enemigo unico_ macana_21
+    21300044: enemigo unico_ macana_22
+    21300046: enemigo unico_ macana_23
+    21300048: enemigo unico_ macana_24
+    21300050: enemigo unico_ macana_25
+    21300052: enemigo unico_ macana_26
+    21300054: enemigo unico_ macana_27
+    21300056: enemigo unico_ macana_28
+    21300058: enemigo unico_ macana_29
+    21300060: enemigo unico_ macana_30
+    21300062: enemigo unico_ macana_31
+    21300064: enemigo unico_ macana_32
+    21300066: enemigo unico_ macana_33
+    21300068: enemigo unico_ macana_34
+    21300070: enemigo unico_ macana_35
+    21300072: enemigo unico_ macana_36
+    21300074: enemigo unico_ macana_37
+    21300076: enemigo unico_ macana_38
+    21300078: enemigo unico_ macana_39
+    21300080: enemigo unico_ macana_40
+    21300082: enemigo unico_ macana_41
+    21300084: enemigo unico_ macana_42
+    21300086: enemigo unico_ macana_43
+    21300088: enemigo unico_ macana_44
+    21300090: enemigo unico_ macana_45
+    21300092: enemigo unico_ macana_46
+    21300094: enemigo unico_ macana_47
+    21300096: enemigo unico_ macana_48
+    21300098: enemigo unico_ macana_49
+    21300100: enemigo unico_ macana_50
+    21300102: enemigo unico_ macana_51
+    21300104: enemigo unico_ macana_52
+    21300106: enemigo unico_ macana_53
+    21300108: enemigo unico_ macana_54
+    21300110: enemigo unico_ macana_55
+    21300112: enemigo unico_ macana_56
+    21300114: enemigo unico_ macana_57
+    21300116: enemigo unico_ macana_58
+    21300118: enemigo unico_ macana_59
+  externalObjects: {}
+  serializedVersion: 6
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 25
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: enemigo unico_ macana_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 210
+        width: 48
+        height: 15
+      alignment: 9
+      pivot: {x: 0.21392596, y: 0.56865746}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5701205739a77cf4b8dee93e8e9c539a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ macana_1
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 221
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa265ad98c15f5240ae352064766bfd8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ macana_2
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 221
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ae51069298f685459a5f7cd83b8f529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ macana_3
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 224
+        width: 72
+        height: 33
+      alignment: 9
+      pivot: {x: 0.10426458, y: 0.55201304}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f4307d7686cccc40a40951eb84f7b58
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ macana_4
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 181
+        width: 37
+        height: 27
+      alignment: 9
+      pivot: {x: 0.26804826, y: 0.576286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 872e5ed2a527b9942b50ecb425dd0bf0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ macana_5
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 181
+        width: 39
+        height: 27
+      alignment: 9
+      pivot: {x: 0.32395464, y: 0.550857}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9c1e93f53cf4194eaa374a1477d16e6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ macana_6
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 184
+        width: 45
+        height: 25
+      alignment: 9
+      pivot: {x: 0.3092838, y: 0.51373106}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 086821709882b8d4b85af5c315929ba6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ macana_7
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 188
+        width: 50
+        height: 22
+      alignment: 9
+      pivot: {x: 0.25969818, y: 0.4687916}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3262c369b6ecc2a4c97821d3bc177eaf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ macana_8
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 160
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5290b815e6c3b1d42a72c5ab99e43940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ macana_9
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 159
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b05bca8b1c48ad4694cd58f55743f3a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ macana_10
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 159
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93ddfe32b6b49ee45a636f368f4b15d5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ macana_11
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 158
+        width: 15
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf155a74ab75dc34dafdf531283a70ae
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ macana_12
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 158
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ef24814e5bab3e468386247c0e55eff
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ macana_13
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 158
+        width: 15
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 057776f4537cc6340ad85726122e6764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ macana_14
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 158
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f329d596d055bab42a0690bb59122e63
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ macana_15
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 159
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bbc3554e313b7847bd781de54350e5c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ macana_16
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 159
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a8fa4fad51ca4a4d8899b649a215709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ macana_17
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 158
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a911a5a50aee5a84c93a3b3a9f26c9a5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ macana_18
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 153
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9089bbcabcccb59429df818bbd15d34a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ macana_19
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 152
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27d7ea6c970ad724da13c1164eb25775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ macana_20
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 151
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb87b424a2dc76c42b0e54e6eab25069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ macana_21
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 150
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47aee84caf6abff44a44d2390c76b1c8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ macana_22
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 150
+        width: 15
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f381af8d00b06249a7e4013fe2ea942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ macana_23
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 150
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04639e17226f15447a28239f7e73982a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ macana_24
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 150
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 306f1a74f39f6834fae2146d5eef3a4c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ macana_25
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 152
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a033a80151fd3d442bf3e36e42d125e8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ macana_26
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 152
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94ef84ce6542adb4a8baee0c72fc82c7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ macana_27
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 152
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da996c9256396b04ab8d4a23866b7019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ macana_28
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 129
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be3085727760ff8458101dd879c8bc3e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ macana_29
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 130
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 030d41ed8574e4746b5edabc7d776423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ macana_30
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 130
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2ddf56dc1da46743b434ce37199ee95
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ macana_31
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 131
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c422e5c532cbb264aa490be961e453c5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ macana_32
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 131
+        width: 15
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 775e1782bb2a27644948d075af8683a7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ macana_33
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 131
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27a3eac4c3c178c4f8f551b0806e6666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ macana_34
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 131
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78113b70d3715da4ebda30b29dc7c4d3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ macana_35
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 130
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86b10e8fe08d2464c9e1adb95e6022ce
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ macana_36
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 130
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f9ecba8760f5524ca0757785007c7a3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ macana_37
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 130
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d48153adb492dac47a9fa728418f8c02
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ macana_38
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 120
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d7b17eb956e5f94db18bfe85f29cdc6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ macana_39
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 121
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70349d89a84f0e4499f8cb15c5f85276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ macana_40
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 120
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a15a1b41fd5f0d41a39e4ed2a337b8b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ macana_41
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 121
+        width: 15
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d364e56e80566b4194e6119d6d52228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ macana_42
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 121
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e66d60cde6e06a34983d67e9354a927a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ macana_43
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 121
+        width: 15
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 196cd391f34657e479f7ab15b3fa6a6e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ macana_44
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 121
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c1eef2c3aadcb941a8c4df3ba362871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ macana_45
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 121
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 293b8a7e7b9b4944a830462b670365f0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ macana_46
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 121
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcdf08e388d537c4e849c7fe26ad396b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ macana_47
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 122
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55635810635b0294992e7e3e4b54f866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ macana_48
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 76
+        width: 29
+        height: 27
+      alignment: 9
+      pivot: {x: 0.22773696, y: 0.5635718}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3edd19457d450947a9de900744ef54a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ macana_49
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 75
+        width: 27
+        height: 27
+      alignment: 9
+      pivot: {x: 0.23299776, y: 0.51271397}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 397a8f6184b420b4db34913bbfcd0494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ macana_50
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 72
+        width: 28
+        height: 29
+      alignment: 9
+      pivot: {x: 0.25479427, y: 0.5473499}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1b821ff868552349bc96169a01543f1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ macana_51
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 72
+        width: 30
+        height: 27
+      alignment: 9
+      pivot: {x: 0.30547002, y: 0.47457066}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f00b390e3a783c9468092951ebaebb85
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ macana_52
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 71
+        width: 30
+        height: 27
+      alignment: 9
+      pivot: {x: 0.24825542, y: 0.48728547}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4445ee64a61df54788d5b3d45f9c195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ macana_53
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 70
+        width: 27
+        height: 27
+      alignment: 9
+      pivot: {x: 0.2329972, y: 0.51271397}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8317edc32fab5c418966a6ef7a73b31
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ macana_54
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 68
+        width: 28
+        height: 29
+      alignment: 9
+      pivot: {x: 0.24253355, y: 0.5947003}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07071cd1d6b42b34e989a1a2035ad090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ macana_55
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 69
+        width: 29
+        height: 27
+      alignment: 9
+      pivot: {x: 0.2277369, y: 0.5254288}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91c416bbb08d3ad4ab3d9bd12c3d8d7e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ macana_56
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 70
+        width: 33
+        height: 27
+      alignment: 9
+      pivot: {x: 0.21912731, y: 0.5254285}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7746f14e0e19c348802b3856d9e2dcf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ macana_57
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 36
+        width: 36
+        height: 28
+      alignment: 9
+      pivot: {x: 0.26160493, y: 0.58582157}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9be8dc83b4e53864e824c78e8ba58c0d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ macana_58
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 37
+        width: 32
+        height: 27
+      alignment: 9
+      pivot: {x: 0.24253333, y: 0.5254288}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a15579dbf134e754c916b64eee34e3dc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemigo unico_ macana_59
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 36
+        width: 30
+        height: 28
+      alignment: 9
+      pivot: {x: 0.22536951, y: 0.5122598}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95666411e88eeed47a7bcb0e478b6c97
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: e04eb0da76bf45846ac73930262503c2
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

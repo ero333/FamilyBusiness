@@ -24,7 +24,12 @@ public class VideoPlay : MonoBehaviour {
 
         else if (sceneName == "Level1")
         {
-            videoInicial.url = System.IO.Path.Combine(Application.streamingAssetsPath, "Escena 2 - Level 1.mov");
+            videoInicial.url = System.IO.Path.Combine(Application.streamingAssetsPath, "Cutscene - Nivel 1.mp4");
+        }
+        
+        else if (sceneName == "Level2")
+        {
+            videoInicial.url = System.IO.Path.Combine(Application.streamingAssetsPath, "Cutscene - Nivel 2.mp4");
         }
 
         

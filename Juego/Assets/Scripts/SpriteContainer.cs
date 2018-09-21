@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class SpriteContainer : MonoBehaviour {
-    public Sprite[] pLegs, pUnarmedWalk, pPunch, pMac10Walk, pMac10Attack, pBowieWalk, pBowieAttack, eBowieAttack, eMac10Attack, eUnarmedWalk, ePunch, eMac10Walk, eBowieWalk, eWalk, eshotAttack, eShotWalk, pShotWalk, pShotAttack, pBatWalk, pBatAttack;//3 arrays at the end are new
+    public Sprite[] pLegs, pUnarmedWalk, pPunch, pMac10Walk, pMac10Attack, pBowieWalk, pBowieAttack, eBowieAttack, eMac10Attack, eUnarmedWalk, ePunch, eMac10Walk, eBowieWalk, eWalk, eshotAttack, eShotWalk, pShotWalk, pShotAttack, pBatWalk, pBatAttack, eBatWalk, eBatAttack, eMatuteWalk, eMatuteAttack, pMatuteWalk, pMatuteAttack, pColtWalk, pColtAttack, eColtWalk, eColtAttack, pWinchesterWalk, pWinchesterAttack, eWinchesterWalk, eWinchesterAttack, pThompsonWalk, pThompsonAttack, eThompsonWalk, eThompsonAttack;//3 arrays at the end are new
 	public Sprite enemySMG, enemyKnife, enemyUnarmed;
 	// Use this for initialization
 	void Start () {
@@ -44,6 +44,18 @@ public class SpriteContainer : MonoBehaviour {
 		case "Bat":
 			return pBatAttack;
 			break;
+		case "Matute":
+			return pMatuteAttack;
+			break;
+		case "Winchester":
+			return pWinchesterAttack;
+			break;
+		case "Colt":
+			return pColtAttack;
+			break;
+		case "Thompson":
+			return pThompsonAttack;
+			break;
 		default:
 			return getPlayerPunch ();
 			break;
@@ -65,6 +77,18 @@ public class SpriteContainer : MonoBehaviour {
 		case "Bat"://NEW STUFF FOR 16a
 			return pBatWalk;
 			break;
+		case "Matute"://NEW STUFF FOR 16a
+			return pMatuteWalk;
+			break;
+		case "Winchester"://NEW STUFF FOR 16a
+			return pWinchesterWalk;
+			break;
+		case "Colt"://NEW STUFF FOR 16a
+			return pColtWalk;
+			break;
+		case "Thompson"://NEW STUFF FOR 16a
+			return pThompsonWalk;
+			break;
 		default:
 			return getPlayerUnarmedWalk ();
 			break;
@@ -75,9 +99,12 @@ public class SpriteContainer : MonoBehaviour {
 	{
 		if (weapon == "Mac10") {
 			return enemySMG;
-		} else if (weapon == "Bowie") {
+		}
+
+        else if (weapon == "Bowie") {
 			return enemyKnife;
-		} else {
+		}
+        else {
 			return enemyUnarmed;
 		}
 	}
@@ -99,6 +126,21 @@ public class SpriteContainer : MonoBehaviour {
 		case "SawnOff":
 			return eshotAttack;
 			break;
+		case "Bat":
+			return eBatAttack;
+			break;
+		case "Matute":
+			return eMatuteAttack;
+			break;
+		case "Winchester":
+			return eWinchesterAttack;
+			break;
+		case "Colt":
+			return eColtAttack;
+			break;
+		case "Thompson":
+			return eThompsonAttack;
+			break;
 		default:
 			return getEnemyPunch ();
 			break;
@@ -116,6 +158,21 @@ public class SpriteContainer : MonoBehaviour {
 			break;
 		case "SawnOff":
 			return eShotWalk;
+			break;
+		case "Bat":
+			return eBatWalk;
+			break;
+		case "Matute":
+			return eMatuteWalk;
+			break;
+		case "Winchester":
+			return eWinchesterWalk;
+			break;
+		case "Colt":
+			return eColtWalk;
+			break;
+		case "Thompson":
+			return eThompsonWalk;
 			break;
 		default:
 			return eUnarmedWalk;
