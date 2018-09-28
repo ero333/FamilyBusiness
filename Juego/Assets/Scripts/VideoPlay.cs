@@ -33,6 +33,16 @@ public class VideoPlay : MonoBehaviour {
         {
             videoInicial.url = System.IO.Path.Combine(Application.streamingAssetsPath, "Cutscene - Nivel 2.mp4");
         }
+
+        else if (sceneName == "Level3")
+        {
+            videoInicial.url = System.IO.Path.Combine(Application.streamingAssetsPath, "Cutscene - Nivel 3.mp4");
+        }
+
+        else if (sceneName == "Level4")
+        {
+            videoInicial.url = System.IO.Path.Combine(Application.streamingAssetsPath, "Cutscene - Nivel 4.mp4");
+        }
                 
         videoInicial.Play();        
         
