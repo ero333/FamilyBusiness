@@ -50,6 +50,22 @@ public class WinLevel : MonoBehaviour {
         {
             SceneManager.LoadScene("Level4");
         }
+        else if (sceneName == "Level4")
+        {
+            SceneManager.LoadScene("Level5");
+        }
+        else if (sceneName == "Level5")
+        {
+            SceneManager.LoadScene("Level6");
+        }
+        else if (sceneName == "Level6")
+        {
+            SceneManager.LoadScene("Level7");
+        }
+        else if (sceneName == "Level7")
+        {
+            SceneManager.LoadScene("Level8");
+        }
         
     }
 
