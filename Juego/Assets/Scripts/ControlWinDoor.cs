@@ -6,9 +6,11 @@ public class ControlWinDoor : MonoBehaviour {
 
     public GameObject[] enemies;
     bool win = false;
+    public GameObject cartelWin;
 
     // Use this for initialization
     void Start () {
+        cartelWin.SetActive(false);
         GameObject[] dogs = GameObject.FindGameObjectsWithTag("Dog");
         GameObject[] heavies = GameObject.FindGameObjectsWithTag("Heavy");
         GameObject[] enemies1 = GameObject.FindGameObjectsWithTag("Enemy");
@@ -24,7 +26,10 @@ public class ControlWinDoor : MonoBehaviour {
 
         if (win == true)
         {
+            cartelWin.SetActive(true);
             Destroy(this.gameObject);
+            
+
         }        
 
 	}

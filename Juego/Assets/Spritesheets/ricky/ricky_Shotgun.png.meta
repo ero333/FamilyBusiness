@@ -5,10 +5,10 @@ TextureImporter:
     21300000: ricky_Shotgun y thompson_0
     21300002: ricky_Shotgun y thompson_1
     21300004: ricky_Shotgun y thompson_2
-    21300006: ricky_Shotgun y thompson_3
-    21300008: ricky_Shotgun y thompson_4
-    21300010: ricky_Shotgun y thompson_5
-    21300012: ricky_Shotgun y thompson_6
+    21300006: Ricky_Shotgun0
+    21300008: Ricky_Shotgun1
+    21300010: Ricky_Shotgun2
+    21300012: Ricky_Shotgun3
   externalObjects: {}
   serializedVersion: 6
   mipmaps:
@@ -173,7 +173,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ricky_Shotgun y thompson_3
+      name: Ricky_Shotgun0
       rect:
         serializedVersion: 2
         x: 22
@@ -193,7 +193,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ricky_Shotgun y thompson_4
+      name: Ricky_Shotgun1
       rect:
         serializedVersion: 2
         x: 76
@@ -213,7 +213,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ricky_Shotgun y thompson_5
+      name: Ricky_Shotgun2
       rect:
         serializedVersion: 2
         x: 134
@@ -233,7 +233,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ricky_Shotgun y thompson_6
+      name: Ricky_Shotgun3
       rect:
         serializedVersion: 2
         x: 191
