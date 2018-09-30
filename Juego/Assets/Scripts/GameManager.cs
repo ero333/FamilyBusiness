@@ -30,9 +30,11 @@ public class GameManager : MonoBehaviour {
         }
     else if (sceneName == "Tutorial")
         {
-            
+           
         }
         
+
+
     
 	}
 	

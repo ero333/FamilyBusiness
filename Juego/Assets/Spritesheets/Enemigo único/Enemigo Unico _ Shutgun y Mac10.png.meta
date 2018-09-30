@@ -1,0 +1,287 @@
+fileFormatVersion: 2
+guid: fa2b10640a640814ba98b314f5fecf5a
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Enemigo Unico _ Shutgun y Mac10_0
+    21300002: Enemigo Unico _ Shutgun y Mac10_1
+    21300004: Enemigo Unico _ Shutgun y Mac10_2
+    21300006: Enemigo Unico _ Shutgun y Mac10_3
+    21300008: Enemigo Unico _ Shutgun y Mac10_4
+    21300010: Enemigo Unico _ Shutgun y Mac10_5
+    21300012: Enemigo Unico _ Shutgun y Mac10_6
+    21300014: Enemigo Unico _ Shutgun y Mac10_7
+  externalObjects: {}
+  serializedVersion: 6
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 25
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Enemigo Unico _ Shutgun y Mac10_0
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 193
+        width: 43
+        height: 14
+      alignment: 9
+      pivot: {x: 0.25403267, y: 0.40252033}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7402c489a99bc5e4d8dd7998a934184d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo Unico _ Shutgun y Mac10_1
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 193
+        width: 45
+        height: 14
+      alignment: 9
+      pivot: {x: 0.24980113, y: 0.35377938}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa090193727f04c4ebc33cb83622d23b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo Unico _ Shutgun y Mac10_2
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 192
+        width: 57
+        height: 14
+      alignment: 9
+      pivot: {x: 0.17677656, y: 0.35377938}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b842d6fc136977f4083329f2f3366c4c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo Unico _ Shutgun y Mac10_3
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 192
+        width: 49
+        height: 14
+      alignment: 9
+      pivot: {x: 0.20755939, y: 0.32941002}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffc4d0132a620d648a8c27ade7f56c9c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo Unico _ Shutgun y Mac10_4
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 117
+        width: 48
+        height: 15
+      alignment: 9
+      pivot: {x: 0.32940984, y: 0.3635269}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad298b0a45f0de54095671f40cbdcb9f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo Unico _ Shutgun y Mac10_5
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 117
+        width: 51
+        height: 15
+      alignment: 9
+      pivot: {x: 0.3126852, y: 0.3635269}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ece4b6c408b4874ca59646bdd3d7ef8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo Unico _ Shutgun y Mac10_6
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 117
+        width: 52
+        height: 15
+      alignment: 9
+      pivot: {x: 0.29660386, y: 0.3635269}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c334796fedc5f0745a98d9e33105547c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo Unico _ Shutgun y Mac10_7
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 117
+        width: 55
+        height: 15
+      alignment: 9
+      pivot: {x: 0.27668208, y: 0.38627216}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bb5a8b05e1c8dc4b807f70d3b3cabd4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 0ed2c05c271f5d842b70b95de524b115
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

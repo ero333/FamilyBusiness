@@ -28,14 +28,12 @@ public class PlayerHealth : MonoBehaviour {
 			killPlayer ();
 
 			if (Input.GetKeyDown (KeyCode.R)) {
-				
-				revivePlayer ();
 
-				SceneManager.LoadScene (SceneManager.GetActiveScene().name);//remember to mention new scene manager using thing
+                revivePlayer();
+                SceneManager.LoadScene (SceneManager.GetActiveScene().name);//remember to mention new scene manager using thing                
 
-			
 
-			}
+            }
 		}
 	}
 
@@ -64,25 +62,23 @@ public class PlayerHealth : MonoBehaviour {
 		}
 	}
 
-	void revivePlayer(){
+	void revivePlayer(){        
 		PlayerAnimate pa = this.GetComponent<PlayerAnimate> ();
 		PlayerMovement pm = this.GetComponent<PlayerMovement> ();
 		RotateToCursor rot = this.GetComponent<RotateToCursor> ();
 		WeaponAttack wa = this.GetComponent<WeaponAttack> ();
-		legDir ld = this.GetComponentInChildren<legDir> ();
+        dead = false;
+        legDir ld = this.GetComponentInChildren<legDir> ();
 		wa.dropWeapon ();
 		pa.legs.enabled = true;
 		ld.enabled = true;
-
 		pa.enabled = true;
-
 		rot.enabled = true;
 		wa.enabled = true;
-
 		pm.enabled = true;
 		CircleCollider2D col = this.GetComponent<CircleCollider2D> ();
 		col.enabled = true;
-		dead = false;
+		
 	}
 
 	void OnGUI()

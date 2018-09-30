@@ -14,6 +14,7 @@ public class WinLevel : MonoBehaviour {
     public Button menu;
     public Button sigNivel;
     private string sceneName;
+    public GameObject cartelWin;
 
     // Use this for initialization
     void Start () {
@@ -75,6 +76,7 @@ public class WinLevel : MonoBehaviour {
         {
             Time.timeScale = 0;
             menuGanar.SetActive(true);
+            cartelWin.SetActive(false);
             if (sceneName == "Tutorial")
             {
                 ganoTuto = true;
