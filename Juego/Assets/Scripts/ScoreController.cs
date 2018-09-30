@@ -1,11 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class ScoreController : MonoBehaviour {
     int score = 0;
     int currentMultiplier = 1;
     float comboTimer = 0.0f;
     int tempScoreHold = 0;
+    private string sceneName;
 
     float originalWidth = 1920.0f; //turn these to floats to fix placement issue
     float originalHeight = 1080.0f;
@@ -15,12 +17,96 @@ public class ScoreController : MonoBehaviour {
     public GameObject fiveHun, thou;
     // Use this for initialization
     void Start() {
-
+        Scene currentScene = SceneManager.GetActiveScene();
+        sceneName = currentScene.name;
     }
 
     // Update is called once per frame
     void Update() {
         comboCountdown();
+
+        if (sceneName == "Level1")
+        {
+            GameManager.curScore1 = score;
+            if (GameManager.curScore1 > GameManager.maxScore1)
+            {
+                GameManager.maxScore1 = GameManager.curScore1;
+            }            
+            
+        }
+
+        else if (sceneName == "Level2")
+        {
+            GameManager.curScore2 = score;
+            if (GameManager.curScore2 > GameManager.maxScore2)
+            {
+                GameManager.maxScore2 = GameManager.curScore2;
+            }
+        }
+        else if (sceneName == "Level3")
+        {
+            GameManager.curScore3 = score;
+            if (GameManager.curScore3 > GameManager.maxScore3)
+            {
+                GameManager.maxScore3 = GameManager.curScore3;
+            }
+        }
+        else if (sceneName == "Level4")
+        {
+            GameManager.curScore4 = score;
+            if (GameManager.curScore4 > GameManager.maxScore4)
+            {
+                GameManager.maxScore4 = GameManager.curScore4;
+            }
+        }
+        else if (sceneName == "Level5")
+        {
+            GameManager.curScore5 = score;
+            if (GameManager.curScore5 > GameManager.maxScore5)
+            {
+                GameManager.maxScore5 = GameManager.curScore5;
+            }
+        }
+        else if (sceneName == "Level6")
+        {
+            GameManager.curScore6 = score;
+            if (GameManager.curScore6 > GameManager.maxScore6)
+            {
+                GameManager.maxScore6 = GameManager.curScore6;
+            }
+        }
+        else if (sceneName == "Level7")
+        {
+            GameManager.curScore7 = score;
+            if (GameManager.curScore7 > GameManager.maxScore7)
+            {
+                GameManager.maxScore7 = GameManager.curScore7;
+            }
+        }
+        else if (sceneName == "Level8")
+        {
+            GameManager.curScore8 = score;
+            if (GameManager.curScore8 > GameManager.maxScore8)
+            {
+                GameManager.maxScore8 = GameManager.curScore8;
+            }
+        }
+        else if (sceneName == "Level9")
+        {
+            GameManager.curScore9 = score;
+            if (GameManager.curScore9 > GameManager.maxScore9)
+            {
+                GameManager.maxScore9 = GameManager.curScore9;
+            }
+        }
+        else if (sceneName == "Level10")
+        {
+            GameManager.curScore10 = score;
+            if (GameManager.curScore10 > GameManager.maxScore10)
+            {
+                GameManager.maxScore10 = GameManager.curScore10;
+            }
+        }
     }
 
     public void AddScore(int val, Vector3 position)

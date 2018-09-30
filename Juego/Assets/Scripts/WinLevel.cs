@@ -6,15 +6,19 @@ using UnityEngine.SceneManagement;
 
 public class WinLevel : MonoBehaviour {
 
+    // APLICAR SOLO PARA DESBLOQUEAR NIVELES
     public static bool ganoTuto = false;
-    public static bool ganoNivel1 = false;
+    /*public static bool ganoNivel1 = false;
     public static bool ganoNivel2 = false;
-    public static bool ganoNivel3 = false;
+    public static bool ganoNivel3 = false;*/
     public GameObject menuGanar;
     public Button menu;
     public Button sigNivel;
     private string sceneName;
     public GameObject cartelWin;
+    public GameObject Score;
+    public Text highScore;
+    public Text curScore;
 
     // Use this for initialization
     void Start () {
@@ -23,8 +27,60 @@ public class WinLevel : MonoBehaviour {
         menuGanar.SetActive(false);
         menu.onClick.AddListener(cargarMenu);
         sigNivel.onClick.AddListener(siguienteNivel);
-	}
+        Score.SetActive(false);
 
+        
+
+    }
+
+    private void Update()
+    {
+        if (sceneName == "Level1")
+        {
+            highScore.text = "Max High Score: " + GameManager.maxScore1;
+            curScore.text = "Current Score: " + GameManager.curScore1;
+        }
+        else if (sceneName == "Level2")
+        {
+            highScore.text = "Max High Score: " + GameManager.maxScore2;
+            curScore.text = "Current Score: " + GameManager.curScore2;
+        }
+        else if (sceneName == "Level3")
+        {
+            highScore.text = "Max High Score: " + GameManager.maxScore3;
+            curScore.text = "Current Score: " + GameManager.curScore3;
+        }
+        else if (sceneName == "Level4")
+        {
+            highScore.text = "Max High Score: " + GameManager.maxScore4;
+            curScore.text = "Current Score: " + GameManager.curScore4;
+        }
+        else if (sceneName == "Level5")
+        {
+            highScore.text = "Max High Score: " + GameManager.maxScore5;
+            curScore.text = "Current Score: " + GameManager.curScore5;
+        }
+        else if (sceneName == "Level6")
+        {
+            highScore.text = "Max High Score: " + GameManager.maxScore6;
+            curScore.text = "Current Score: " + GameManager.curScore6;
+        }
+        else if (sceneName == "Level7")
+        {
+            highScore.text = "Max High Score: " + GameManager.maxScore7;
+            curScore.text = "Current Score: " + GameManager.curScore7;
+        }
+        else if (sceneName == "Level8")
+        {
+            highScore.text = "Max High Score: " + GameManager.maxScore8;
+            curScore.text = "Current Score: " + GameManager.curScore8;
+        }
+        else if (sceneName == "Level9")
+        {
+            highScore.text = "Max High Score: " + GameManager.maxScore9;
+            curScore.text = "Current Score: " + GameManager.curScore9;
+        }
+    }
 
 
     void cargarMenu()
@@ -67,6 +123,10 @@ public class WinLevel : MonoBehaviour {
         {
             SceneManager.LoadScene("Level8");
         }
+        else if (sceneName == "Level8")
+        {
+            SceneManager.LoadScene("Level9");
+        }
         
     }
 
@@ -77,11 +137,13 @@ public class WinLevel : MonoBehaviour {
             Time.timeScale = 0;
             menuGanar.SetActive(true);
             cartelWin.SetActive(false);
+            Score.SetActive(true);            
+
             if (sceneName == "Tutorial")
             {
                 ganoTuto = true;
             }
-            else if (sceneName == "Level1")
+            /*else if (sceneName == "Level1")
             {
                 ganoNivel1 = true;
             }
@@ -92,9 +154,8 @@ public class WinLevel : MonoBehaviour {
             else if (sceneName == "Level3")
             {
                 ganoNivel3 = true;
-            }
-            
-            
+            }*/
+
         }
     }
 
