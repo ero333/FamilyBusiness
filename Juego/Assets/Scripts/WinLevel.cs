@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.Analytics;
 
 public class WinLevel : MonoBehaviour {
 
@@ -93,38 +94,66 @@ public class WinLevel : MonoBehaviour {
     {
         if (sceneName == "Tutorial")
         {
+            Analytics.CustomEvent("EmpezarNivel", new Dictionary<string, object>
+        {  { "nivel", 1 }   }
+        );
+
             SceneManager.LoadScene("Level1");
         }
         else if (sceneName == "Level1")
         {
+            Analytics.CustomEvent("EmpezarNivel", new Dictionary<string, object>
+        {  { "nivel", 2 }   }
+        );
             SceneManager.LoadScene("Level2");
         }
         else if (sceneName == "Level2")
         {
+                Analytics.CustomEvent("EmpezarNivel", new Dictionary<string, object>
+                {  { "nivel", 3 }   }
+                );
             SceneManager.LoadScene("Level3");
         }
         else if (sceneName == "Level3")
         {
+            Analytics.CustomEvent("EmpezarNivel", new Dictionary<string, object>
+                {  { "nivel", 4 }   }
+            );
             SceneManager.LoadScene("Level4");
         }
         else if (sceneName == "Level4")
         {
+            Analytics.CustomEvent("EmpezarNivel", new Dictionary<string, object>
+                {  { "nivel", 5 }   }
+            );
             SceneManager.LoadScene("Level5");
         }
         else if (sceneName == "Level5")
         {
+            Analytics.CustomEvent("EmpezarNivel", new Dictionary<string, object>
+                {  { "nivel", 6 }   }
+            );
             SceneManager.LoadScene("Level6");
         }
         else if (sceneName == "Level6")
         {
+            Analytics.CustomEvent("EmpezarNivel", new Dictionary<string, object>
+                {  { "nivel", 7 }   }
+            );
             SceneManager.LoadScene("Level7");
         }
         else if (sceneName == "Level7")
         {
+            Analytics.CustomEvent("EmpezarNivel", new Dictionary<string, object>
+                {  { "nivel", 8 }   }
+            );
             SceneManager.LoadScene("Level8");
         }
         else if (sceneName == "Level8")
         {
+            Analytics.CustomEvent("EmpezarNivel", new Dictionary<string, object>
+                {  { "nivel", 9 }   }
+            );
             SceneManager.LoadScene("Level9");
         }
         
