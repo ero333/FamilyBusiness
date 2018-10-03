@@ -5,7 +5,8 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using UnityEngine.Analytics;
 
-public class WinLevel : MonoBehaviour {
+public class WinLevel : MonoBehaviour
+{
 
     // APLICAR SOLO PARA DESBLOQUEAR NIVELES
     public static bool ganoTuto = false;
@@ -22,7 +23,8 @@ public class WinLevel : MonoBehaviour {
     public Text curScore;
 
     // Use this for initialization
-    void Start () {
+    void Start()
+    {
         Scene currentScene = SceneManager.GetActiveScene();
         sceneName = currentScene.name;
         menuGanar.SetActive(false);
@@ -30,7 +32,7 @@ public class WinLevel : MonoBehaviour {
         sigNivel.onClick.AddListener(siguienteNivel);
         Score.SetActive(false);
 
-        
+
 
     }
 
@@ -86,9 +88,9 @@ public class WinLevel : MonoBehaviour {
 
     void cargarMenu()
     {
-        SceneManager.LoadScene("Menu");        
+        SceneManager.LoadScene("Menu");
 
-    }    
+    }
 
     void siguienteNivel()
     {
@@ -109,9 +111,9 @@ public class WinLevel : MonoBehaviour {
         }
         else if (sceneName == "Level2")
         {
-                Analytics.CustomEvent("EmpezarNivel", new Dictionary<string, object>
+            Analytics.CustomEvent("EmpezarNivel", new Dictionary<string, object>
                 {  { "nivel", 3 }   }
-                );
+            );
             SceneManager.LoadScene("Level3");
         }
         else if (sceneName == "Level3")
@@ -156,7 +158,7 @@ public class WinLevel : MonoBehaviour {
             );
             SceneManager.LoadScene("Level9");
         }
-        
+
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -166,7 +168,7 @@ public class WinLevel : MonoBehaviour {
             Time.timeScale = 0;
             menuGanar.SetActive(true);
             cartelWin.SetActive(false);
-            Score.SetActive(true);            
+            Score.SetActive(true);
 
             if (sceneName == "Tutorial")
             {
