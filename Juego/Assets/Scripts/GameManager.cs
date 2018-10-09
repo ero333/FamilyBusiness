@@ -6,13 +6,9 @@ using UnityEngine.UI;
 using UnityEngine.Analytics;
 
 public class GameManager : MonoBehaviour {
-  public GameObject objMain;
-  public GameObject objSecondary;
-  public Button inicioJuego;
-  public Button niveles;
-  public Button volverMenu;
-  public Button Jugar;
-  public int contEmpezar = 0;
+  public GameObject objMain;    
+  public Button niveles;  
+  public Button Jugar;  
   public static int maxScore1 = 0;
   public static int maxScore2 = 0;
   public static int maxScore3 = 0;
@@ -48,8 +44,10 @@ public class GameManager : MonoBehaviour {
         sceneName = currentScene.name;    
         
         if (sceneName == "Menu")
-        {
-             objMain.SetActive(true);          
+        {            
+             objMain.SetActive(true);
+            niveles.onClick.AddListener(seleccion);
+            Jugar.onClick.AddListener(empezarJuego);
 
         }
     else if (sceneName == "Level1")
@@ -102,24 +100,7 @@ public class GameManager : MonoBehaviour {
 	void Update () {
         if (sceneName == "Menu")
         {
-        
-            if (objMain.activeSelf == true)
-            {
-            inicioJuego.onClick.AddListener(sig);
-            niveles.onClick.AddListener(seleccion);
-            MenuScreen.menu = true;
-            MenuScreen.play = false;
-            }
 
-            else
-            {
-            
-            volverMenu.onClick.AddListener(volverMain);
-            Jugar.onClick.AddListener(empezarJuego);
-            MenuScreen.menu = false;
-            MenuScreen.play = true;
-            
-            }
         }             
 
         else if (sceneName == "Tutorial")
@@ -132,26 +113,10 @@ public class GameManager : MonoBehaviour {
     void seleccion()
     {
         SceneManager.LoadScene("LevelSelect");
-    }
-
-    void sig()
-    {       
-        objMain.SetActive(false);
-        objSecondary.SetActive(true);
-    }
-
-    void volverMain()
-    {
-        objMain.SetActive(true);
-        objSecondary.SetActive(false);
-    }
+    }    
 
     void empezarJuego()
     {
-        Analytics.CustomEvent("Empezar", new Dictionary<string, object>
-        {  { "Vez", contEmpezar }   }
-       );
-        contEmpezar += 1;
         SceneManager.LoadScene("Tutorial");
         
     }
