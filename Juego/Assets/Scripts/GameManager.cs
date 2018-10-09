@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.Analytics;
 
 public class GameManager : MonoBehaviour {
   public GameObject objMain;
@@ -11,6 +12,7 @@ public class GameManager : MonoBehaviour {
   public Button niveles;
   public Button volverMenu;
   public Button Jugar;
+  public int contEmpezar = 0;
   public static int maxScore1 = 0;
   public static int maxScore2 = 0;
   public static int maxScore3 = 0;
@@ -36,7 +38,7 @@ public class GameManager : MonoBehaviour {
 
     private void Awake()
     {
-        Time.timeScale = 1;        
+        Time.timeScale = 1;
         
     }
 
@@ -146,7 +148,11 @@ public class GameManager : MonoBehaviour {
 
     void empezarJuego()
     {
-            SceneManager.LoadScene("Tutorial");       
-
+        Analytics.CustomEvent("Empezar", new Dictionary<string, object>
+        {  { "Vez", contEmpezar }   }
+       );
+        contEmpezar += 1;
+        SceneManager.LoadScene("Tutorial");
+        
     }
 }
