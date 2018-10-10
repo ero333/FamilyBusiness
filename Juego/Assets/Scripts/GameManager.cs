@@ -10,6 +10,8 @@ public class GameManager : MonoBehaviour {
   public GameObject objMain;    
   public Button niveles;  
   public Button Jugar;
+  public Button Controles;
+  public Button Creditos;
   public static int maxScore1 = 0;
   public static int maxScore2 = 0;
   public static int maxScore3 = 0;
@@ -56,10 +58,12 @@ public class GameManager : MonoBehaviour {
         sceneName = currentScene.name;        
         if (sceneName == "Menu")
         {
-            Debug.Log(sceneName);
+            
              objMain.SetActive(true);
             niveles.onClick.AddListener(seleccion);
             Jugar.onClick.AddListener(empezarJuego);
+            Controles.onClick.AddListener(verControles);
+            Creditos.onClick.AddListener(verCreditos);
 
         }
     else if (sceneName == "Tutorial")
@@ -139,5 +143,15 @@ public class GameManager : MonoBehaviour {
     void empezarJuego()
     {        
         SceneManager.LoadScene("Tutorial");
+    }
+
+    void verControles()
+    {
+        SceneManager.LoadScene("Controls");
+    }
+
+    void verCreditos()
+    {
+        SceneManager.LoadScene("Credits");
     }
 }

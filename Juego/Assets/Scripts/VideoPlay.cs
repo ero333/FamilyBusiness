@@ -19,6 +19,10 @@ public class VideoPlay : MonoBehaviour {
         videoInicial = GameObject.Find("Video Player").GetComponent<VideoPlayer>();        
         camAnimacion.SetActive(false);
 
+        if (sceneName == "Credits")
+        {
+            videoInicial.url = System.IO.Path.Combine(Application.streamingAssetsPath, "Cutscene - Creditos.mp4");
+        }
         if (sceneName == "Tutorial")
         {
             videoInicial.url = System.IO.Path.Combine(Application.streamingAssetsPath, "Escena 1 - Tutorial.mp4");
@@ -53,6 +57,9 @@ public class VideoPlay : MonoBehaviour {
     void Update()
     {
       
+        if (sceneName != "Credits")
+        {
+
         
         if (videoInicial.isPlaying == true)
         {
@@ -72,6 +79,8 @@ public class VideoPlay : MonoBehaviour {
         {
             videoInicial.Stop();
             
+
+
             MusicController.aus.mute = false;
 
             if (empezar == false)
@@ -84,9 +93,24 @@ public class VideoPlay : MonoBehaviour {
             
                      
         }
-        
-      
-        
+
+        }
+
+        if (sceneName == "Credits")
+        {
+            if (videoInicial.isPlaying == true)
+            {
+                camAnimacion.SetActive(true);
+                
+            }
+
+            else
+            {
+                SceneManager.LoadScene("Menu");
+            }
+        }
+
+
     }
    
 }
