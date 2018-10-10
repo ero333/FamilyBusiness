@@ -1,11 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine.SceneManagement;
+using UnityEngine.Analytics;
 
 public class PlayerHealth : MonoBehaviour {
 	public static bool dead=false;
-
-	float originalWidth = 1920.0f; //turn these to floats to fix placement issue
+    private string sceneName;
+    float originalWidth = 1920.0f; //turn these to floats to fix placement issue
 	float originalHeight = 1080.0f;
 	Vector3 scale;
 	public GUIStyle text;
@@ -14,22 +16,96 @@ public class PlayerHealth : MonoBehaviour {
 
 	void awake()
 	{
-		
-	}
+        
+    }
 
 	// Use this for initialization
 	void Start () {
-	
-	}
+        Scene currentScene = SceneManager.GetActiveScene();
+        sceneName = currentScene.name;
+    }
 	
 	// Update is called once per frame
 	void Update () {
 		if (dead == true) {
 			killPlayer ();
+        
 
-			if (Input.GetKeyDown (KeyCode.R)) {
+            if (Input.GetKeyDown (KeyCode.R)) {
 
-                revivePlayer();
+                if (sceneName == "Level1")
+            {
+                
+                Analytics.CustomEvent("ReiniciarNivel", new Dictionary<string, object>
+                {  { "nivel", 1 }   }
+                );
+               
+            }
+            else if (sceneName == "Level2")
+            {
+                
+                Analytics.CustomEvent("ReiniciarNivel", new Dictionary<string, object>
+                {  { "nivel", 2 }   }
+                );
+               
+            }
+            else if (sceneName == "Level3")
+            {
+                Analytics.CustomEvent("ReiniciarNivel", new Dictionary<string, object>
+                {  { "nivel", 3 }   }
+                );
+              
+            }
+            else if (sceneName == "Level4")
+            {
+                Analytics.CustomEvent("ReiniciarNivel", new Dictionary<string, object>
+                {  { "nivel", 4 }   }
+                );
+              
+            }
+            else if (sceneName == "Level5")
+            {
+                Analytics.CustomEvent("ReiniciarNivel", new Dictionary<string, object>
+                {  { "nivel", 5 }   }
+                );
+             
+            }
+            else if (sceneName == "Level6")
+            {
+                Analytics.CustomEvent("ReiniciarNivel", new Dictionary<string, object>
+                {  { "nivel", 6 }   }
+                );
+                
+            }
+            else if (sceneName == "Level7")
+            {
+                Analytics.CustomEvent("ReiniciarNivel", new Dictionary<string, object>
+                {  { "nivel", 7 }   }
+                );
+                
+            }
+            else if (sceneName == "Level8")
+            {
+                Analytics.CustomEvent("ReiniciarNivel", new Dictionary<string, object>
+                {  { "nivel", 8 }   }
+                );
+                
+            }
+            else if (sceneName == "Level9")
+            {
+                Analytics.CustomEvent("ReiniciarNivel", new Dictionary<string, object>
+                {  { "nivel", 9 }   }
+                );
+               
+            }
+            else if (sceneName == "Level10")
+            {
+                Analytics.CustomEvent("ReiniciarNivel", new Dictionary<string, object>
+                {  { "nivel", 10}   }
+                );
+             
+            }
+                revivePlayer();                
                 SceneManager.LoadScene (SceneManager.GetActiveScene().name);//remember to mention new scene manager using thing                
 
 
