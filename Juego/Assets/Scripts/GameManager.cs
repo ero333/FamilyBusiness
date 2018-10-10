@@ -68,11 +68,11 @@ public class GameManager : MonoBehaviour {
         }
     else if (sceneName == "Tutorial")
         {
+            ContEmpezar.contarEmpezar++;
             Analytics.CustomEvent("Empezar", new Dictionary<string, object>
         {  { "vez", ContEmpezar.contarEmpezar }   }
-        );
-            ContEmpezar.contarEmpezar++;
-            Debug.Log(ContEmpezar.contarEmpezar);
+        );            
+          
 
         }
     else if (sceneName == "Level1")
