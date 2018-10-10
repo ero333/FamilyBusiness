@@ -174,18 +174,76 @@ public class WinLevel : MonoBehaviour
             {
                 ganoTuto = true;
             }
-            /*else if (sceneName == "Level1")
+            else if (sceneName == "Level1")
             {
-                ganoNivel1 = true;
+                Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
+                {  { "nivel", 1 }   }
+                );
+                //ganoNivel1 = true;
             }
             else if (sceneName == "Level2")
             {
-                ganoNivel2 = true;
+                Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
+                {  { "nivel", 2 }   }
+                );
+                //ganoNivel2 = true;
             }
             else if (sceneName == "Level3")
             {
-                ganoNivel3 = true;
-            }*/
+                Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
+                {  { "nivel", 3 }   }
+                );
+                //ganoNivel3 = true;
+            }
+            else if (sceneName == "Level4")
+            {
+                Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
+                {  { "nivel", 4 }   }
+                );
+                //ganoNivel4 = true;
+            }
+            else if (sceneName == "Level5")
+            {
+                Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
+                {  { "nivel", 5 }   }
+                );
+                //ganoNivel5 = true;
+            }
+            else if (sceneName == "Level6")
+            {
+                Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
+                {  { "nivel", 6 }   }
+                );
+                //ganoNivel6 = true;
+            }
+            else if (sceneName == "Level7")
+            {
+                Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
+                {  { "nivel", 7 }   }
+                );
+                //ganoNivel7 = true;
+            }
+            else if (sceneName == "Level8")
+            {
+                Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
+                {  { "nivel", 8 }   }
+                );
+                //ganoNivel8 = true;
+            }
+            else if (sceneName == "Level9")
+            {
+                Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
+                {  { "nivel", 9 }   }
+                );
+                //ganoNivel9 = true;
+            }
+            else if (sceneName == "Level10")
+            {
+                Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
+                {  { "nivel", 10}   }
+                );
+                //ganoNivel10 = true;
+            }
 
         }
     }

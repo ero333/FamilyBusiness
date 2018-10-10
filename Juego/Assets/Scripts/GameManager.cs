@@ -6,9 +6,10 @@ using UnityEngine.UI;
 using UnityEngine.Analytics;
 
 public class GameManager : MonoBehaviour {
+  //public static GameManager instance;
   public GameObject objMain;    
   public Button niveles;  
-  public Button Jugar;  
+  public Button Jugar;
   public static int maxScore1 = 0;
   public static int maxScore2 = 0;
   public static int maxScore3 = 0;
@@ -35,19 +36,39 @@ public class GameManager : MonoBehaviour {
     private void Awake()
     {
         Time.timeScale = 1;
-        
+        /*if (instance == null)
+        {
+            instance = this;
+        }
+        else if (instance != this)
+        {
+            Destroy(gameObject);
+        }
+
+        DontDestroyOnLoad(gameObject);   */             
+
+
     }
 
     // Use this for initialization
     void Start () {                
         Scene currentScene = SceneManager.GetActiveScene();
-        sceneName = currentScene.name;    
-        
+        sceneName = currentScene.name;        
         if (sceneName == "Menu")
-        {            
+        {
+            Debug.Log(sceneName);
              objMain.SetActive(true);
             niveles.onClick.AddListener(seleccion);
             Jugar.onClick.AddListener(empezarJuego);
+
+        }
+    else if (sceneName == "Tutorial")
+        {
+            Analytics.CustomEvent("Empezar", new Dictionary<string, object>
+        {  { "vez", ContEmpezar.contarEmpezar }   }
+        );
+            ContEmpezar.contarEmpezar++;
+            Debug.Log(ContEmpezar.contarEmpezar);
 
         }
     else if (sceneName == "Level1")
@@ -100,12 +121,12 @@ public class GameManager : MonoBehaviour {
 	void Update () {
         if (sceneName == "Menu")
         {
-
+            
         }             
 
         else if (sceneName == "Tutorial")
-        {            
-           
+        {
+            
         }
 
     }
@@ -116,8 +137,7 @@ public class GameManager : MonoBehaviour {
     }    
 
     void empezarJuego()
-    {
+    {        
         SceneManager.LoadScene("Tutorial");
-        
     }
 }
