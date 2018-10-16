@@ -8,7 +8,7 @@ public class ScoreController : MonoBehaviour {
     float comboTimer = 0.0f;
     int tempScoreHold = 0;
     private string sceneName;
-
+    bool flag = false;
     float originalWidth = 1920.0f; //turn these to floats to fix placement issue
     float originalHeight = 1080.0f;
     Vector3 scale;
@@ -144,6 +144,12 @@ public class ScoreController : MonoBehaviour {
                 score += (tempScoreHold * currentMultiplier);
                 tempScoreHold = 0;
                 currentMultiplier = 1;
+            }
+            // Agregar combo hecho al final del nivel
+            else if (Time.timeScale == 0 && flag != true)
+            {
+                score += (tempScoreHold * currentMultiplier);
+                flag = true;
             }
         }
     }

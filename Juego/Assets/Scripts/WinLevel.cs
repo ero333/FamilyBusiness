@@ -18,8 +18,7 @@ public class WinLevel : MonoBehaviour
     public Button sigNivel;
     private string sceneName;
     public GameObject cartelWin;
-    public GameObject Score;
-    public Text highScore;
+    public GameObject Score;    
     public Text curScore;
 
     // Use this for initialization
@@ -40,48 +39,232 @@ public class WinLevel : MonoBehaviour
     {
         if (sceneName == "Level1")
         {
-            highScore.text = "Max High Score: " + GameManager.maxScore1;
-            curScore.text = "Current Score: " + GameManager.curScore1;
+            if (GameManager.curScore1 >= GameManager.maxScore1)
+            {
+                curScore.text = "Obtuviste una A. Puntaje perfecto!!";
+            }
+
+            else if (GameManager.curScore1 == GameManager.minScore1)
+            {
+                curScore.text = "Obtuviste una D. Puntaje mínimo.";
+            }
+
+            else if (GameManager.curScore1 > GameManager.minScore1 && GameManager.curScore1 <= (GameManager.minScore1 + GameManager.maxScore1) / 2)
+            {
+                curScore.text = "Obtuviste una C. Puntaje por arriba del mínimo";
+            }
+
+            else if (GameManager.curScore1 < GameManager.maxScore1 && GameManager.curScore1 >= (GameManager.minScore1 + GameManager.maxScore1) / 2){
+                curScore.text = "Obtuviste una B. Puntaje por arriba de la mitad";
+            }
+
         }
         else if (sceneName == "Level2")
         {
-            highScore.text = "Max High Score: " + GameManager.maxScore2;
-            curScore.text = "Current Score: " + GameManager.curScore2;
+
+            if (GameManager.curScore2 >= GameManager.maxScore2)
+            {
+                curScore.text = "Obtuviste una A. Puntaje perfecto!!";
+            }
+
+            else if (GameManager.curScore2 == GameManager.minScore2)
+            {
+                curScore.text = "Obtuviste una D. Puntaje mínimo.";
+            }
+
+            else if (GameManager.curScore2 > GameManager.minScore2 && GameManager.curScore2 <= (GameManager.minScore2 + GameManager.maxScore2) / 2)
+            {
+                curScore.text = "Obtuviste una C. Puntaje por arriba del mínimo";
+            }
+
+            else if (GameManager.curScore2 < GameManager.maxScore2 && GameManager.curScore2 >= (GameManager.minScore2 + GameManager.maxScore2) / 2)
+            {
+                curScore.text = "Obtuviste una B. Puntaje por arriba de la mitad";
+            }
         }
         else if (sceneName == "Level3")
         {
-            highScore.text = "Max High Score: " + GameManager.maxScore3;
-            curScore.text = "Current Score: " + GameManager.curScore3;
+
+            if (GameManager.curScore3 >= GameManager.maxScore3)
+            {
+                curScore.text = "Obtuviste una A. Puntaje perfecto!!";
+            }
+
+            else if (GameManager.curScore3 == GameManager.minScore3)
+            {
+                curScore.text = "Obtuviste una D. Puntaje mínimo.";
+            }
+
+            else if (GameManager.curScore3 > GameManager.minScore3 && GameManager.curScore3 <= (GameManager.minScore3 + GameManager.maxScore3) / 2)
+            {
+                curScore.text = "Obtuviste una C. Puntaje por arriba del mínimo";
+            }
+
+            else if (GameManager.curScore3 < GameManager.maxScore3 && GameManager.curScore3 >= (GameManager.minScore3 + GameManager.maxScore3) / 2)
+            {
+                curScore.text = "Obtuviste una B. Puntaje por arriba de la mitad";
+            }
         }
         else if (sceneName == "Level4")
         {
-            highScore.text = "Max High Score: " + GameManager.maxScore4;
-            curScore.text = "Current Score: " + GameManager.curScore4;
+
+            if (GameManager.curScore4 >= GameManager.maxScore4)
+            {
+                curScore.text = "Obtuviste una A. Puntaje perfecto!!";
+            }
+
+            else if (GameManager.curScore4 == GameManager.minScore4)
+            {
+                curScore.text = "Obtuviste una D. Puntaje mínimo.";
+            }
+
+            else if (GameManager.curScore4 > GameManager.minScore4 && GameManager.curScore4 <= (GameManager.minScore4 + GameManager.maxScore4) / 2)
+            {
+                curScore.text = "Obtuviste una C. Puntaje por arriba del mínimo";
+            }
+
+            else if (GameManager.curScore4 < GameManager.maxScore4 && GameManager.curScore4 >= (GameManager.minScore4 + GameManager.maxScore4) / 2)
+            {
+                curScore.text = "Obtuviste una B. Puntaje por arriba de la mitad";
+            }
         }
         else if (sceneName == "Level5")
         {
-            highScore.text = "Max High Score: " + GameManager.maxScore5;
-            curScore.text = "Current Score: " + GameManager.curScore5;
+
+            if (GameManager.curScore5 >= GameManager.maxScore5)
+            {
+                curScore.text = "Obtuviste una A. Puntaje perfecto!!";
+            }
+
+            else if (GameManager.curScore5 == GameManager.minScore5)
+            {
+                curScore.text = "Obtuviste una D. Puntaje mínimo.";
+            }
+
+            else if (GameManager.curScore5 > GameManager.minScore5 && GameManager.curScore5 <= (GameManager.minScore5 + GameManager.maxScore5) / 2)
+            {
+                curScore.text = "Obtuviste una C. Puntaje por arriba del mínimo";
+            }
+
+            else if (GameManager.curScore5 < GameManager.maxScore5 && GameManager.curScore5 >= (GameManager.minScore5 + GameManager.maxScore5) / 2)
+            {
+                curScore.text = "Obtuviste una B. Puntaje por arriba de la mitad";
+            }
         }
         else if (sceneName == "Level6")
         {
-            highScore.text = "Max High Score: " + GameManager.maxScore6;
-            curScore.text = "Current Score: " + GameManager.curScore6;
+
+            if (GameManager.curScore6 >= GameManager.maxScore6)
+            {
+                curScore.text = "Obtuviste una A. Puntaje perfecto!!";
+            }
+
+            else if (GameManager.curScore6 == GameManager.minScore6)
+            {
+                curScore.text = "Obtuviste una D. Puntaje mínimo.";
+            }
+
+            else if (GameManager.curScore6 > GameManager.minScore6 && GameManager.curScore6 <= (GameManager.minScore6 + GameManager.maxScore6) / 2)
+            {
+                curScore.text = "Obtuviste una C. Puntaje por arriba del mínimo";
+            }
+
+            else if (GameManager.curScore6 < GameManager.maxScore6 && GameManager.curScore6 >= (GameManager.minScore6 + GameManager.maxScore6) / 2)
+            {
+                curScore.text = "Obtuviste una B. Puntaje por arriba de la mitad";
+            }
         }
         else if (sceneName == "Level7")
         {
-            highScore.text = "Max High Score: " + GameManager.maxScore7;
-            curScore.text = "Current Score: " + GameManager.curScore7;
+
+            if (GameManager.curScore7 >= GameManager.maxScore7)
+            {
+                curScore.text = "Obtuviste una A. Puntaje perfecto!!";
+            }
+
+            else if (GameManager.curScore7 == GameManager.minScore7)
+            {
+                curScore.text = "Obtuviste una D. Puntaje mínimo.";
+            }
+
+            else if (GameManager.curScore7 > GameManager.minScore7 && GameManager.curScore7 <= (GameManager.minScore7 + GameManager.maxScore7) / 2)
+            {
+                curScore.text = "Obtuviste una C. Puntaje por arriba del mínimo";
+            }
+
+            else if (GameManager.curScore7 < GameManager.maxScore7 && GameManager.curScore7 >= (GameManager.minScore7 + GameManager.maxScore7) / 2)
+            {
+                curScore.text = "Obtuviste una B. Puntaje por arriba de la mitad";
+            }
         }
         else if (sceneName == "Level8")
         {
-            highScore.text = "Max High Score: " + GameManager.maxScore8;
-            curScore.text = "Current Score: " + GameManager.curScore8;
+
+            if (GameManager.curScore8 >= GameManager.maxScore8)
+            {
+                curScore.text = "Obtuviste una A. Puntaje perfecto!!";
+            }
+
+            else if (GameManager.curScore8 == GameManager.minScore8)
+            {
+                curScore.text = "Obtuviste una D. Puntaje mínimo.";
+            }
+
+            else if (GameManager.curScore8 > GameManager.minScore8 && GameManager.curScore8 <= (GameManager.minScore8 + GameManager.maxScore8) / 2)
+            {
+                curScore.text = "Obtuviste una C. Puntaje por arriba del mínimo";
+            }
+
+            else if (GameManager.curScore8 < GameManager.maxScore8 && GameManager.curScore8 >= (GameManager.minScore8 + GameManager.maxScore8) / 2)
+            {
+                curScore.text = "Obtuviste una B. Puntaje por arriba de la mitad";
+            }
         }
         else if (sceneName == "Level9")
         {
-            highScore.text = "Max High Score: " + GameManager.maxScore9;
-            curScore.text = "Current Score: " + GameManager.curScore9;
+
+            if (GameManager.curScore9 >= GameManager.maxScore9)
+            {
+                curScore.text = "Obtuviste una A. Puntaje perfecto!!";
+            }
+
+            else if (GameManager.curScore9 == GameManager.minScore9)
+            {
+                curScore.text = "Obtuviste una D. Puntaje mínimo.";
+            }
+
+            else if (GameManager.curScore9 > GameManager.minScore9 && GameManager.curScore9 <= (GameManager.minScore9 + GameManager.maxScore9) / 2)
+            {
+                curScore.text = "Obtuviste una C. Puntaje por arriba del mínimo";
+            }
+
+            else if (GameManager.curScore9 < GameManager.maxScore9 && GameManager.curScore9 >= (GameManager.minScore9 + GameManager.maxScore9) / 2)
+            {
+                curScore.text = "Obtuviste una B. Puntaje por arriba de la mitad";
+            }
+        }
+        else if (sceneName == "Level10")
+        {
+
+            if (GameManager.curScore10 >= GameManager.maxScore10)
+            {
+                curScore.text = "Obtuviste una A. Puntaje perfecto!!";
+            }
+
+            else if (GameManager.curScore10 == GameManager.minScore10)
+            {
+                curScore.text = "Obtuviste una D. Puntaje mínimo.";
+            }
+
+            else if (GameManager.curScore10 > GameManager.minScore10 && GameManager.curScore10 <= (GameManager.minScore10 + GameManager.maxScore10) / 2)
+            {
+                curScore.text = "Obtuviste una C. Puntaje por arriba del mínimo";
+            }
+
+            else if (GameManager.curScore10 < GameManager.maxScore10 && GameManager.curScore10 >= (GameManager.minScore10 + GameManager.maxScore10) / 2)
+            {
+                curScore.text = "Obtuviste una B. Puntaje por arriba de la mitad";
+            }
         }
     }
 
@@ -90,6 +273,95 @@ public class WinLevel : MonoBehaviour
     {
         SceneManager.LoadScene("Menu");
 
+    }
+
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            Time.timeScale = 0;
+            menuGanar.SetActive(true);
+            cartelWin.SetActive(false);
+            Score.SetActive(true);
+            
+
+            if (sceneName == "Tutorial")
+            {
+                ganoTuto = true;
+            }
+            else if (sceneName == "Level1")
+            {
+                Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
+                {  { "nivel", 1 }   }
+                );
+                
+            }
+            else if (sceneName == "Level2")
+            {
+                Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
+                {  { "nivel", 2 }   }
+                );
+                
+            }
+            else if (sceneName == "Level3")
+            {
+                Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
+                {  { "nivel", 3 }   }
+                );
+                
+            }
+            else if (sceneName == "Level4")
+            {
+                Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
+                {  { "nivel", 4 }   }
+                );
+                
+            }
+            else if (sceneName == "Level5")
+            {
+                Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
+                {  { "nivel", 5 }   }
+                );
+                
+            }
+            else if (sceneName == "Level6")
+            {
+                Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
+                {  { "nivel", 6 }   }
+                );
+                
+            }
+            else if (sceneName == "Level7")
+            {
+                Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
+                {  { "nivel", 7 }   }
+                );
+                
+            }
+            else if (sceneName == "Level8")
+            {
+                Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
+                {  { "nivel", 8 }   }
+                );
+                
+            }
+            else if (sceneName == "Level9")
+            {
+                Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
+                {  { "nivel", 9 }   }
+                );
+                
+            }
+            else if (sceneName == "Level10")
+            {
+                Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
+                {  { "nivel", 10}   }
+                );
+                
+            }
+
+        }
     }
 
     void siguienteNivel()
@@ -160,93 +432,4 @@ public class WinLevel : MonoBehaviour
         }
 
     }
-
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.gameObject.tag == "Player")
-        {
-            Time.timeScale = 0;
-            menuGanar.SetActive(true);
-            cartelWin.SetActive(false);
-            Score.SetActive(true);
-
-            if (sceneName == "Tutorial")
-            {
-                ganoTuto = true;
-            }
-            else if (sceneName == "Level1")
-            {
-                Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
-                {  { "nivel", 1 }   }
-                );
-                //ganoNivel1 = true;
-            }
-            else if (sceneName == "Level2")
-            {
-                Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
-                {  { "nivel", 2 }   }
-                );
-                //ganoNivel2 = true;
-            }
-            else if (sceneName == "Level3")
-            {
-                Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
-                {  { "nivel", 3 }   }
-                );
-                //ganoNivel3 = true;
-            }
-            else if (sceneName == "Level4")
-            {
-                Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
-                {  { "nivel", 4 }   }
-                );
-                //ganoNivel4 = true;
-            }
-            else if (sceneName == "Level5")
-            {
-                Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
-                {  { "nivel", 5 }   }
-                );
-                //ganoNivel5 = true;
-            }
-            else if (sceneName == "Level6")
-            {
-                Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
-                {  { "nivel", 6 }   }
-                );
-                //ganoNivel6 = true;
-            }
-            else if (sceneName == "Level7")
-            {
-                Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
-                {  { "nivel", 7 }   }
-                );
-                //ganoNivel7 = true;
-            }
-            else if (sceneName == "Level8")
-            {
-                Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
-                {  { "nivel", 8 }   }
-                );
-                //ganoNivel8 = true;
-            }
-            else if (sceneName == "Level9")
-            {
-                Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
-                {  { "nivel", 9 }   }
-                );
-                //ganoNivel9 = true;
-            }
-            else if (sceneName == "Level10")
-            {
-                Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
-                {  { "nivel", 10}   }
-                );
-                //ganoNivel10 = true;
-            }
-
-        }
-    }
-
-
 }

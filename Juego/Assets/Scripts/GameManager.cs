@@ -12,16 +12,27 @@ public class GameManager : MonoBehaviour {
   public Button Jugar;
   public Button Controles;
   public Button Creditos;
-  public static int maxScore1 = 0;
-  public static int maxScore2 = 0;
-  public static int maxScore3 = 0;
-  public static int maxScore4 = 0;
-  public static int maxScore5 = 0;
-  public static int maxScore6 = 0;
-  public static int maxScore7 = 0;
-  public static int maxScore8 = 0;
-  public static int maxScore9 = 0;
-  public static int maxScore10 = 0;
+  public Button Calificar;
+  public static int minScore1 = 5500;
+  public static int minScore2 = 5500;
+  public static int minScore3 = 7000;
+  public static int minScore4 = 5500;
+  public static int minScore5 = 5500;
+  public static int minScore6 = 5500;
+  public static int minScore7 = 5500;
+  public static int minScore8 = 5500;
+  public static int minScore9 = 5500;
+  public static int minScore10 = 5500;
+  public static int maxScore1 = 15000;
+  public static int maxScore2 = 15000;
+  public static int maxScore3 = 15000;
+  public static int maxScore4 = 30500;
+  public static int maxScore5 = 15000;
+  public static int maxScore6 = 15000;
+  public static int maxScore7 = 15000;
+  public static int maxScore8 = 15000;
+  public static int maxScore9 = 15000;
+  public static int maxScore10 = 15000;
   public static int curScore1;
   public static int curScore2;
   public static int curScore3;
@@ -64,6 +75,7 @@ public class GameManager : MonoBehaviour {
             Jugar.onClick.AddListener(empezarJuego);
             Controles.onClick.AddListener(verControles);
             Creditos.onClick.AddListener(verCreditos);
+            Calificar.onClick.AddListener(verCalificar);
 
         }
     else if (sceneName == "Tutorial")
@@ -153,5 +165,9 @@ public class GameManager : MonoBehaviour {
     void verCreditos()
     {
         SceneManager.LoadScene("Credits");
+    }
+    void verCalificar()
+    {
+        
     }
 }
