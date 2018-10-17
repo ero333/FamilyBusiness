@@ -28,7 +28,102 @@ public class PlayerHealth : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (dead == true) {
-			killPlayer ();
+
+            killPlayer();
+
+            if (sceneName == "Level1")
+            {
+                GameManager.muertes1 += 1;
+
+                Analytics.CustomEvent("Morir", new Dictionary<string, object>
+                {  { "nivel", 1 }   }
+                );
+
+            }
+            else if (sceneName == "Level2")
+            {
+                GameManager.muertes2 += 1;
+
+                Analytics.CustomEvent("Morir", new Dictionary<string, object>
+                {  { "nivel", 2 }   }
+                );
+
+            }
+            else if (sceneName == "Level3")
+            {
+                GameManager.muertes3 += 1;
+
+                Analytics.CustomEvent("Morir", new Dictionary<string, object>
+                {  { "nivel", 3 }   }
+                );
+
+            }
+            else if (sceneName == "Level4")
+            {
+                GameManager.muertes4 += 1;
+
+                Analytics.CustomEvent("Morir", new Dictionary<string, object>
+                {  { "nivel", 4 }   }
+                );
+
+            }
+            else if (sceneName == "Level5")
+            {
+                GameManager.muertes1 += 5;
+
+                Analytics.CustomEvent("Morir", new Dictionary<string, object>
+                {  { "nivel", 5 }   }
+                );
+
+            }
+            else if (sceneName == "Level6")
+            {
+                GameManager.muertes6 += 1;
+
+                Analytics.CustomEvent("Morir", new Dictionary<string, object>
+                {  { "nivel", 6 }   }
+                );
+
+            }
+            else if (sceneName == "Level7")
+            {
+                GameManager.muertes7 += 1;
+
+                Analytics.CustomEvent("Morir", new Dictionary<string, object>
+                {  { "nivel", 7 }   }
+                );
+
+            }
+            else if (sceneName == "Level8")
+            {
+                GameManager.muertes8 += 1;
+
+                Analytics.CustomEvent("Morir", new Dictionary<string, object>
+                {  { "nivel", 8 }   }
+                );
+
+            }
+            else if (sceneName == "Level9")
+            {
+                GameManager.muertes9 += 1;
+
+                Analytics.CustomEvent("Morir", new Dictionary<string, object>
+                {  { "nivel", 9 }   }
+                );
+
+            }
+            else if (sceneName == "Level10")
+            {
+                GameManager.muertes10 += 1;
+
+                Analytics.CustomEvent("Morir", new Dictionary<string, object>
+                {  { "nivel", 10}   }
+                );
+
+            }
+
+            
+
         
 
             if (Input.GetKeyDown (KeyCode.R)) {
