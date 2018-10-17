@@ -36,7 +36,7 @@ public class GameManager : MonoBehaviour {
   public static int maxScore1 = 15000;
   public static int maxScore2 = 15000;
   public static int maxScore3 = 15000;
-  public static int maxScore4 = 30500;
+  public static int maxScore4 = 39000;
   public static int maxScore5 = 15000;
   public static int maxScore6 = 15000;
   public static int maxScore7 = 15000;
