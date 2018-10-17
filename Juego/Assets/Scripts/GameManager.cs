@@ -13,16 +13,16 @@ public class GameManager : MonoBehaviour {
   public Button Controles;
   public Button Creditos;
   public Button Calificar;
-  public static int muertes1;
-  public static int muertes2;
-  public static int muertes3;
-  public static int muertes4;
-  public static int muertes5;
-  public static int muertes6;
-  public static int muertes7;
-  public static int muertes8;
-  public static int muertes9;
-  public static int muertes10;  
+  public static int muertes1 = 0;
+  public static int muertes2 = 0;
+  public static int muertes3 = 0;
+  public static int muertes4 = 0;
+  public static int muertes5 = 0;
+  public static int muertes6 = 0;
+  public static int muertes7 = 0;
+  public static int muertes8 = 0;
+  public static int muertes9 = 0;
+  public static int muertes10 = 0;  
   public static int minScore1 = 5500;
   public static int minScore2 = 5500;
   public static int minScore3 = 7000;
@@ -100,52 +100,52 @@ public class GameManager : MonoBehaviour {
     else if (sceneName == "Level1")
         {
             curScore1 = 0;
-            muertes1 = 0;
+            
         }
     else if (sceneName == "Level2")
         {
             curScore2 = 0;
-            muertes2 = 0;
+            
         }
     else if (sceneName == "Level3")
         {
             curScore3 = 0;
-            muertes3 = 0;
+            
         }
     else if (sceneName == "Level4")
         {
             curScore4 = 0;
-            muertes4 = 0;
+            
         }
     else if (sceneName == "Level5")
         {
             curScore5 = 0;
-            muertes5 = 0;
+            
         }
     else if (sceneName == "Level6")
         {
             curScore6 = 0;
-            muertes6 = 0;
+            
         }
     else if (sceneName == "Level7")
         {
             curScore7 = 0;
-            muertes7 = 0;
+            
         }
     else if (sceneName == "Level8")
         {
             curScore8 = 0;
-            muertes8 = 0;
+            
         }
     else if (sceneName == "Level9")
         {
             curScore9 = 0;
-            muertes9 = 0;
+            
         }
     else if (sceneName == "Level10")
         {
             curScore10 = 0;
-            muertes10 = 0;
+            
         }
         
 
