@@ -22,6 +22,7 @@ public class VideoPlay : MonoBehaviour {
         videoInicial = GameObject.Find("Video Player").GetComponent<VideoPlayer>();        
         camAnimacion.SetActive(false);
 
+
         if (sceneName == "Credits")
         {
             videoInicial.url = System.IO.Path.Combine(Application.streamingAssetsPath, "Cutscene - Creditos.mp4");
@@ -72,7 +73,7 @@ public class VideoPlay : MonoBehaviour {
         }
         else if (sceneName == "Level10" && showoOne == true)
         {
-            videoInicial.url = System.IO.Path.Combine(Application.streamingAssetsPath, "Cutscene - Nivel 9.mp4");
+            videoInicial.url = System.IO.Path.Combine(Application.streamingAssetsPath, "Cutscene - Nivel 10.mp4");
         }
                 
         videoInicial.Play();        
@@ -90,11 +91,16 @@ public class VideoPlay : MonoBehaviour {
         
         if (videoInicial.isPlaying == true)
         {
+                if (sceneName == "Level8")
+                {
+
+                    dog1.GetComponent<AudioSource>().mute = true;
+                    dog2.GetComponent<AudioSource>().mute = true;
+                }
+
             camAnimacion.SetActive(true);
             Time.timeScale = 0;
             MusicController.aus.mute = true;
-            dog1.GetComponent<AudioSource>().mute = true;
-            dog2.GetComponent<AudioSource>().mute = true;
 
 
                 if (Input.GetKeyDown(KeyCode.Mouse0))
@@ -103,18 +109,26 @@ public class VideoPlay : MonoBehaviour {
                 camAnimacion.SetActive(false);
                 Time.timeScale = 1;
                 MusicController.aus.mute = false;
-                dog1.GetComponent<AudioSource>().mute = false;
-                dog2.GetComponent<AudioSource>().mute = false;
 
-            }
+                    if (sceneName == "Level8")
+                    {
+
+                        dog1.GetComponent<AudioSource>().mute = false;
+                        dog2.GetComponent<AudioSource>().mute = false;
+                    }
+                }
         }
         else
         {
             videoInicial.Stop();
 
                 MusicController.aus.mute = false;
-                dog1.GetComponent<AudioSource>().mute = false;
-                dog2.GetComponent<AudioSource>().mute = false;
+                if (sceneName == "Level8")
+                {
+
+                    dog1.GetComponent<AudioSource>().mute = false;
+                    dog2.GetComponent<AudioSource>().mute = false;
+                }
 
                 if (empezar == false)
             {
