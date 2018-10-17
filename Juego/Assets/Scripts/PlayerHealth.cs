@@ -13,6 +13,7 @@ public class PlayerHealth : MonoBehaviour {
 	public GUIStyle text;
 	public Texture2D bg;
 	public Sprite deadSpr;
+    private bool flagdead = false;
 
 	void awake()
 	{
@@ -22,109 +23,108 @@ public class PlayerHealth : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         Scene currentScene = SceneManager.GetActiveScene();
-        sceneName = currentScene.name;
+        sceneName = currentScene.name;        
     }
 	
 	// Update is called once per frame
 	void Update () {
-		if (dead == true) {
 
-            killPlayer();
+        if (dead == true) {
+            killPlayer();                      
 
-            if (sceneName == "Level1")
+            if (sceneName == "Level1" && flagdead == false)
             {
                 GameManager.muertes1 += 1;
-
                 Analytics.CustomEvent("Morir", new Dictionary<string, object>
                 {  { "nivel", 1 }   }
                 );
-
+                
+                flagdead = true;
+                
             }
-            else if (sceneName == "Level2")
+            else if (sceneName == "Level2" && flagdead == false)
             {
                 GameManager.muertes2 += 1;
 
                 Analytics.CustomEvent("Morir", new Dictionary<string, object>
                 {  { "nivel", 2 }   }
                 );
-
+                flagdead = true;
             }
-            else if (sceneName == "Level3")
+            else if (sceneName == "Level3" && flagdead == false)
             {
                 GameManager.muertes3 += 1;
 
                 Analytics.CustomEvent("Morir", new Dictionary<string, object>
                 {  { "nivel", 3 }   }
                 );
-
+                flagdead = true;
             }
-            else if (sceneName == "Level4")
+            else if (sceneName == "Level4" && flagdead == false)
             {
                 GameManager.muertes4 += 1;
 
                 Analytics.CustomEvent("Morir", new Dictionary<string, object>
                 {  { "nivel", 4 }   }
                 );
-
+                flagdead = true;
             }
-            else if (sceneName == "Level5")
+            else if (sceneName == "Level5" && flagdead == false)
             {
                 GameManager.muertes1 += 5;
 
                 Analytics.CustomEvent("Morir", new Dictionary<string, object>
                 {  { "nivel", 5 }   }
                 );
-
+                flagdead = true;
             }
-            else if (sceneName == "Level6")
+            else if (sceneName == "Level6" && flagdead == false)
             {
                 GameManager.muertes6 += 1;
 
                 Analytics.CustomEvent("Morir", new Dictionary<string, object>
                 {  { "nivel", 6 }   }
                 );
-
+                flagdead = true;
             }
-            else if (sceneName == "Level7")
+            else if (sceneName == "Level7" && flagdead == false)
             {
                 GameManager.muertes7 += 1;
 
                 Analytics.CustomEvent("Morir", new Dictionary<string, object>
                 {  { "nivel", 7 }   }
                 );
-
+                flagdead = true;
             }
-            else if (sceneName == "Level8")
+            else if (sceneName == "Level8" && flagdead == false)
             {
                 GameManager.muertes8 += 1;
 
                 Analytics.CustomEvent("Morir", new Dictionary<string, object>
                 {  { "nivel", 8 }   }
                 );
-
+                flagdead = true;
             }
-            else if (sceneName == "Level9")
+            else if (sceneName == "Level9" && flagdead == false)
             {
                 GameManager.muertes9 += 1;
 
                 Analytics.CustomEvent("Morir", new Dictionary<string, object>
                 {  { "nivel", 9 }   }
                 );
-
+                flagdead = true;
             }
-            else if (sceneName == "Level10")
+            else if (sceneName == "Level10" && flagdead == false)
             {
                 GameManager.muertes10 += 1;
 
                 Analytics.CustomEvent("Morir", new Dictionary<string, object>
                 {  { "nivel", 10}   }
                 );
-
+                flagdead = true;
             }
 
-            
 
-        
 
             if (Input.GetKeyDown (KeyCode.R)) {
 
@@ -231,7 +231,9 @@ public class PlayerHealth : MonoBehaviour {
 			CircleCollider2D col = this.GetComponent<CircleCollider2D> ();
 			col.enabled = false;
 		}
-	}
+
+       
+    }
 
 	void revivePlayer(){        
 		PlayerAnimate pa = this.GetComponent<PlayerAnimate> ();
