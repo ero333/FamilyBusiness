@@ -305,6 +305,10 @@ public class WinLevel : MonoBehaviour
                 {  { "muertes", GameManager.muertes1 }   }
                 );
 
+                Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
+                {  { "tiempo", Time.fixedTime }   }
+                );
+
             }
             else if (sceneName == "Level2")
             {
@@ -320,6 +324,10 @@ public class WinLevel : MonoBehaviour
                 {  { "muertes", GameManager.muertes2 }   }
                 );
 
+                Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
+                {  { "tiempo", Time.fixedTime }   }
+               );
+
             }
             else if (sceneName == "Level3")
             {
@@ -334,6 +342,10 @@ public class WinLevel : MonoBehaviour
                 Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
                 {  { "muertes", GameManager.muertes3 }   }
                 );
+
+                Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
+                {  { "tiempo", Time.fixedTime }   }
+               );
 
             }
             else if (sceneName == "Level4")
@@ -351,6 +363,10 @@ public class WinLevel : MonoBehaviour
                 {  { "muertes", GameManager.muertes4 }   }
                 );
 
+                Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
+                {  { "tiempo", Time.fixedTime }   }
+               );
+
             }
             else if (sceneName == "Level5")
             {
@@ -366,6 +382,10 @@ public class WinLevel : MonoBehaviour
                 {  { "muertes", GameManager.muertes5 }   }
                 );
 
+                Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
+                {  { "tiempo", Time.fixedTime }   }
+               );
+
             }
             else if (sceneName == "Level6")
             {
@@ -380,6 +400,10 @@ public class WinLevel : MonoBehaviour
                 Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
                 {  { "muertes", GameManager.muertes6 }   }
                 );
+
+                Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
+                {  { "tiempo", Time.fixedTime }   }
+               );
 
             }
             else if (sceneName == "Level7")
@@ -397,6 +421,10 @@ public class WinLevel : MonoBehaviour
                 {  { "muertes", GameManager.muertes7 }   }
                 );
 
+                Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
+                {  { "tiempo", Time.fixedTime }   }
+               );
+
             }
             else if (sceneName == "Level8")
             {
@@ -411,6 +439,10 @@ public class WinLevel : MonoBehaviour
                 Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
                 {  { "muertes", GameManager.muertes8 }   }
                 );
+
+                Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
+                {  { "tiempo", Time.fixedTime }   }
+               );
 
             }
             else if (sceneName == "Level9")
@@ -427,6 +459,10 @@ public class WinLevel : MonoBehaviour
                 {  { "muertes", GameManager.muertes9 }   }
                 );
 
+                Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
+                {  { "tiempo", Time.fixedTime }   }
+               );
+
             }
             else if (sceneName == "Level10")
             {
@@ -441,6 +477,10 @@ public class WinLevel : MonoBehaviour
                 Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
                 {  { "muertes", GameManager.muertes10 }   }
                 );
+
+                Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
+                {  { "tiempo", Time.fixedTime }   }
+               );
 
             }
 

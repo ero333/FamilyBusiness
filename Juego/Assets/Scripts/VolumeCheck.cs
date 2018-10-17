@@ -19,6 +19,9 @@ public class VolumeCheck : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+	    if (VideoPlay.videoInicial.isPlaying == true)
+        {
+            
+        }
 	}
 }

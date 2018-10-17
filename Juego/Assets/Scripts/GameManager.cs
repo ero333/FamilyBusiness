@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour {
   public Button Controles;
   public Button Creditos;
   public Button Calificar;
+  public static float timecont1;
   public static int muertes1 = 0;
   public static int muertes2 = 0;
   public static int muertes3 = 0;
@@ -100,7 +101,7 @@ public class GameManager : MonoBehaviour {
     else if (sceneName == "Level1")
         {
             curScore1 = 0;
-            
+                 
         }
     else if (sceneName == "Level2")
         {
@@ -165,6 +166,33 @@ public class GameManager : MonoBehaviour {
             
         }
 
+        else if (sceneName == "Level1")
+        {
+          
+        }        
+
+    }
+
+    private void FixedUpdate()
+    {
+        if (sceneName == "Menu")
+        {
+
+        }
+
+        else if (sceneName == "Tutorial")
+        {
+
+        }
+
+        else if (sceneName == "Level1")
+        {
+            if (VideoPlay.videoInicial.isPlaying == false)
+            {
+                Debug.Log(Time.fixedTime);
+            }
+
+        }
     }
 
     void seleccion()

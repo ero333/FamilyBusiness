@@ -10,6 +10,9 @@ public class VideoPlay : MonoBehaviour {
     bool empezar = false;
     private string sceneName;
     public GameObject camAnimacion;
+    public static bool showoOne = true;
+    public GameObject dog1;
+    public GameObject dog2;
 
     // Use this for initialization
     void Start()
@@ -28,46 +31,46 @@ public class VideoPlay : MonoBehaviour {
             videoInicial.url = System.IO.Path.Combine(Application.streamingAssetsPath, "Escena 1 - Tutorial.mp4");
         }
 
-        else if (sceneName == "Level1")
+        else if (sceneName == "Level1" && showoOne == true)
         {
             videoInicial.url = System.IO.Path.Combine(Application.streamingAssetsPath, "Cutscene - Nivel 1.mp4");
         }
         
-        else if (sceneName == "Level2")
+        else if (sceneName == "Level2" && showoOne == true)
         {
             videoInicial.url = System.IO.Path.Combine(Application.streamingAssetsPath, "Cutscene - Nivel 2.mp4");
         }
 
-        else if (sceneName == "Level3")
+        else if (sceneName == "Level3" && showoOne == true)
         {
             videoInicial.url = System.IO.Path.Combine(Application.streamingAssetsPath, "Cutscene - Nivel 3.mp4");
         }
 
-        else if (sceneName == "Level4")
+        else if (sceneName == "Level4" && showoOne == true)
         {
             videoInicial.url = System.IO.Path.Combine(Application.streamingAssetsPath, "Cutscene - Nivel 4.mp4");
         }
-        else if (sceneName == "Level5")
+        else if (sceneName == "Level5" && showoOne == true)
         {
             videoInicial.url = System.IO.Path.Combine(Application.streamingAssetsPath, "Cutscene - Nivel 5.mp4");
         }
-        else if (sceneName == "Level6")
+        else if (sceneName == "Level6" && showoOne == true)
         {
             videoInicial.url = System.IO.Path.Combine(Application.streamingAssetsPath, "Cutscene - Nivel 6.mp4");
         }
-        else if (sceneName == "Level7")
+        else if (sceneName == "Level7" && showoOne == true)
         {
             videoInicial.url = System.IO.Path.Combine(Application.streamingAssetsPath, "Cutscene - Nivel 7.mp4");
         }
-        else if (sceneName == "Level8")
+        else if (sceneName == "Level8" && showoOne == true)
         {
             videoInicial.url = System.IO.Path.Combine(Application.streamingAssetsPath, "Cutscene - Nivel 8.mp4");
         }
-        else if (sceneName == "Level9")
+        else if (sceneName == "Level9" && showoOne == true)
         {
             videoInicial.url = System.IO.Path.Combine(Application.streamingAssetsPath, "Cutscene - Nivel 9.mp4");
         }
-        else if (sceneName == "Level10")
+        else if (sceneName == "Level10" && showoOne == true)
         {
             videoInicial.url = System.IO.Path.Combine(Application.streamingAssetsPath, "Cutscene - Nivel 9.mp4");
         }
@@ -90,24 +93,30 @@ public class VideoPlay : MonoBehaviour {
             camAnimacion.SetActive(true);
             Time.timeScale = 0;
             MusicController.aus.mute = true;
+            dog1.GetComponent<AudioSource>().mute = true;
+            dog2.GetComponent<AudioSource>().mute = true;
 
-            if (Input.GetKeyDown(KeyCode.Mouse0))
+
+                if (Input.GetKeyDown(KeyCode.Mouse0))
             {
                 videoInicial.Stop();
                 camAnimacion.SetActive(false);
                 Time.timeScale = 1;
-                MusicController.aus.mute = false;                
+                MusicController.aus.mute = false;
+                dog1.GetComponent<AudioSource>().mute = false;
+                dog2.GetComponent<AudioSource>().mute = false;
+
             }
         }
         else
         {
             videoInicial.Stop();
-            
 
+                MusicController.aus.mute = false;
+                dog1.GetComponent<AudioSource>().mute = false;
+                dog2.GetComponent<AudioSource>().mute = false;
 
-            MusicController.aus.mute = false;
-
-            if (empezar == false)
+                if (empezar == false)
             {
                 camAnimacion.SetActive(false);
                 Time.timeScale = 1;                
