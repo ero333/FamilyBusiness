@@ -71,7 +71,7 @@ public class PlayerHealth : MonoBehaviour {
             }
             else if (sceneName == "Level5" && flagdead == false)
             {
-                GameManager.muertes1 += 5;
+                GameManager.muertes5 += 5;
 
                 Analytics.CustomEvent("Morir", new Dictionary<string, object>
                 {  { "nivel", 5 }   }
