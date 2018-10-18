@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class SpriteContainer : MonoBehaviour {
-    public Sprite[] pLegs, pUnarmedWalk, pPunch, pMac10Walk, pMac10Attack, pBowieWalk, pBowieAttack, eBowieAttack, eMac10Attack, eUnarmedWalk, ePunch, eMac10Walk, eBowieWalk, eWalk, eshotAttack, eShotWalk, pShotWalk, pShotAttack, pBatWalk, pBatAttack, eBatWalk, eBatAttack, eMatuteWalk, eMatuteAttack, pMatuteWalk, pMatuteAttack, pColtWalk, pColtAttack, eColtWalk, eColtAttack, pWinchesterWalk, pWinchesterAttack, eWinchesterWalk, eWinchesterAttack, pThompsonWalk, pThompsonAttack, eThompsonWalk, eThompsonAttack;//3 arrays at the end are new
+    public Sprite[] pLegs, pUnarmedWalk, pPunch, pMac10Walk, pMac10Attack, pBowieWalk, pBowieAttack, eBowieAttack, eMac10Attack, eUnarmedWalk, ePunch, eMac10Walk, eBowieWalk, eWalk, eshotAttack, eShotWalk, pShotWalk, pShotAttack, pBatWalk, pBatAttack, eBatWalk, eBatAttack, eMatuteWalk, eMatuteAttack, pMatuteWalk, pMatuteAttack, pColtWalk, pColtAttack, eColtWalk, eColtAttack, pWinchesterWalk, pWinchesterAttack, eWinchesterWalk, eWinchesterAttack, pThompsonWalk, pThompsonAttack, eThompsonWalk, eThompsonAttack, mThompsonAttack, mThompsonWalk;//3 arrays at the end are new
 	public Sprite enemySMG, enemyKnife, enemyUnarmed;
 	// Use this for initialization
 	void Start () {
@@ -141,6 +141,9 @@ public class SpriteContainer : MonoBehaviour {
 		case "Thompson":
 			return eThompsonAttack;
 			break;
+		case "ThompsonM":
+			return mThompsonAttack;
+			break;
 		default:
 			return getEnemyPunch ();
 			break;
@@ -173,6 +176,9 @@ public class SpriteContainer : MonoBehaviour {
 			break;
 		case "Thompson":
 			return eThompsonWalk;
+			break;
+		case "ThompsonM":
+			return mThompsonWalk;
 			break;
 		default:
 			return eUnarmedWalk;
