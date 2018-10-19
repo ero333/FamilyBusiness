@@ -128,7 +128,7 @@ public class PlayerHealth : MonoBehaviour {
 
             if (Input.GetKeyDown (KeyCode.R)) {
 
-                VideoPlay.showoOne = false;
+                //VideoPlay.showoOne = false;
 
                 if (sceneName == "Level1")
             {
