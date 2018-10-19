@@ -54,8 +54,19 @@ public class GameManager : MonoBehaviour {
   public static int curScore8;
   public static int curScore9;
   public static int curScore10;
-  
-  private string sceneName;  
+    
+  public static float tiempoNivel1;
+    public static float tiempoNivel2;
+    public static float tiempoNivel3;
+    public static float tiempoNivel4;
+    public static float tiempoNivel5;
+    public static float tiempoNivel6;
+    public static float tiempoNivel7;
+    public static float tiempoNivel8;
+    public static float tiempoNivel9;
+    public static float tiempoNivel10;
+ 
+    private string sceneName;  
 
     private void Awake()
     {
@@ -100,51 +111,61 @@ public class GameManager : MonoBehaviour {
         }
     else if (sceneName == "Level1")
         {
-            curScore1 = 0;
+            tiempoNivel1 = Time.fixedTime;
+    curScore1 = 0;
                  
         }
     else if (sceneName == "Level2")
         {
+            tiempoNivel2 = Time.fixedTime;
             curScore2 = 0;
             
         }
     else if (sceneName == "Level3")
         {
+            tiempoNivel3 = Time.fixedTime;
             curScore3 = 0;
             
         }
     else if (sceneName == "Level4")
         {
+            tiempoNivel4 = Time.fixedTime;
             curScore4 = 0;
             
         }
     else if (sceneName == "Level5")
         {
+            tiempoNivel5 = Time.fixedTime;
             curScore5 = 0;
             
         }
     else if (sceneName == "Level6")
         {
+            tiempoNivel6 = Time.fixedTime;
             curScore6 = 0;
             
         }
     else if (sceneName == "Level7")
         {
+            tiempoNivel7 = Time.fixedTime;
             curScore7 = 0;
             
         }
     else if (sceneName == "Level8")
         {
+            tiempoNivel8 = Time.fixedTime;
             curScore8 = 0;
             
         }
     else if (sceneName == "Level9")
         {
+            tiempoNivel9 = Time.fixedTime;
             curScore9 = 0;
             
         }
     else if (sceneName == "Level10")
         {
+            tiempoNivel10 = Time.fixedTime;
             curScore10 = 0;
             
         }

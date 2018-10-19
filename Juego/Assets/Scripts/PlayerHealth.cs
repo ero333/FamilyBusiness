@@ -14,6 +14,7 @@ public class PlayerHealth : MonoBehaviour {
 	public Texture2D bg;
 	public Sprite deadSpr;
     private bool flagdead = false;
+    
 
 	void awake()
 	{
