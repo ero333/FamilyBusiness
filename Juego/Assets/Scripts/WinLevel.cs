@@ -306,7 +306,7 @@ public class WinLevel : MonoBehaviour
                 );
 
                 Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
-                {  { "tiempo", Time.fixedTime }   }
+                {  { "tiempo", Time.timeSinceLevelLoad }   }
                 );
 
             }
@@ -325,7 +325,7 @@ public class WinLevel : MonoBehaviour
                 );
 
                 Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
-                {  { "tiempo", Time.fixedTime }   }
+                {  { "tiempo", Time.timeSinceLevelLoad }   }
                );
 
             }
@@ -344,7 +344,7 @@ public class WinLevel : MonoBehaviour
                 );
 
                 Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
-                {  { "tiempo", Time.fixedTime }   }
+                {  { "tiempo", Time.timeSinceLevelLoad }   }
                );
 
             }
@@ -364,7 +364,7 @@ public class WinLevel : MonoBehaviour
                 );
 
                 Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
-                {  { "tiempo", Time.fixedTime }   }
+                {  { "tiempo", Time.timeSinceLevelLoad }   }
                );
 
             }
@@ -383,7 +383,7 @@ public class WinLevel : MonoBehaviour
                 );
 
                 Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
-                {  { "tiempo", Time.fixedTime }   }
+                {  { "tiempo", Time.timeSinceLevelLoad }   }
                );
 
             }
@@ -402,7 +402,7 @@ public class WinLevel : MonoBehaviour
                 );
 
                 Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
-                {  { "tiempo", Time.fixedTime }   }
+                {  { "tiempo", Time.timeSinceLevelLoad }   }
                );
 
             }
@@ -422,7 +422,7 @@ public class WinLevel : MonoBehaviour
                 );
 
                 Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
-                {  { "tiempo", Time.fixedTime }   }
+                {  { "tiempo", Time.timeSinceLevelLoad }   }
                );
 
             }
@@ -441,7 +441,7 @@ public class WinLevel : MonoBehaviour
                 );
 
                 Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
-                {  { "tiempo", Time.fixedTime }   }
+                {  { "tiempo", Time.timeSinceLevelLoad }   }
                );
 
             }
@@ -460,7 +460,7 @@ public class WinLevel : MonoBehaviour
                 );
 
                 Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
-                {  { "tiempo", Time.fixedTime }   }
+                {  { "tiempo", Time.timeSinceLevelLoad }   }
                );
 
             }
@@ -479,7 +479,7 @@ public class WinLevel : MonoBehaviour
                 );
 
                 Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
-                {  { "tiempo", Time.fixedTime }   }
+                {  { "tiempo", Time.timeSinceLevelLoad }   }
                );
 
             }

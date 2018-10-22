@@ -111,61 +111,60 @@ public class GameManager : MonoBehaviour {
         }
     else if (sceneName == "Level1")
         {
-            tiempoNivel1 = Time.fixedTime;
-    curScore1 = 0;
+            
+            curScore1 = 0;
                  
         }
     else if (sceneName == "Level2")
         {
-            tiempoNivel2 = Time.fixedTime;
+            
             curScore2 = 0;
             
         }
     else if (sceneName == "Level3")
         {
-            tiempoNivel3 = Time.fixedTime;
+            
             curScore3 = 0;
             
         }
     else if (sceneName == "Level4")
         {
-            tiempoNivel4 = Time.fixedTime;
+            
             curScore4 = 0;
             
         }
     else if (sceneName == "Level5")
         {
-            tiempoNivel5 = Time.fixedTime;
+            
             curScore5 = 0;
             
         }
     else if (sceneName == "Level6")
         {
-            tiempoNivel6 = Time.fixedTime;
+            
             curScore6 = 0;
             
         }
     else if (sceneName == "Level7")
         {
-            tiempoNivel7 = Time.fixedTime;
+            
             curScore7 = 0;
             
         }
     else if (sceneName == "Level8")
         {
-            tiempoNivel8 = Time.fixedTime;
+            
             curScore8 = 0;
             
         }
     else if (sceneName == "Level9")
         {
-            tiempoNivel9 = Time.fixedTime;
+            
             curScore9 = 0;
             
         }
     else if (sceneName == "Level10")
-        {
-            tiempoNivel10 = Time.fixedTime;
+        {           
             curScore10 = 0;
             
         }
@@ -208,11 +207,52 @@ public class GameManager : MonoBehaviour {
 
         else if (sceneName == "Level1")
         {
-            if (VideoPlay.videoInicial.isPlaying == false)
-            {
-                Debug.Log(Time.fixedTime);
-            }
+            tiempoNivel1 = Time.timeSinceLevelLoad;
+            Debug.Log(tiempoNivel1);
 
+        }
+        else if (sceneName == "Level2")
+        {
+            tiempoNivel2 = Time.timeSinceLevelLoad;
+            Debug.Log(tiempoNivel2);
+        }
+        else if (sceneName == "Level3")
+        {
+            tiempoNivel3 = Time.timeSinceLevelLoad;
+
+        }
+        else if (sceneName == "Level4")
+        {
+            tiempoNivel4 = Time.timeSinceLevelLoad;
+
+        }
+        else if (sceneName == "Level5")
+        {
+            tiempoNivel5 = Time.timeSinceLevelLoad;
+
+        }
+        else if (sceneName == "Level6")
+        {
+            tiempoNivel6 = Time.timeSinceLevelLoad;
+
+        }
+        else if (sceneName == "Level7")
+        {
+            tiempoNivel7 = Time.timeSinceLevelLoad;
+
+        }
+        else if (sceneName == "Level8")
+        {
+            tiempoNivel8 = Time.timeSinceLevelLoad;
+        }
+        else if (sceneName == "Level9")
+        {
+            tiempoNivel9 = Time.timeSinceLevelLoad;
+        }
+        else if (sceneName == "Level10")
+        {
+            tiempoNivel10 = Time.timeSinceLevelLoad;           
+       
         }
     }
 
