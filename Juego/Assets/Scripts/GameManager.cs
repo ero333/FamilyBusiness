@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour {
   public Button Controles;
   public Button Creditos;
   public Button Calificar;
+  public static int lifeBoss = 10;  
   public static float timecont1;
   public static int muertes1 = 0;
   public static int muertes2 = 0;
@@ -55,7 +56,7 @@ public class GameManager : MonoBehaviour {
   public static int curScore9;
   public static int curScore10;
     
-  public static float tiempoNivel1;
+    public static float tiempoNivel1;
     public static float tiempoNivel2;
     public static float tiempoNivel3;
     public static float tiempoNivel4;
@@ -166,6 +167,7 @@ public class GameManager : MonoBehaviour {
         }
     else if (sceneName == "Level10")
         {
+            
             VideoPlay.showoOne = true;
             curScore10 = 0;
             

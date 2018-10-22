@@ -7,12 +7,13 @@ public class Bullet : MonoBehaviour {
 	EnemyAttacked attacked;
 	HeavyAttacked ha;
 	public GameObject bloodImpact,wallImpact;
+    
 	// Use this for initialization
 	float timer = 10.0f;
 
 
 	void Start () {
-	
+	    
 	}
 
 	// Update is called once per frame
@@ -36,8 +37,22 @@ public class Bullet : MonoBehaviour {
 	{
 		if (col.gameObject.tag == "Enemy") {
 			attacked = col.gameObject.GetComponent<EnemyAttacked> ();
-			attacked.killBullet ();
-			Instantiate (bloodImpact, this.transform.position, this.transform.rotation);
+            //attacked.killBullet (); // Llama a la funcion para matar con arma
+
+            // EL SIGUIENTE CODIGO ES PARA QUE MIRTHA TENGA MAS VIDA
+            
+            if (GameManager.lifeBoss > 0 && col.gameObject.name == "Mirtha")
+            {
+                GameManager.lifeBoss -= 1;
+            }
+            else
+            {
+                attacked.killBullet();
+            } 
+            
+            // AQUI TERMINA EL CODIGO PARA MIRTHA
+
+            Instantiate (bloodImpact, this.transform.position, this.transform.rotation);
 			Destroy (this.gameObject);
 		} else if (col.gameObject.tag == "Enemy" && creator == "Enemy") {
 

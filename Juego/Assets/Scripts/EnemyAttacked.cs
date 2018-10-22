@@ -70,6 +70,8 @@ public class EnemyAttacked : MonoBehaviour {
 
 	}
 
+    /* killBullet() es la funcion para matar al enemigo con arma*/
+
 	public void killBullet()
 	{
 		knockDownTimer = 9999;
