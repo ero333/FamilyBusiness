@@ -111,60 +111,62 @@ public class GameManager : MonoBehaviour {
         }
     else if (sceneName == "Level1")
         {
-            
+            VideoPlay.showoOne = true;
             curScore1 = 0;
+            
                  
         }
     else if (sceneName == "Level2")
         {
-            
+            VideoPlay.showoOne = true;
             curScore2 = 0;
             
         }
     else if (sceneName == "Level3")
         {
-            
+            VideoPlay.showoOne = true;
             curScore3 = 0;
             
         }
     else if (sceneName == "Level4")
         {
-            
+            VideoPlay.showoOne = true;
             curScore4 = 0;
             
         }
     else if (sceneName == "Level5")
         {
-            
+            VideoPlay.showoOne = true;
             curScore5 = 0;
             
         }
     else if (sceneName == "Level6")
         {
-            
+            VideoPlay.showoOne = true;
             curScore6 = 0;
             
         }
     else if (sceneName == "Level7")
         {
-            
+            VideoPlay.showoOne = true;
             curScore7 = 0;
             
         }
     else if (sceneName == "Level8")
         {
-            
+            VideoPlay.showoOne = true;
             curScore8 = 0;
             
         }
     else if (sceneName == "Level9")
         {
-            
+            VideoPlay.showoOne = true;
             curScore9 = 0;
             
         }
     else if (sceneName == "Level10")
-        {           
+        {
+            VideoPlay.showoOne = true;
             curScore10 = 0;
             
         }
@@ -208,13 +210,13 @@ public class GameManager : MonoBehaviour {
         else if (sceneName == "Level1")
         {
             tiempoNivel1 = Time.timeSinceLevelLoad;
-            Debug.Log(tiempoNivel1);
+            
 
         }
         else if (sceneName == "Level2")
         {
             tiempoNivel2 = Time.timeSinceLevelLoad;
-            Debug.Log(tiempoNivel2);
+            
         }
         else if (sceneName == "Level3")
         {
