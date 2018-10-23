@@ -294,192 +294,192 @@ public class WinLevel : MonoBehaviour
             else if (sceneName == "Level1")
             {
                 Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
-                {  { "nivel", 1 }   }
+                {  { "nivel", sceneName}   }
+                );
+                
+                Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
+                {  { "puntos", sceneName + " con puntaje " + GameManager.curScore1 }   }
                 );
 
                 Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
-                {  { "puntos", GameManager.curScore1 }   }
+                {  { "muertes", sceneName + " con muertes " + GameManager.muertes1 }   }
                 );
 
                 Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
-                {  { "muertes", GameManager.muertes1 }   }
-                );
-
-                Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
-                {  { "tiempo", Time.timeSinceLevelLoad }   }
+                {  { "tiempo", sceneName + " con tiempo final de " + Time.timeSinceLevelLoad }   }
                 );
 
             }
             else if (sceneName == "Level2")
             {
                 Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
-                {  { "nivel", 2 }   }
+                {  { "nivel", sceneName }   }
                 );
 
                 Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
-                {  { "puntos", GameManager.curScore2 }   }
+                {  { "puntos", sceneName + " con puntaje " + GameManager.curScore2 }   }
                 );
 
                 Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
-                {  { "muertes", GameManager.muertes2 }   }
+                {  { "muertes", sceneName + " con muertes " + GameManager.muertes2 }   }
                 );
 
                 Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
-                {  { "tiempo", Time.timeSinceLevelLoad }   }
+                {  { "tiempo", sceneName + " con tiempo final de " + Time.timeSinceLevelLoad }   }
                );
 
             }
             else if (sceneName == "Level3")
             {
                 Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
-                {  { "nivel", 3 }   }
+                {  { "nivel", sceneName }   }
                 );
 
                 Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
-                {  { "puntos", GameManager.curScore3 }   }
+                {  { "puntos", sceneName + " con puntaje " + GameManager.curScore3 }   }
                 );
 
                 Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
-                {  { "muertes", GameManager.muertes3 }   }
+                {  { "muertes", sceneName + " con muertes " + GameManager.muertes3 }   }
                 );
 
                 Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
-                {  { "tiempo", Time.timeSinceLevelLoad }   }
+                {  { "tiempo", sceneName + " con tiempo final de " + Time.timeSinceLevelLoad }   }
                );
 
             }
             else if (sceneName == "Level4")
             {
                 Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
-                {  { "nivel", 4 }   }
+                {  { "nivel", sceneName }   }
                 );
 
 
                 Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
-                {  { "puntos", GameManager.curScore4 }   }
+                {  { "puntos", sceneName + " con puntaje " + GameManager.curScore4 }   }
                 );
 
                 Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
-                {  { "muertes", GameManager.muertes4 }   }
+                {  { "muertes", sceneName + " con muertes " + GameManager.muertes4 }   }
                 );
 
                 Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
-                {  { "tiempo", Time.timeSinceLevelLoad }   }
+                {  { "tiempo", sceneName + " con tiempo final de " + Time.timeSinceLevelLoad }   }
                );
 
             }
             else if (sceneName == "Level5")
             {
                 Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
-                {  { "nivel", 5 }   }
+                {  { "nivel", sceneName }   }
                 );
 
                 Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
-                {  { "puntos", GameManager.curScore5 }   }
+                {  { "puntos", sceneName + " con puntaje " + GameManager.curScore5 }   }
                 );
 
                 Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
-                {  { "muertes", GameManager.muertes5 }   }
+                {  { "muertes", sceneName + " con muertes " + GameManager.muertes5 }   }
                 );
 
                 Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
-                {  { "tiempo", Time.timeSinceLevelLoad }   }
+                {  { "tiempo", sceneName + " con tiempo final de " + Time.timeSinceLevelLoad }   }
                );
 
             }
             else if (sceneName == "Level6")
             {
                 Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
-                {  { "nivel", 6 }   }
+                {  { "nivel", sceneName }   }
                 );
 
                 Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
-                {  { "puntos", GameManager.curScore6 }   }
+                {  { "puntos", sceneName + " con puntaje " + GameManager.curScore6 }   }
                 );
 
                 Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
-                {  { "muertes", GameManager.muertes6 }   }
+                {  { "muertes", sceneName + " con muertes " + GameManager.muertes6 }   }
                 );
 
                 Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
-                {  { "tiempo", Time.timeSinceLevelLoad }   }
+                {  { "tiempo", sceneName + " con tiempo final de " + Time.timeSinceLevelLoad }   }
                );
 
             }
             else if (sceneName == "Level7")
             {
                 Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
-                {  { "nivel", 7 }   }
+                {  { "nivel", sceneName }   }
                 );
 
 
                 Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
-                {  { "puntos", GameManager.curScore7 }   }
+                {  { "puntos", sceneName + " con puntaje " + GameManager.curScore7 }   }
                 );
 
                 Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
-                {  { "muertes", GameManager.muertes7 }   }
+                {  { "muertes", sceneName + " con muertes " + GameManager.muertes7 }   }
                 );
 
                 Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
-                {  { "tiempo", Time.timeSinceLevelLoad }   }
+                {  { "tiempo", sceneName + " con tiempo final de " + Time.timeSinceLevelLoad }   }
                );
 
             }
             else if (sceneName == "Level8")
             {
                 Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
-                {  { "nivel", 8 }   }
+                {  { "nivel", sceneName }   }
                 );
 
                 Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
-                {  { "puntos", GameManager.curScore8 }   }
+                {  { "puntos", sceneName + " con puntaje " + GameManager.curScore8 }   }
                 );
 
                 Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
-                {  { "muertes", GameManager.muertes8 }   }
+                {  { "muertes", sceneName + " con muertes " + GameManager.muertes8 }   }
                 );
 
                 Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
-                {  { "tiempo", Time.timeSinceLevelLoad }   }
+                {  { "tiempo", sceneName + " con tiempo final de " + Time.timeSinceLevelLoad }   }
                );
 
             }
             else if (sceneName == "Level9")
             {
                 Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
-                {  { "nivel", 9 }   }
+                {  { "nivel", sceneName }   }
                 );
 
                 Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
-                {  { "puntos", GameManager.curScore9 }   }
+                {  { "puntos", sceneName + " con puntaje " + GameManager.curScore9 }   }
                 );
 
                 Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
-                {  { "muertes", GameManager.muertes9 }   }
+                {  { "muertes", sceneName + " con muertes " + GameManager.muertes9 }   }
                 );
 
                 Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
-                {  { "tiempo", Time.timeSinceLevelLoad }   }
+                {  { "tiempo", sceneName + " con tiempo final de " + Time.timeSinceLevelLoad }   }
                );
 
             }
             else if (sceneName == "Level10")
             {
                 Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
-                {  { "nivel", 10}   }
+                {  { "nivel", sceneName }   }
                 );
 
                 Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
-                {  { "puntos", GameManager.curScore10 }   }
+                {  { "puntos", sceneName + " con puntaje " + GameManager.curScore10 }   }
                 );
 
                 Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
-                {  { "muertes", GameManager.muertes10 }   }
+                {  { "muertes", sceneName + " con muertes " + GameManager.muertes10 }   }
                 );
 
                 Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
-                {  { "tiempo", Time.timeSinceLevelLoad }   }
+                {  { "tiempo", sceneName + " con tiempo final de " + Time.timeSinceLevelLoad }   }
                );
 
             }
@@ -492,7 +492,7 @@ public class WinLevel : MonoBehaviour
         if (sceneName == "Tutorial")
         {
             Analytics.CustomEvent("EmpezarNivel", new Dictionary<string, object>
-        {  { "nivel", 1 }   }
+        {  { "nivel", sceneName }   }
         );
 
             SceneManager.LoadScene("Level1");
@@ -500,58 +500,65 @@ public class WinLevel : MonoBehaviour
         else if (sceneName == "Level1")
         {
             Analytics.CustomEvent("EmpezarNivel", new Dictionary<string, object>
-        {  { "nivel", 2 }   }
+        {  { "nivel", sceneName }   }
         );
             SceneManager.LoadScene("Level2");
         }
         else if (sceneName == "Level2")
         {
             Analytics.CustomEvent("EmpezarNivel", new Dictionary<string, object>
-                {  { "nivel", 3 }   }
+                {  { "nivel", sceneName }   }
             );
             SceneManager.LoadScene("Level3");
         }
         else if (sceneName == "Level3")
         {
             Analytics.CustomEvent("EmpezarNivel", new Dictionary<string, object>
-                {  { "nivel", 4 }   }
+                {  { "nivel", sceneName }   }
             );
             SceneManager.LoadScene("Level4");
         }
         else if (sceneName == "Level4")
         {
             Analytics.CustomEvent("EmpezarNivel", new Dictionary<string, object>
-                {  { "nivel", 5 }   }
+                {  { "nivel", sceneName }   }
             );
             SceneManager.LoadScene("Level5");
         }
         else if (sceneName == "Level5")
         {
             Analytics.CustomEvent("EmpezarNivel", new Dictionary<string, object>
-                {  { "nivel", 6 }   }
+                {  { "nivel", sceneName }   }
             );
             SceneManager.LoadScene("Level6");
         }
         else if (sceneName == "Level6")
         {
             Analytics.CustomEvent("EmpezarNivel", new Dictionary<string, object>
-                {  { "nivel", 7 }   }
+                {  { "nivel", sceneName }   }
             );
             SceneManager.LoadScene("Level7");
         }
         else if (sceneName == "Level7")
         {
             Analytics.CustomEvent("EmpezarNivel", new Dictionary<string, object>
-                {  { "nivel", 8 }   }
+                {  { "nivel", sceneName }   }
             );
             SceneManager.LoadScene("Level8");
         }
         else if (sceneName == "Level8")
         {
             Analytics.CustomEvent("EmpezarNivel", new Dictionary<string, object>
-                {  { "nivel", 9 }   }
+                {  { "nivel", sceneName }   }
             );
             SceneManager.LoadScene("Level9");
+        }
+        else if (sceneName == "Level9")
+        {
+            Analytics.CustomEvent("EmpezarNivel", new Dictionary<string, object>
+                {  { "nivel", sceneName }   }
+            );
+            SceneManager.LoadScene("Level10");
         }
 
     }
