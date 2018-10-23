@@ -66,6 +66,7 @@ public class GameManager : MonoBehaviour {
     public static float tiempoNivel8;
     public static float tiempoNivel9;
     public static float tiempoNivel10;
+    public static bool check10;
  
     private string sceneName;  
 
@@ -99,6 +100,8 @@ public class GameManager : MonoBehaviour {
             Controles.onClick.AddListener(verControles);
             Creditos.onClick.AddListener(verCreditos);
             Calificar.onClick.AddListener(verCalificar);
+            
+            
 
         }
     else if (sceneName == "Tutorial")
@@ -170,7 +173,6 @@ public class GameManager : MonoBehaviour {
             
             VideoPlay.showoOne = true;
             curScore10 = 0;
-            
         }
         
 
@@ -182,7 +184,7 @@ public class GameManager : MonoBehaviour {
 	void Update () {
         if (sceneName == "Menu")
         {
-            
+            Debug.Log(check10);
         }             
 
         else if (sceneName == "Tutorial")
@@ -190,9 +192,9 @@ public class GameManager : MonoBehaviour {
             
         }
 
-        else if (sceneName == "Level1")
+        else if (sceneName == "Level10")
         {
-          
+            Debug.Log(check10);
         }        
 
     }
@@ -268,6 +270,7 @@ public class GameManager : MonoBehaviour {
     void empezarJuego()
     {        
         SceneManager.LoadScene("Tutorial");
+        check10 = false;
     }
 
     void verControles()

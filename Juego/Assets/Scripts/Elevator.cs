@@ -6,18 +6,17 @@ public class Elevator : MonoBehaviour {
 	public GameObject NextPlaceToGo;
     public GameObject ElevatorWin;
     float timeLeft = 10;
-	static bool canTravel = true;
+	public static bool canTravel = true;
     
 	float timer=1.0f;
 	// Use this for initialization
 	void Start () {
-	
-	}
+        
+}
 	
 	// Update is called once per frame
-	void Update () {
-                
-        if (areAllEnemiesDead() == true && timeLeft != 0)
+	void Update () {        
+        if (areAllEnemiesDead() == true) //&& timeLeft != 0)
         {
 
             ElevatorWin.SetActive(true);
@@ -28,7 +27,7 @@ public class Elevator : MonoBehaviour {
             }
         }
       
-        timerCountdown ();
+        //timerCountdown ();
         
 	}
     
@@ -38,6 +37,7 @@ public class Elevator : MonoBehaviour {
 			other.transform.position = NextPlaceToGo.transform.position;
             
 			canTravel = false;
+            GameManager.check10 = true;
             
 		}
 	}
@@ -52,7 +52,7 @@ public class Elevator : MonoBehaviour {
         
         return true;
 	}
-
+    /*
 	void timerCountdown()
 	{
 		if (canTravel == false) {
@@ -64,5 +64,5 @@ public class Elevator : MonoBehaviour {
 		}
 
 
-	}
+	}*/
 }

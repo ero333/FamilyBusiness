@@ -14,6 +14,8 @@ public class PlayerHealth : MonoBehaviour {
 	public Texture2D bg;
 	public Sprite deadSpr;
     private bool flagdead = false;
+    public GameObject elevatorPosition;
+    Vector3 initialPosition;
     
 
 	void awake()
@@ -24,7 +26,20 @@ public class PlayerHealth : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         Scene currentScene = SceneManager.GetActiveScene();
-        sceneName = currentScene.name;        
+        sceneName = currentScene.name;
+        initialPosition = this.gameObject.transform.position;
+        
+
+        if (GameManager.check10 == true)
+        {
+            this.gameObject.transform.position = elevatorPosition.transform.position;
+        }
+        
+        else if (GameManager.check10 == false)
+        {
+            this.gameObject.transform.position = initialPosition;
+        }
+
     }
 	
 	// Update is called once per frame
@@ -183,7 +198,7 @@ public class PlayerHealth : MonoBehaviour {
                 {  { "tiempo", GameManager.tiempoNivel10 }   }
                );
 
-                flagdead = true;
+                flagdead = true;               
 
             }
 
@@ -344,7 +359,7 @@ public class PlayerHealth : MonoBehaviour {
                     Analytics.CustomEvent("ReiniciarNivel", new Dictionary<string, object>
                     {  { "tiempo", GameManager.tiempoNivel10 }   }
                     );
-
+                    
                 }
                 revivePlayer();                
                 SceneManager.LoadScene (SceneManager.GetActiveScene().name);//remember to mention new scene manager using thing                
@@ -375,8 +390,8 @@ public class PlayerHealth : MonoBehaviour {
 
 			pm.enabled = false;
 			CircleCollider2D col = this.GetComponent<CircleCollider2D> ();
-			col.enabled = false;
-		}
+			col.enabled = false;            
+        }
 
        
     }
@@ -397,8 +412,8 @@ public class PlayerHealth : MonoBehaviour {
 		pm.enabled = true;
 		CircleCollider2D col = this.GetComponent<CircleCollider2D> ();
 		col.enabled = true;
-		
-	}
+       
+    }
 
 	void OnGUI()
 	{

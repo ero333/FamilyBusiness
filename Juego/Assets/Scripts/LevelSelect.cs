@@ -111,6 +111,7 @@ public class LevelSelect : MonoBehaviour {
         {  { "nivel", 10 }   }
        );
         SceneManager.LoadScene("Level10");
+        GameManager.check10 = false;
         
     }
 
