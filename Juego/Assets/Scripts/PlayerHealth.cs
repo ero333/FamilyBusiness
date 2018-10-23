@@ -27,18 +27,25 @@ public class PlayerHealth : MonoBehaviour {
 	void Start () {
         Scene currentScene = SceneManager.GetActiveScene();
         sceneName = currentScene.name;
-        initialPosition = this.gameObject.transform.position;
         
+        
+        if (sceneName == "Level10")
+        {
+            initialPosition = this.gameObject.transform.position;
 
-        if (GameManager.check10 == true)
-        {
-            this.gameObject.transform.position = elevatorPosition.transform.position;
+            if (GameManager.check10 == true)
+            {
+                this.gameObject.transform.position = elevatorPosition.transform.position;
+                Destroy(GameObject.Find("enemigos Piso 0"));
+            }
+
+            else if (GameManager.check10 == false)
+            {
+                this.gameObject.transform.position = initialPosition;
+
+            }
         }
         
-        else if (GameManager.check10 == false)
-        {
-            this.gameObject.transform.position = initialPosition;
-        }
 
     }
 	

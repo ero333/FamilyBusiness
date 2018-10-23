@@ -11,6 +11,17 @@ public class ControlWinDoor : MonoBehaviour {
     // Use this for initialization
     void Start () {
         cartelWin.SetActive(false);
+        /*GameObject[] dogs = GameObject.FindGameObjectsWithTag("Dog");
+        GameObject[] heavies = GameObject.FindGameObjectsWithTag("Heavy");
+        GameObject[] enemies1 = GameObject.FindGameObjectsWithTag("Enemy");
+        enemies = new GameObject[dogs.Length + heavies.Length + enemies1.Length];
+        dogs.CopyTo(enemies, 0);
+        heavies.CopyTo(enemies, dogs.Length);
+        enemies1.CopyTo(enemies, (dogs.Length) + (heavies.Length));*/
+    }
+	
+	// Update is called once per frame
+	void Update () {
         GameObject[] dogs = GameObject.FindGameObjectsWithTag("Dog");
         GameObject[] heavies = GameObject.FindGameObjectsWithTag("Heavy");
         GameObject[] enemies1 = GameObject.FindGameObjectsWithTag("Enemy");
@@ -18,10 +29,6 @@ public class ControlWinDoor : MonoBehaviour {
         dogs.CopyTo(enemies, 0);
         heavies.CopyTo(enemies, dogs.Length);
         enemies1.CopyTo(enemies, (dogs.Length) + (heavies.Length));
-    }
-	
-	// Update is called once per frame
-	void Update () {
         win = areAllEnemiesDead();
 
         if (win == true)

@@ -67,7 +67,7 @@ public class GameManager : MonoBehaviour {
     public static float tiempoNivel9;
     public static float tiempoNivel10;
     public static bool check10;
- 
+    public GameObject contador;
     private string sceneName;  
 
     private void Awake()
@@ -91,6 +91,10 @@ public class GameManager : MonoBehaviour {
     void Start () {                
         Scene currentScene = SceneManager.GetActiveScene();
         sceneName = currentScene.name;        
+        if (Time.timeScale == 0)
+        {
+            contador.SetActive(false);
+        }
         if (sceneName == "Menu")
         {
             
@@ -182,6 +186,16 @@ public class GameManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
+        if (Time.timeScale != 0)
+        {
+            contador.SetActive(true);
+        }
+        else
+        {
+            contador.SetActive(false);
+        }
+
         if (sceneName == "Menu")
         {
             Debug.Log(check10);
