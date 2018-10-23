@@ -186,15 +186,7 @@ public class GameManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
-        if (Time.timeScale != 0)
-        {
-            contador.SetActive(true);
-        }
-        else
-        {
-            contador.SetActive(false);
-        }
+        
 
         if (sceneName == "Menu")
         {
@@ -203,12 +195,127 @@ public class GameManager : MonoBehaviour {
 
         else if (sceneName == "Tutorial")
         {
-            
+            if (Time.timeScale != 0)
+            {
+                contador.SetActive(true);
+            }
+            else
+            {
+                contador.SetActive(false);
+            }
         }
+        else if (sceneName == "Level1")
+        {
+            if (Time.timeScale != 0)
+            {
+                contador.SetActive(true);
+            }
+            else
+            {
+                contador.SetActive(false);
+            }
+        }
+        else if (sceneName == "Level2")
+        {
+            if (Time.timeScale != 0)
+            {
+                contador.SetActive(true);
+            }
+            else
+            {
+                contador.SetActive(false);
+            }
+        }
+        else if (sceneName == "Level3")
+        {
+            if (Time.timeScale != 0)
+            {
+                contador.SetActive(true);
+            }
+            else
+            {
+                contador.SetActive(false);
+            }
+        }
+        else if (sceneName == "Level4")
+        {
+            if (Time.timeScale != 0)
+            {
+                contador.SetActive(true);
+            }
+            else
+            {
+                contador.SetActive(false);
+            }
+        }
+        else if (sceneName == "Level5")
+        {
+            if (Time.timeScale != 0)
+            {
+                contador.SetActive(true);
+            }
+            else
+            {
+                contador.SetActive(false);
+            }
+        }
+        else if (sceneName == "Level6")
+        {
+            if (Time.timeScale != 0)
+            {
+                contador.SetActive(true);
+            }
+            else
+            {
+                contador.SetActive(false);
+            }
+        }
+        else if (sceneName == "Level7")
+        {
+            if (Time.timeScale != 0)
+            {
+                contador.SetActive(true);
+            }
+            else
+            {
+                contador.SetActive(false);
+            }
+        }
+        else if (sceneName == "Level8")
+        {
+            if (Time.timeScale != 0)
+            {
+                contador.SetActive(true);
+            }
+            else
+            {
+                contador.SetActive(false);
+            }
+        }
+        else if (sceneName == "Level9")
+        {
+            if (Time.timeScale != 0)
+            {
+                contador.SetActive(true);
+            }
+            else
+            {
+                contador.SetActive(false);
+            }
+        }        
 
         else if (sceneName == "Level10")
         {
             Debug.Log(check10);
+
+            if (Time.timeScale != 0)
+            {
+                contador.SetActive(true);
+            }
+            else
+            {
+                contador.SetActive(false);
+            }
         }        
 
     }
