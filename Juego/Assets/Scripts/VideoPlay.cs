@@ -83,13 +83,14 @@ public class VideoPlay : MonoBehaviour {
 
     // Update is called once per frame
     void Update()
-    {
-      
+    {       
+
         if (sceneName != "Credits")
         {
-
         
-        if (videoInicial.isPlaying == true)
+           
+
+            if (videoInicial.isPlaying == true)
         {
                 if (sceneName == "Level8")
                 {
@@ -109,6 +110,7 @@ public class VideoPlay : MonoBehaviour {
                 camAnimacion.SetActive(false);
                 Time.timeScale = 1;
                 MusicController.aus.mute = false;
+                    this.gameObject.SetActive(false);
 
                     if (sceneName == "Level8")
                     {
@@ -116,6 +118,7 @@ public class VideoPlay : MonoBehaviour {
                         dog1.GetComponent<AudioSource>().mute = false;
                         dog2.GetComponent<AudioSource>().mute = false;
                     }
+
                 }
         }
         else
@@ -133,7 +136,8 @@ public class VideoPlay : MonoBehaviour {
                 if (empezar == false)
             {
                 camAnimacion.SetActive(false);
-                Time.timeScale = 1;                
+                Time.timeScale = 1;
+                this.gameObject.SetActive(false);
                 empezar = true;
 
             }
