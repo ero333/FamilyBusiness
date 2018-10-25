@@ -8,15 +8,20 @@ public class VideoMirtha : MonoBehaviour {
     public GameObject camara;
     public GameObject videoplayer;
     public VideoPlayer videoIntermedio;
+    public GameObject vidaBoss;
 
     // Use this for initialization
     void Start () {
         camara.SetActive(false);
         videoplayer.SetActive(false);
+        vidaBoss.SetActive(false);
+
+
     }
 	
 	// Update is called once per frame
 	void Update () {		
+
         if (videoIntermedio.isPlaying == true)
         {
             Time.timeScale = 0;
@@ -52,4 +57,11 @@ public class VideoMirtha : MonoBehaviour {
         }
     }
 
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            vidaBoss.SetActive(true);
+        }
+    }
 }
