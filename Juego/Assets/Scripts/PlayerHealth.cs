@@ -59,11 +59,11 @@ public class PlayerHealth : MonoBehaviour {
             {
                 GameManager.muertes1 += 1;
                 Analytics.CustomEvent("Morir", new Dictionary<string, object>
-                {  { "nivel", sceneName }   }
+                {  { "nivel", 1 }   }
                 );
                                           
                 Analytics.CustomEvent("Morir", new Dictionary<string, object>
-                {  { "tiempo", "El tiempo del " + sceneName + " en morir fue de " + GameManager.tiempoNivel1 }   }
+                {  { "tiempo", GameManager.tiempoNivel1 }   }
                 );
                 
                 
@@ -76,12 +76,12 @@ public class PlayerHealth : MonoBehaviour {
                 GameManager.muertes2 += 1;
 
                 Analytics.CustomEvent("Morir", new Dictionary<string, object>
-                {  { "nivel", sceneName }   }
+                {  { "nivel", 2 }   }
                 );
                 
 
                 Analytics.CustomEvent("Morir", new Dictionary<string, object>
-                {  { "tiempo", "El tiempo del " + sceneName + " en morir fue de " + GameManager.tiempoNivel2 }   }
+                {  { "tiempo", GameManager.tiempoNivel2 }   }
                );
 
                 flagdead = true;
@@ -92,12 +92,12 @@ public class PlayerHealth : MonoBehaviour {
                 GameManager.muertes3 += 1;
 
                 Analytics.CustomEvent("Morir", new Dictionary<string, object>
-                {  { "nivel", sceneName }   }
+                {  { "nivel", 3 }   }
                 );
                 
 
                 Analytics.CustomEvent("Morir", new Dictionary<string, object>
-                {  { "tiempo", "El tiempo del " + sceneName + " en morir fue de " + GameManager.tiempoNivel3 }   }
+                {  { "tiempo", GameManager.tiempoNivel3 }   }
                );
 
 
@@ -108,11 +108,11 @@ public class PlayerHealth : MonoBehaviour {
                 GameManager.muertes4 += 1;
 
                 Analytics.CustomEvent("Morir", new Dictionary<string, object>
-                {  { "nivel", sceneName }   }
+                {  { "nivel", 4 }   }
                 );
 
                 Analytics.CustomEvent("Morir", new Dictionary<string, object>
-                {  { "tiempo", "El tiempo del " + sceneName + " en morir fue de " + GameManager.tiempoNivel4 }   }
+                {  { "tiempo", GameManager.tiempoNivel4 }   }
                );
 
                 flagdead = true;
@@ -123,11 +123,11 @@ public class PlayerHealth : MonoBehaviour {
                 GameManager.muertes5 += 5;
 
                 Analytics.CustomEvent("Morir", new Dictionary<string, object>
-                {  { "nivel", sceneName }   }
+                {  { "nivel", 5 }   }
                 );
 
                 Analytics.CustomEvent("Morir", new Dictionary<string, object>
-                {  { "tiempo", "El tiempo del " + sceneName + " en morir fue de " + GameManager.tiempoNivel5 }   }
+                {  { "tiempo", GameManager.tiempoNivel5 }   }
                );
 
                 flagdead = true;
@@ -138,11 +138,11 @@ public class PlayerHealth : MonoBehaviour {
                 GameManager.muertes6 += 1;
 
                 Analytics.CustomEvent("Morir", new Dictionary<string, object>
-                {  { "nivel", sceneName }   }
+                {  { "nivel", 6 }   }
                 );
 
                 Analytics.CustomEvent("Morir", new Dictionary<string, object>
-                {  { "tiempo", "El tiempo del " + sceneName + " en morir fue de " + GameManager.tiempoNivel6 }   }
+                {  { "tiempo", GameManager.tiempoNivel6 }   }
                );
 
                 flagdead = true;
@@ -153,11 +153,11 @@ public class PlayerHealth : MonoBehaviour {
                 GameManager.muertes7 += 1;
 
                 Analytics.CustomEvent("Morir", new Dictionary<string, object>
-                {  { "nivel", sceneName }   }
+                {  { "nivel", 7 }   }
                 );
 
                 Analytics.CustomEvent("Morir", new Dictionary<string, object>
-                {  { "tiempo", "El tiempo del " + sceneName + " en morir fue de " + GameManager.tiempoNivel7 }   }
+                {  { "tiempo", GameManager.tiempoNivel7 }   }
                );
 
                 flagdead = true;
@@ -168,11 +168,11 @@ public class PlayerHealth : MonoBehaviour {
                 GameManager.muertes8 += 1;
 
                 Analytics.CustomEvent("Morir", new Dictionary<string, object>
-                {  { "nivel", sceneName }   }
+                {  { "nivel", 8 }   }
                 );
 
                 Analytics.CustomEvent("Morir", new Dictionary<string, object>
-                {  { "tiempo", "El tiempo del " + sceneName + " en morir fue de " + GameManager.tiempoNivel8 }   }
+                {  { "tiempo", GameManager.tiempoNivel8 }   }
                );
 
                 flagdead = true;
@@ -183,11 +183,11 @@ public class PlayerHealth : MonoBehaviour {
                 GameManager.muertes9 += 1;
 
                 Analytics.CustomEvent("Morir", new Dictionary<string, object>
-                {  { "nivel", sceneName }   }
+                {  { "nivel", 9 }   }
                 );
 
                 Analytics.CustomEvent("Morir", new Dictionary<string, object>
-                {  { "tiempo", "El tiempo del " + sceneName + " en morir fue de " + GameManager.tiempoNivel9 }   }
+                {  { "tiempo", GameManager.tiempoNivel9 }   }
                );
 
                 flagdead = true;
@@ -198,11 +198,11 @@ public class PlayerHealth : MonoBehaviour {
                 GameManager.muertes10 += 1;
 
                 Analytics.CustomEvent("Morir", new Dictionary<string, object>
-                {  { "nivel", sceneName}   }
+                {  { "nivel", 10}   }
                 );
 
                 Analytics.CustomEvent("Morir", new Dictionary<string, object>
-                {  { "tiempo", "El tiempo del " + sceneName + " en morir fue de " + GameManager.tiempoNivel10 }   }
+                {  { "tiempo", GameManager.tiempoNivel10 }   }
                );
 
                 flagdead = true;               
@@ -219,15 +219,15 @@ public class PlayerHealth : MonoBehaviour {
                 {
                 
                     Analytics.CustomEvent("ReiniciarNivel", new Dictionary<string, object>
-                    {  { "nivel", sceneName }   }
+                    {  { "nivel", 1 }   }
                     );
 
                     Analytics.CustomEvent("ReiniciarNivel", new Dictionary<string, object>
-                    {  { "vez", "La cantidad de muertes del " + sceneName + " es " + GameManager.muertes1 }   }
+                    {  { "vez", GameManager.muertes1 }   }
                     );
 
                     Analytics.CustomEvent("ReiniciarNivel", new Dictionary<string, object>
-                    {  { "tiempo", "El tiempo del " + sceneName + " antes de reiniciar fue de " + GameManager.tiempoNivel1 }   }
+                    {  { "tiempo", GameManager.tiempoNivel1 }   }
                     );
 
                 }
@@ -235,136 +235,136 @@ public class PlayerHealth : MonoBehaviour {
             {
                 
                 Analytics.CustomEvent("ReiniciarNivel", new Dictionary<string, object>
-                {  { "nivel", sceneName }   }
+                {  { "nivel", 2 }   }
                 );
 
                     Analytics.CustomEvent("ReiniciarNivel", new Dictionary<string, object>
-                {  { "vez", "La cantidad de muertes del " + sceneName + " es " + GameManager.muertes2 }   }
+                {  { "vez", GameManager.muertes2 }   }
                         );
 
                     Analytics.CustomEvent("ReiniciarNivel", new Dictionary<string, object>
-                    {  { "tiempo", "El tiempo del " + sceneName + " antes de reiniciar fue de " + GameManager.tiempoNivel2 }   }
+                    {  { "tiempo", GameManager.tiempoNivel2 }   }
                     );
                 }
             else if (sceneName == "Level3")
             {
                 Analytics.CustomEvent("ReiniciarNivel", new Dictionary<string, object>
-                {  { "nivel", sceneName }   }
+                {  { "nivel", 3 }   }
                 );
 
                     Analytics.CustomEvent("ReiniciarNivel", new Dictionary<string, object>
-                {  { "vez",  "La cantidad de muertes del " + sceneName + " es " + GameManager.muertes3 }   }
+                {  { "vez", GameManager.muertes3 }   }
                         );
 
                     Analytics.CustomEvent("ReiniciarNivel", new Dictionary<string, object>
-                    {  { "tiempo", "El tiempo del " + sceneName + " antes de reiniciar fue de " + GameManager.tiempoNivel3 }   }
+                    {  { "tiempo", GameManager.tiempoNivel3 }   }
                     );
 
                 }
             else if (sceneName == "Level4")
             {
                 Analytics.CustomEvent("ReiniciarNivel", new Dictionary<string, object>
-                {  { "nivel", sceneName }   }
+                {  { "nivel", 4 }   }
                 );
 
                     Analytics.CustomEvent("ReiniciarNivel", new Dictionary<string, object>
-                {  { "vez", "La cantidad de muertes del " + sceneName + " es " + GameManager.muertes4 }   }
+                {  { "vez", GameManager.muertes4 }   }
                         );
 
 
                     Analytics.CustomEvent("ReiniciarNivel", new Dictionary<string, object>
-                    {  { "tiempo", "El tiempo del " + sceneName + " antes de reiniciar fue de " + GameManager.tiempoNivel4 }   }
+                    {  { "tiempo", GameManager.tiempoNivel4 }   }
                     );
 
                 }
             else if (sceneName == "Level5")
             {
                 Analytics.CustomEvent("ReiniciarNivel", new Dictionary<string, object>
-                {  { "nivel", sceneName }   }
+                {  { "nivel", 5 }   }
                 );
 
                     Analytics.CustomEvent("ReiniciarNivel", new Dictionary<string, object>
-                {  { "vez", "La cantidad de muertes del " + sceneName + " es " + GameManager.muertes5 }   }
+                {  { "vez", GameManager.muertes5 }   }
                         );
 
 
                     Analytics.CustomEvent("ReiniciarNivel", new Dictionary<string, object>
-                    {  { "tiempo", "El tiempo del " + sceneName + " antes de reiniciar fue de " + GameManager.tiempoNivel5 }   }
+                    {  { "tiempo", GameManager.tiempoNivel5 }   }
                     );
 
                 }
             else if (sceneName == "Level6")
             {
                 Analytics.CustomEvent("ReiniciarNivel", new Dictionary<string, object>
-                {  { "nivel", sceneName }   }
+                {  { "nivel", 6 }   }
                 );
 
                     Analytics.CustomEvent("ReiniciarNivel", new Dictionary<string, object>
-                {  { "vez", "La cantidad de muertes del " + sceneName + " es " + GameManager.muertes6 }   }
+                {  { "vez", GameManager.muertes6 }   }
                         );
 
                     Analytics.CustomEvent("ReiniciarNivel", new Dictionary<string, object>
-                    {  { "tiempo", "El tiempo del " + sceneName + " antes de reiniciar fue de " + GameManager.tiempoNivel6 }   }
+                    {  { "tiempo", GameManager.tiempoNivel6 }   }
                     );
 
                 }
             else if (sceneName == "Level7")
             {
                 Analytics.CustomEvent("ReiniciarNivel", new Dictionary<string, object>
-                {  { "nivel", sceneName }   }
+                {  { "nivel", 7 }   }
                 );
 
                     Analytics.CustomEvent("ReiniciarNivel", new Dictionary<string, object>
-                {  { "vez", "La cantidad de muertes del " + sceneName + " es " + GameManager.muertes7 }   }
+                {  { "vez", GameManager.muertes7 }   }
                         );
 
                     Analytics.CustomEvent("ReiniciarNivel", new Dictionary<string, object>
-                    {  { "tiempo", "El tiempo del " + sceneName + " antes de reiniciar fue de " + GameManager.tiempoNivel7 }   }
+                    {  { "tiempo", GameManager.tiempoNivel7 }   }
                     );
 
                 }
             else if (sceneName == "Level8")
             {
                 Analytics.CustomEvent("ReiniciarNivel", new Dictionary<string, object>
-                {  { "nivel", sceneName }   }
+                {  { "nivel", 8 }   }
                 );
 
                     Analytics.CustomEvent("ReiniciarNivel", new Dictionary<string, object>
-                {  { "vez", "La cantidad de muertes del " + sceneName + " es " + GameManager.muertes8 }   }
+                {  { "vez", GameManager.muertes8 }   }
                         );
 
                     Analytics.CustomEvent("ReiniciarNivel", new Dictionary<string, object>
-                    {  { "tiempo", "El tiempo del " + sceneName + " antes de reiniciar fue de " + GameManager.tiempoNivel8 }   }
+                    {  { "tiempo", GameManager.tiempoNivel8 }   }
                     );
 
                 }
             else if (sceneName == "Level9")
             {
                 Analytics.CustomEvent("ReiniciarNivel", new Dictionary<string, object>
-                {  { "nivel", sceneName }   }
+                {  { "nivel", 9 }   }
                 );
 
                     Analytics.CustomEvent("ReiniciarNivel", new Dictionary<string, object>
-                {  { "vez", "La cantidad de muertes del " + sceneName + " es " + GameManager.muertes9 }   }
+                {  { "vez", GameManager.muertes9 }   }
                         );
 
                     Analytics.CustomEvent("ReiniciarNivel", new Dictionary<string, object>
-                    {  { "tiempo", "El tiempo del " + sceneName + " antes de reiniciar fue de " + GameManager.tiempoNivel9 }   }
+                    {  { "tiempo", GameManager.tiempoNivel9 }   }
                     );
 
                 }
             else if (sceneName == "Level10")
             {
                 Analytics.CustomEvent("ReiniciarNivel", new Dictionary<string, object>
-                {  { "nivel", sceneName}   }
+                {  { "nivel", 10}   }
                 );
 
                     Analytics.CustomEvent("ReiniciarNivel", new Dictionary<string, object>
-                {  { "vez", "La cantidad de muertes del " + sceneName + " es " + GameManager.muertes10 }   }
+                {  { "vez", GameManager.muertes10 }   }
                         );
 
                     Analytics.CustomEvent("ReiniciarNivel", new Dictionary<string, object>
-                    {  { "tiempo", "El tiempo del " + sceneName + " antes de reiniciar fue de " + GameManager.tiempoNivel10 }   }
+                    {  { "tiempo", GameManager.tiempoNivel10 }   }
                     );
                     
                 }
