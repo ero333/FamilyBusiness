@@ -16,7 +16,14 @@ public class LevelSelect : MonoBehaviour {
     public string Level8;
     public string Level9;
     public string Level10;
+    private string sceneName;
 
+
+    private void Start()
+    {
+        Scene currentScene = SceneManager.GetActiveScene();
+        sceneName = currentScene.name;
+    }
 
     public void PlayMenu()
     {
@@ -27,7 +34,7 @@ public class LevelSelect : MonoBehaviour {
     public void PlayLevel1()
     {
         Analytics.CustomEvent("SeleccionarNivel", new Dictionary<string, object>
-        {  { "nivel", 1 }   }
+        {  { "nivel", sceneName }   }
        );
         SceneManager.LoadScene("Level1");
         
@@ -36,7 +43,7 @@ public class LevelSelect : MonoBehaviour {
     public void PlayLevel2()
     {
         Analytics.CustomEvent("SeleccionarNivel", new Dictionary<string, object>
-        {  { "nivel", 2 }   }
+        {  { "nivel", sceneName }   }
        );
         SceneManager.LoadScene("Level2");
         
@@ -45,7 +52,7 @@ public class LevelSelect : MonoBehaviour {
     public void PlayLevel3()
     {
         Analytics.CustomEvent("SeleccionarNivel", new Dictionary<string, object>
-        {  { "nivel", 3 }   }
+        {  { "nivel", sceneName }   }
        );
         SceneManager.LoadScene("Level3");
         
@@ -54,7 +61,7 @@ public class LevelSelect : MonoBehaviour {
     public void PlayLevel4()
     {
         Analytics.CustomEvent("SeleccionarNivel", new Dictionary<string, object>
-        {  { "nivel", 4 }   }
+        {  { "nivel", sceneName }   }
        );
         SceneManager.LoadScene("Level4");
         
@@ -63,7 +70,7 @@ public class LevelSelect : MonoBehaviour {
     public void PlayLevel5()
     {
         Analytics.CustomEvent("SeleccionarNivel", new Dictionary<string, object>
-        {  { "nivel", 5 }   }
+        {  { "nivel", sceneName }   }
        );
         SceneManager.LoadScene("Level5");
         
@@ -72,7 +79,7 @@ public class LevelSelect : MonoBehaviour {
     public void PlayLevel6()
     {
         Analytics.CustomEvent("SeleccionarNivel", new Dictionary<string, object>
-        {  { "nivel", 6 }   }
+        {  { "nivel", sceneName }   }
        );
         SceneManager.LoadScene("Level6");
         
@@ -81,7 +88,7 @@ public class LevelSelect : MonoBehaviour {
     public void PlayLevel7()
     {
         Analytics.CustomEvent("SeleccionarNivel", new Dictionary<string, object>
-        {  { "nivel", 7 }   }
+        {  { "nivel", sceneName }   }
        );
         SceneManager.LoadScene("Level7");
         
@@ -90,7 +97,7 @@ public class LevelSelect : MonoBehaviour {
     public void PlayLevel8()
     {
         Analytics.CustomEvent("SeleccionarNivel", new Dictionary<string, object>
-        {  { "nivel", 8 }   }
+        {  { "nivel", sceneName }   }
        );
         SceneManager.LoadScene("Level8");
         
@@ -99,7 +106,7 @@ public class LevelSelect : MonoBehaviour {
     public void PlayLevel9()
     {
         Analytics.CustomEvent("SeleccionarNivel", new Dictionary<string, object>
-        {  { "nivel", 9 }   }
+        {  { "nivel", sceneName }   }
        );
         SceneManager.LoadScene("Level9");
         
@@ -108,7 +115,7 @@ public class LevelSelect : MonoBehaviour {
     public void PlayLevel10()
     {
         Analytics.CustomEvent("SeleccionarNivel", new Dictionary<string, object>
-        {  { "nivel", 10 }   }
+        {  { "nivel", sceneName }   }
        );
         SceneManager.LoadScene("Level10");
         GameManager.check10 = false;

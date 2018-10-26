@@ -9,6 +9,7 @@ public class VideoMirtha : MonoBehaviour {
     public GameObject videoplayer;
     public VideoPlayer videoIntermedio;
     public GameObject vidaBoss;
+    bool videofinal = false;
 
     // Use this for initialization
     void Start () {
@@ -21,6 +22,8 @@ public class VideoMirtha : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {		
+
+        
 
         if (videoIntermedio.isPlaying == true)
         {
