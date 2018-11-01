@@ -25,6 +25,7 @@ public class VideoPlay : MonoBehaviour {
 
         if (sceneName == "Credits")
         {
+            ContCreditos.contCreditos++;
             videoInicial.url = System.IO.Path.Combine(Application.streamingAssetsPath, "Cutscene - Creditos.mp4");
         }
         if (sceneName == "Tutorial")

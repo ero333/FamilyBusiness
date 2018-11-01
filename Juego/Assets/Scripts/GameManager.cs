@@ -11,8 +11,7 @@ public class GameManager : MonoBehaviour {
   public Button niveles;  
   public Button Jugar;
   public Button Controles;
-  public Button Creditos;
-  public Button Calificar;
+  public Button Creditos;  
   public static int lifeBoss = 10;  
   public static float timecont1;
   public static int muertes1 = 0;
@@ -103,7 +102,6 @@ public class GameManager : MonoBehaviour {
             Jugar.onClick.AddListener(empezarJuego);
             Controles.onClick.AddListener(verControles);
             Creditos.onClick.AddListener(verCreditos);
-            Calificar.onClick.AddListener(verCalificar);
             
             
 
@@ -115,6 +113,10 @@ public class GameManager : MonoBehaviour {
         {  { "vez", ContEmpezar.contarEmpezar }   }
         );            
           
+
+        }
+    else if (sceneName == "Credits")
+        {            
 
         }
     else if (sceneName == "Level1")
@@ -189,8 +191,8 @@ public class GameManager : MonoBehaviour {
         
 
         if (sceneName == "Menu")
-        {
-            Debug.Log(check10);
+        {            
+            Debug.Log(check10);            
         }             
 
         else if (sceneName == "Tutorial")
@@ -401,10 +403,9 @@ public class GameManager : MonoBehaviour {
 
     void verCreditos()
     {
+        Analytics.CustomEvent("VerCreditos", new Dictionary<string, object>
+        {  { "vez", ContCreditos.contCreditos }   }
+        );
         SceneManager.LoadScene("Credits");
-    }
-    void verCalificar()
-    {
-        
     }
 }
