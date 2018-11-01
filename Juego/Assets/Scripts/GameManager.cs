@@ -65,9 +65,20 @@ public class GameManager : MonoBehaviour {
     public static float tiempoNivel8;
     public static float tiempoNivel9;
     public static float tiempoNivel10;
+    public static float tiempoTotalNivel1 = 0;
+    public static float tiempoTotalNivel2 = 0;
+    public static float tiempoTotalNivel3 = 0;
+    public static float tiempoTotalNivel4 = 0;
+    public static float tiempoTotalNivel5 = 0;
+    public static float tiempoTotalNivel6 = 0;
+    public static float tiempoTotalNivel7 = 0;
+    public static float tiempoTotalNivel8 = 0;
+    public static float tiempoTotalNivel9 = 0;
+    public static float tiempoTotalNivel10 = 0;
     public static bool check10;
     public GameObject contador;
-    private string sceneName;  
+    private string sceneName;
+    public static Vector3 playerPosition;
 
     private void Awake()
     {
@@ -122,8 +133,7 @@ public class GameManager : MonoBehaviour {
     else if (sceneName == "Level1")
         {
             VideoPlay.showoOne = true;
-            curScore1 = 0;
-            
+            curScore1 = 0;            
                  
         }
     else if (sceneName == "Level2")
@@ -207,7 +217,7 @@ public class GameManager : MonoBehaviour {
             }
         }
         else if (sceneName == "Level1")
-        {
+        {            
             if (Time.timeScale != 0)
             {
                 contador.SetActive(true);
@@ -403,9 +413,10 @@ public class GameManager : MonoBehaviour {
 
     void verCreditos()
     {
+        SceneManager.LoadScene("Credits");
+
         Analytics.CustomEvent("VerCreditos", new Dictionary<string, object>
         {  { "vez", ContCreditos.contCreditos }   }
         );
-        SceneManager.LoadScene("Credits");
     }
 }

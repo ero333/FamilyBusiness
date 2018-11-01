@@ -293,6 +293,7 @@ public class WinLevel : MonoBehaviour
             }
             else if (sceneName == "Level1")
             {
+                GameManager.tiempoTotalNivel1 += Time.timeSinceLevelLoad;
                 Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
                 {  { "nivel", 1}   }
                 );
@@ -309,9 +310,15 @@ public class WinLevel : MonoBehaviour
                 {  { "tiempo", Time.timeSinceLevelLoad }   }
                 );
 
+                Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
+                {  { "tiempo", GameManager.tiempoTotalNivel1 }   }
+                );
+
+
             }
             else if (sceneName == "Level2")
             {
+                GameManager.tiempoTotalNivel2 += Time.timeSinceLevelLoad;
                 Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
                 {  { "nivel", 2 }   }
                 );
@@ -328,9 +335,15 @@ public class WinLevel : MonoBehaviour
                 {  { "tiempo", Time.timeSinceLevelLoad }   }
                );
 
+                Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
+                {  { "tiempo", GameManager.tiempoTotalNivel2 }   }
+                );
+
+
             }
             else if (sceneName == "Level3")
             {
+                GameManager.tiempoTotalNivel3 += Time.timeSinceLevelLoad;
                 Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
                 {  { "nivel", 3 }   }
                 );
@@ -347,9 +360,14 @@ public class WinLevel : MonoBehaviour
                 {  { "tiempo", Time.timeSinceLevelLoad }   }
                );
 
+                Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
+                {  { "tiempo", GameManager.tiempoTotalNivel3 }   }
+                );
+
             }
             else if (sceneName == "Level4")
             {
+                GameManager.tiempoTotalNivel4 += Time.timeSinceLevelLoad;
                 Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
                 {  { "nivel", 4 }   }
                 );
@@ -367,9 +385,14 @@ public class WinLevel : MonoBehaviour
                 {  { "tiempo", Time.timeSinceLevelLoad }   }
                );
 
+                Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
+                {  { "tiempo", GameManager.tiempoTotalNivel4 }   }
+                );
+
             }
             else if (sceneName == "Level5")
             {
+                GameManager.tiempoTotalNivel5 += Time.timeSinceLevelLoad;
                 Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
                 {  { "nivel", 5 }   }
                 );
@@ -386,9 +409,14 @@ public class WinLevel : MonoBehaviour
                 {  { "tiempo", Time.timeSinceLevelLoad }   }
                );
 
+                Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
+                {  { "tiempo", GameManager.tiempoTotalNivel5 }   }
+                );
+
             }
             else if (sceneName == "Level6")
             {
+                GameManager.tiempoTotalNivel6 += Time.timeSinceLevelLoad;
                 Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
                 {  { "nivel", 6 }   }
                 );
@@ -405,9 +433,14 @@ public class WinLevel : MonoBehaviour
                 {  { "tiempo", Time.timeSinceLevelLoad }   }
                );
 
+                Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
+                {  { "tiempo", GameManager.tiempoTotalNivel6 }   }
+                );
+
             }
             else if (sceneName == "Level7")
             {
+                GameManager.tiempoTotalNivel7 += Time.timeSinceLevelLoad;
                 Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
                 {  { "nivel", 7 }   }
                 );
@@ -425,9 +458,14 @@ public class WinLevel : MonoBehaviour
                 {  { "tiempo", Time.timeSinceLevelLoad }   }
                );
 
+                Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
+                {  { "tiempo", GameManager.tiempoTotalNivel7 }   }
+                );
+
             }
             else if (sceneName == "Level8")
             {
+                GameManager.tiempoTotalNivel8 += Time.timeSinceLevelLoad;
                 Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
                 {  { "nivel", 8 }   }
                 );
@@ -444,9 +482,14 @@ public class WinLevel : MonoBehaviour
                 {  { "tiempo", Time.timeSinceLevelLoad }   }
                );
 
+                Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
+                {  { "tiempo", GameManager.tiempoTotalNivel8 }   }
+                );
+
             }
             else if (sceneName == "Level9")
             {
+                GameManager.tiempoTotalNivel9 += Time.timeSinceLevelLoad;
                 Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
                 {  { "nivel", 9 }   }
                 );
@@ -463,9 +506,14 @@ public class WinLevel : MonoBehaviour
                 {  { "tiempo", Time.timeSinceLevelLoad }   }
                );
 
+                Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
+                {  { "tiempo", GameManager.tiempoTotalNivel9 }   }
+                );
+
             }
             else if (sceneName == "Level10")
             {
+                GameManager.tiempoTotalNivel10 += Time.timeSinceLevelLoad;
                 Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
                 {  { "nivel", 10 }   }
                 );
@@ -482,6 +530,10 @@ public class WinLevel : MonoBehaviour
                 {  { "tiempo", Time.timeSinceLevelLoad }   }
                );
 
+                Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
+                {  { "tiempo", GameManager.tiempoTotalNivel10 }   }
+                );
+
             }
 
         }
@@ -496,6 +548,7 @@ public class WinLevel : MonoBehaviour
         );
 
             SceneManager.LoadScene("Level1");
+            GameManager.tiempoTotalNivel1 = 0;
         }
         else if (sceneName == "Level1")
         {
@@ -503,6 +556,7 @@ public class WinLevel : MonoBehaviour
         {  { "nivel", 2 }   }
         );
             SceneManager.LoadScene("Level2");
+            GameManager.tiempoTotalNivel2 = 0;
         }
         else if (sceneName == "Level2")
         {
@@ -510,6 +564,7 @@ public class WinLevel : MonoBehaviour
                 {  { "nivel", 3}   }
             );
             SceneManager.LoadScene("Level3");
+            GameManager.tiempoTotalNivel3 = 0;
         }
         else if (sceneName == "Level3")
         {
@@ -517,6 +572,7 @@ public class WinLevel : MonoBehaviour
                 {  { "nivel", 4 }   }
             );
             SceneManager.LoadScene("Level4");
+            GameManager.tiempoTotalNivel4 = 0;
         }
         else if (sceneName == "Level4")
         {
@@ -524,6 +580,7 @@ public class WinLevel : MonoBehaviour
                 {  { "nivel", 5 }   }
             );
             SceneManager.LoadScene("Level5");
+            GameManager.tiempoTotalNivel5 = 0;
         }
         else if (sceneName == "Level5")
         {
@@ -531,6 +588,7 @@ public class WinLevel : MonoBehaviour
                 {  { "nivel", 6 }   }
             );
             SceneManager.LoadScene("Level6");
+            GameManager.tiempoTotalNivel6 = 0;
         }
         else if (sceneName == "Level6")
         {
@@ -538,6 +596,7 @@ public class WinLevel : MonoBehaviour
                 {  { "nivel", 7 }   }
             );
             SceneManager.LoadScene("Level7");
+            GameManager.tiempoTotalNivel7 = 0;
         }
         else if (sceneName == "Level7")
         {
@@ -545,6 +604,7 @@ public class WinLevel : MonoBehaviour
                 {  { "nivel", 8 }   }
             );
             SceneManager.LoadScene("Level8");
+            GameManager.tiempoTotalNivel8 = 0;
         }
         else if (sceneName == "Level8")
         {
@@ -552,6 +612,7 @@ public class WinLevel : MonoBehaviour
                 {  { "nivel", 9 }   }
             );
             SceneManager.LoadScene("Level9");
+            GameManager.tiempoTotalNivel9 = 0;
         }
         else if (sceneName == "Level9")
         {
@@ -559,6 +620,7 @@ public class WinLevel : MonoBehaviour
                 {  { "nivel", 10 }   }
             );
             SceneManager.LoadScene("Level10");
+            GameManager.tiempoTotalNivel10 = 0;
         }
 
     }

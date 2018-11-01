@@ -8,6 +8,7 @@ public class ContadorEnemigos : MonoBehaviour {
     public GameObject[] enemies;
     bool win = false;
     public Text contEnemigos;
+    public static int enemigosLeft = 0;
     
 
 
@@ -23,6 +24,7 @@ public class ContadorEnemigos : MonoBehaviour {
         enemies1.CopyTo(enemies, (dogs.Length) + (heavies.Length));
         win = areAllEnemiesDead();
         contEnemigos.text = "Enemigos restantes " + enemies.Length;
+        enemigosLeft = enemies.Length;
 
     }
 

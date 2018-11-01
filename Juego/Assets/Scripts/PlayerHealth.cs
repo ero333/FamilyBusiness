@@ -53,8 +53,9 @@ public class PlayerHealth : MonoBehaviour {
 	void Update () {
 
         if (dead == true) {
-            killPlayer();                      
-
+            killPlayer();
+            GameManager.playerPosition = this.transform.position;
+            
             if (sceneName == "Level1" && flagdead == false)
             {
                 GameManager.muertes1 += 1;
@@ -64,6 +65,10 @@ public class PlayerHealth : MonoBehaviour {
                                           
                 Analytics.CustomEvent("Morir", new Dictionary<string, object>
                 {  { "tiempo", GameManager.tiempoNivel1 }   }
+                );
+                
+                Analytics.CustomEvent("Morir", new Dictionary<string, object>
+                {  { "CoordenadasXYZ", GameManager.playerPosition }   }
                 );
                 
                 
@@ -84,6 +89,10 @@ public class PlayerHealth : MonoBehaviour {
                 {  { "tiempo", GameManager.tiempoNivel2 }   }
                );
 
+                Analytics.CustomEvent("Morir", new Dictionary<string, object>
+                {  { "CoordenadasXYZ", GameManager.playerPosition }   }
+               );
+
                 flagdead = true;
             }
 
@@ -100,6 +109,9 @@ public class PlayerHealth : MonoBehaviour {
                 {  { "tiempo", GameManager.tiempoNivel3 }   }
                );
 
+                Analytics.CustomEvent("Morir", new Dictionary<string, object>
+                {  { "CoordenadasXYZ", GameManager.playerPosition }   }
+               );
 
                 flagdead = true;
             }
@@ -113,6 +125,10 @@ public class PlayerHealth : MonoBehaviour {
 
                 Analytics.CustomEvent("Morir", new Dictionary<string, object>
                 {  { "tiempo", GameManager.tiempoNivel4 }   }
+               );
+
+                Analytics.CustomEvent("Morir", new Dictionary<string, object>
+                {  { "CoordenadasXYZ", GameManager.playerPosition }   }
                );
 
                 flagdead = true;
@@ -130,6 +146,10 @@ public class PlayerHealth : MonoBehaviour {
                 {  { "tiempo", GameManager.tiempoNivel5 }   }
                );
 
+                Analytics.CustomEvent("Morir", new Dictionary<string, object>
+                {  { "CoordenadasXYZ", GameManager.playerPosition }   }
+               );
+
                 flagdead = true;
 
             }
@@ -143,6 +163,10 @@ public class PlayerHealth : MonoBehaviour {
 
                 Analytics.CustomEvent("Morir", new Dictionary<string, object>
                 {  { "tiempo", GameManager.tiempoNivel6 }   }
+               );
+
+                Analytics.CustomEvent("Morir", new Dictionary<string, object>
+                {  { "CoordenadasXYZ", GameManager.playerPosition }   }
                );
 
                 flagdead = true;
@@ -160,6 +184,10 @@ public class PlayerHealth : MonoBehaviour {
                 {  { "tiempo", GameManager.tiempoNivel7 }   }
                );
 
+                Analytics.CustomEvent("Morir", new Dictionary<string, object>
+                {  { "CoordenadasXYZ", GameManager.playerPosition }   }
+               );
+
                 flagdead = true;
 
             }
@@ -173,6 +201,10 @@ public class PlayerHealth : MonoBehaviour {
 
                 Analytics.CustomEvent("Morir", new Dictionary<string, object>
                 {  { "tiempo", GameManager.tiempoNivel8 }   }
+               );
+
+                Analytics.CustomEvent("Morir", new Dictionary<string, object>
+                {  { "CoordenadasXYZ", GameManager.playerPosition }   }
                );
 
                 flagdead = true;
@@ -190,6 +222,10 @@ public class PlayerHealth : MonoBehaviour {
                 {  { "tiempo", GameManager.tiempoNivel9 }   }
                );
 
+                Analytics.CustomEvent("Morir", new Dictionary<string, object>
+                {  { "CoordenadasXYZ", GameManager.playerPosition }   }
+               );
+
                 flagdead = true;
 
             }
@@ -205,6 +241,10 @@ public class PlayerHealth : MonoBehaviour {
                 {  { "tiempo", GameManager.tiempoNivel10 }   }
                );
 
+                Analytics.CustomEvent("Morir", new Dictionary<string, object>
+                {  { "CoordenadasXYZ", GameManager.playerPosition }   }
+               );
+
                 flagdead = true;               
 
             }
@@ -217,7 +257,11 @@ public class PlayerHealth : MonoBehaviour {
 
                 if (sceneName == "Level1")
                 {
-                
+
+                    if (Time.timeSinceLevelLoad > 0)
+                    {
+                        GameManager.tiempoTotalNivel1 += Time.timeSinceLevelLoad;
+                    }
                     Analytics.CustomEvent("ReiniciarNivel", new Dictionary<string, object>
                     {  { "nivel", 1 }   }
                     );
@@ -230,11 +274,20 @@ public class PlayerHealth : MonoBehaviour {
                     {  { "tiempo", GameManager.tiempoNivel1 }   }
                     );
 
+                    Analytics.CustomEvent("ReiniciarNivel", new Dictionary<string, object>
+                    {  { "muertes", ContadorEnemigos.enemigosLeft }   }
+                    );
+
                 }
             else if (sceneName == "Level2")
             {
-                
-                Analytics.CustomEvent("ReiniciarNivel", new Dictionary<string, object>
+
+                    if (Time.timeSinceLevelLoad > 0)
+                    {
+                        GameManager.tiempoTotalNivel2 += Time.timeSinceLevelLoad;
+                    }
+
+                    Analytics.CustomEvent("ReiniciarNivel", new Dictionary<string, object>
                 {  { "nivel", 2 }   }
                 );
 
@@ -245,10 +298,20 @@ public class PlayerHealth : MonoBehaviour {
                     Analytics.CustomEvent("ReiniciarNivel", new Dictionary<string, object>
                     {  { "tiempo", GameManager.tiempoNivel2 }   }
                     );
+
+                    Analytics.CustomEvent("ReiniciarNivel", new Dictionary<string, object>
+                    {  { "muertes", ContadorEnemigos.enemigosLeft }   }
+                    );
                 }
             else if (sceneName == "Level3")
             {
-                Analytics.CustomEvent("ReiniciarNivel", new Dictionary<string, object>
+
+                    if (Time.timeSinceLevelLoad > 0)
+                    {
+                        GameManager.tiempoTotalNivel3 += Time.timeSinceLevelLoad;
+                    }
+
+                    Analytics.CustomEvent("ReiniciarNivel", new Dictionary<string, object>
                 {  { "nivel", 3 }   }
                 );
 
@@ -260,10 +323,20 @@ public class PlayerHealth : MonoBehaviour {
                     {  { "tiempo", GameManager.tiempoNivel3 }   }
                     );
 
+                    Analytics.CustomEvent("ReiniciarNivel", new Dictionary<string, object>
+                    {  { "muertes", ContadorEnemigos.enemigosLeft }   }
+                    );
+
                 }
             else if (sceneName == "Level4")
             {
-                Analytics.CustomEvent("ReiniciarNivel", new Dictionary<string, object>
+
+                    if (Time.timeSinceLevelLoad > 0)
+                    {
+                        GameManager.tiempoTotalNivel4 += Time.timeSinceLevelLoad;
+                    }
+
+                    Analytics.CustomEvent("ReiniciarNivel", new Dictionary<string, object>
                 {  { "nivel", 4 }   }
                 );
 
@@ -276,10 +349,20 @@ public class PlayerHealth : MonoBehaviour {
                     {  { "tiempo", GameManager.tiempoNivel4 }   }
                     );
 
+                    Analytics.CustomEvent("ReiniciarNivel", new Dictionary<string, object>
+                    {  { "muertes", ContadorEnemigos.enemigosLeft }   }
+                    );
+
                 }
             else if (sceneName == "Level5")
             {
-                Analytics.CustomEvent("ReiniciarNivel", new Dictionary<string, object>
+
+                    if (Time.timeSinceLevelLoad > 0)
+                    {
+                        GameManager.tiempoTotalNivel5 += Time.timeSinceLevelLoad;
+                    }
+
+                    Analytics.CustomEvent("ReiniciarNivel", new Dictionary<string, object>
                 {  { "nivel", 5 }   }
                 );
 
@@ -292,10 +375,20 @@ public class PlayerHealth : MonoBehaviour {
                     {  { "tiempo", GameManager.tiempoNivel5 }   }
                     );
 
+                    Analytics.CustomEvent("ReiniciarNivel", new Dictionary<string, object>
+                    {  { "muertes", ContadorEnemigos.enemigosLeft }   }
+                    );
+
                 }
             else if (sceneName == "Level6")
             {
-                Analytics.CustomEvent("ReiniciarNivel", new Dictionary<string, object>
+
+                    if (Time.timeSinceLevelLoad > 0)
+                    {
+                        GameManager.tiempoTotalNivel6 += Time.timeSinceLevelLoad;
+                    }
+
+                    Analytics.CustomEvent("ReiniciarNivel", new Dictionary<string, object>
                 {  { "nivel", 6 }   }
                 );
 
@@ -307,10 +400,20 @@ public class PlayerHealth : MonoBehaviour {
                     {  { "tiempo", GameManager.tiempoNivel6 }   }
                     );
 
+                    Analytics.CustomEvent("ReiniciarNivel", new Dictionary<string, object>
+                    {  { "muertes", ContadorEnemigos.enemigosLeft }   }
+                    );
+
                 }
             else if (sceneName == "Level7")
             {
-                Analytics.CustomEvent("ReiniciarNivel", new Dictionary<string, object>
+
+                    if (Time.timeSinceLevelLoad > 0)
+                    {
+                        GameManager.tiempoTotalNivel7 += Time.timeSinceLevelLoad;
+                    }
+
+                    Analytics.CustomEvent("ReiniciarNivel", new Dictionary<string, object>
                 {  { "nivel", 7 }   }
                 );
 
@@ -322,10 +425,20 @@ public class PlayerHealth : MonoBehaviour {
                     {  { "tiempo", GameManager.tiempoNivel7 }   }
                     );
 
+                    Analytics.CustomEvent("ReiniciarNivel", new Dictionary<string, object>
+                    {  { "muertes", ContadorEnemigos.enemigosLeft }   }
+                    );
+
                 }
             else if (sceneName == "Level8")
             {
-                Analytics.CustomEvent("ReiniciarNivel", new Dictionary<string, object>
+
+                    if (Time.timeSinceLevelLoad > 0)
+                    {
+                        GameManager.tiempoTotalNivel8 += Time.timeSinceLevelLoad;
+                    }
+
+                    Analytics.CustomEvent("ReiniciarNivel", new Dictionary<string, object>
                 {  { "nivel", 8 }   }
                 );
 
@@ -337,10 +450,20 @@ public class PlayerHealth : MonoBehaviour {
                     {  { "tiempo", GameManager.tiempoNivel8 }   }
                     );
 
+                    Analytics.CustomEvent("ReiniciarNivel", new Dictionary<string, object>
+                    {  { "muertes", ContadorEnemigos.enemigosLeft }   }
+                    );
+
                 }
             else if (sceneName == "Level9")
             {
-                Analytics.CustomEvent("ReiniciarNivel", new Dictionary<string, object>
+                    if (Time.timeSinceLevelLoad > 0)
+                    {
+                        GameManager.tiempoTotalNivel9 += Time.timeSinceLevelLoad;
+                    }
+
+
+                    Analytics.CustomEvent("ReiniciarNivel", new Dictionary<string, object>
                 {  { "nivel", 9 }   }
                 );
 
@@ -352,10 +475,19 @@ public class PlayerHealth : MonoBehaviour {
                     {  { "tiempo", GameManager.tiempoNivel9 }   }
                     );
 
+                    Analytics.CustomEvent("ReiniciarNivel", new Dictionary<string, object>
+                    {  { "muertes", ContadorEnemigos.enemigosLeft }   }
+                    );
+
                 }
             else if (sceneName == "Level10")
             {
-                Analytics.CustomEvent("ReiniciarNivel", new Dictionary<string, object>
+                    if (Time.timeSinceLevelLoad > 0)
+                    {
+                        GameManager.tiempoTotalNivel10 += Time.timeSinceLevelLoad;
+                    }
+
+                    Analytics.CustomEvent("ReiniciarNivel", new Dictionary<string, object>
                 {  { "nivel", 10}   }
                 );
 
@@ -366,9 +498,13 @@ public class PlayerHealth : MonoBehaviour {
                     Analytics.CustomEvent("ReiniciarNivel", new Dictionary<string, object>
                     {  { "tiempo", GameManager.tiempoNivel10 }   }
                     );
-                    
+
+                    Analytics.CustomEvent("ReiniciarNivel", new Dictionary<string, object>
+                    {  { "muertes", ContadorEnemigos.enemigosLeft }   }
+                    );
+
                 }
-                revivePlayer();                
+                revivePlayer();
                 SceneManager.LoadScene (SceneManager.GetActiveScene().name);//remember to mention new scene manager using thing                
                 
 
