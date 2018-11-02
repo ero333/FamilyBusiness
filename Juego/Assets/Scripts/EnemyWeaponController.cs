@@ -7,7 +7,7 @@ public class EnemyWeaponController : MonoBehaviour {
 	GameObject curWeapon;
 	public bool gun = false;
 	float timer = 0.1f,timerReset=0.1f;
-
+    public GameObject Boss;
 	SpriteContainer sc;
 
 	float weaponChange = 0.5f;
@@ -50,7 +50,11 @@ public class EnemyWeaponController : MonoBehaviour {
 					attack ();
 				}
 				ea.setAttacking ();
-			} else if (eai.hasGun == true && eai.pursuingPlayer == true && timer <= 0 && Vector3.Distance (this.transform.position, player.transform.position) <= 5.0f) {
+			} else if ( Boss.name == "Mirtha" && eai.hasGun == true && eai.pursuingPlayer == true && timer <= 0 && Vector3.Distance (this.transform.position, player.transform.position) <= 25.0f) {
+				attack ();
+				ea.setAttacking ();
+			}
+            else if (eai.hasGun == true && eai.pursuingPlayer == true && timer <= 0 && Vector3.Distance (this.transform.position, player.transform.position) <= 5.0f) {
 				attack ();
 				ea.setAttacking ();
 			} 
