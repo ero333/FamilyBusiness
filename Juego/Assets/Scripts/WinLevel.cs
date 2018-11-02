@@ -20,17 +20,21 @@ public class WinLevel : MonoBehaviour
     public GameObject cartelWin;
     public GameObject Score;    
     public Text curScore;
+    public Text Calificar;
 
     // Use this for initialization
     void Start()
     {
         Scene currentScene = SceneManager.GetActiveScene();
         sceneName = currentScene.name;
-        menuGanar.SetActive(false);
-        menu.onClick.AddListener(cargarMenu);
+        menuGanar.SetActive(false);        
+        menu.onClick.AddListener(cargarMenu);        
         sigNivel.onClick.AddListener(siguienteNivel);
         Score.SetActive(false);
-
+        if (sceneName == "Level10")
+        {
+            Calificar.text = "Calificar Juego";
+        }
 
 
     }
@@ -621,6 +625,10 @@ public class WinLevel : MonoBehaviour
             );
             SceneManager.LoadScene("Level10");
             GameManager.tiempoTotalNivel10 = 0;
+        }
+        else if (sceneName == "Level10")
+        {            
+            SceneManager.LoadScene("Calificar");
         }
 
     }

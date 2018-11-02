@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ActivateCollider : MonoBehaviour {
     public GameObject collide;
-    
+    public GameObject animacionFinal;
     public GameObject[] life;
 
 
@@ -64,6 +64,7 @@ public class ActivateCollider : MonoBehaviour {
             else if (GameManager.lifeBoss == 0)
             {
                 Destroy(life[0]);
+                animacionFinal.SetActive(true);
             }
             
 
