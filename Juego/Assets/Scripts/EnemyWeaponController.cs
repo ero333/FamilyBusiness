@@ -27,6 +27,7 @@ public class EnemyWeaponController : MonoBehaviour {
 		sr = this.GetComponent<SpriteRenderer> ();
 		sc = GameObject.FindGameObjectWithTag ("GameController").GetComponent<SpriteContainer> ();
 		ea = this.GetComponent<EnemyAnimate> ();
+        Boss = GameObject.Find("Mirtha");
 	}
 
 	// Update is called once per frame
@@ -44,17 +45,26 @@ public class EnemyWeaponController : MonoBehaviour {
 			timer -= Time.deltaTime;
 		}
 
-		if (PlayerHealth.dead == false) {//new for 10
-			if (eai.hasGun == false && gun == false && eai.pursuingPlayer == true && timer <= 0 && Vector3.Distance (this.transform.position, player.transform.position) <= 1.6f) {
+		if (PlayerHealth.dead == false)
+        {//new for 10
+			if (eai.hasGun == false && gun == false && eai.pursuingPlayer == true && timer <= 0 && Vector3.Distance (this.transform.position, player.transform.position) <= 1.6f)
+            {
 				if (ea.tCounter == ea.attackingSpr.Length - 3) {//new for heavy tut
 					attack ();
 				}
 				ea.setAttacking ();
-			} else if ( Boss.name == "Mirtha" && eai.hasGun == true && eai.pursuingPlayer == true && timer <= 0 && Vector3.Distance (this.transform.position, player.transform.position) <= 25.0f) {
+			} 
+            
+            else if (Boss.name == "Mirtha")
+            {                         
+             if (eai.hasGun == true && eai.pursuingPlayer == true && timer <= 0 && Vector3.Distance (this.transform.position, player.transform.position) <= 25.0f)
+                {
 				attack ();
 				ea.setAttacking ();
-			}
-            else if (eai.hasGun == true && eai.pursuingPlayer == true && timer <= 0 && Vector3.Distance (this.transform.position, player.transform.position) <= 5.0f) {
+			    }
+            }
+            else if (Boss == null && eai.hasGun == true && eai.pursuingPlayer == true && timer <= 0 && Vector3.Distance (this.transform.position, player.transform.position) <= 5.0f) 
+            {
 				attack ();
 				ea.setAttacking ();
 			} 
