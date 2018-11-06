@@ -63,7 +63,7 @@ public class EnemyWeaponController : MonoBehaviour {
 				ea.setAttacking ();
 			    }
             }*/
-            else if (Boss == null && eai.hasGun == true && eai.pursuingPlayer == true && timer <= 0 && Vector3.Distance (this.transform.position, player.transform.position) <= 5.0f) 
+            else if (eai.hasGun == true && eai.pursuingPlayer == true && timer <= 0 && Vector3.Distance (this.transform.position, player.transform.position) <= 5.0f) 
             {
 				attack ();
 				ea.setAttacking ();
