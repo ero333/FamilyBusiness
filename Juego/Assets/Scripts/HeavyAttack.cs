@@ -48,7 +48,8 @@ public class HeavyAttack : MonoBehaviour {
 
 
 			if (ray.collider.gameObject.tag=="Player") {
-				PlayerHealth.dead = true;
+				Debug.Log("*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* HeavyAttack");
+				PlayerHealth.dead= true;
 				Instantiate (blood, player.transform.position, player.transform.rotation);
 				this.GetComponent<AudioController> ().meleeAttack ();
 			} 

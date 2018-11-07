@@ -63,6 +63,7 @@ public class Bullet : MonoBehaviour {
 			Destroy (this.gameObject);
 		} else if (col.gameObject.tag == "Player") {
 			Instantiate (bloodImpact, this.transform.position, this.transform.rotation);
+			Debug.Log("*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* Bullet");
 			PlayerHealth.dead = true;//new for 10
 			Destroy (this.gameObject);
 		} else if (col.gameObject.tag != "Enemy" && col.gameObject.tag != "Player" && col.gameObject.tag != "Dog" && col.gameObject.tag!="Heavy") {

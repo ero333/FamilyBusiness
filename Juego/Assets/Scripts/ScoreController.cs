@@ -180,8 +180,9 @@ public class ScoreController : MonoBehaviour {
                     GUI.Box(scorePos, "Score: " + score, text);
                     GUI.Box(multiPos, "Combo: " + currentMultiplier + " * " + tempScoreHold + " - " + (int)comboTimer, text);
                 }
-                else if (PlayerHealth.dead == true)
+                else if (PlayerHealth.dead)
                 {
+                    Debug.Log("************************* PlayerHealth.dead");
                     GUI.Box(diePos, "You Died", text);
                 }
             }

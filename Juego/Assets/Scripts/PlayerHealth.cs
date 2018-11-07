@@ -504,6 +504,7 @@ public class PlayerHealth : MonoBehaviour {
                     );
 
                 }
+                Debug.Log("------------------------------------------------- Revive");
                 revivePlayer();
                 SceneManager.LoadScene (SceneManager.GetActiveScene().name);//remember to mention new scene manager using thing                
                 
@@ -539,7 +540,12 @@ public class PlayerHealth : MonoBehaviour {
        
     }
 
-	void revivePlayer(){        
+	void revivePlayer(){
+
+        dead = false;
+
+        Debug.Log("PlayerHealth - revivePlayer");
+
 		PlayerAnimate pa = this.GetComponent<PlayerAnimate> ();
 		PlayerMovement pm = this.GetComponent<PlayerMovement> ();
 		RotateToCursor rot = this.GetComponent<RotateToCursor> ();
