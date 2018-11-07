@@ -6,7 +6,7 @@ public class EnemyWeaponController : MonoBehaviour {
 	public GameObject oneHandSpawn,twoHandSpawn,bullet,blood,shotgunBullet;
 	GameObject curWeapon;
 	public bool gun = false;
-	float timer = 0.1f,timerReset=0.1f;
+	float timer = 999999999,timerReset=0.1f;
     public GameObject Boss;
 	SpriteContainer sc;
 
@@ -47,25 +47,31 @@ public class EnemyWeaponController : MonoBehaviour {
 
 		if (PlayerHealth.dead == false)
         {//new for 10
-			if (eai.hasGun == false && gun == false && eai.pursuingPlayer == true && timer <= 0 && Vector3.Distance (this.transform.position, player.transform.position) <= 1.6f)
+            Debug.Log("timer " + timer);
+           
+
+            if (eai.hasGun == false && gun == false && eai.pursuingPlayer == true && timer <= 0 && Vector3.Distance (this.transform.position, player.transform.position) <= 1.6f)
             {
 				if (ea.tCounter == ea.attackingSpr.Length - 3) {//new for heavy tut
+                    Debug.Log("///////////////////////////////////////////////////////////////////////// 1");
 					attack ();
 				}
 				ea.setAttacking ();
 			} 
-            /*
-            else if (Boss.name == "Mirtha")
+            
+            else if (Boss != null && Boss.name == "Mirtha")
             {                         
              if (eai.hasGun == true && eai.pursuingPlayer == true && timer <= 0 && Vector3.Distance (this.transform.position, player.transform.position) <= 25.0f)
                 {
-				attack ();
+                    Debug.Log("///////////////////////////////////////////////////////////////////////// 1");
+                    attack ();
 				ea.setAttacking ();
 			    }
-            }*/
-            else if (eai.hasGun == true && eai.pursuingPlayer == true && timer <= 0 && Vector3.Distance (this.transform.position, player.transform.position) <= 5.0f) 
+            }
+            else if (Boss == null && eai.hasGun == true && eai.pursuingPlayer == true && timer <= 0 && Vector3.Distance (this.transform.position, player.transform.position) <= 5.0f) 
             {
-				attack ();
+                Debug.Log("///////////////////////////////////////////////////////////////////////// 1");
+                attack ();
 				ea.setAttacking ();
 			} 
 		}
@@ -155,6 +161,7 @@ public class EnemyWeaponController : MonoBehaviour {
 			Debug.Log ("Attempting melee attack");
 			if (curWeapon == null && ray.collider.gameObject.tag=="Player") {
 				Debug.Log("Punching player");
+				Debug.Log("*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* EnemyWeaponController");
 				PlayerHealth.dead = true;
 				Instantiate (blood, player.transform.position, player.transform.rotation);
 				//EnemyAttacked ea = ray.collider.gameObject.GetComponent<EnemyAttacked> ();
@@ -164,6 +171,7 @@ public class EnemyWeaponController : MonoBehaviour {
 				
 				if (ray.collider.gameObject.tag == "Player") {
 					Debug.Log ("Melee attacking player");
+					Debug.Log("*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* EnemyWeaponController");
 					PlayerHealth.dead = true;
 					Instantiate (blood, player.transform.position, player.transform.rotation);
 					decideSFX ();
