@@ -272,11 +272,11 @@ public class PlayerHealth : MonoBehaviour {
 
                     Analytics.CustomEvent("ReiniciarNivel", new Dictionary<string, object>
                     {  { "tiempo", GameManager.tiempoNivel1 }   }
-                    );
+                    );                    
 
                     Analytics.CustomEvent("ReiniciarNivel", new Dictionary<string, object>
-                    {  { "muertes", ContadorEnemigos.enemigosLeft }   }
-                    );
+                    {  { "muertes", ContarMuertos.contMuertos }   }
+                        );
 
                 }
             else if (sceneName == "Level2")

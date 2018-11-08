@@ -11,6 +11,7 @@ public class ContarMuertos : MonoBehaviour {
     public float[] deadTime;
     public string[] deadName;
     string sceneName;
+    public static int contMuertos;
     
 
     // Use this for initialization
@@ -27,7 +28,7 @@ public class ContarMuertos : MonoBehaviour {
         enemies1.CopyTo(enemies, (dogs.Length) + (heavies.Length));
         deadTime = new float[enemies.Length];
         deadName = new string[enemies.Length];
-        
+        contMuertos = 0;
     }
 	
 	// Update is called once per frame
@@ -46,6 +47,7 @@ public class ContarMuertos : MonoBehaviour {
             {
                 if (sceneName == "Level1")
                 {
+                    contMuertos++;
                     Analytics.CustomEvent("Matar", new Dictionary<string, object>
                 {  { "nivel", 1 }   }
                 );
