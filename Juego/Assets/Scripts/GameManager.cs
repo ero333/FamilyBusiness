@@ -127,8 +127,18 @@ public class GameManager : MonoBehaviour {
 
         }
     else if (sceneName == "Credits")
-        {            
-
+        {
+            ContCreditos.contCreditos++;
+            Analytics.CustomEvent("VerCreditos", new Dictionary<string, object>
+        {  { "vez", ContCreditos.contCreditos }   }
+        );
+        }
+    else if (sceneName == "Controls")
+        {
+            ContCreditos.contControles++;
+            Analytics.CustomEvent("VerControles", new Dictionary<string, object>
+        {  { "vez", ContCreditos.contControles }   }
+        );
         }
     else if (sceneName == "Level1")
         {
@@ -409,6 +419,10 @@ public class GameManager : MonoBehaviour {
     void verControles()
     {
         SceneManager.LoadScene("Controls");
+
+        Analytics.CustomEvent("VerControles", new Dictionary<string, object>
+        {  { "vez", ContCreditos.contControles }   }
+        );
     }
 
     void verCreditos()

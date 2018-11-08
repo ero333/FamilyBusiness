@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Video;
 using UnityEngine.SceneManagement;
+using UnityEngine.Analytics;
 
 public class VideoPlay : MonoBehaviour {    
 
@@ -26,6 +27,9 @@ public class VideoPlay : MonoBehaviour {
         if (sceneName == "Credits")
         {
             ContCreditos.contCreditos++;
+            Analytics.CustomEvent("VerCreditos", new Dictionary<string, object>
+        {  { "vez", ContCreditos.contCreditos }   }
+        );
             videoInicial.url = System.IO.Path.Combine(Application.streamingAssetsPath, "Cutscene - Creditos.mp4");
         }
         if (sceneName == "Tutorial")

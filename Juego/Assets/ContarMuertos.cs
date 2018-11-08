@@ -44,18 +44,157 @@ public class ContarMuertos : MonoBehaviour {
         {
             if (enemies[x].tag == "Dead" && deadTime[x] == 0)
             {
-                Analytics.CustomEvent("Matar", new Dictionary<string, object>
-                {  { "nivel", sceneName }   }
+                if (sceneName == "Level1")
+                {
+                    Analytics.CustomEvent("Matar", new Dictionary<string, object>
+                {  { "nivel", 1 }   }
                 );
-                deadName[x] = enemies[x].name;
-                Analytics.CustomEvent("Matar", new Dictionary<string, object>
+                    deadName[x] = enemies[x].name;
+                    Analytics.CustomEvent("Matar", new Dictionary<string, object>
                 {  { "enemigo", deadName[x] }   }
-                );
-                deadTime[x] = Time.timeSinceLevelLoad;
-                Analytics.CustomEvent("Matar", new Dictionary<string, object>
+                    );
+                    deadTime[x] = Time.timeSinceLevelLoad;
+                    Analytics.CustomEvent("Matar", new Dictionary<string, object>
                 {  { "tiempo", deadTime[x] }   }
+                    );
+                }
+
+                else if (sceneName == "Level2")
+                {
+                    Analytics.CustomEvent("Matar", new Dictionary<string, object>
+                {  { "nivel", 2 }   }
                 );
-                
+                    deadName[x] = enemies[x].name;
+                    Analytics.CustomEvent("Matar", new Dictionary<string, object>
+                {  { "enemigo", deadName[x] }   }
+                    );
+                    deadTime[x] = Time.timeSinceLevelLoad;
+                    Analytics.CustomEvent("Matar", new Dictionary<string, object>
+                {  { "tiempo", deadTime[x] }   }
+                    );
+                }
+
+                else if (sceneName == "Level3")
+                {
+                    Analytics.CustomEvent("Matar", new Dictionary<string, object>
+                {  { "nivel", 3 }   }
+                );
+                    deadName[x] = enemies[x].name;
+                    Analytics.CustomEvent("Matar", new Dictionary<string, object>
+                {  { "enemigo", deadName[x] }   }
+                    );
+                    deadTime[x] = Time.timeSinceLevelLoad;
+                    Analytics.CustomEvent("Matar", new Dictionary<string, object>
+                {  { "tiempo", deadTime[x] }   }
+                    );
+                }
+
+                else if (sceneName == "Level4")
+                {
+                    Analytics.CustomEvent("Matar", new Dictionary<string, object>
+                {  { "nivel", 4 }   }
+                );
+                    deadName[x] = enemies[x].name;
+                    Analytics.CustomEvent("Matar", new Dictionary<string, object>
+                {  { "enemigo", deadName[x] }   }
+                    );
+                    deadTime[x] = Time.timeSinceLevelLoad;
+                    Analytics.CustomEvent("Matar", new Dictionary<string, object>
+                {  { "tiempo", deadTime[x] }   }
+                    );
+                }
+
+                else if (sceneName == "Level5")
+                {
+                    Analytics.CustomEvent("Matar", new Dictionary<string, object>
+                {  { "nivel", 5 }   }
+                );
+                    deadName[x] = enemies[x].name;
+                    Analytics.CustomEvent("Matar", new Dictionary<string, object>
+                {  { "enemigo", deadName[x] }   }
+                    );
+                    deadTime[x] = Time.timeSinceLevelLoad;
+                    Analytics.CustomEvent("Matar", new Dictionary<string, object>
+                {  { "tiempo", deadTime[x] }   }
+                    );
+                }
+
+                else if (sceneName == "Level6")
+                {
+                    Analytics.CustomEvent("Matar", new Dictionary<string, object>
+                {  { "nivel", 6 }   }
+                );
+                    deadName[x] = enemies[x].name;
+                    Analytics.CustomEvent("Matar", new Dictionary<string, object>
+                {  { "enemigo", deadName[x] }   }
+                    );
+                    deadTime[x] = Time.timeSinceLevelLoad;
+                    Analytics.CustomEvent("Matar", new Dictionary<string, object>
+                {  { "tiempo", deadTime[x] }   }
+                    );
+                }
+
+                else if (sceneName == "Level7")
+                {
+                    Analytics.CustomEvent("Matar", new Dictionary<string, object>
+                {  { "nivel", 7 }   }
+                );
+                    deadName[x] = enemies[x].name;
+                    Analytics.CustomEvent("Matar", new Dictionary<string, object>
+                {  { "enemigo", deadName[x] }   }
+                    );
+                    deadTime[x] = Time.timeSinceLevelLoad;
+                    Analytics.CustomEvent("Matar", new Dictionary<string, object>
+                {  { "tiempo", deadTime[x] }   }
+                    );
+                }
+
+                else if (sceneName == "Level8")
+                {
+                    Analytics.CustomEvent("Matar", new Dictionary<string, object>
+                {  { "nivel", 8 }   }
+                );
+                    deadName[x] = enemies[x].name;
+                    Analytics.CustomEvent("Matar", new Dictionary<string, object>
+                {  { "enemigo", deadName[x] }   }
+                    );
+                    deadTime[x] = Time.timeSinceLevelLoad;
+                    Analytics.CustomEvent("Matar", new Dictionary<string, object>
+                {  { "tiempo", deadTime[x] }   }
+                    );
+                }
+
+                else if (sceneName == "Level9")
+                {
+                    Analytics.CustomEvent("Matar", new Dictionary<string, object>
+                {  { "nivel", 9 }   }
+                );
+                    deadName[x] = enemies[x].name;
+                    Analytics.CustomEvent("Matar", new Dictionary<string, object>
+                {  { "enemigo", deadName[x] }   }
+                    );
+                    deadTime[x] = Time.timeSinceLevelLoad;
+                    Analytics.CustomEvent("Matar", new Dictionary<string, object>
+                {  { "tiempo", deadTime[x] }   }
+                    );
+                }
+
+                else if (sceneName == "Level10")
+                {
+                    Analytics.CustomEvent("Matar", new Dictionary<string, object>
+                {  { "nivel", 10 }   }
+                );
+                    deadName[x] = enemies[x].name;
+                    Analytics.CustomEvent("Matar", new Dictionary<string, object>
+                {  { "enemigo", deadName[x] }   }
+                    );
+                    deadTime[x] = Time.timeSinceLevelLoad;
+                    Analytics.CustomEvent("Matar", new Dictionary<string, object>
+                {  { "tiempo", deadTime[x] }   }
+                    );
+                }
+
+
 
 
             }
