@@ -122,8 +122,12 @@ public class GameManager : MonoBehaviour {
             ContEmpezar.contarEmpezar++;
             Analytics.CustomEvent("Empezar", new Dictionary<string, object>
         {  { "vez", ContEmpezar.contarEmpezar }   }
-        );            
-          
+        );
+
+            Analytics.CustomEvent("EmpezarNivel", new Dictionary<string, object>
+        {  { "nivel", 0 }   }
+        );
+
 
         }
     else if (sceneName == "Credits")

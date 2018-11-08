@@ -294,6 +294,11 @@ public class WinLevel : MonoBehaviour
             if (sceneName == "Tutorial")
             {
                 ganoTuto = true;
+                
+                Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
+                {  { "nivel", 0}   }
+                );
+
             }
             else if (sceneName == "Level1")
             {
