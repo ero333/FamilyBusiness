@@ -4,6 +4,7 @@ using System.Collections;
 public class CutsceneContainer : MonoBehaviour {
 	public Texture2D[] faces;
 	public string Text;
+	public int Paso;
 	// Use this for initialization
 	void Start () {
 	

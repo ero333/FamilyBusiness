@@ -174,7 +174,7 @@ public class WeaponAttack : MonoBehaviour {
 				else if (curWeapon == null && ray.collider.gameObject.tag == "Wall" && ray.collider.gameObject.GetComponent<Window> () != null) {
 					ray.collider.gameObject.GetComponent<Window> ().breakWindow ();
 				} else if (ray.collider != null) {
-					Debug.Log (ray.collider.gameObject.tag);
+					//Debug.Log (ray.collider.gameObject.tag);
 					if (ray.collider.gameObject.tag == "Enemy") {
 						
 						if (ray.collider.isTrigger == true && ray.collider.gameObject.tag == "Enemy") {

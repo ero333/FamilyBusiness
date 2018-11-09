@@ -1,5 +1,9 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+using UnityEngine.Analytics;
 
 public class CutsceneDisplay : MonoBehaviour {
 	public CutsceneContainer[] cutsceneBits;
@@ -57,6 +61,10 @@ public class CutsceneDisplay : MonoBehaviour {
             {
                 anyCutsceneDisplaying = false;
                 Time.timeScale = 1;
+				Analytics.CustomEvent("VerTutorial", new Dictionary<string, object>
+					{  { "paso", activeCutscene.Paso }   }
+				);
+				print ("paso: "+activeCutscene.Paso);
                 Destroy(this.gameObject);
             }
 
@@ -73,6 +81,7 @@ public class CutsceneDisplay : MonoBehaviour {
 			display = true;
 			Time.timeScale = 0;
 			anyCutsceneDisplaying = true;
+			//activeCutscene = cutsceneBits [cutsceneCounter];
 		}
 	}
 
@@ -88,6 +97,7 @@ public class CutsceneDisplay : MonoBehaviour {
 			GUI.DrawTexture (new Rect (0, 0, originalWidth, originalHeight), bg); // agrega el fondo negro
 			GUI.DrawTexture (new Rect (originalWidth - 550, originalHeight / 2-400, 700, 600), activeFace); // Activa la cara de la persona hablando
 			GUI.Box (new Rect (originalWidth / 2-500, originalHeight - 150, 1000, 100), activeCutscene.Text,text);
+			//print ("paso: "+activeCutscene.Paso);
 		}
 		GUI.matrix = svMat;
 	}

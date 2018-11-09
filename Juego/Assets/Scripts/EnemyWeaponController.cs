@@ -47,7 +47,7 @@ public class EnemyWeaponController : MonoBehaviour {
 
 		if (PlayerHealth.dead == false)
         {//new for 10
-            Debug.Log("timer " + timer);
+            //Debug.Log("timer " + timer);
            
 
             if (eai.hasGun == false && gun == false && eai.pursuingPlayer == true && timer <= 0 && Vector3.Distance (this.transform.position, player.transform.position) <= 1.6f)

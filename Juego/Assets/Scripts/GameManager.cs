@@ -54,7 +54,8 @@ public class GameManager : MonoBehaviour {
   public static int curScore8;
   public static int curScore9;
   public static int curScore10;
-    
+
+	public static float tiempoNivelTutorial;
     public static float tiempoNivel1;
     public static float tiempoNivel2;
     public static float tiempoNivel3;

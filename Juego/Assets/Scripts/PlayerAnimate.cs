@@ -55,7 +55,7 @@ public class PlayerAnimate : MonoBehaviour {
 	void animateAttack()
 	{
 		torso.sprite = attacking [counter];
-		Debug.Log ("Attack Counter : " + counter);
+		//Debug.Log ("Attack Counter : " + counter);
 		timer -= Time.deltaTime;
 		if(timer<=0)
 		{
