@@ -38,7 +38,7 @@ public class ThrowWeapon : MonoBehaviour {
 	{
 		if (col.gameObject.tag == "Enemy") {
 			attacked = col.gameObject.GetComponent<EnemyAttacked> ();
-			attacked.knockDownEnemy();
+			attacked.knockDownEnemy();            
             rid.isKinematic = true;
             Destroy (this);
             

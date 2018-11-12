@@ -92,6 +92,8 @@ public class DogAI : MonoBehaviour {
 				Instantiate (bloodSpurt, player.transform.position, this.transform.rotation);
 				Instantiate (bloodSpurt, player.transform.position, player.transform.rotation);
 				PlayerHealth.dead = true;
+                Debug.Log("El player muere por perro");
+                //Aca el player muere por el perro
 			}
 
 		}

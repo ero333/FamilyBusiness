@@ -10,7 +10,7 @@ TextureImporter:
     21300010: weapons_spritesheet_04_5
     21300012: weapons_spritesheet_04_6
     21300014: weapons_spritesheet_04_7
-    21300016: weapons_spritesheet_04_8
+    21300016: Winchester
     21300018: weapons_spritesheet_04_9
     21300020: weapons_spritesheet_04_10
     21300022: weapons_spritesheet_04_11
@@ -279,7 +279,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: weapons_spritesheet_04_8
+      name: Winchester
       rect:
         serializedVersion: 2
         x: 225

@@ -116,9 +116,8 @@ public class EnemyWeaponController : MonoBehaviour {
 		this.oneHanded = oneHanded;
 		ea.setTorsoSpr (name);
 		shotgun = shot;
-   
         arma = name;
-        asesino = cur.name;
+        asesino = this.gameObject.name;
 
 
 	}
@@ -131,9 +130,9 @@ public class EnemyWeaponController : MonoBehaviour {
 			Bullet bl = bullet.GetComponent<Bullet> ();
             bl.arma = arma;
             bl.asesino = asesino;
-            //print("arma " + arma + " y el asesino es " + asesino);
+            print("arma " + arma + " y el asesino es " + asesino);            
 
-			Vector3 dir;
+            Vector3 dir;
 			dir.x = Vector2.right.x;
 			dir.y = Vector2.right.y;
 			dir.z = 0;
@@ -168,12 +167,12 @@ public class EnemyWeaponController : MonoBehaviour {
 			//pa.attack ();
 			RaycastHit2D ray = Physics2D.Raycast (new Vector2(this.transform.position.x,this.transform.position.y),new Vector2(transform.right.x,transform.right.y),1.5f,layerMask);
 			Debug.DrawRay (new Vector2(this.transform.position.x,this.transform.position.y),new Vector2(transform.right.x,transform.right.y),Color.green);
-			Debug.Log ("Attempting melee attack");
-			if (curWeapon == null && ray.collider.gameObject.tag=="Player") {
+			Debug.Log ("Attempting melee attack");            
+            if (curWeapon == null && ray.collider.gameObject.tag=="Player") {
 				Debug.Log("Punching player");
 				Debug.Log("*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* EnemyWeaponController");
-				PlayerHealth.dead = true;
-				Instantiate (blood, player.transform.position, player.transform.rotation);
+				PlayerHealth.dead = true;                
+                Instantiate (blood, player.transform.position, player.transform.rotation);
 				//EnemyAttacked ea = ray.collider.gameObject.GetComponent<EnemyAttacked> ();
 				//ea.knockDownEnemy ();
 				decideSFX ();
@@ -183,7 +182,9 @@ public class EnemyWeaponController : MonoBehaviour {
 					Debug.Log ("Melee attacking player");
 					Debug.Log("*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* EnemyWeaponController");
 					PlayerHealth.dead = true;
-					Instantiate (blood, player.transform.position, player.transform.rotation);
+                    Debug.Log("el arma melee es " + arma);        
+                    //Aca insertar variable de morir con arma pero melee.
+                    Instantiate (blood, player.transform.position, player.transform.rotation);
 					decideSFX ();
 					//EnemyAttacked ea = ray.collider.gameObject.GetComponent<EnemyAttacked> ();
 					//ea.killMelee ();

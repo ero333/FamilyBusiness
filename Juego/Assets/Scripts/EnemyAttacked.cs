@@ -30,8 +30,11 @@ public class EnemyAttacked : MonoBehaviour {
 
 	void knockDown()
 	{
-		
-		this.GetComponent<EnemyWeaponController> ().dropWeapon ();
+        string nombreEnemigo = this.gameObject.name;
+        Debug.Log("El enemigo nockeado es " + nombreEnemigo);
+        // aqui se sabe que enemigo esta noqueado
+
+        this.GetComponent<EnemyWeaponController> ().dropWeapon ();
 		if (this.GetComponent<EnemyWeaponController> ().enabled==true) {
 			sc.AddScore (500,this.transform.position);
 			this.GetComponent<EnemyWeaponController> ().enabled=false;

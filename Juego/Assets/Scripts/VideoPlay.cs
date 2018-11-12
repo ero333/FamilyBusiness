@@ -13,7 +13,7 @@ public class VideoPlay : MonoBehaviour {
     public GameObject camAnimacion;
     public static bool showoOne = true;
     public GameObject dog1;
-    public GameObject dog2;
+    //public GameObject dog2;
 
     // Use this for initialization
     void Start()
@@ -101,7 +101,7 @@ public class VideoPlay : MonoBehaviour {
                 {
 
                     dog1.GetComponent<AudioSource>().mute = true;
-                    dog2.GetComponent<AudioSource>().mute = true;
+                    //dog2.GetComponent<AudioSource>().mute = true;
                 }
 
             camAnimacion.SetActive(true);
@@ -121,7 +121,7 @@ public class VideoPlay : MonoBehaviour {
                     {
 
                         dog1.GetComponent<AudioSource>().mute = false;
-                        dog2.GetComponent<AudioSource>().mute = false;
+                        //dog2.GetComponent<AudioSource>().mute = false;
                     }
 
                 }
@@ -135,7 +135,7 @@ public class VideoPlay : MonoBehaviour {
                 {
 
                     dog1.GetComponent<AudioSource>().mute = false;
-                    dog2.GetComponent<AudioSource>().mute = false;
+                    //dog2.GetComponent<AudioSource>().mute = false;
                 }
 
                 if (empezar == false)
