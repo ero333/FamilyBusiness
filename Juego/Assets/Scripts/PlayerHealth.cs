@@ -59,18 +59,7 @@ public class PlayerHealth : MonoBehaviour {
             if (sceneName == "Level1" && flagdead == false)
             {
                 GameManager.muertes1 += 1;
-                Analytics.CustomEvent("Morir", new Dictionary<string, object>
-                {  { "nivel", 1 }   }
-                );
-                                          
-                Analytics.CustomEvent("Morir", new Dictionary<string, object>
-                {  { "tiempo", GameManager.tiempoNivel1 }   }
-                );
-                
-                Analytics.CustomEvent("Morir", new Dictionary<string, object>
-                {  { "CoordenadasXYZ", GameManager.playerPosition }   }
-                );
-                
+    
                 
                 flagdead = true;
 

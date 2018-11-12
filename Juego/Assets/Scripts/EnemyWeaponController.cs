@@ -9,7 +9,8 @@ public class EnemyWeaponController : MonoBehaviour {
 	float timer = 999999999,timerReset=0.1f;
     public GameObject Boss;
 	SpriteContainer sc;
-
+    public string arma;
+    public string asesino;
 	float weaponChange = 0.5f;
 	bool changingWeapon = false;
 	bool oneHanded = false;
@@ -115,6 +116,11 @@ public class EnemyWeaponController : MonoBehaviour {
 		this.oneHanded = oneHanded;
 		ea.setTorsoSpr (name);
 		shotgun = shot;
+   
+        arma = name;
+        asesino = cur.name;
+
+
 	}
 
 	public void attack()
@@ -123,6 +129,10 @@ public class EnemyWeaponController : MonoBehaviour {
 		if (gun == true) {
 			//pa.attack ();
 			Bullet bl = bullet.GetComponent<Bullet> ();
+            bl.arma = arma;
+            bl.asesino = asesino;
+            //print("arma " + arma + " y el asesino es " + asesino);
+
 			Vector3 dir;
 			dir.x = Vector2.right.x;
 			dir.y = Vector2.right.y;

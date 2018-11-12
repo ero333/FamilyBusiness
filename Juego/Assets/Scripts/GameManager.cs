@@ -11,7 +11,10 @@ public class GameManager : MonoBehaviour {
   public Button niveles;  
   public Button Jugar;
   public Button Controles;
-  public Button Creditos;  
+  public Button Creditos;
+
+
+  public static int level;   
   public static int lifeBoss = 10;  
   public static float timecont1;
   public static int muertes1 = 0;

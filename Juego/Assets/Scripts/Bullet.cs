@@ -6,6 +6,8 @@ public class Bullet : MonoBehaviour {
     public string creator;
 	EnemyAttacked attacked;
 	HeavyAttacked ha;
+    public string arma;
+    public string asesino;
 	public GameObject bloodImpact,wallImpact;
     
 	// Use this for initialization
@@ -64,8 +66,26 @@ public class Bullet : MonoBehaviour {
 		} else if (col.gameObject.tag == "Player") {
 			Instantiate (bloodImpact, this.transform.position, this.transform.rotation);
 			Debug.Log("*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* Bullet");
-			PlayerHealth.dead = true;//new for 10
-			Destroy (this.gameObject);
+
+            if(!PlayerHealth.dead)
+            {
+                PlayerHealth.dead = true;//new for 10
+                print("me mato" + " con " + arma);
+                // Morir
+                /*
+                Analytics.CustomEvent("Morir", new Dictionary<string, object>
+                {  { "nivel", 1 } 
+                  { "tiempo", GameManager.tiempoNivel1 }   }
+                );
+
+                Analytics.CustomEvent("Morir", new Dictionary<string, object>
+                {  { "CoordenadasXYZ", GameManager.playerPosition }   }
+                );
+
+    */
+            }
+
+            Destroy (this.gameObject);
 		} else if (col.gameObject.tag != "Enemy" && col.gameObject.tag != "Player" && col.gameObject.tag != "Dog" && col.gameObject.tag!="Heavy") {
 			//Debug.Log ("hit");
 			Instantiate (wallImpact, this.transform.position, this.transform.rotation);
