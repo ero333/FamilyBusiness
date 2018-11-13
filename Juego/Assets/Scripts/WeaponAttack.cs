@@ -106,8 +106,7 @@ public class WeaponAttack : MonoBehaviour {
 	}
 
 	public void attack()
-	{
-        Debug.Log("Disparo Winchester");
+	{        
 		if (gun == true && curWepScr.ammo > 0) {//NEW STUFF FOR 16
 			pa.attack ();
 			Vector3 dir;
@@ -119,9 +118,6 @@ public class WeaponAttack : MonoBehaviour {
 				if (oneHanded == true) {
 					if (Shotgun == false) {//new for new weapons
 
-
-                    
-                    
                     Bullet bl =  Instantiate (bullet, oneHandSpawn.transform.position, this.transform.rotation).GetComponent<Bullet>();
                     bl.arma = curWepScr.name;
                     Debug.Log("El arma del player es: " + bl.arma);
@@ -173,8 +169,10 @@ public class WeaponAttack : MonoBehaviour {
 						decideSFX ();
 					} else {
 						EnemyAttacked ea = ray.collider.gameObject.GetComponent<EnemyAttacked> ();
-						ea.knockDownEnemy ();                        
-						decideSFX ();
+						ea.knockDownEnemy ();
+                        Debug.Log("Enemigo que fue noqueado sin arma: " + ea.nombreEnemigo);
+                        Debug.Log("Insertar evento de noquear");
+                        decideSFX ();
 					}
 				} else if (curWeapon == null && ray.collider.gameObject.tag == "Dog") {////
 					ray.collider.gameObject.GetComponent<DogHealth> ().killDog ();//

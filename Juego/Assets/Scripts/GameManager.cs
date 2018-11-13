@@ -19,16 +19,6 @@ public class GameManager : MonoBehaviour {
   public static int lifeBoss = 10;  
   public static float timecont1;
   public static int muertes = 0;
-  public static int muertes1 = 0;
-  public static int muertes2 = 0;
-  public static int muertes3 = 0;
-  public static int muertes4 = 0;
-  public static int muertes5 = 0;
-  public static int muertes6 = 0;
-  public static int muertes7 = 0;
-  public static int muertes8 = 0;
-  public static int muertes9 = 0;
-  public static int muertes10 = 0;  
   public static int minScore1 = 5500;
   public static int minScore2 = 5500;
   public static int minScore3 = 7000;
@@ -50,6 +40,7 @@ public class GameManager : MonoBehaviour {
   public static int maxScore9 = 15000;
   public static int maxScore10 = 15000;
   public static int curScore;
+   
   public static int curScore1;
   public static int curScore2;
   public static int curScore3;
@@ -60,6 +51,7 @@ public class GameManager : MonoBehaviour {
   public static int curScore8;
   public static int curScore9;
   public static int curScore10;
+  
     public static float tiempoNivel;
     public static float tiempoNivelTutorial;
     public static float tiempoNivel1;
@@ -73,18 +65,6 @@ public class GameManager : MonoBehaviour {
     public static float tiempoNivel9;
     public static float tiempoNivel10;
     public static float tiempoTotalNivel;
-    public static float tiempoTotalNivel1 = 0;
-    public static float tiempoTotalNivel2 = 0;
-    public static float tiempoTotalNivel3 = 0;
-    public static float tiempoTotalNivel4 = 0;
-    public static float tiempoTotalNivel5 = 0;
-    public static float tiempoTotalNivel6 = 0;
-    public static float tiempoTotalNivel7 = 0;
-    public static float tiempoTotalNivel8 = 0;
-    public static float tiempoTotalNivel9 = 0;
-    public static float tiempoTotalNivel10 = 0;
-
-
 
     public static bool SaltearNivel0 = false;
     public static bool SaltearNivel1 = false;
@@ -105,17 +85,6 @@ public class GameManager : MonoBehaviour {
     private void Awake()
     {
         Time.timeScale = 1;
-        /*if (instance == null)
-        {
-            instance = this;
-        }
-        else if (instance != this)
-        {
-            Destroy(gameObject);
-        }
-
-        DontDestroyOnLoad(gameObject);   */             
-
 
     }
 
@@ -150,135 +119,34 @@ public class GameManager : MonoBehaviour {
                 //VideoPlay.showoOne = true;                
                 break;
             case "Level2":
-                VideoPlay.showoOne = true;                
+                //VideoPlay.showoOne = true;                
                 break;
             case "Level3":
-                VideoPlay.showoOne = true;                
+                //VideoPlay.showoOne = true;                
                 break;
             case "Level4":
-                VideoPlay.showoOne = true;                
+                //VideoPlay.showoOne = true;                
                 break;
             case "Level5":
-                VideoPlay.showoOne = true;                
+                //VideoPlay.showoOne = true;                
                 break;
             case "Level6":
-                VideoPlay.showoOne = true;                
+                //VideoPlay.showoOne = true;                
                 break;
             case "Level7":
-                VideoPlay.showoOne = true;                
+                //VideoPlay.showoOne = true;                
                 break;
             case "Level8":
-                VideoPlay.showoOne = true;                
+                //VideoPlay.showoOne = true;                
                 break;
             case "Level9":
-                VideoPlay.showoOne = true;                
+                //VideoPlay.showoOne = true;                
                 break;
             case "Level10":
-                VideoPlay.showoOne = true;                
+                //VideoPlay.showoOne = true;                
                 break;
         }
         
-
-        /*
-        if (sceneName == "Menu")
-        {
-            
-             objMain.SetActive(true);
-            niveles.onClick.AddListener(seleccion);
-            Jugar.onClick.AddListener(empezarJuego);
-            Controles.onClick.AddListener(verControles);
-            Creditos.onClick.AddListener(verCreditos);
-            
-            
-
-        }
-    else if (sceneName == "Tutorial")
-        {
-            ContEmpezar.contarEmpezar++;
-            Debug.Log("aqui empieza evento Empezar. " + "contador: " + ContEmpezar.contarEmpezar);
-            Analytics.CustomEvent("Empezar", new Dictionary<string, object>
-        {  { "vez", ContEmpezar.contarEmpezar }   }
-        );
-
-            Analytics.CustomEvent("EmpezarNivel", new Dictionary<string, object>
-        {  { "nivel", 0 }   }
-        );
-
-
-        }
-    else if (sceneName == "Credits")
-        {
-            ContCreditos.contCreditos++;
-            
-        }
-    else if (sceneName == "Controls")
-        {
-            ContCreditos.contControles++;
-            
-        }
-    else if (sceneName == "Level1")
-        {
-            VideoPlay.showoOne = true;
-            curScore1 = 0;            
-                 
-        }
-    else if (sceneName == "Level2")
-        {
-            VideoPlay.showoOne = true;
-            curScore2 = 0;
-            
-        }
-    else if (sceneName == "Level3")
-        {
-            VideoPlay.showoOne = true;
-            curScore3 = 0;
-            
-        }
-    else if (sceneName == "Level4")
-        {
-            VideoPlay.showoOne = true;
-            curScore4 = 0;
-            
-        }
-    else if (sceneName == "Level5")
-        {
-            VideoPlay.showoOne = true;
-            curScore5 = 0;
-            
-        }
-    else if (sceneName == "Level6")
-        {
-            VideoPlay.showoOne = true;
-            curScore6 = 0;
-            
-        }
-    else if (sceneName == "Level7")
-        {
-            VideoPlay.showoOne = true;
-            curScore7 = 0;
-            
-        }
-    else if (sceneName == "Level8")
-        {
-            VideoPlay.showoOne = true;
-            curScore8 = 0;
-            
-        }
-    else if (sceneName == "Level9")
-        {
-            VideoPlay.showoOne = true;
-            curScore9 = 0;
-            
-        }
-    else if (sceneName == "Level10")
-        {
-            
-            VideoPlay.showoOne = true;
-            curScore10 = 0;
-        }*/
-        
-           
-
     
 	}
 	

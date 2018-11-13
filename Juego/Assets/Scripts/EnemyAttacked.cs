@@ -14,12 +14,14 @@ public class EnemyAttacked : MonoBehaviour {
 	GameObject player;
 	ScoreController sc;
     string sceneName;
+    public string nombreEnemigo;
 
 	void Start () {
 		sr = this.GetComponent<SpriteRenderer> ();
 		player = GameObject.FindGameObjectWithTag ("Player");
 		sc = GameObject.FindGameObjectWithTag ("GameController").GetComponent<ScoreController> ();
         sceneName = SceneManager.GetActiveScene().name;
+        nombreEnemigo = this.gameObject.name;
 
     }
 	
@@ -27,6 +29,7 @@ public class EnemyAttacked : MonoBehaviour {
 	void Update () {
 		if(EnemyKnockedDown==true){
 			knockDown ();
+
 		}
 	}
 
@@ -37,8 +40,8 @@ public class EnemyAttacked : MonoBehaviour {
 
 	void knockDown()
 	{
-        string nombreEnemigo = this.gameObject.name;
-        Debug.Log("El enemigo nockeado es " + nombreEnemigo);
+        
+        //Debug.Log("El enemigo nockeado es " + nombreEnemigo);
         int level;
 
         if (sceneName == "Tutorial")
@@ -51,8 +54,8 @@ public class EnemyAttacked : MonoBehaviour {
             
         }
 
-        Debug.Log("Noquear nivel: " + level);
-
+        //Debug.Log("Noquear nivel: " + level);
+        /*
         Analytics.CustomEvent("Noquear", new Dictionary<string, object>
         {  { "nivel", level },
            { "enemigo", nombreEnemigo },
@@ -60,7 +63,7 @@ public class EnemyAttacked : MonoBehaviour {
 
         }
         );
-
+        */
         // aqui se sabe que enemigo esta noqueado
 
         this.GetComponent<EnemyWeaponController> ().dropWeapon ();

@@ -38,7 +38,10 @@ public class ThrowWeapon : MonoBehaviour {
 	{
 		if (col.gameObject.tag == "Enemy") {
 			attacked = col.gameObject.GetComponent<EnemyAttacked> ();
-			attacked.knockDownEnemy();            
+			attacked.knockDownEnemy();
+            Debug.Log("Enemigo que fue noqueado con arma: " + attacked.nombreEnemigo);
+            Debug.Log("Insertar evento de noquear");
+
             rid.isKinematic = true;
             Destroy (this);
             

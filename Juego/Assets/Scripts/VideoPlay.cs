@@ -13,7 +13,6 @@ public class VideoPlay : MonoBehaviour {
     public GameObject camAnimacion;
     public static bool showoOne = false;
     public GameObject dog1;
-    //public GameObject dog2;
 
     // Use this for initialization
     void Start()
@@ -31,63 +30,63 @@ public class VideoPlay : MonoBehaviour {
             case "Tutorial":
         
                 videoInicial.url = System.IO.Path.Combine(Application.streamingAssetsPath, "Escena 1 - Tutorial.mp4");
-                showoOne = SaltearNivel0;
+                showoOne = GameManager.SaltearNivel0;
                 break;
 
 
             case "Level1":
         
                 videoInicial.url = System.IO.Path.Combine(Application.streamingAssetsPath, "Cutscene - Nivel 1.mp4");
-                showoOne = SaltearNivel1;
+                showoOne = GameManager.SaltearNivel1;
                 break;
 
             case "Level2": 
         
                videoInicial.url = System.IO.Path.Combine(Application.streamingAssetsPath, "Cutscene - Nivel 2.mp4");
-                showoOne = SaltearNivel2;
+                showoOne = GameManager.SaltearNivel2;
                 break;
 
             case "Level3":
         
                 videoInicial.url = System.IO.Path.Combine(Application.streamingAssetsPath, "Cutscene - Nivel 3.mp4");
-                showoOne = SaltearNivel3;
+                showoOne = GameManager.SaltearNivel3;
                 break;
 
             case "Level4":
         
                videoInicial.url = System.IO.Path.Combine(Application.streamingAssetsPath, "Cutscene - Nivel 4.mp4");
-                showoOne = SaltearNivel4;
+                showoOne = GameManager.SaltearNivel4;
                 break;
             case "Level5":
         
                 videoInicial.url = System.IO.Path.Combine(Application.streamingAssetsPath, "Cutscene - Nivel 5.mp4");
-                showoOne = SaltearNivel5;
+                showoOne = GameManager.SaltearNivel5;
                 break;
             case "Level6":
         
                 videoInicial.url = System.IO.Path.Combine(Application.streamingAssetsPath, "Cutscene - Nivel 6.mp4");
 
-                showoOne = SaltearNivel6;
+                showoOne = GameManager.SaltearNivel6;
                 break;
             case "Level7":
         
                 videoInicial.url = System.IO.Path.Combine(Application.streamingAssetsPath, "Cutscene - Nivel 7.mp4");
 
-                showoOne = SaltearNivel7; break;
+                showoOne = GameManager.SaltearNivel7; break;
             case "Level8":
         
                videoInicial.url = System.IO.Path.Combine(Application.streamingAssetsPath, "Cutscene - Nivel 8.mp4");
-                showoOne = SaltearNivel8;
+                showoOne = GameManager.SaltearNivel8;
                 break;
             case "Level9":
         
                 videoInicial.url = System.IO.Path.Combine(Application.streamingAssetsPath, "Cutscene - Nivel 9.mp4");
-                showoOne = SaltearNivel9;
+                showoOne = GameManager.SaltearNivel9;
                 break;
             case "Level10":
         
               videoInicial.url = System.IO.Path.Combine(Application.streamingAssetsPath, "Cutscene - Nivel 10.mp4");
-                showoOne = SaltearNivel10;
+                showoOne = GameManager.SaltearNivel10;
                 break;
         }
                 
@@ -106,8 +105,8 @@ public class VideoPlay : MonoBehaviour {
             {
                 if (sceneName == "Level8")
                 {
-
-                    //dog2.GetComponent<AudioSource>().mute = true;
+                    
+                    dog1.GetComponent<AudioSource>().mute = true;
                 }
 
                 camAnimacion.SetActive(true);
@@ -132,7 +131,7 @@ public class VideoPlay : MonoBehaviour {
                     if (sceneName == "Level8")
                     {
 
-                        //dog2.GetComponent<AudioSource>().mute = false;
+                        dog1.GetComponent<AudioSource>().mute = false;
                     }
 
                 }
@@ -146,37 +145,37 @@ public class VideoPlay : MonoBehaviour {
                 switch (sceneName)
                 {
                     case "Tutorial":
-                        SaltearNivel0 = true;
+                        GameManager.SaltearNivel0 = true;
                         break;
                     case "Level1":
-                        SaltearNivel1 = true;
+                        GameManager.SaltearNivel1 = true;
                         break;
                     case "Level2":
-                        SaltearNivel2 = true;
+                        GameManager.SaltearNivel2 = true;
                         break;
                     case "Level3":
-                        SaltearNivel3 = true;
+                        GameManager.SaltearNivel3 = true;
                         break;
                     case "Level4":
-                        SaltearNivel4 = true;
+                        GameManager.SaltearNivel4 = true;
                         break;
                     case "Level5":
-                        SaltearNivel5 = true;
+                        GameManager.SaltearNivel5 = true;
                         break;
                     case "Level6":
-                        SaltearNivel6 = true;
+                        GameManager.SaltearNivel6 = true;
                         break;
                     case "Level7":
-                        SaltearNivel7 = true;
+                        GameManager.SaltearNivel7 = true;
                         break;
                     case "Level8":
-                        SaltearNivel8 = true;
+                        GameManager.SaltearNivel8 = true;
                         break;
                     case "Level9":
-                        SaltearNivel9 = true;
+                        GameManager.SaltearNivel9 = true;
                         break;
                     case "Level10":
-                        SaltearNivel10 = true;
+                        GameManager.SaltearNivel10 = true;
                         break;
                 }
 
@@ -184,7 +183,7 @@ public class VideoPlay : MonoBehaviour {
                 MusicController.aus.mute = false;
                 if (sceneName == "Level8")
                 {
-                    //dog2.GetComponent<AudioSource>().mute = false;
+                    dog1.GetComponent<AudioSource>().mute = false;
                 }
 
                 if (empezar == false)

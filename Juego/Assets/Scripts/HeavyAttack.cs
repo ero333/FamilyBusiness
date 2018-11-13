@@ -44,15 +44,15 @@ public class HeavyAttack : MonoBehaviour {
 			//pa.attack ();
 			RaycastHit2D ray = Physics2D.Raycast (new Vector2(this.transform.position.x,this.transform.position.y),new Vector2(transform.right.x,transform.right.y),1.5f,layerMask);
 			Debug.DrawRay (new Vector2(this.transform.position.x,this.transform.position.y),new Vector2(transform.right.x,transform.right.y),Color.green);
-			Debug.Log ("Attempting melee attack");
-
-
+			Debug.Log ("Attempting melee attack");            
 			if (ray.collider.gameObject.tag=="Player") {
 				Debug.Log("*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* HeavyAttack");
 				PlayerHealth.dead= true;
             Debug.Log("El player es matado por heavy");
+            Debug.Log("Insertar evento de Morir aqui");
+
             // Aca el player muere por heavy
-				Instantiate (blood, player.transform.position, player.transform.rotation);
+            Instantiate (blood, player.transform.position, player.transform.rotation);
 				this.GetComponent<AudioController> ().meleeAttack ();
 			} 
 

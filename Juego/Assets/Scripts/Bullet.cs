@@ -70,7 +70,8 @@ public class Bullet : MonoBehaviour {
             if(!PlayerHealth.dead)
             {
                 PlayerHealth.dead = true;//new for 10
-                print("me mato" + " con " + arma);
+                Debug.Log("me mato con el arma " + arma);
+                Debug.Log("Insertar evento Morir aqui");
                 // Morir
                 /*
                 Analytics.CustomEvent("Morir", new Dictionary<string, object>

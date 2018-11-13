@@ -312,158 +312,24 @@ public class WinLevel : MonoBehaviour
             menuGanar.SetActive(true);
             cartelWin.SetActive(false);
             Score.SetActive(true);
-            //Debug.Log("El score final es de: " + GameManager.curScore);
-
+            GameManager.tiempoTotalNivel += Time.timeSinceLevelLoad;
+            int level;
             if (sceneName == "Tutorial")
-            {                                
-                Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
-                {  { "nivel", 0}   }
-                );
-
-            }
-            else if (sceneName == "Level1")
             {
-                GameManager.tiempoTotalNivel1 += Time.timeSinceLevelLoad;
-                Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
-					{  { "nivel", 1}, 
-						{ "puntos", GameManager.curScore1 },
-						{ "muertes", GameManager.muertes1 },
-						{ "tiempoultimoreintento", Time.timeSinceLevelLoad },
-						{ "tiempo", GameManager.tiempoTotalNivel1 } 
-
-					}
-                );                             
-
-
+                level = 0;
             }
-            else if (sceneName == "Level2")
+            else
             {
-                GameManager.tiempoTotalNivel2 += Time.timeSinceLevelLoad;
-				Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
-					{  { "nivel", 2}, 
-						{ "puntos", GameManager.curScore2 },
-						{ "muertes", GameManager.muertes2 },
-						{ "tiempoultimoreintento", Time.timeSinceLevelLoad },
-						{ "tiempo", GameManager.tiempoTotalNivel2 } 
-
-					}
-				);   
-
+                level = Utils.LevelFromSceneName(sceneName);
 
             }
-            else if (sceneName == "Level3")
-            {
-                GameManager.tiempoTotalNivel3 += Time.timeSinceLevelLoad;
-				Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
-					{  { "nivel", 3}, 
-						{ "puntos", GameManager.curScore3 },
-						{ "muertes", GameManager.muertes3 },
-						{ "tiempoultimoreintento", Time.timeSinceLevelLoad },
-						{ "tiempo", GameManager.tiempoTotalNivel3 } 
-
-					}
-				);   
-
-            }
-            else if (sceneName == "Level4")
-            {
-                GameManager.tiempoTotalNivel4 += Time.timeSinceLevelLoad;
-				Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
-					{  { "nivel", 4}, 
-						{ "puntos", GameManager.curScore4 },
-						{ "muertes", GameManager.muertes4 },
-						{ "tiempoultimoreintento", Time.timeSinceLevelLoad },
-						{ "tiempo", GameManager.tiempoTotalNivel4 } 
-
-					}
-				);   
-
-            }
-            else if (sceneName == "Level5")
-            {
-                GameManager.tiempoTotalNivel5 += Time.timeSinceLevelLoad;
-				Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
-					{  { "nivel", 5}, 
-						{ "puntos", GameManager.curScore5 },
-						{ "muertes", GameManager.muertes5 },
-						{ "tiempoultimoreintento", Time.timeSinceLevelLoad },
-						{ "tiempo", GameManager.tiempoTotalNivel5 } 
-
-					}
-				);   
-
-            }
-            else if (sceneName == "Level6")
-            {
-                GameManager.tiempoTotalNivel6 += Time.timeSinceLevelLoad;
-				Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
-					{  { "nivel", 6}, 
-						{ "puntos", GameManager.curScore6 },
-						{ "muertes", GameManager.muertes6 },
-						{ "tiempoultimoreintento", Time.timeSinceLevelLoad },
-						{ "tiempo", GameManager.tiempoTotalNivel6 } 
-
-					}
-				);   
-
-            }
-            else if (sceneName == "Level7")
-            {
-                GameManager.tiempoTotalNivel7 += Time.timeSinceLevelLoad;
-				Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
-					{  { "nivel", 7}, 
-						{ "puntos", GameManager.curScore7 },
-						{ "muertes", GameManager.muertes7 },
-						{ "tiempoultimoreintento", Time.timeSinceLevelLoad },
-						{ "tiempo", GameManager.tiempoTotalNivel7 } 
-
-					}
-				);   
-
-            }
-            else if (sceneName == "Level8")
-            {
-                GameManager.tiempoTotalNivel8 += Time.timeSinceLevelLoad;
-				Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
-					{  { "nivel", 8}, 
-						{ "puntos", GameManager.curScore8 },
-						{ "muertes", GameManager.muertes8 },
-						{ "tiempoultimoreintento", Time.timeSinceLevelLoad },
-						{ "tiempo", GameManager.tiempoTotalNivel8 } 
-
-					}
-				);   
-
-            }
-            else if (sceneName == "Level9")
-            {
-                GameManager.tiempoTotalNivel9 += Time.timeSinceLevelLoad;               
-				Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
-					{  { "nivel", 9}, 
-						{ "puntos", GameManager.curScore9 },
-						{ "muertes", GameManager.muertes9 },
-						{ "tiempoultimoreintento", Time.timeSinceLevelLoad },
-						{ "tiempo", GameManager.tiempoTotalNivel9 } 
-
-					}
-				);   
-
-            }
-            else if (sceneName == "Level10")
-            {
-                GameManager.tiempoTotalNivel10 += Time.timeSinceLevelLoad;
-				Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
-					{  { "nivel", 10}, 
-						{ "puntos", GameManager.curScore10 },
-						{ "muertes", GameManager.muertes10 },
-						{ "tiempoultimoreintento", Time.timeSinceLevelLoad },
-						{ "tiempo", GameManager.tiempoTotalNivel10 } 
-
-					}
-				);   
-
-            }
-
+            Debug.Log("nivel es: " + level);
+            Debug.Log("tiempo es: " + GameManager.tiempoTotalNivel);
+            Debug.Log("tiempoultimoreintento es: " + Time.timeSinceLevelLoad);                                    
+            Debug.Log("muertes es: " + GameManager.muertes);
+            Debug.Log("El score final es de: " + GameManager.curScore);
+            Debug.Log("Insertar evento de TerminarNivel");            
+            
         }
     }
 
@@ -492,7 +358,8 @@ public class WinLevel : MonoBehaviour
 
         SceneManager.LoadScene("Level"  + level);
         
-        GameManager.tiempoTotalNivel = 0;
-                
+        GameManager.tiempoTotalNivel = 0; //Resetea la variable a cero para el proximo nivel
+        GameManager.muertes = 0; //Resetea la variable a cero para el proximo nivel
+
     }
 }

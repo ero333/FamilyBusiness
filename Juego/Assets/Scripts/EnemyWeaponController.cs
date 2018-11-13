@@ -127,20 +127,22 @@ public class EnemyWeaponController : MonoBehaviour {
 		//pa.attack ();
 		if (gun == true) {
 			//pa.attack ();
-			Bullet bl = bullet.GetComponent<Bullet> ();
-            bl.arma = arma;
-            bl.asesino = asesino;
-            print("arma " + arma + " y el asesino es " + asesino);            
-
+			Bullet bl = bullet.GetComponent<Bullet> ();          
+            
             Vector3 dir;
 			dir.x = Vector2.right.x;
 			dir.y = Vector2.right.y;
 			dir.z = 0;
-			bl.setVals (dir,"Enemy");
+			
 			if(oneHanded==true)
 			{
 				if (shotgun == false) {//new for new weapons
-					Instantiate (bullet, oneHandSpawn.transform.position, this.transform.rotation);
+
+                    //Bullet bl = Instantiate(bullet, oneHandSpawn.transform.position, this.transform.rotation).GetComponent<Bullet>();
+                    bl.arma = arma;
+                    Debug.Log("El arma del enemigo es: " + bl.arma);
+
+                    Instantiate (bullet, oneHandSpawn.transform.position, this.transform.rotation);
 				} else {
 					Instantiate (shotgunBullet, oneHandSpawn.transform.position, this.transform.rotation);
 				}
@@ -148,7 +150,10 @@ public class EnemyWeaponController : MonoBehaviour {
 			}
 			else{
 				if (shotgun == false) {//new for new weapons
-					Instantiate (bullet, twoHandSpawn.transform.position, this.transform.rotation);
+                    //Bullet bl = Instantiate(bullet, oneHandSpawn.transform.position, this.transform.rotation).GetComponent<Bullet>();
+                    bl.arma = arma;
+                    Debug.Log("El arma del enemigo es: " + bl.arma);
+                    Instantiate (bullet, twoHandSpawn.transform.position, this.transform.rotation);
 				} else {
 					Instantiate (shotgunBullet, twoHandSpawn.transform.position, this.transform.rotation);
 				}
@@ -182,7 +187,8 @@ public class EnemyWeaponController : MonoBehaviour {
 					Debug.Log ("Melee attacking player");
 					Debug.Log("*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* EnemyWeaponController");
 					PlayerHealth.dead = true;
-                    Debug.Log("el arma melee es " + arma);        
+                    Debug.Log("el arma melee con el que me mato es " + arma);
+                    Debug.Log("Insertar evento de morir");
                     //Aca insertar variable de morir con arma pero melee.
                     Instantiate (blood, player.transform.position, player.transform.rotation);
 					decideSFX ();
