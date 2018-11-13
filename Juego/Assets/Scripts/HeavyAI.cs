@@ -17,13 +17,13 @@ public class HeavyAI : MonoBehaviour {
 
 
 
-	ObjectManager obj;
+	//ObjectManager obj;
 
 	// Use this for initialization
 	void Start () {
 		player = GameObject.FindGameObjectWithTag ("Player");
 		playerLastPos = this.transform.position;
-		obj = GameObject.FindGameObjectWithTag ("GameController").GetComponent<ObjectManager> ();
+		//obj = GameObject.FindGameObjectWithTag ("GameController").GetComponent<ObjectManager> ();
 		rid = this.GetComponent<Rigidbody2D> ();
 		layerMask = ~layerMask;
 

@@ -28,6 +28,8 @@ public class ScoreController : MonoBehaviour {
         if (sceneName == "Level1")
         {
             GameManager.curScore1 = score;
+            GameManager.curScore = score;
+            Debug.Log("el score actual es: " + GameManager.curScore);
             if (GameManager.curScore1 > GameManager.maxScore1)
             {
                 GameManager.maxScore1 = GameManager.curScore1;

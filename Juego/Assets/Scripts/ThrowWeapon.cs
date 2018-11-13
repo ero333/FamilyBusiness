@@ -6,10 +6,10 @@ public class ThrowWeapon : MonoBehaviour {
 	float timer = 2.0f;
 	Vector3 direction;
 	Rigidbody2D rid;
-	GameObject player;
+	//GameObject player;
 	// Use this for initialization
 	void Start () {
-		player = GameObject.FindGameObjectWithTag ("Player");
+		//player = GameObject.FindGameObjectWithTag ("Player");
 		rid = this.GetComponent<Rigidbody2D> ();
 		rid.AddForce (direction*40);
 	}

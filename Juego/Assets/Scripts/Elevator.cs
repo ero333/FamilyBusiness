@@ -8,7 +8,7 @@ public class Elevator : MonoBehaviour {
     float timeLeft = 10;
 	public static bool canTravel = true;
     
-	float timer=1.0f;
+	//float timer=1.0f;
 	// Use this for initialization
 	void Start () {
         

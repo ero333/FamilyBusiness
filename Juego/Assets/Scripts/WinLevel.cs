@@ -6,13 +6,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.Analytics;
 
 public class WinLevel : MonoBehaviour
-{
-
-    // APLICAR SOLO PARA DESBLOQUEAR NIVELES
-    public static bool ganoTuto = false;
-    /*public static bool ganoNivel1 = false;
-    public static bool ganoNivel2 = false;
-    public static bool ganoNivel3 = false;*/
+{    
     public GameObject menuGanar;
     public Button menu;
     public Button sigNivel;
@@ -292,9 +286,7 @@ public class WinLevel : MonoBehaviour
             
 
             if (sceneName == "Tutorial")
-            {
-                ganoTuto = true;
-                
+            {                                
                 Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
                 {  { "nivel", 0}   }
                 );

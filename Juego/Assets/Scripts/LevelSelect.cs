@@ -16,14 +16,6 @@ public class LevelSelect : MonoBehaviour {
     public string Level8;
     public string Level9;
     public string Level10;
-    private string sceneName;
-
-
-    private void Start()
-    {
-        Scene currentScene = SceneManager.GetActiveScene();
-        sceneName = currentScene.name;
-    }
 
     public void PlayMenu()
     {
@@ -120,12 +112,5 @@ public class LevelSelect : MonoBehaviour {
         SceneManager.LoadScene("Level10");
         GameManager.check10 = false;
         
-    }
-
-
-    public void QuitGame()
-    {
-        Application.Quit();
-    }
-
+    }    
 }

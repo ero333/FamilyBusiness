@@ -11,7 +11,7 @@ public class HeavyAttack : MonoBehaviour {
 
 	GameObject player;
 
-	bool attacking = false;
+	//bool attacking = false;
 	SpriteRenderer sr;
 	HeavyAnimate ea;
 	// Use this for initialization

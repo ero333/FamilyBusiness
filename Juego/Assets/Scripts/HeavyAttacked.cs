@@ -6,15 +6,15 @@ public class HeavyAttacked : MonoBehaviour {
 	public Sprite bulletWound,backUp;
 	public GameObject bloodPool,bloodSpurt;
 	SpriteRenderer sr;
-	bool EnemyKnockedDown=false;
-	GameObject player;
+	//bool EnemyKnockedDown=false;
+	//GameObject player;
 	ScoreController sc;
 
 	int health = 4;
 	// Use this for initialization
 	void Start () {
 		sr = this.GetComponent<SpriteRenderer> ();
-		player = GameObject.FindGameObjectWithTag ("Player");
+		//player = GameObject.FindGameObjectWithTag ("Player");
 		sc = GameObject.FindGameObjectWithTag ("GameController").GetComponent<ScoreController> ();
 	}
 

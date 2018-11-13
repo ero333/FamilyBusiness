@@ -5,8 +5,7 @@ using UnityEngine.UI;
 
 public class ContadorEnemigos : MonoBehaviour {
 
-    public GameObject[] enemies;
-    bool win = false;
+    public GameObject[] enemies;    
     public Text contEnemigos;
     public static int enemigosLeft = 0;
     
@@ -21,8 +20,8 @@ public class ContadorEnemigos : MonoBehaviour {
         enemies = new GameObject[dogs.Length + heavies.Length + enemies1.Length];
         dogs.CopyTo(enemies, 0);
         heavies.CopyTo(enemies, dogs.Length);
-        enemies1.CopyTo(enemies, (dogs.Length) + (heavies.Length));
-        win = areAllEnemiesDead();
+        enemies1.CopyTo(enemies, (dogs.Length) + (heavies.Length));        
+        areAllEnemiesDead();
         contEnemigos.text = "Enemigos restantes " + enemies.Length;
         enemigosLeft = enemies.Length;
 

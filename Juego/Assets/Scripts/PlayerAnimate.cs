@@ -8,7 +8,7 @@ public class PlayerAnimate : MonoBehaviour {
 	float timer = 0.05f,legTimer = 0.05f;
 	public SpriteRenderer torso,legs;
 	SpriteContainer sc;
-	WeaponAttack wa;
+	//WeaponAttack wa;
 	bool attackingB = false;
 	// Use this for initialization
 	void Start () {
@@ -18,7 +18,7 @@ public class PlayerAnimate : MonoBehaviour {
 		attacking = sc.getPlayerPunch ();
 		legsSpr = sc.getPlayerLegs ();
 
-		wa = this.GetComponent<WeaponAttack> ();
+		//wa = this.GetComponent<WeaponAttack> ();
 	}
 	
 	// Update is called once per frame

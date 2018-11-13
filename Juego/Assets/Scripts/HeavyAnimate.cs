@@ -12,14 +12,14 @@ public class HeavyAnimate : MonoBehaviour {
 	float torsoTimer=0.15f,legsTimer=0.15f,legReset=0.15f,torsoReset=0.15f;
 	public int tCounter = 0,lCounter = 0;//changed so I can use it to check for attack
 	string weapon;
-	HeavyAttack ewc;
+	//HeavyAttack ewc;
 	public bool attacking = false;
 	// Use this for initialization
 	void Start () {
 		eai = this.GetComponent<HeavyAI> ();
 		sc = GameObject.FindGameObjectWithTag ("GameController").GetComponent<SpriteContainer>();
 
-		ewc = this.GetComponent<HeavyAttack> ();
+		//ewc = this.GetComponent<HeavyAttack> ();
 		legsSpr = sc.getPlayerLegs ();
 	}
 

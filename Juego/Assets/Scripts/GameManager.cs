@@ -13,10 +13,12 @@ public class GameManager : MonoBehaviour {
   public Button Controles;
   public Button Creditos;
 
-
-  public static int level;   
+  public static int contCreditos = 0;
+  public static int contControles = 0;
+    public static int level;   
   public static int lifeBoss = 10;  
   public static float timecont1;
+  public static int muertes = 0;
   public static int muertes1 = 0;
   public static int muertes2 = 0;
   public static int muertes3 = 0;
@@ -47,6 +49,7 @@ public class GameManager : MonoBehaviour {
   public static int maxScore8 = 15000;
   public static int maxScore9 = 15000;
   public static int maxScore10 = 15000;
+  public static int curScore;
   public static int curScore1;
   public static int curScore2;
   public static int curScore3;
@@ -57,8 +60,8 @@ public class GameManager : MonoBehaviour {
   public static int curScore8;
   public static int curScore9;
   public static int curScore10;
-
-	public static float tiempoNivelTutorial;
+    public static float tiempoNivel;
+    public static float tiempoNivelTutorial;
     public static float tiempoNivel1;
     public static float tiempoNivel2;
     public static float tiempoNivel3;
@@ -69,6 +72,7 @@ public class GameManager : MonoBehaviour {
     public static float tiempoNivel8;
     public static float tiempoNivel9;
     public static float tiempoNivel10;
+    public static float tiempoTotalNivel;
     public static float tiempoTotalNivel1 = 0;
     public static float tiempoTotalNivel2 = 0;
     public static float tiempoTotalNivel3 = 0;
@@ -109,6 +113,69 @@ public class GameManager : MonoBehaviour {
         {
             contador.SetActive(false);
         }
+
+        switch (sceneName)
+        {
+            case "Menu":
+                objMain.SetActive(true);
+                niveles.onClick.AddListener(seleccion);
+                Jugar.onClick.AddListener(empezarJuego);
+                Controles.onClick.AddListener(verControles);
+                Creditos.onClick.AddListener(verCreditos);
+                Debug.Log("Verificacion variable de checkpoint: " + check10);
+                break;
+            case "Tutorial":
+                ContEmpezar.contarEmpezar++;
+                Debug.Log("aqui empieza evento Empezar. " + "contador: " + ContEmpezar.contarEmpezar);
+                break;
+            case "Credits":                
+                break;
+            case "Controls":                
+                break;
+            case "Level1":
+                VideoPlay.showoOne = true;
+                curScore = 0;
+                break;
+            case "Level2":
+                VideoPlay.showoOne = true;
+                curScore = 0;
+                break;
+            case "Level3":
+                VideoPlay.showoOne = true;
+                curScore = 0;
+                break;
+            case "Level4":
+                VideoPlay.showoOne = true;
+                curScore = 0;
+                break;
+            case "Level5":
+                VideoPlay.showoOne = true;
+                curScore = 0;
+                break;
+            case "Level6":
+                VideoPlay.showoOne = true;
+                curScore = 0;
+                break;
+            case "Level7":
+                VideoPlay.showoOne = true;
+                curScore = 0;
+                break;
+            case "Level8":
+                VideoPlay.showoOne = true;
+                curScore = 0;
+                break;
+            case "Level9":
+                VideoPlay.showoOne = true;
+                curScore = 0;
+                break;
+            case "Level10":
+                VideoPlay.showoOne = true;
+                curScore = 0;
+                break;
+        }
+        
+
+        /*
         if (sceneName == "Menu")
         {
             
@@ -124,6 +191,7 @@ public class GameManager : MonoBehaviour {
     else if (sceneName == "Tutorial")
         {
             ContEmpezar.contarEmpezar++;
+            Debug.Log("aqui empieza evento Empezar. " + "contador: " + ContEmpezar.contarEmpezar);
             Analytics.CustomEvent("Empezar", new Dictionary<string, object>
         {  { "vez", ContEmpezar.contarEmpezar }   }
         );
@@ -203,9 +271,9 @@ public class GameManager : MonoBehaviour {
             
             VideoPlay.showoOne = true;
             curScore10 = 0;
-        }
+        }*/
         
-
+           
 
     
 	}
@@ -216,7 +284,7 @@ public class GameManager : MonoBehaviour {
 
         if (sceneName == "Menu")
         {            
-            Debug.Log(check10);            
+            //Debug.Log("Variable para verificar checkpoint: " + check10);            
         }             
 
         else if (sceneName == "Tutorial")
@@ -422,15 +490,17 @@ public class GameManager : MonoBehaviour {
 
     void verControles()
     {
+        contControles++;
+        Debug.Log("aqui se llama al evento VerControles. El contador es: " + contControles);
         SceneManager.LoadScene("Controls");
-        /*Analytics.CustomEvent("VerControles", new Dictionary<string, object>
-        {  { "vez", ContCreditos.contControles }   }
-        );*/
     }
 
     void verCreditos()
     {
+        contCreditos++;
+        Debug.Log("aqui se llama al evento VerCreditos. El contador es: " + contCreditos);
         SceneManager.LoadScene("Credits");
+
        
     }
 }

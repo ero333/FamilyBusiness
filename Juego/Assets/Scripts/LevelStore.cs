@@ -25,7 +25,7 @@ public class LevelStore : MonoBehaviour {
         {
             unlocked = true;
         }
-        else if ((WinLevel.ganoTuto == true) && (levelName == "Nivel_1"))
+        else if (levelName == "Nivel_1")
         {
             unlocked = true;
         }

@@ -25,14 +25,10 @@ public class VideoPlay : MonoBehaviour {
 
 
         if (sceneName == "Credits")
-        {
-            ContCreditos.contCreditos++;
-            Analytics.CustomEvent("VerCreditos", new Dictionary<string, object>
-        {  { "vez", ContCreditos.contCreditos }   }
-        );
+        {           
             videoInicial.url = System.IO.Path.Combine(Application.streamingAssetsPath, "Cutscene - Creditos.mp4");
         }
-        if (sceneName == "Tutorial")
+        else if (sceneName == "Tutorial")
         {
             videoInicial.url = System.IO.Path.Combine(Application.streamingAssetsPath, "Escena 1 - Tutorial.mp4");
         }
