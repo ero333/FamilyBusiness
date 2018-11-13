@@ -313,7 +313,7 @@ public class WinLevel : MonoBehaviour
             cartelWin.SetActive(false);
             Score.SetActive(true);            
             GameManager.tiempoTotalNivel += Time.timeSinceLevelLoad;
-            Debug.Log("el puntaje final es: " + GameManager.curScore);
+            Debug.Log("Estos son los puntos una vez pasado el timer: " + GameManager.curScore);
             
             int level;
             if (sceneName == "Tutorial")

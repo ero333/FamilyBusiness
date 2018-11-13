@@ -70,6 +70,9 @@ public class ScoreController : MonoBehaviour {
             else if (Time.timeScale == 0 && flag != true)
             {
                 score += (tempScoreHold * currentMultiplier);
+                GameManager.curScore = score;
+                Debug.Log("El puntaje final es este: " + GameManager.curScore);
+                // SI ACA VA LA VARIABLE GameManager.curScore CON UN DEBUG.LOG MUESTRA EL PUNTAJE FINAL SIN ESPERAR EL TIEMPO
                 flag = true;
                 
             }
