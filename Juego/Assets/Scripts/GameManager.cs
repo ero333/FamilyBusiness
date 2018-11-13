@@ -53,17 +53,6 @@ public class GameManager : MonoBehaviour {
   public static int curScore10;
   
     public static float tiempoNivel;
-    public static float tiempoNivelTutorial;
-    public static float tiempoNivel1;
-    public static float tiempoNivel2;
-    public static float tiempoNivel3;
-    public static float tiempoNivel4;
-    public static float tiempoNivel5;
-    public static float tiempoNivel6;
-    public static float tiempoNivel7;
-    public static float tiempoNivel8;
-    public static float tiempoNivel9;
-    public static float tiempoNivel10;
     public static float tiempoTotalNivel;
 
     public static bool SaltearNivel0 = false;
@@ -152,14 +141,8 @@ public class GameManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        
 
-        if (sceneName == "Menu")
-        {            
-            //Debug.Log("Variable para verificar checkpoint: " + check10);            
-        }             
-
-        else if (sceneName == "Tutorial")
+        if (contador != null)
         {
             if (Time.timeScale != 0)
             {
@@ -170,184 +153,9 @@ public class GameManager : MonoBehaviour {
                 contador.SetActive(false);
             }
         }
-        else if (sceneName == "Level1")
-        {            
-            if (Time.timeScale != 0)
-            {
-                contador.SetActive(true);
-            }
-            else
-            {
-                contador.SetActive(false);
-            }
-        }
-        else if (sceneName == "Level2")
-        {
-            if (Time.timeScale != 0)
-            {
-                contador.SetActive(true);
-            }
-            else
-            {
-                contador.SetActive(false);
-            }
-        }
-        else if (sceneName == "Level3")
-        {
-            if (Time.timeScale != 0)
-            {
-                contador.SetActive(true);
-            }
-            else
-            {
-                contador.SetActive(false);
-            }
-        }
-        else if (sceneName == "Level4")
-        {
-            if (Time.timeScale != 0)
-            {
-                contador.SetActive(true);
-            }
-            else
-            {
-                contador.SetActive(false);
-            }
-        }
-        else if (sceneName == "Level5")
-        {
-            if (Time.timeScale != 0)
-            {
-                contador.SetActive(true);
-            }
-            else
-            {
-                contador.SetActive(false);
-            }
-        }
-        else if (sceneName == "Level6")
-        {
-            if (Time.timeScale != 0)
-            {
-                contador.SetActive(true);
-            }
-            else
-            {
-                contador.SetActive(false);
-            }
-        }
-        else if (sceneName == "Level7")
-        {
-            if (Time.timeScale != 0)
-            {
-                contador.SetActive(true);
-            }
-            else
-            {
-                contador.SetActive(false);
-            }
-        }
-        else if (sceneName == "Level8")
-        {
-            if (Time.timeScale != 0)
-            {
-                contador.SetActive(true);
-            }
-            else
-            {
-                contador.SetActive(false);
-            }
-        }
-        else if (sceneName == "Level9")
-        {
-            if (Time.timeScale != 0)
-            {
-                contador.SetActive(true);
-            }
-            else
-            {
-                contador.SetActive(false);
-            }
-        }        
-
-        else if (sceneName == "Level10")
-        {
-            Debug.Log(check10);
-
-            if (Time.timeScale != 0)
-            {
-                contador.SetActive(true);
-            }
-            else
-            {
-                contador.SetActive(false);
-            }
-        }        
-
+               
     }
-
-    private void FixedUpdate()
-    {
-        if (sceneName == "Menu")
-        {
-
-        }
-
-        else if (sceneName == "Tutorial")
-        {
-
-        }
-
-        else if (sceneName == "Level1")
-        {
-            tiempoNivel1 = Time.timeSinceLevelLoad;
-            
-
-        }
-        else if (sceneName == "Level2")
-        {
-            tiempoNivel2 = Time.timeSinceLevelLoad;
-            
-        }
-        else if (sceneName == "Level3")
-        {
-            tiempoNivel3 = Time.timeSinceLevelLoad;
-
-        }
-        else if (sceneName == "Level4")
-        {
-            tiempoNivel4 = Time.timeSinceLevelLoad;
-
-        }
-        else if (sceneName == "Level5")
-        {
-            tiempoNivel5 = Time.timeSinceLevelLoad;
-
-        }
-        else if (sceneName == "Level6")
-        {
-            tiempoNivel6 = Time.timeSinceLevelLoad;
-
-        }
-        else if (sceneName == "Level7")
-        {
-            tiempoNivel7 = Time.timeSinceLevelLoad;
-
-        }
-        else if (sceneName == "Level8")
-        {
-            tiempoNivel8 = Time.timeSinceLevelLoad;
-        }
-        else if (sceneName == "Level9")
-        {
-            tiempoNivel9 = Time.timeSinceLevelLoad;
-        }
-        else if (sceneName == "Level10")
-        {
-            tiempoNivel10 = Time.timeSinceLevelLoad;           
-       
-        }
-    }
+    
 
     void seleccion()
     {
