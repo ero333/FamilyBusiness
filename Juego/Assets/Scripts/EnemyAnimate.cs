@@ -10,7 +10,7 @@ public class EnemyAnimate : MonoBehaviour {
 	float torsoTimer=0.15f,legsTimer=0.15f,legReset=0.15f,torsoReset=0.15f;
 	public int tCounter = 0,lCounter = 0;
 	string weapon;
-	//EnemyWeaponController ewc;
+	EnemyWeaponController ewc;
 	public bool attacking = false;
 	// Use this for initialization
 	void Start () {
@@ -20,7 +20,7 @@ public class EnemyAnimate : MonoBehaviour {
 			torsoSpr = sc.getEnemyWalk ("");
 			attackingSpr = sc.getEnemyWeapon ("");
 
-		//ewc = this.GetComponent<EnemyWeaponController> ();
+		ewc = this.GetComponent<EnemyWeaponController> ();
 		legsSpr = sc.getPlayerLegs ();
 	}
 

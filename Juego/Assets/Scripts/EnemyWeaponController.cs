@@ -12,7 +12,7 @@ public class EnemyWeaponController : MonoBehaviour {
 	public bool gun = false;
 	float timer = 999999999,timerReset=0.1f;
     public GameObject Boss;
-	//SpriteContainer sc;
+	SpriteContainer sc;
     public string arma;
     public string asesino;
 	float weaponChange = 0.5f;
@@ -23,7 +23,7 @@ public class EnemyWeaponController : MonoBehaviour {
 	GameObject player;
     private string sceneName;
     bool attacking = false;
-	//SpriteRenderer sr;
+	SpriteRenderer sr;
 	EnemyAnimate ea;
 	// Use this for initialization
 	void Start () {
@@ -31,8 +31,8 @@ public class EnemyWeaponController : MonoBehaviour {
         sceneName = currentScene.name;
 		eai = this.GetComponent<EnemyAI> ();
 		player = GameObject.FindGameObjectWithTag ("Player");
-		//sr = this.GetComponent<SpriteRenderer> ();
-		//sc = GameObject.FindGameObjectWithTag ("GameController").GetComponent<SpriteContainer> ();
+		sr = this.GetComponent<SpriteRenderer> ();
+		sc = GameObject.FindGameObjectWithTag ("GameController").GetComponent<SpriteContainer> ();
 		ea = this.GetComponent<EnemyAnimate> ();
         Boss = GameObject.Find("Mirtha");
 	}

@@ -153,6 +153,7 @@ public class EnemyAttacked : MonoBehaviour {
 		this.GetComponent<EnemyAnimate> ().disableLegs ();
 		this.GetComponent<EnemyAnimate> ().enabled =false;
 		this.gameObject.tag = "Dead";
+        
 	}
 
 	public void execute()

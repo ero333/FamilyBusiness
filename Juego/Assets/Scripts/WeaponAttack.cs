@@ -167,7 +167,9 @@ public class WeaponAttack : MonoBehaviour {
 
 					if (ray.collider.isTrigger == true && ray.collider.gameObject.tag == "Enemy") {//new for execute
 						ray.collider.gameObject.GetComponent<EnemyAttacked> ().execute ();
-						decideSFX ();
+                        Debug.Log("Enemigo murio sin arma");
+                        ContarMuertos.armaPlayer = "sin arma";
+                        decideSFX ();
 					} else {
 						EnemyAttacked ea = ray.collider.gameObject.GetComponent<EnemyAttacked> ();
 						ea.knockDownEnemy ();
@@ -185,10 +187,10 @@ public class WeaponAttack : MonoBehaviour {
 					if (ray.collider.gameObject.tag == "Enemy") {
 						
 						if (ray.collider.isTrigger == true && ray.collider.gameObject.tag == "Enemy") {
-							ray.collider.gameObject.GetComponent<EnemyAttacked> ().execute ();
+							ray.collider.gameObject.GetComponent<EnemyAttacked> ().execute ();                            
 						} else {
-							EnemyAttacked ea = ray.collider.gameObject.GetComponent<EnemyAttacked> ();
-							ea.killMelee ();
+							EnemyAttacked ea = ray.collider.gameObject.GetComponent<EnemyAttacked> ();                            
+                            ea.killMelee ();                            
 							decideSFX ();
 						}
 					} else if (ray.collider.gameObject.tag == "Dog") {
