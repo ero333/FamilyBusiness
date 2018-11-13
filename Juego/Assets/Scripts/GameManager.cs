@@ -83,6 +83,20 @@ public class GameManager : MonoBehaviour {
     public static float tiempoTotalNivel8 = 0;
     public static float tiempoTotalNivel9 = 0;
     public static float tiempoTotalNivel10 = 0;
+
+
+
+    public static bool SaltearNivel0 = false;
+    public static bool SaltearNivel1 = false;
+    public static bool SaltearNivel2 = false;
+    public static bool SaltearNivel3 = false;
+    public static bool SaltearNivel4 = false;
+    public static bool SaltearNivel5 = false;
+    public static bool SaltearNivel6 = false;
+    public static bool SaltearNivel7 = false;
+    public static bool SaltearNivel8 = false;
+    public static bool SaltearNivel9 = false;
+    public static bool SaltearNivel10 = false;
     public static bool check10;
     public GameObject contador;
     private string sceneName;

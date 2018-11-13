@@ -11,7 +11,7 @@ public class VideoPlay : MonoBehaviour {
     bool empezar = false;
     private string sceneName;
     public GameObject camAnimacion;
-    public static bool showoOne = true;
+    public static bool showoOne = false;
     public GameObject dog1;
     //public GameObject dog2;
 
@@ -23,58 +23,72 @@ public class VideoPlay : MonoBehaviour {
         videoInicial = GameObject.Find("Video Player").GetComponent<VideoPlayer>();        
         camAnimacion.SetActive(false);
 
+        switch (sceneName) { 
+            case "Credits":
+                videoInicial.url = System.IO.Path.Combine(Application.streamingAssetsPath, "Cutscene - Creditos.mp4");
+            break;
 
-        if (sceneName == "Credits")
-        {           
-            videoInicial.url = System.IO.Path.Combine(Application.streamingAssetsPath, "Cutscene - Creditos.mp4");
-        }
-        else if (sceneName == "Tutorial")
-        {
-            videoInicial.url = System.IO.Path.Combine(Application.streamingAssetsPath, "Escena 1 - Tutorial.mp4");
-        }
-
-        else if (sceneName == "Level1" && showoOne == true)
-        {
-            videoInicial.url = System.IO.Path.Combine(Application.streamingAssetsPath, "Cutscene - Nivel 1.mp4");
-        }
+            case "Tutorial":
         
-        else if (sceneName == "Level2" && showoOne == true)
-        {
-            videoInicial.url = System.IO.Path.Combine(Application.streamingAssetsPath, "Cutscene - Nivel 2.mp4");
-        }
+                videoInicial.url = System.IO.Path.Combine(Application.streamingAssetsPath, "Escena 1 - Tutorial.mp4");
+                showoOne = SaltearNivel0;
+                break;
 
-        else if (sceneName == "Level3" && showoOne == true)
-        {
-            videoInicial.url = System.IO.Path.Combine(Application.streamingAssetsPath, "Cutscene - Nivel 3.mp4");
-        }
 
-        else if (sceneName == "Level4" && showoOne == true)
-        {
-            videoInicial.url = System.IO.Path.Combine(Application.streamingAssetsPath, "Cutscene - Nivel 4.mp4");
-        }
-        else if (sceneName == "Level5" && showoOne == true)
-        {
-            videoInicial.url = System.IO.Path.Combine(Application.streamingAssetsPath, "Cutscene - Nivel 5.mp4");
-        }
-        else if (sceneName == "Level6" && showoOne == true)
-        {
-            videoInicial.url = System.IO.Path.Combine(Application.streamingAssetsPath, "Cutscene - Nivel 6.mp4");
-        }
-        else if (sceneName == "Level7" && showoOne == true)
-        {
-            videoInicial.url = System.IO.Path.Combine(Application.streamingAssetsPath, "Cutscene - Nivel 7.mp4");
-        }
-        else if (sceneName == "Level8" && showoOne == true)
-        {
-            videoInicial.url = System.IO.Path.Combine(Application.streamingAssetsPath, "Cutscene - Nivel 8.mp4");
-        }
-        else if (sceneName == "Level9" && showoOne == true)
-        {
-            videoInicial.url = System.IO.Path.Combine(Application.streamingAssetsPath, "Cutscene - Nivel 9.mp4");
-        }
-        else if (sceneName == "Level10" && showoOne == true)
-        {
-            videoInicial.url = System.IO.Path.Combine(Application.streamingAssetsPath, "Cutscene - Nivel 10.mp4");
+            case "Level1":
+        
+                videoInicial.url = System.IO.Path.Combine(Application.streamingAssetsPath, "Cutscene - Nivel 1.mp4");
+                showoOne = SaltearNivel1;
+                break;
+
+            case "Level2": 
+        
+               videoInicial.url = System.IO.Path.Combine(Application.streamingAssetsPath, "Cutscene - Nivel 2.mp4");
+                showoOne = SaltearNivel2;
+                break;
+
+            case "Level3":
+        
+                videoInicial.url = System.IO.Path.Combine(Application.streamingAssetsPath, "Cutscene - Nivel 3.mp4");
+                showoOne = SaltearNivel3;
+                break;
+
+            case "Level4":
+        
+               videoInicial.url = System.IO.Path.Combine(Application.streamingAssetsPath, "Cutscene - Nivel 4.mp4");
+                showoOne = SaltearNivel4;
+                break;
+            case "Level5":
+        
+                videoInicial.url = System.IO.Path.Combine(Application.streamingAssetsPath, "Cutscene - Nivel 5.mp4");
+                showoOne = SaltearNivel5;
+                break;
+            case "Level6":
+        
+                videoInicial.url = System.IO.Path.Combine(Application.streamingAssetsPath, "Cutscene - Nivel 6.mp4");
+
+                showoOne = SaltearNivel6;
+                break;
+            case "Level7":
+        
+                videoInicial.url = System.IO.Path.Combine(Application.streamingAssetsPath, "Cutscene - Nivel 7.mp4");
+
+                showoOne = SaltearNivel7; break;
+            case "Level8":
+        
+               videoInicial.url = System.IO.Path.Combine(Application.streamingAssetsPath, "Cutscene - Nivel 8.mp4");
+                showoOne = SaltearNivel8;
+                break;
+            case "Level9":
+        
+                videoInicial.url = System.IO.Path.Combine(Application.streamingAssetsPath, "Cutscene - Nivel 9.mp4");
+                showoOne = SaltearNivel9;
+                break;
+            case "Level10":
+        
+              videoInicial.url = System.IO.Path.Combine(Application.streamingAssetsPath, "Cutscene - Nivel 10.mp4");
+                showoOne = SaltearNivel10;
+                break;
         }
                 
         videoInicial.Play();        
@@ -88,63 +102,102 @@ public class VideoPlay : MonoBehaviour {
 
         if (sceneName != "Credits")
         {
-        
-           
-
             if (videoInicial.isPlaying == true)
-        {
+            {
                 if (sceneName == "Level8")
                 {
 
-                    dog1.GetComponent<AudioSource>().mute = true;
                     //dog2.GetComponent<AudioSource>().mute = true;
                 }
 
-            camAnimacion.SetActive(true);
-            Time.timeScale = 0;
-            MusicController.aus.mute = true;
+                camAnimacion.SetActive(true);
+                Time.timeScale = 0;
+                MusicController.aus.mute = true;
 
+                if (Input.GetKeyDown(KeyCode.Mouse0) || showoOne)
+                {
 
-                if (Input.GetKeyDown(KeyCode.Mouse0))
-            {
-                videoInicial.Stop();
-                camAnimacion.SetActive(false);
-                Time.timeScale = 1;
-                MusicController.aus.mute = false;
+                    if (!showoOne )
+                    {
+                        // mandar el evento de salter
+                    }
+                       
+                    
+                    videoInicial.Stop();
+                    camAnimacion.SetActive(false);
+                    Time.timeScale = 1;
+                    MusicController.aus.mute = false;
                     this.gameObject.SetActive(false);
 
                     if (sceneName == "Level8")
                     {
 
-                        dog1.GetComponent<AudioSource>().mute = false;
                         //dog2.GetComponent<AudioSource>().mute = false;
                     }
 
                 }
-        }
-        else
-        {
-            videoInicial.Stop();
+            }
+            else
+            {
+                videoInicial.Stop();
+
+                // mandar el evento de lo vio hasta el final
+
+                switch (sceneName)
+                {
+                    case "Tutorial":
+                        SaltearNivel0 = true;
+                        break;
+                    case "Level1":
+                        SaltearNivel1 = true;
+                        break;
+                    case "Level2":
+                        SaltearNivel2 = true;
+                        break;
+                    case "Level3":
+                        SaltearNivel3 = true;
+                        break;
+                    case "Level4":
+                        SaltearNivel4 = true;
+                        break;
+                    case "Level5":
+                        SaltearNivel5 = true;
+                        break;
+                    case "Level6":
+                        SaltearNivel6 = true;
+                        break;
+                    case "Level7":
+                        SaltearNivel7 = true;
+                        break;
+                    case "Level8":
+                        SaltearNivel8 = true;
+                        break;
+                    case "Level9":
+                        SaltearNivel9 = true;
+                        break;
+                    case "Level10":
+                        SaltearNivel10 = true;
+                        break;
+                }
+
 
                 MusicController.aus.mute = false;
                 if (sceneName == "Level8")
                 {
-
-                    dog1.GetComponent<AudioSource>().mute = false;
                     //dog2.GetComponent<AudioSource>().mute = false;
                 }
 
                 if (empezar == false)
-            {
-                camAnimacion.SetActive(false);
-                Time.timeScale = 1;
-                this.gameObject.SetActive(false);
-                empezar = true;
+                {
+                    camAnimacion.SetActive(false);
+                    Time.timeScale = 1;
+                    this.gameObject.SetActive(false);
+                    empezar = true;
 
-            }
+                 }
             
                      
-        }
+            }
 
         }
 
