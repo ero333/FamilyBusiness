@@ -39,19 +39,8 @@ public class GameManager : MonoBehaviour {
   public static int maxScore8 = 15000;
   public static int maxScore9 = 15000;
   public static int maxScore10 = 15000;
-  public static int curScore;
-   
-  public static int curScore1;
-  public static int curScore2;
-  public static int curScore3;
-  public static int curScore4;
-  public static int curScore5;
-  public static int curScore6;
-  public static int curScore7;
-  public static int curScore8;
-  public static int curScore9;
-  public static int curScore10;
-  
+  public static int curScore = 0;
+
     public static float tiempoNivel;
     public static float tiempoTotalNivel;
 
@@ -84,10 +73,8 @@ public class GameManager : MonoBehaviour {
         if (Time.timeScale == 0)
         {
             contador.SetActive(false);
-        }
-
-        curScore = 0;
-
+        }        
+        
         switch (sceneName)
         {
             case "Menu":

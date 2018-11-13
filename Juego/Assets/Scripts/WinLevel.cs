@@ -25,7 +25,7 @@ public class WinLevel : MonoBehaviour
         menu.onClick.AddListener(cargarMenu);        
         sigNivel.onClick.AddListener(siguienteNivel);
         Score.SetActive(false);
-
+        
         switch (sceneName)
         {
             case "Menu":                
@@ -63,25 +63,25 @@ public class WinLevel : MonoBehaviour
 
     private void Update()
     {
-
+        
         if (sceneName == "Level1")
         {
-            if (GameManager.curScore1 >= GameManager.maxScore1)
+            if (GameManager.curScore >= GameManager.maxScore1)
             {
                 curScore.text = "Obtuviste una A. Puntaje perfecto!!";
             }
 
-            else if (GameManager.curScore1 == GameManager.minScore1)
+            else if (GameManager.curScore == GameManager.minScore1)
             {
                 curScore.text = "Obtuviste una D. Puntaje mínimo.";
             }
 
-            else if (GameManager.curScore1 > GameManager.minScore1 && GameManager.curScore1 <= (GameManager.minScore1 + GameManager.maxScore1) / 2)
+            else if (GameManager.curScore > GameManager.minScore1 && GameManager.curScore <= (GameManager.minScore1 + GameManager.maxScore1) / 2)
             {
                 curScore.text = "Obtuviste una C. Puntaje por arriba del mínimo";
             }
 
-            else if (GameManager.curScore1 < GameManager.maxScore1 && GameManager.curScore1 >= (GameManager.minScore1 + GameManager.maxScore1) / 2){
+            else if (GameManager.curScore < GameManager.maxScore1 && GameManager.curScore >= (GameManager.minScore1 + GameManager.maxScore1) / 2){
                 curScore.text = "Obtuviste una B. Puntaje por arriba de la mitad";
             }
 
@@ -89,22 +89,22 @@ public class WinLevel : MonoBehaviour
         else if (sceneName == "Level2")
         {
 
-            if (GameManager.curScore2 >= GameManager.maxScore2)
+            if (GameManager.curScore >= GameManager.maxScore2)
             {
                 curScore.text = "Obtuviste una A. Puntaje perfecto!!";
             }
 
-            else if (GameManager.curScore2 == GameManager.minScore2)
+            else if (GameManager.curScore == GameManager.minScore2)
             {
                 curScore.text = "Obtuviste una D. Puntaje mínimo.";
             }
 
-            else if (GameManager.curScore2 > GameManager.minScore2 && GameManager.curScore2 <= (GameManager.minScore2 + GameManager.maxScore2) / 2)
+            else if (GameManager.curScore > GameManager.minScore2 && GameManager.curScore <= (GameManager.minScore2 + GameManager.maxScore2) / 2)
             {
                 curScore.text = "Obtuviste una C. Puntaje por arriba del mínimo";
             }
 
-            else if (GameManager.curScore2 < GameManager.maxScore2 && GameManager.curScore2 >= (GameManager.minScore2 + GameManager.maxScore2) / 2)
+            else if (GameManager.curScore < GameManager.maxScore2 && GameManager.curScore >= (GameManager.minScore2 + GameManager.maxScore2) / 2)
             {
                 curScore.text = "Obtuviste una B. Puntaje por arriba de la mitad";
             }
@@ -112,22 +112,22 @@ public class WinLevel : MonoBehaviour
         else if (sceneName == "Level3")
         {
 
-            if (GameManager.curScore3 >= GameManager.maxScore3)
+            if (GameManager.curScore >= GameManager.maxScore3)
             {
                 curScore.text = "Obtuviste una A. Puntaje perfecto!!";
             }
 
-            else if (GameManager.curScore3 == GameManager.minScore3)
+            else if (GameManager.curScore == GameManager.minScore3)
             {
                 curScore.text = "Obtuviste una D. Puntaje mínimo.";
             }
 
-            else if (GameManager.curScore3 > GameManager.minScore3 && GameManager.curScore3 <= (GameManager.minScore3 + GameManager.maxScore3) / 2)
+            else if (GameManager.curScore > GameManager.minScore3 && GameManager.curScore <= (GameManager.minScore3 + GameManager.maxScore3) / 2)
             {
                 curScore.text = "Obtuviste una C. Puntaje por arriba del mínimo";
             }
 
-            else if (GameManager.curScore3 < GameManager.maxScore3 && GameManager.curScore3 >= (GameManager.minScore3 + GameManager.maxScore3) / 2)
+            else if (GameManager.curScore < GameManager.maxScore3 && GameManager.curScore >= (GameManager.minScore3 + GameManager.maxScore3) / 2)
             {
                 curScore.text = "Obtuviste una B. Puntaje por arriba de la mitad";
             }
@@ -135,22 +135,22 @@ public class WinLevel : MonoBehaviour
         else if (sceneName == "Level4")
         {
 
-            if (GameManager.curScore4 >= GameManager.maxScore4)
+            if (GameManager.curScore >= GameManager.maxScore4)
             {
                 curScore.text = "Obtuviste una A. Puntaje perfecto!!";
             }
 
-            else if (GameManager.curScore4 == GameManager.minScore4)
+            else if (GameManager.curScore == GameManager.minScore4)
             {
                 curScore.text = "Obtuviste una D. Puntaje mínimo.";
             }
 
-            else if (GameManager.curScore4 > GameManager.minScore4 && GameManager.curScore4 <= (GameManager.minScore4 + GameManager.maxScore4) / 2)
+            else if (GameManager.curScore > GameManager.minScore4 && GameManager.curScore <= (GameManager.minScore4 + GameManager.maxScore4) / 2)
             {
                 curScore.text = "Obtuviste una C. Puntaje por arriba del mínimo";
             }
 
-            else if (GameManager.curScore4 < GameManager.maxScore4 && GameManager.curScore4 >= (GameManager.minScore4 + GameManager.maxScore4) / 2)
+            else if (GameManager.curScore < GameManager.maxScore4 && GameManager.curScore >= (GameManager.minScore4 + GameManager.maxScore4) / 2)
             {
                 curScore.text = "Obtuviste una B. Puntaje por arriba de la mitad";
             }
@@ -158,22 +158,22 @@ public class WinLevel : MonoBehaviour
         else if (sceneName == "Level5")
         {
 
-            if (GameManager.curScore5 >= GameManager.maxScore5)
+            if (GameManager.curScore >= GameManager.maxScore5)
             {
                 curScore.text = "Obtuviste una A. Puntaje perfecto!!";
             }
 
-            else if (GameManager.curScore5 == GameManager.minScore5)
+            else if (GameManager.curScore == GameManager.minScore5)
             {
                 curScore.text = "Obtuviste una D. Puntaje mínimo.";
             }
 
-            else if (GameManager.curScore5 > GameManager.minScore5 && GameManager.curScore5 <= (GameManager.minScore5 + GameManager.maxScore5) / 2)
+            else if (GameManager.curScore > GameManager.minScore5 && GameManager.curScore <= (GameManager.minScore5 + GameManager.maxScore5) / 2)
             {
                 curScore.text = "Obtuviste una C. Puntaje por arriba del mínimo";
             }
 
-            else if (GameManager.curScore5 < GameManager.maxScore5 && GameManager.curScore5 >= (GameManager.minScore5 + GameManager.maxScore5) / 2)
+            else if (GameManager.curScore < GameManager.maxScore5 && GameManager.curScore >= (GameManager.minScore5 + GameManager.maxScore5) / 2)
             {
                 curScore.text = "Obtuviste una B. Puntaje por arriba de la mitad";
             }
@@ -181,22 +181,22 @@ public class WinLevel : MonoBehaviour
         else if (sceneName == "Level6")
         {
 
-            if (GameManager.curScore6 >= GameManager.maxScore6)
+            if (GameManager.curScore >= GameManager.maxScore6)
             {
                 curScore.text = "Obtuviste una A. Puntaje perfecto!!";
             }
 
-            else if (GameManager.curScore6 == GameManager.minScore6)
+            else if (GameManager.curScore == GameManager.minScore6)
             {
                 curScore.text = "Obtuviste una D. Puntaje mínimo.";
             }
 
-            else if (GameManager.curScore6 > GameManager.minScore6 && GameManager.curScore6 <= (GameManager.minScore6 + GameManager.maxScore6) / 2)
+            else if (GameManager.curScore > GameManager.minScore6 && GameManager.curScore <= (GameManager.minScore6 + GameManager.maxScore6) / 2)
             {
                 curScore.text = "Obtuviste una C. Puntaje por arriba del mínimo";
             }
 
-            else if (GameManager.curScore6 < GameManager.maxScore6 && GameManager.curScore6 >= (GameManager.minScore6 + GameManager.maxScore6) / 2)
+            else if (GameManager.curScore < GameManager.maxScore6 && GameManager.curScore >= (GameManager.minScore6 + GameManager.maxScore6) / 2)
             {
                 curScore.text = "Obtuviste una B. Puntaje por arriba de la mitad";
             }
@@ -204,22 +204,22 @@ public class WinLevel : MonoBehaviour
         else if (sceneName == "Level7")
         {
 
-            if (GameManager.curScore7 >= GameManager.maxScore7)
+            if (GameManager.curScore >= GameManager.maxScore7)
             {
                 curScore.text = "Obtuviste una A. Puntaje perfecto!!";
             }
 
-            else if (GameManager.curScore7 == GameManager.minScore7)
+            else if (GameManager.curScore == GameManager.minScore7)
             {
                 curScore.text = "Obtuviste una D. Puntaje mínimo.";
             }
 
-            else if (GameManager.curScore7 > GameManager.minScore7 && GameManager.curScore7 <= (GameManager.minScore7 + GameManager.maxScore7) / 2)
+            else if (GameManager.curScore > GameManager.minScore7 && GameManager.curScore <= (GameManager.minScore7 + GameManager.maxScore7) / 2)
             {
                 curScore.text = "Obtuviste una C. Puntaje por arriba del mínimo";
             }
 
-            else if (GameManager.curScore7 < GameManager.maxScore7 && GameManager.curScore7 >= (GameManager.minScore7 + GameManager.maxScore7) / 2)
+            else if (GameManager.curScore < GameManager.maxScore7 && GameManager.curScore >= (GameManager.minScore7 + GameManager.maxScore7) / 2)
             {
                 curScore.text = "Obtuviste una B. Puntaje por arriba de la mitad";
             }
@@ -227,22 +227,22 @@ public class WinLevel : MonoBehaviour
         else if (sceneName == "Level8")
         {
 
-            if (GameManager.curScore8 >= GameManager.maxScore8)
+            if (GameManager.curScore >= GameManager.maxScore8)
             {
                 curScore.text = "Obtuviste una A. Puntaje perfecto!!";
             }
 
-            else if (GameManager.curScore8 == GameManager.minScore8)
+            else if (GameManager.curScore == GameManager.minScore8)
             {
                 curScore.text = "Obtuviste una D. Puntaje mínimo.";
             }
 
-            else if (GameManager.curScore8 > GameManager.minScore8 && GameManager.curScore8 <= (GameManager.minScore8 + GameManager.maxScore8) / 2)
+            else if (GameManager.curScore > GameManager.minScore8 && GameManager.curScore <= (GameManager.minScore8 + GameManager.maxScore8) / 2)
             {
                 curScore.text = "Obtuviste una C. Puntaje por arriba del mínimo";
             }
 
-            else if (GameManager.curScore8 < GameManager.maxScore8 && GameManager.curScore8 >= (GameManager.minScore8 + GameManager.maxScore8) / 2)
+            else if (GameManager.curScore < GameManager.maxScore8 && GameManager.curScore >= (GameManager.minScore8 + GameManager.maxScore8) / 2)
             {
                 curScore.text = "Obtuviste una B. Puntaje por arriba de la mitad";
             }
@@ -250,22 +250,22 @@ public class WinLevel : MonoBehaviour
         else if (sceneName == "Level9")
         {
 
-            if (GameManager.curScore9 >= GameManager.maxScore9)
+            if (GameManager.curScore >= GameManager.maxScore9)
             {
                 curScore.text = "Obtuviste una A. Puntaje perfecto!!";
             }
 
-            else if (GameManager.curScore9 == GameManager.minScore9)
+            else if (GameManager.curScore == GameManager.minScore9)
             {
                 curScore.text = "Obtuviste una D. Puntaje mínimo.";
             }
 
-            else if (GameManager.curScore9 > GameManager.minScore9 && GameManager.curScore9 <= (GameManager.minScore9 + GameManager.maxScore9) / 2)
+            else if (GameManager.curScore > GameManager.minScore9 && GameManager.curScore <= (GameManager.minScore9 + GameManager.maxScore9) / 2)
             {
                 curScore.text = "Obtuviste una C. Puntaje por arriba del mínimo";
             }
 
-            else if (GameManager.curScore9 < GameManager.maxScore9 && GameManager.curScore9 >= (GameManager.minScore9 + GameManager.maxScore9) / 2)
+            else if (GameManager.curScore < GameManager.maxScore9 && GameManager.curScore >= (GameManager.minScore9 + GameManager.maxScore9) / 2)
             {
                 curScore.text = "Obtuviste una B. Puntaje por arriba de la mitad";
             }
@@ -273,22 +273,22 @@ public class WinLevel : MonoBehaviour
         else if (sceneName == "Level10")
         {
 
-            if (GameManager.curScore10 >= GameManager.maxScore10)
+            if (GameManager.curScore >= GameManager.maxScore10)
             {
                 curScore.text = "Obtuviste una A. Puntaje perfecto!!";
             }
 
-            else if (GameManager.curScore10 == GameManager.minScore10)
+            else if (GameManager.curScore == GameManager.minScore10)
             {
                 curScore.text = "Obtuviste una D. Puntaje mínimo.";
             }
 
-            else if (GameManager.curScore10 > GameManager.minScore10 && GameManager.curScore10 <= (GameManager.minScore10 + GameManager.maxScore10) / 2)
+            else if (GameManager.curScore > GameManager.minScore10 && GameManager.curScore <= (GameManager.minScore10 + GameManager.maxScore10) / 2)
             {
                 curScore.text = "Obtuviste una C. Puntaje por arriba del mínimo";
             }
 
-            else if (GameManager.curScore10 < GameManager.maxScore10 && GameManager.curScore10 >= (GameManager.minScore10 + GameManager.maxScore10) / 2)
+            else if (GameManager.curScore < GameManager.maxScore10 && GameManager.curScore >= (GameManager.minScore10 + GameManager.maxScore10) / 2)
             {
                 curScore.text = "Obtuviste una B. Puntaje por arriba de la mitad";
             }
@@ -311,8 +311,10 @@ public class WinLevel : MonoBehaviour
             Time.timeScale = 0;
             menuGanar.SetActive(true);
             cartelWin.SetActive(false);
-            Score.SetActive(true);
+            Score.SetActive(true);            
             GameManager.tiempoTotalNivel += Time.timeSinceLevelLoad;
+            Debug.Log("el puntaje final es: " + GameManager.curScore);
+            
             int level;
             if (sceneName == "Tutorial")
             {
@@ -326,8 +328,7 @@ public class WinLevel : MonoBehaviour
             Debug.Log("nivel es: " + level);
             Debug.Log("tiempo es: " + GameManager.tiempoTotalNivel);
             Debug.Log("tiempoultimoreintento es: " + Time.timeSinceLevelLoad);                                    
-            Debug.Log("muertes es: " + GameManager.muertes);
-            Debug.Log("El score final es de: " + GameManager.curScore);
+            Debug.Log("muertes es: " + GameManager.muertes);            
             Debug.Log("Insertar evento de TerminarNivel");            
             
         }
@@ -360,6 +361,7 @@ public class WinLevel : MonoBehaviour
         
         GameManager.tiempoTotalNivel = 0; //Resetea la variable a cero para el proximo nivel
         GameManager.muertes = 0; //Resetea la variable a cero para el proximo nivel
+        GameManager.curScore = 0; //Resetea la variable a cero para el proximo nivel
 
     }
 }
