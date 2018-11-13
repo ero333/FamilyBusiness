@@ -1,5 +1,9 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using UnityEngine.Analytics;
 
 public class EnemyAttacked : MonoBehaviour {
 	public Sprite knockedDown,stabbed,bulletWound,backUp;
@@ -9,12 +13,15 @@ public class EnemyAttacked : MonoBehaviour {
 	float knockDownTimer = 3.0f;
 	GameObject player;
 	ScoreController sc;
+    string sceneName;
 
 	void Start () {
 		sr = this.GetComponent<SpriteRenderer> ();
 		player = GameObject.FindGameObjectWithTag ("Player");
 		sc = GameObject.FindGameObjectWithTag ("GameController").GetComponent<ScoreController> ();
-	}
+        sceneName = SceneManager.GetActiveScene().name;
+
+    }
 	
 
 	void Update () {
@@ -32,6 +39,15 @@ public class EnemyAttacked : MonoBehaviour {
 	{
         string nombreEnemigo = this.gameObject.name;
         Debug.Log("El enemigo nockeado es " + nombreEnemigo);
+        int level = Utils.LevelFromSceneName(sceneName);
+        Analytics.CustomEvent("Noquear", new Dictionary<string, object>
+        {  { "nivel", level },
+           { "enemigo", nombreEnemigo },
+            { "tiempo", Time.timeSinceLevelLoad  }
+
+        }
+        );
+
         // aqui se sabe que enemigo esta noqueado
 
         this.GetComponent<EnemyWeaponController> ().dropWeapon ();

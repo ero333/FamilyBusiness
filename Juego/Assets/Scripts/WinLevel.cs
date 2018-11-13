@@ -477,11 +477,7 @@ public class WinLevel : MonoBehaviour
        }
        else
        {
-            if(!int.TryParse(sceneName.Substring(5), out level))
-            {
-                Debug.Log("Error: No es un numero");
-                return;
-            }
+            level = Utils.LevelFromSceneName(sceneName);
             level++;
         }
 
