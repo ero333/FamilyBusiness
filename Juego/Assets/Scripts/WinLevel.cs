@@ -469,91 +469,31 @@ public class WinLevel : MonoBehaviour
 
     void siguienteNivel()
     {
-        if (sceneName == "Tutorial")
-        {
-            Analytics.CustomEvent("EmpezarNivel", new Dictionary<string, object>
-        {  { "nivel", 1 }   }
-        );
+        int level;
 
-            SceneManager.LoadScene("Level1");
-            GameManager.tiempoTotalNivel1 = 0;
-        }
-        else if (sceneName == "Level1")
-        {
-            Analytics.CustomEvent("EmpezarNivel", new Dictionary<string, object>
-        {  { "nivel", 2 }   }
-        );
-            SceneManager.LoadScene("Level2");
-            GameManager.tiempoTotalNivel2 = 0;
-        }
-        else if (sceneName == "Level2")
-        {
-            Analytics.CustomEvent("EmpezarNivel", new Dictionary<string, object>
-                {  { "nivel", 3}   }
-            );
-            SceneManager.LoadScene("Level3");
-            GameManager.tiempoTotalNivel3 = 0;
-        }
-        else if (sceneName == "Level3")
-        {
-            Analytics.CustomEvent("EmpezarNivel", new Dictionary<string, object>
-                {  { "nivel", 4 }   }
-            );
-            SceneManager.LoadScene("Level4");
-            GameManager.tiempoTotalNivel4 = 0;
-        }
-        else if (sceneName == "Level4")
-        {
-            Analytics.CustomEvent("EmpezarNivel", new Dictionary<string, object>
-                {  { "nivel", 5 }   }
-            );
-            SceneManager.LoadScene("Level5");
-            GameManager.tiempoTotalNivel5 = 0;
-        }
-        else if (sceneName == "Level5")
-        {
-            Analytics.CustomEvent("EmpezarNivel", new Dictionary<string, object>
-                {  { "nivel", 6 }   }
-            );
-            SceneManager.LoadScene("Level6");
-            GameManager.tiempoTotalNivel6 = 0;
-        }
-        else if (sceneName == "Level6")
-        {
-            Analytics.CustomEvent("EmpezarNivel", new Dictionary<string, object>
-                {  { "nivel", 7 }   }
-            );
-            SceneManager.LoadScene("Level7");
-            GameManager.tiempoTotalNivel7 = 0;
-        }
-        else if (sceneName == "Level7")
-        {
-            Analytics.CustomEvent("EmpezarNivel", new Dictionary<string, object>
-                {  { "nivel", 8 }   }
-            );
-            SceneManager.LoadScene("Level8");
-            GameManager.tiempoTotalNivel8 = 0;
-        }
-        else if (sceneName == "Level8")
-        {
-            Analytics.CustomEvent("EmpezarNivel", new Dictionary<string, object>
-                {  { "nivel", 9 }   }
-            );
-            SceneManager.LoadScene("Level9");
-            GameManager.tiempoTotalNivel9 = 0;
-        }
-        else if (sceneName == "Level9")
-        {
-            Analytics.CustomEvent("EmpezarNivel", new Dictionary<string, object>
-                {  { "nivel", 10 }   }
-            );
-            SceneManager.LoadScene("Level10");
-            GameManager.tiempoTotalNivel10 = 0;
-        }
-        else if (sceneName == "Level10")
-        {            
-            SceneManager.LoadScene("Calificar");
+       if(sceneName == "Tutorial")
+       {
+            level = 1;
+       }
+       else
+       {
+            if(!int.TryParse(sceneName.Substring(5), out level))
+            {
+                Debug.Log("Error: No es un numero");
+                return;
+            }
+            level++;
         }
 
+        
+
+        Analytics.CustomEvent("EmpezarNivel", new Dictionary<string, object>
+        {  { "nivel", level }   }
+        );
+
+        SceneManager.LoadScene("Level"  + level);
+        
+        GameManager.tiempoTotalNivel = 0;
+                
     }
 }
