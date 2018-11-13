@@ -152,6 +152,12 @@ public class GameManager : MonoBehaviour {
     {
         contEmpezar++;
         Debug.Log("aqui se llama al evento Empezar. El contador es: " + contEmpezar);
+        Analytics.CustomEvent("Empezar", new Dictionary<string, object>
+                {
+                    { "vez", contEmpezar }
+                }
+                );
+
         SceneManager.LoadScene("Tutorial");
         check10 = false;
     }
@@ -160,6 +166,11 @@ public class GameManager : MonoBehaviour {
     {
         contControles++;
         Debug.Log("aqui se llama al evento VerControles. El contador es: " + contControles);
+        Analytics.CustomEvent("VerControles", new Dictionary<string, object>
+                {
+                    { "vez", contControles }
+                }
+                );
         SceneManager.LoadScene("Controls");
     }
 
@@ -167,6 +178,11 @@ public class GameManager : MonoBehaviour {
     {
         contCreditos++;
         Debug.Log("aqui se llama al evento VerCreditos. El contador es: " + contCreditos);
+        Analytics.CustomEvent("VerCreditos", new Dictionary<string, object>
+                {
+                    { "vez", contCreditos }
+                }
+                );
         SceneManager.LoadScene("Credits");
 
        
