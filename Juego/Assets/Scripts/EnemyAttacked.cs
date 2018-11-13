@@ -39,7 +39,20 @@ public class EnemyAttacked : MonoBehaviour {
 	{
         string nombreEnemigo = this.gameObject.name;
         Debug.Log("El enemigo nockeado es " + nombreEnemigo);
-        int level = Utils.LevelFromSceneName(sceneName);
+        int level;
+
+        if (sceneName == "Tutorial")
+        {
+            level = 0;
+        }
+        else
+        {
+            level = Utils.LevelFromSceneName(sceneName);
+            
+        }
+
+        Debug.Log("Noquear nivel: " + level);
+
         Analytics.CustomEvent("Noquear", new Dictionary<string, object>
         {  { "nivel", level },
            { "enemigo", nombreEnemigo },

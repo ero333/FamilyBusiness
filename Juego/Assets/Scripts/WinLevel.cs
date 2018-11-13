@@ -473,12 +473,12 @@ public class WinLevel : MonoBehaviour
 
        if(sceneName == "Tutorial")
        {
-            level = 1;
+            level = 0;
        }
        else
        {
             level = Utils.LevelFromSceneName(sceneName);
-            level++;
+           
         }
 
         
@@ -486,6 +486,9 @@ public class WinLevel : MonoBehaviour
         Analytics.CustomEvent("EmpezarNivel", new Dictionary<string, object>
         {  { "nivel", level }   }
         );
+
+        level++;
+        Debug.Log("EmpezarNivel: " + level);
 
         SceneManager.LoadScene("Level"  + level);
         
