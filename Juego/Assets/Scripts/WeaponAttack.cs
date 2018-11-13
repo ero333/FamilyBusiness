@@ -107,28 +107,36 @@ public class WeaponAttack : MonoBehaviour {
 
 	public void attack()
 	{
-		
+        Debug.Log("Disparo Winchester");
 		if (gun == true && curWepScr.ammo > 0) {//NEW STUFF FOR 16
 			pa.attack ();
-			Bullet bl = bullet.GetComponent<Bullet> ();
 			Vector3 dir;
 			dir.x = Vector2.right.x;
 			dir.y = Vector2.right.y;
 			dir.z = 0;
-			bl.setVals (dir,"Player");
+	
 
 				if (oneHanded == true) {
 					if (Shotgun == false) {//new for new weapons
-						Instantiate (bullet, oneHandSpawn.transform.position, this.transform.rotation);
-					} else {
+
+
+                    
+                    
+                    Bullet bl =  Instantiate (bullet, oneHandSpawn.transform.position, this.transform.rotation).GetComponent<Bullet>();
+                    bl.arma = curWepScr.name;
+                    Debug.Log("El arma del player es: " + bl.arma);
+                } else {
 						Instantiate (shotgunBullet, oneHandSpawn.transform.position, this.transform.rotation);
+
 					}
 					curWeapon.GetComponent<WeaponPickup> ().ammo--;
 					//FindObjectOfType<LevelEscapeController> ().shotFired (); Comentado para que se pueda disparar
 				} else {
 					if (Shotgun == false) {//new for new weapons
-						Instantiate (bullet, twoHandSpawn.transform.position, this.transform.rotation);
-					} else {
+                    Bullet bl = Instantiate(bullet, twoHandSpawn.transform.position, this.transform.rotation).GetComponent<Bullet>();
+                    bl.arma = curWepScr.name;
+                    Debug.Log("El arma del player es: " + bl.arma);
+                } else {
 						Instantiate (shotgunBullet, twoHandSpawn.transform.position, this.transform.rotation);
 					}
 					curWeapon.GetComponent<WeaponPickup> ().ammo--;

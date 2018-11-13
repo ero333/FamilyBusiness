@@ -104,7 +104,7 @@ public class EnemyAttacked : MonoBehaviour {
 
     /* killBullet() es la funcion para matar al enemigo con arma*/
 
-	public void killBullet()
+	public void killBullet(Bullet bullet)
 	{
 		knockDownTimer = 9999;
 		EnemyKnockedDown = false;
@@ -131,6 +131,8 @@ public class EnemyAttacked : MonoBehaviour {
 		this.GetComponent<EnemyAnimate> ().disableLegs ();
 		this.GetComponent<EnemyAnimate> ().enabled =false;
 		this.gameObject.tag = "Dead";
+
+        Debug.Log("Kill Bullet con arma " + bullet.arma);
 	}
 
 	public void killMelee()

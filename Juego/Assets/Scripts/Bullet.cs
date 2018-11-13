@@ -49,7 +49,7 @@ public class Bullet : MonoBehaviour {
             }
             else
             {
-                attacked.killBullet();
+                attacked.killBullet(this);
             } 
             
             // AQUI TERMINA EL CODIGO PARA MIRTHA
