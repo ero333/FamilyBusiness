@@ -1,5 +1,9 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+using UnityEngine.Analytics;
 
 public class Bullet : MonoBehaviour {
 	public Vector3 direction;
@@ -9,14 +13,15 @@ public class Bullet : MonoBehaviour {
     public string arma;
     public string asesino;
 	public GameObject bloodImpact,wallImpact;
-    
-	// Use this for initialization
-	float timer = 10.0f;
+    private string sceneName;
+    // Use this for initialization
+    float timer = 10.0f;
 
 
 	void Start () {
-	    
-	}
+        Scene currentScene = SceneManager.GetActiveScene();
+        sceneName = currentScene.name;
+    }
 
 	// Update is called once per frame
 	void Update () {
@@ -70,20 +75,26 @@ public class Bullet : MonoBehaviour {
             if(!PlayerHealth.dead)
             {
                 PlayerHealth.dead = true;//new for 10
-                Debug.Log("me mato con el arma " + arma);
-                Debug.Log("Insertar evento Morir aqui");
+                //Debug.Log("me mato con el arma " + arma);
+                int level;
+                if (sceneName == "Tutorial")
+                {
+                    level = 0;
+                }
+                else
+                {
+                    level = Utils.LevelFromSceneName(sceneName);
+
+                }
+                Debug.Log("nivel de Morir: " + level);
+                Debug.Log("enemigo de Morir: " + asesino);
+                Debug.Log("tiempo de Morir: " + Time.timeSinceLevelLoad);
+                Debug.Log("coordenada X de Morir: " + col.gameObject.transform.position.x);
+                Debug.Log("coordenada Y de Morir: " + col.gameObject.transform.position.y);
+                Debug.Log("arma de Morir: " + arma);
+                Debug.Log("Insertar evento de morir");
                 // Morir
-                /*
-                Analytics.CustomEvent("Morir", new Dictionary<string, object>
-                {  { "nivel", 1 } 
-                  { "tiempo", GameManager.tiempoNivel1 }   }
-                );
 
-                Analytics.CustomEvent("Morir", new Dictionary<string, object>
-                {  { "CoordenadasXYZ", GameManager.playerPosition }   }
-                );
-
-    */
             }
 
             Destroy (this.gameObject);

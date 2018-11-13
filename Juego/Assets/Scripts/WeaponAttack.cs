@@ -120,6 +120,7 @@ public class WeaponAttack : MonoBehaviour {
 
                     Bullet bl =  Instantiate (bullet, oneHandSpawn.transform.position, this.transform.rotation).GetComponent<Bullet>();
                     bl.arma = curWepScr.name;
+                    ContarMuertos.armaPlayer = bl.arma;
                     Debug.Log("El arma del player es: " + bl.arma);
                 } else {
 						Instantiate (shotgunBullet, oneHandSpawn.transform.position, this.transform.rotation);

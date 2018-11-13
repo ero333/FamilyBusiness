@@ -69,6 +69,22 @@ public class PlayerHealth : MonoBehaviour {
            
 
             if (Input.GetKeyDown (KeyCode.R)) {
+                int level;
+                if (sceneName == "Tutorial")
+                {
+                    level = 0;
+                }
+                else
+                {
+                    level = Utils.LevelFromSceneName(sceneName);
+
+                }
+                Debug.Log("nivel de ReiniciarNivel: " + level);
+                Debug.Log("tiempo de ReiniciarNivel: " + Time.timeSinceLevelLoad);
+                Debug.Log("enemigos muertos de ReiniciarNivel: " + ContarMuertos.contMuertos);
+                Debug.Log("vez de ReiniciarNivel: " + GameManager.muertes);
+
+
 
                 if (Time.timeSinceLevelLoad > 0)
                 {

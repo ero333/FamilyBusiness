@@ -1,11 +1,15 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using UnityEngine.Analytics;
 
 public class HeavyAttack : MonoBehaviour {
 	public GameObject blood;
 	float timer = 0.1f,timerReset=0.1f;
-
-	SpriteContainer sc;
+    string sceneName;
+    SpriteContainer sc;
 
 
 
@@ -16,7 +20,8 @@ public class HeavyAttack : MonoBehaviour {
 	HeavyAnimate ea;
 	// Use this for initialization
 	void Start () {
-		player = GameObject.FindGameObjectWithTag ("Player");
+        sceneName = SceneManager.GetActiveScene().name;
+        player = GameObject.FindGameObjectWithTag ("Player");
 		ea = this.GetComponent<HeavyAnimate> ();
 	}
 	
@@ -38,7 +43,7 @@ public class HeavyAttack : MonoBehaviour {
 	}
 
 	public void attack()
-	{
+	{                  
 			int layerMask = 1<<8;
 			layerMask = ~layerMask;
 			//pa.attack ();
@@ -48,8 +53,25 @@ public class HeavyAttack : MonoBehaviour {
 			if (ray.collider.gameObject.tag=="Player") {
 				Debug.Log("*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* HeavyAttack");
 				PlayerHealth.dead= true;
-            Debug.Log("El player es matado por heavy");
-            Debug.Log("Insertar evento de Morir aqui");
+            //Debug.Log("El player es matado por heavy");
+
+            int level;
+            if (sceneName == "Tutorial")
+            {
+                level = 0;
+            }
+            else
+            {
+                level = Utils.LevelFromSceneName(sceneName);
+
+            }
+            Debug.Log("nivel de Morir: " + level);
+            Debug.Log("enemigo de Morir: " + this.gameObject.name);
+            Debug.Log("tiempo de Morir: " + Time.timeSinceLevelLoad);
+            Debug.Log("coordenada X de Morir: " + ray.collider.gameObject.transform.position.x);
+            Debug.Log("coordenada Y de Morir: " + ray.collider.gameObject.transform.position.y);
+            // el heavy no usa arma
+            Debug.Log("Insertar evento de morir");
 
             // Aca el player muere por heavy
             Instantiate (blood, player.transform.position, player.transform.rotation);

@@ -1,5 +1,9 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using UnityEngine.Analytics;
 
 public class DogAI : MonoBehaviour {
 	GameObject player;
@@ -13,12 +17,13 @@ public class DogAI : MonoBehaviour {
 	float speed = 2.0f; //changed bullets to be kenimatic
 	int layerMask = 1<<8; //explain layermask for tutorial (how it works + changes to weapon attack)
 	public GameObject bloodSpurt;
+    string sceneName;
 
 
-
-	// Use this for initialization
-	void Start () {
-		player = GameObject.FindGameObjectWithTag ("Player");
+    // Use this for initialization
+    void Start () {        
+        sceneName = SceneManager.GetActiveScene().name;
+        player = GameObject.FindGameObjectWithTag ("Player");
 		playerLastPos = this.transform.position;
 		rid = this.GetComponent<Rigidbody2D> ();
 		layerMask = ~layerMask;
@@ -93,7 +98,23 @@ public class DogAI : MonoBehaviour {
 				Instantiate (bloodSpurt, player.transform.position, player.transform.rotation);
 				PlayerHealth.dead = true;
                 Debug.Log("El player muere por perro");
-                Debug.Log("Insertar evento de Morir aqui");
+                int level;
+                if (sceneName == "Tutorial")
+                {
+                    level = 0;
+                }
+                else
+                {
+                    level = Utils.LevelFromSceneName(sceneName);
+
+                }
+                Debug.Log("nivel de Morir: " + level);
+                Debug.Log("enemigo de Morir: " + this.gameObject.name);
+                Debug.Log("tiempo de Morir: " + Time.timeSinceLevelLoad);
+                Debug.Log("coordenada X de Morir: " + hit.collider.gameObject.transform.position.x);
+                Debug.Log("coordenada Y de Morir: " + hit.collider.gameObject.transform.position.y);
+                // el perro no usa arma
+                Debug.Log("Insertar evento de morir");
                 //Aca el player muere por el perro
             }
 

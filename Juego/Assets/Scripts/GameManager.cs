@@ -15,6 +15,9 @@ public class GameManager : MonoBehaviour {
   public static int contEmpezar = 0;
   public static int contCreditos = 0;
   public static int contControles = 0;
+  public static int curScore = 0;
+  public static float tiempoNivel;
+  public static float tiempoTotalNivel;
   public static int level;   
   public static int lifeBoss = 10;  
   public static float timecont1;
@@ -39,10 +42,6 @@ public class GameManager : MonoBehaviour {
   public static int maxScore8 = 15000;
   public static int maxScore9 = 15000;
   public static int maxScore10 = 15000;
-  public static int curScore = 0;
-
-    public static float tiempoNivel;
-    public static float tiempoTotalNivel;
 
     public static bool SaltearNivel0 = false;
     public static bool SaltearNivel1 = false;

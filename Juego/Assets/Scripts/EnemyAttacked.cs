@@ -53,17 +53,7 @@ public class EnemyAttacked : MonoBehaviour {
             level = Utils.LevelFromSceneName(sceneName);
             
         }
-
-        //Debug.Log("Noquear nivel: " + level);
-        /*
-        Analytics.CustomEvent("Noquear", new Dictionary<string, object>
-        {  { "nivel", level },
-           { "enemigo", nombreEnemigo },
-            { "tiempo", Time.timeSinceLevelLoad  }
-
-        }
-        );
-        */
+        
         // aqui se sabe que enemigo esta noqueado
 
         this.GetComponent<EnemyWeaponController> ().dropWeapon ();

@@ -1,5 +1,9 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+using UnityEngine.Analytics;
 
 public class EnemyWeaponController : MonoBehaviour {
 
@@ -17,12 +21,14 @@ public class EnemyWeaponController : MonoBehaviour {
 	bool shotgun = false;//new for new weapons (also in player weapon script)
 	EnemyAI eai;
 	GameObject player;
-
-	bool attacking = false;
+    private string sceneName;
+    bool attacking = false;
 	//SpriteRenderer sr;
 	EnemyAnimate ea;
 	// Use this for initialization
 	void Start () {
+        Scene currentScene = SceneManager.GetActiveScene();
+        sceneName = currentScene.name;
 		eai = this.GetComponent<EnemyAI> ();
 		player = GameObject.FindGameObjectWithTag ("Player");
 		//sr = this.GetComponent<SpriteRenderer> ();
@@ -140,11 +146,13 @@ public class EnemyWeaponController : MonoBehaviour {
 
                     //Bullet bl = Instantiate(bullet, oneHandSpawn.transform.position, this.transform.rotation).GetComponent<Bullet>();
                     bl.arma = arma;
+                    bl.asesino = this.gameObject.name;
                     Debug.Log("El arma del enemigo es: " + bl.arma);
 
                     Instantiate (bullet, oneHandSpawn.transform.position, this.transform.rotation);
 				} else {
-					Instantiate (shotgunBullet, oneHandSpawn.transform.position, this.transform.rotation);
+                    
+                    Instantiate (shotgunBullet, oneHandSpawn.transform.position, this.transform.rotation);
 				}
 				decideSFX ();
 			}
@@ -187,8 +195,26 @@ public class EnemyWeaponController : MonoBehaviour {
 					Debug.Log ("Melee attacking player");
 					Debug.Log("*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* EnemyWeaponController");
 					PlayerHealth.dead = true;
-                    Debug.Log("el arma melee con el que me mato es " + arma);
+                    //Debug.Log("el arma melee con el que me mato es " + arma);
+
+                    int level;
+                    if (sceneName == "Tutorial")
+                    {
+                        level = 0;
+                    }
+                    else
+                    {
+                        level = Utils.LevelFromSceneName(sceneName);
+
+                    }
+                    Debug.Log("nivel es: " + level);
+                    Debug.Log("enemigo de Morir: " + this.gameObject.name);
+                    Debug.Log("tiempo de Morir: " + Time.timeSinceLevelLoad);
+                    Debug.Log("coordenada X de Morir: " + player.transform.position.x);
+                    Debug.Log("coordenada Y de Morir: " + player.transform.position.y);
+                    Debug.Log("arma de Morir: " + arma);
                     Debug.Log("Insertar evento de morir");
+
                     //Aca insertar variable de morir con arma pero melee.
                     Instantiate (blood, player.transform.position, player.transform.rotation);
 					decideSFX ();
