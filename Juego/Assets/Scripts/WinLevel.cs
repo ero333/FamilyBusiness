@@ -25,16 +25,45 @@ public class WinLevel : MonoBehaviour
         menu.onClick.AddListener(cargarMenu);        
         sigNivel.onClick.AddListener(siguienteNivel);
         Score.SetActive(false);
-        if (sceneName == "Level10")
-        {
-            Calificar.text = "Calificar Juego";
-        }
 
+        switch (sceneName)
+        {
+            case "Menu":                
+                break;
+            case "Tutorial":
+                break;
+            case "Credits":
+                break;
+            case "Controls":
+                break;
+            case "Level1":
+                break;
+            case "Level2":
+                break;
+            case "Level3":
+                break;
+            case "Level4":
+                break;
+            case "Level5":
+                break;
+            case "Level6":
+                break;
+            case "Level7":
+                break;
+            case "Level8":
+                break;
+            case "Level9":
+                break;
+            case "Level10":
+                Calificar.text = "Calificar Juego";
+                break;
+        }      
 
     }
 
     private void Update()
     {
+
         if (sceneName == "Level1")
         {
             if (GameManager.curScore1 >= GameManager.maxScore1)
@@ -283,7 +312,7 @@ public class WinLevel : MonoBehaviour
             menuGanar.SetActive(true);
             cartelWin.SetActive(false);
             Score.SetActive(true);
-            
+            //Debug.Log("El score final es de: " + GameManager.curScore);
 
             if (sceneName == "Tutorial")
             {                                

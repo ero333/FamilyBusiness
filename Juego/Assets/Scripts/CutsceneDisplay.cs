@@ -62,9 +62,12 @@ public class CutsceneDisplay : MonoBehaviour {
                 anyCutsceneDisplaying = false;
                 Time.timeScale = 1;
 				Analytics.CustomEvent("VerTutorial", new Dictionary<string, object>
-					{  { "paso", activeCutscene.Paso }   }
+				{
+                    { "paso", activeCutscene.Paso },
+                    { "tiempo", Time.timeSinceLevelLoad }
+                }
 				);
-				print ("paso: "+activeCutscene.Paso);
+				print ("paso: "+activeCutscene.Paso + " tiempo en que se realizo el paso: " + Time.timeSinceLevelLoad);
                 Destroy(this.gameObject);
             }
 

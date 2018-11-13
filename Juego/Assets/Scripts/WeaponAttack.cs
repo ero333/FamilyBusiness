@@ -165,7 +165,7 @@ public class WeaponAttack : MonoBehaviour {
 						decideSFX ();
 					} else {
 						EnemyAttacked ea = ray.collider.gameObject.GetComponent<EnemyAttacked> ();
-						ea.knockDownEnemy ();
+						ea.knockDownEnemy ();                        
 						decideSFX ();
 					}
 				} else if (curWeapon == null && ray.collider.gameObject.tag == "Dog") {////

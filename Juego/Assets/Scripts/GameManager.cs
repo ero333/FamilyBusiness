@@ -12,10 +12,10 @@ public class GameManager : MonoBehaviour {
   public Button Jugar;
   public Button Controles;
   public Button Creditos;
-
+  public static int contEmpezar = 0;
   public static int contCreditos = 0;
   public static int contControles = 0;
-    public static int level;   
+  public static int level;   
   public static int lifeBoss = 10;  
   public static float timecont1;
   public static int muertes = 0;
@@ -114,6 +114,8 @@ public class GameManager : MonoBehaviour {
             contador.SetActive(false);
         }
 
+        curScore = 0;
+
         switch (sceneName)
         {
             case "Menu":
@@ -124,53 +126,41 @@ public class GameManager : MonoBehaviour {
                 Creditos.onClick.AddListener(verCreditos);
                 Debug.Log("Verificacion variable de checkpoint: " + check10);
                 break;
-            case "Tutorial":
-                ContEmpezar.contarEmpezar++;
-                Debug.Log("aqui empieza evento Empezar. " + "contador: " + ContEmpezar.contarEmpezar);
+            case "Tutorial":                
                 break;
             case "Credits":                
                 break;
             case "Controls":                
                 break;
             case "Level1":
-                VideoPlay.showoOne = true;
-                curScore = 0;
+                //VideoPlay.showoOne = true;                
                 break;
             case "Level2":
-                VideoPlay.showoOne = true;
-                curScore = 0;
+                VideoPlay.showoOne = true;                
                 break;
             case "Level3":
-                VideoPlay.showoOne = true;
-                curScore = 0;
+                VideoPlay.showoOne = true;                
                 break;
             case "Level4":
-                VideoPlay.showoOne = true;
-                curScore = 0;
+                VideoPlay.showoOne = true;                
                 break;
             case "Level5":
-                VideoPlay.showoOne = true;
-                curScore = 0;
+                VideoPlay.showoOne = true;                
                 break;
             case "Level6":
-                VideoPlay.showoOne = true;
-                curScore = 0;
+                VideoPlay.showoOne = true;                
                 break;
             case "Level7":
-                VideoPlay.showoOne = true;
-                curScore = 0;
+                VideoPlay.showoOne = true;                
                 break;
             case "Level8":
-                VideoPlay.showoOne = true;
-                curScore = 0;
+                VideoPlay.showoOne = true;                
                 break;
             case "Level9":
-                VideoPlay.showoOne = true;
-                curScore = 0;
+                VideoPlay.showoOne = true;                
                 break;
             case "Level10":
-                VideoPlay.showoOne = true;
-                curScore = 0;
+                VideoPlay.showoOne = true;                
                 break;
         }
         
@@ -483,7 +473,9 @@ public class GameManager : MonoBehaviour {
     }    
 
     void empezarJuego()
-    {        
+    {
+        contEmpezar++;
+        Debug.Log("aqui se llama al evento Empezar. El contador es: " + contEmpezar);
         SceneManager.LoadScene("Tutorial");
         check10 = false;
     }

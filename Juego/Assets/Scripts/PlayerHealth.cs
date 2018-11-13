@@ -244,6 +244,10 @@ public class PlayerHealth : MonoBehaviour {
 
                 VideoPlay.showoOne = false; // Comentar para mostrar una vez el cutscene
 
+                Debug.Log("nivel que se reinicia en string: " + sceneName[5]);
+               
+
+
                 if (sceneName == "Level1")
                 {
 
