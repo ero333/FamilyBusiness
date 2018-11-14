@@ -65,10 +65,19 @@ public class ContarMuertos : MonoBehaviour {
 
                 Debug.Log("nivel de Matar " + level);
                 Debug.Log("enemigo de Matar " + deadName[x]);
-                Debug.Log("tiempo de Matar " + deadTime[x]);
                 Debug.Log("arma de Matar " + armaPlayer);
+                Debug.Log("tiempo de Matar " + deadTime[x]);                
                 Debug.Log("Insertar evento de Matar aqui");
+                /*
+                Analytics.CustomEvent("Matar", new Dictionary<string, object>
+                {  { "nivel", level },
+                   { "enemigo", deadName[x] },
+                   { "Arma", armaPlayer },
+                   { "tiempo", deadTime[x] },
 
+                }
+                );
+                */
 
 
             }

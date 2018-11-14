@@ -1,14 +1,23 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+using UnityEngine.Analytics;
 
 public class ThrowWeapon : MonoBehaviour {
 	EnemyAttacked attacked;
 	float timer = 2.0f;
 	Vector3 direction;
 	Rigidbody2D rid;
-	//GameObject player;
-	// Use this for initialization
-	void Start () {
+    string sceneName;
+    //GameObject player;
+    // Use this for initialization
+
+    void Start () {
+        
+        Scene currentScene = SceneManager.GetActiveScene();
+        sceneName = currentScene.name;
 		//player = GameObject.FindGameObjectWithTag ("Player");
 		rid = this.GetComponent<Rigidbody2D> ();
 		rid.AddForce (direction*40);
@@ -39,8 +48,28 @@ public class ThrowWeapon : MonoBehaviour {
 		if (col.gameObject.tag == "Enemy") {
 			attacked = col.gameObject.GetComponent<EnemyAttacked> ();
 			attacked.knockDownEnemy();
-            Debug.Log("Enemigo que fue noqueado con arma: " + attacked.nombreEnemigo);
+            int level;
+            if (sceneName == "Tutorial")
+            {
+                level = 0;
+            }
+            else
+            {
+                level = Utils.LevelFromSceneName(sceneName);
+
+            }
+
+            Debug.Log("nivel de Noquear: " + level);
+            Debug.Log("Enemigo de Noquear con arma: " + attacked.nombreEnemigo);
+            Debug.Log("tiempo de Noquear: " + Time.timeSinceLevelLoad);                       
             Debug.Log("Insertar evento de noquear");
+
+            Analytics.CustomEvent("Noquear", new Dictionary<string, object>
+            {   { "nivel", level },
+                { "enemigo", attacked.nombreEnemigo },
+                { "tiempo", Time.timeSinceLevelLoad }
+            }
+            );
 
             rid.isKinematic = true;
             Destroy (this);

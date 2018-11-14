@@ -1,5 +1,9 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+using UnityEngine.Analytics;
 
 public class WeaponAttack : MonoBehaviour {
 	public GameObject oneHandSpawn,twoHandSpawn,bullet,shotgunBullet;
@@ -8,8 +12,8 @@ public class WeaponAttack : MonoBehaviour {
 	float timer = 0.1f,timerReset=0.1f;
 	PlayerAnimate pa;
 	SpriteContainer sc;
-
-	float weaponChange = 0.5f;
+    string sceneName;
+    float weaponChange = 0.5f;
 	bool changingWeapon = false;
 	bool oneHanded = false;
 
@@ -25,8 +29,11 @@ public class WeaponAttack : MonoBehaviour {
 	public Texture2D bg;
 	public WeaponPickup curWepScr;
 
-	void Start () {
-		pa = this.GetComponent<PlayerAnimate> ();
+	void Start ()
+    {
+        Scene currentScene = SceneManager.GetActiveScene();
+        sceneName = currentScene.name;
+        pa = this.GetComponent<PlayerAnimate> ();
 		sc = GameObject.FindGameObjectWithTag ("GameController").GetComponent<SpriteContainer> ();
 	}
 	
@@ -107,7 +114,9 @@ public class WeaponAttack : MonoBehaviour {
 
 	public void attack()
 	{        
-		if (gun == true && curWepScr.ammo > 0) {//NEW STUFF FOR 16
+		if (gun == true && curWepScr.ammo > 0)
+        {
+            //NEW STUFF FOR 16
 			pa.attack ();
 			Vector3 dir;
 			dir.x = Vector2.right.x;
@@ -115,30 +124,42 @@ public class WeaponAttack : MonoBehaviour {
 			dir.z = 0;
 	
 
-				if (oneHanded == true) {
-					if (Shotgun == false) {//new for new weapons
+			if (oneHanded == true)
+            {
+					if (Shotgun == false)
+                    {//new for new weapons
 
-                    Bullet bl =  Instantiate (bullet, oneHandSpawn.transform.position, this.transform.rotation).GetComponent<Bullet>();
-                    bl.arma = curWepScr.name;
-                    ContarMuertos.armaPlayer = bl.arma; //Pasa el arma para el evento Matar
-                    Debug.Log("El arma del player es: " + bl.arma);
-                } else {
+                        Bullet bl =  Instantiate (bullet, oneHandSpawn.transform.position, this.transform.rotation).GetComponent<Bullet>();
+                        bl.arma = curWepScr.name;
+                        ContarMuertos.armaPlayer = bl.arma; //Pasa el arma para el evento Matar
+                        Debug.Log("El arma del player es: " + bl.arma);
+                    }
+
+                    else
+                    {
 						Instantiate (shotgunBullet, oneHandSpawn.transform.position, this.transform.rotation);
 
 					}
+
 					curWeapon.GetComponent<WeaponPickup> ().ammo--;
 					//FindObjectOfType<LevelEscapeController> ().shotFired (); Comentado para que se pueda disparar
-				} else {
-					if (Shotgun == false) {//new for new weapons
+			}
+            else
+            {
+			    if (Shotgun == false)
+                {   
+                    //new for new weapons
                     Bullet bl = Instantiate(bullet, twoHandSpawn.transform.position, this.transform.rotation).GetComponent<Bullet>();
                     bl.arma = curWepScr.name;
                     Debug.Log("El arma del player es: " + bl.arma);
-                } else {
+                }
+                else
+                {
 						Instantiate (shotgunBullet, twoHandSpawn.transform.position, this.transform.rotation);
-					}
+				}
 					curWeapon.GetComponent<WeaponPickup> ().ammo--;
 					FindObjectOfType<LevelEscapeController> ().shotFired ();
-				}
+			}
 			decideSFX ();
 			timer = timerReset;
 
@@ -146,12 +167,14 @@ public class WeaponAttack : MonoBehaviour {
 				//pa.resetCounter ();
 			//}
 
-		} else if(gun == true && curWepScr.ammo == 0)
+		}
+
+        else if(gun == true && curWepScr.ammo == 0)
 		{
 			//NEW STUFF FOR 16
 		}
-		else{
-			
+		else
+        {			
 			pa.attack ();//NEW STUFF FOR 16
 			//melee attack
 			int layerMask = 1<<9;
@@ -160,44 +183,89 @@ public class WeaponAttack : MonoBehaviour {
 			RaycastHit2D ray = Physics2D.Raycast (new Vector2(this.transform.position.x,this.transform.position.y),new Vector2(transform.right.x,transform.right.y),1.5f,layerMask);
 			Debug.DrawRay (new Vector2(this.transform.position.x,this.transform.position.y),new Vector2(transform.right.x,transform.right.y),Color.green);
 
-			if (ray.collider == null) {
+			if (ray.collider == null)
+            {
 
-			} else {
-				if (curWeapon == null && ray.collider.gameObject.tag == "Enemy") {
+			}
 
-					if (ray.collider.isTrigger == true && ray.collider.gameObject.tag == "Enemy") {//new for execute
-						ray.collider.gameObject.GetComponent<EnemyAttacked> ().execute ();
-                        Debug.Log("Enemigo murio sin arma");
+            else
+            {
+				if (curWeapon == null && ray.collider.gameObject.tag == "Enemy")
+                {
+
+					if (ray.collider.isTrigger == true && ray.collider.gameObject.tag == "Enemy")
+                    {
+                        //new for execute
+						ray.collider.gameObject.GetComponent<EnemyAttacked> ().execute ();                        
                         ContarMuertos.armaPlayer = "sin arma";
-                        decideSFX ();
-					} else {
-						EnemyAttacked ea = ray.collider.gameObject.GetComponent<EnemyAttacked> ();
-						ea.knockDownEnemy ();
-                        Debug.Log("Enemigo que fue noqueado sin arma: " + ea.nombreEnemigo);
-                        Debug.Log("Insertar evento de noquear");
+                        Debug.Log("Enemigo murio " + ContarMuertos.armaPlayer);
                         decideSFX ();
 					}
-				} else if (curWeapon == null && ray.collider.gameObject.tag == "Dog") {////
+                    else
+                    {
+						EnemyAttacked ea = ray.collider.gameObject.GetComponent<EnemyAttacked> ();
+						ea.knockDownEnemy ();
+
+                        int level;
+                        if (sceneName == "Tutorial")
+                        {
+                            level = 0;
+                        }
+                        else
+                        {
+                            level = Utils.LevelFromSceneName(sceneName);
+
+                        }
+
+                        Debug.Log("nivel de Noquear: " + level);
+                        Debug.Log("Enemigo de Noquear sin arma: " + ea.nombreEnemigo);
+                        Debug.Log("tiempo de Noquear: " + Time.timeSinceLevelLoad);
+                        Debug.Log("Insertar evento de noquear");
+                        /*
+                        Analytics.CustomEvent("Noquear", new Dictionary<string, object>
+                        {   { "nivel", level },
+                            { "enemigo", ea.nombreEnemigo },                            
+                            { "tiempo", Time.timeSinceLevelLoad }
+                        }
+                        );
+                        */
+                        decideSFX ();
+					}
+				}
+
+                else if (curWeapon == null && ray.collider.gameObject.tag == "Dog")
+                {////
 					ray.collider.gameObject.GetComponent<DogHealth> ().killDog ();//
 				}//
-				else if (curWeapon == null && ray.collider.gameObject.tag == "Wall" && ray.collider.gameObject.GetComponent<Window> () != null) {
+				else if (curWeapon == null && ray.collider.gameObject.tag == "Wall" && ray.collider.gameObject.GetComponent<Window> () != null)
+                {
 					ray.collider.gameObject.GetComponent<Window> ().breakWindow ();
-				} else if (ray.collider != null) {
+				}
+                else if (ray.collider != null)
+                {
 					//Debug.Log (ray.collider.gameObject.tag);
-					if (ray.collider.gameObject.tag == "Enemy") {
+					if (ray.collider.gameObject.tag == "Enemy")
+                    {
 						
-						if (ray.collider.isTrigger == true && ray.collider.gameObject.tag == "Enemy") {
+						if (ray.collider.isTrigger == true && ray.collider.gameObject.tag == "Enemy")
+                        {
 							ray.collider.gameObject.GetComponent<EnemyAttacked> ().execute ();                            
-						} else {
-							EnemyAttacked ea = ray.collider.gameObject.GetComponent<EnemyAttacked> ();                            
-                            ea.killMelee ();                            
-							decideSFX ();
 						}
-					} else if (ray.collider.gameObject.tag == "Dog") {
+
+                        else
+                        {
+							EnemyAttacked ea = ray.collider.gameObject.GetComponent<EnemyAttacked> ();                            
+                            ea.killMelee ();
+                            decideSFX ();
+						}
+					}
+                    else if (ray.collider.gameObject.tag == "Dog")
+                    {
 						ray.collider.gameObject.GetComponent<DogHealth> ().killDog ();
 					}
 
-					if (ray.collider.gameObject.tag == "Wall" && ray.collider.gameObject.GetComponent<Window> () != null) {
+					if (ray.collider.gameObject.tag == "Wall" && ray.collider.gameObject.GetComponent<Window> () != null)
+                    {
 						ray.collider.gameObject.GetComponent<Window> ().breakWindow ();
 					}
 				}
