@@ -52,7 +52,7 @@ public class PlayerHealth : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         //Debug.Log("Tiempo actual de la escena: " + Time.timeSinceLevelLoad);
-        Debug.Log("El tiempo total del juego incluyendo reinicios: " + GameManager.tiempoTotalNivel);
+        //Debug.Log("El tiempo total del juego incluyendo reinicios: " + GameManager.tiempoTotalNivel);
 
         if (dead == true) {
             killPlayer();

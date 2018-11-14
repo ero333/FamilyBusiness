@@ -24,10 +24,9 @@ public class ScoreController : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
+
         comboCountdown();
-        GameManager.curScore = score;        
-
-
+        
     }
 
     public void AddScore(int val, Vector3 position)
@@ -61,22 +60,26 @@ public class ScoreController : MonoBehaviour {
         if (tempScoreHold > 0) {
             comboTimer -= Time.deltaTime;
 
+
+            // Esto ocurre cuando el timer es mayor a 0
             if (comboTimer <= 0) {
                 score += (tempScoreHold * currentMultiplier);
                 tempScoreHold = 0;
                 currentMultiplier = 1;
+                Debug.Log("score actual despues del timer: " + score);
             }
-            // Agregar combo hecho al final del nivel
-            else if (Time.timeScale == 0 && flag != true)
+            // fin de timer
+            else
             {
-                score += (tempScoreHold * currentMultiplier);
-                GameManager.curScore = score;
-                Debug.Log("El puntaje final es este: " + GameManager.curScore);
-                // SI ACA VA LA VARIABLE GameManager.curScore CON UN DEBUG.LOG MUESTRA EL PUNTAJE FINAL SIN ESPERAR EL TIEMPO
-                flag = true;
+                GameManager.curScore = score + (tempScoreHold * currentMultiplier);
+                Debug.Log("Score con el tiempo mayor a 0: " + GameManager.curScore);
                 
             }
+            
+            
+
         }
+        
     }
 
     public void scoreReset(int val)//new

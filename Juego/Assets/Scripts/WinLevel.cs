@@ -313,7 +313,7 @@ public class WinLevel : MonoBehaviour
             cartelWin.SetActive(false);
             Score.SetActive(true);            
             GameManager.tiempoTotalNivel += Time.timeSinceLevelLoad;
-            Debug.Log("Estos son los puntos una vez pasado el timer: " + GameManager.curScore);
+            
             
             int level;
             if (sceneName == "Tutorial")
@@ -325,10 +325,11 @@ public class WinLevel : MonoBehaviour
                 level = Utils.LevelFromSceneName(sceneName);
 
             }
-            Debug.Log("nivel es: " + level);
-            Debug.Log("tiempo es: " + GameManager.tiempoTotalNivel);
-            Debug.Log("tiempoultimoreintento es: " + Time.timeSinceLevelLoad);                                    
-            Debug.Log("muertes es: " + GameManager.muertes);            
+            Debug.Log("nivel de TerminarNivel es: " + level);
+            Debug.Log("tiempo de TerminarNivel es: " + GameManager.tiempoTotalNivel);
+            Debug.Log("tiempoultimoreintento de TerminarNivel es: " + Time.timeSinceLevelLoad);
+            Debug.Log("puntos de TerminarNivel es: " + GameManager.curScore);
+            Debug.Log("muertes de TerminarNivel es: " + GameManager.muertes);            
             Debug.Log("Insertar evento de TerminarNivel");            
             
         }
@@ -361,7 +362,7 @@ public class WinLevel : MonoBehaviour
         
         GameManager.tiempoTotalNivel = 0; //Resetea la variable a cero para el proximo nivel
         GameManager.muertes = 0; //Resetea la variable a cero para el proximo nivel
-        GameManager.curScore = 0; //Resetea la variable a cero para el proximo nivel
+        //GameManager.curScore = 0; //Resetea la variable a cero para el proximo nivel
 
     }
 }
