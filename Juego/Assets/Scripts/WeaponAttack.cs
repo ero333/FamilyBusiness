@@ -221,14 +221,14 @@ public class WeaponAttack : MonoBehaviour {
                         Debug.Log("Enemigo de Noquear sin arma: " + ea.nombreEnemigo);
                         Debug.Log("tiempo de Noquear: " + Time.timeSinceLevelLoad);
                         Debug.Log("Insertar evento de noquear");
-                        /*
+                        
                         Analytics.CustomEvent("Noquear", new Dictionary<string, object>
                         {   { "nivel", level },
                             { "enemigo", ea.nombreEnemigo },                            
                             { "tiempo", Time.timeSinceLevelLoad }
                         }
                         );
-                        */
+                        
                         decideSFX ();
 					}
 				}
