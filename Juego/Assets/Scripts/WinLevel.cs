@@ -330,8 +330,19 @@ public class WinLevel : MonoBehaviour
             Debug.Log("tiempoultimoreintento de TerminarNivel es: " + Time.timeSinceLevelLoad);
             Debug.Log("puntos de TerminarNivel es: " + GameManager.curScore);
             Debug.Log("muertes de TerminarNivel es: " + GameManager.muertes);            
-            Debug.Log("Insertar evento de TerminarNivel");            
+            Debug.Log("Insertar evento de TerminarNivel");
+
+            Analytics.CustomEvent("TerminarNivel", new Dictionary<string, object>
+            {   { "nivel", level },
+                { "tiempo", GameManager.tiempoTotalNivel },
+                { "tiempoultimoreintento", Time.timeSinceLevelLoad },
+                { "puntos", GameManager.curScore },
+                { "muertes", GameManager.muertes }
+            }
+            );
             
+
+
         }
     }
 
@@ -349,13 +360,11 @@ public class WinLevel : MonoBehaviour
            
         }
 
-        
-
-        Analytics.CustomEvent("EmpezarNivel", new Dictionary<string, object>
-        {  { "nivel", level }   }
-        );
 
         level++;
+        Analytics.CustomEvent("EmpezarNivel", new Dictionary<string, object>
+        {  { "nivel", level }   }
+        );        
         Debug.Log("EmpezarNivel: " + level);
 
         SceneManager.LoadScene("Level"  + level);

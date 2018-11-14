@@ -113,6 +113,15 @@ public class DogAI : MonoBehaviour {
                 Debug.Log("tiempo de Morir: " + Time.timeSinceLevelLoad);
                 Debug.Log("coordenada X de Morir: " + hit.collider.gameObject.transform.position.x);
                 Debug.Log("coordenada Y de Morir: " + hit.collider.gameObject.transform.position.y);
+
+                Analytics.CustomEvent("Morir", new Dictionary<string, object>
+                {   { "nivel", level },
+                    { "enemigo", this.gameObject.name },
+                    { "tiempo", Time.timeSinceLevelLoad },
+                    { "CordenadasX", hit.collider.gameObject.transform.position.x },
+                    { "CordenadasY", hit.collider.gameObject.transform.position.y }
+                }
+                );
                 // el perro no usa arma
                 Debug.Log("Insertar evento de morir");
                 //Aca el player muere por el perro

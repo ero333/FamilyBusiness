@@ -73,6 +73,16 @@ public class HeavyAttack : MonoBehaviour {
             // el heavy no usa arma
             Debug.Log("Insertar evento de morir");
 
+            Analytics.CustomEvent("Morir", new Dictionary<string, object>
+            {   { "nivel", level },
+                { "enemigo", this.gameObject.name },
+                { "tiempo", Time.timeSinceLevelLoad },
+                { "CordenadasX", ray.collider.gameObject.transform.position.x },
+                { "CordenadasY", ray.collider.gameObject.transform.position.y }
+            }
+            );
+
+
             // Aca el player muere por heavy
             Instantiate (blood, player.transform.position, player.transform.rotation);
 				this.GetComponent<AudioController> ().meleeAttack ();

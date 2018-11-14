@@ -196,9 +196,10 @@ public class WeaponAttack : MonoBehaviour {
 					if (ray.collider.isTrigger == true && ray.collider.gameObject.tag == "Enemy")
                     {
                         //new for execute
-						ray.collider.gameObject.GetComponent<EnemyAttacked> ().execute ();                        
+						ray.collider.gameObject.GetComponent<EnemyAttacked> ().execute (); 
                         ContarMuertos.armaPlayer = "sin arma";
                         Debug.Log("Enemigo murio " + ContarMuertos.armaPlayer);
+                        
                         decideSFX ();
 					}
                     else

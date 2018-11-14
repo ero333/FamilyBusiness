@@ -64,13 +64,14 @@ public class ThrowWeapon : MonoBehaviour {
             Debug.Log("tiempo de Noquear: " + Time.timeSinceLevelLoad);                       
             Debug.Log("Insertar evento de noquear");
 
+            /* PROBLEMA EN EL COLLIDER PORQUE LO TOMA MAS DE UNA VEZ
             Analytics.CustomEvent("Noquear", new Dictionary<string, object>
             {   { "nivel", level },
                 { "enemigo", attacked.nombreEnemigo },
                 { "tiempo", Time.timeSinceLevelLoad }
             }
             );
-
+            */
             rid.isKinematic = true;
             Destroy (this);
             
