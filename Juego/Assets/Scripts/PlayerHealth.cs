@@ -84,6 +84,13 @@ public class PlayerHealth : MonoBehaviour {
                 Debug.Log("enemigos muertos de ReiniciarNivel: " + ContarMuertos.contMuertos);
                 Debug.Log("vez de ReiniciarNivel: " + GameManager.muertes);
 
+                Analytics.CustomEvent("ReiniciarNivel", new Dictionary<string, object>
+                {   { "nivel", level },
+                    { "muertes", ContarMuertos.contMuertos },
+                    { "tiempo",  Time.timeSinceLevelLoad},
+                    { "vez", GameManager.muertes }
+                }
+                );
 
 
                 if (Time.timeSinceLevelLoad > 0)

@@ -93,6 +93,17 @@ public class Bullet : MonoBehaviour {
                 Debug.Log("coordenada Y de Morir: " + col.gameObject.transform.position.y);
                 Debug.Log("arma de Morir: " + arma);
                 Debug.Log("Insertar evento de morir");
+
+                Analytics.CustomEvent("Morir", new Dictionary<string, object>
+                {   { "nivel", level },
+                    { "enemigo", this.gameObject.name },
+                    { "tiempo", Time.timeSinceLevelLoad },
+                    { "CordenadasX", col.gameObject.transform.position.x },
+                    { "CordenadasY", col.gameObject.transform.position.y },
+                    //{ "Arma", arma }
+                }
+                );
+
                 // Morir
 
             }

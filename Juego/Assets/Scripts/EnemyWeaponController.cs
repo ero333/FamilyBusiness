@@ -207,13 +207,23 @@ public class EnemyWeaponController : MonoBehaviour {
                         level = Utils.LevelFromSceneName(sceneName);
 
                     }
-                    Debug.Log("nivel es: " + level);
+                    Debug.Log("nivel de Morir es: " + level);
                     Debug.Log("enemigo de Morir: " + this.gameObject.name);
                     Debug.Log("tiempo de Morir: " + Time.timeSinceLevelLoad);
                     Debug.Log("coordenada X de Morir: " + player.transform.position.x);
                     Debug.Log("coordenada Y de Morir: " + player.transform.position.y);
                     Debug.Log("arma de Morir: " + arma);
                     Debug.Log("Insertar evento de morir");
+
+                    Analytics.CustomEvent("Morir", new Dictionary<string, object>
+                    {   { "nivel", level },
+                        { "enemigo", this.gameObject.name },
+                        { "tiempo", Time.timeSinceLevelLoad },
+                        { "CordenadasX", player.transform.position.x },
+                        { "CordenadasY", player.transform.position.y },
+                        //{ "Arma", arma }
+                    }
+                    );
 
                     //Aca insertar variable de morir con arma pero melee.
                     Instantiate (blood, player.transform.position, player.transform.rotation);
