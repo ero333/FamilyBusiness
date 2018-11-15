@@ -72,7 +72,7 @@ public class ScoreController : MonoBehaviour {
             else
             {
                 GameManager.curScore = score + (tempScoreHold * currentMultiplier);
-                Debug.Log("Score con el tiempo mayor a 0: " + GameManager.curScore);
+                //Debug.Log("Score con el tiempo mayor a 0: " + GameManager.curScore);
                 
             }
             

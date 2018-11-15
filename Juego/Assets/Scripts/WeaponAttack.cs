@@ -63,7 +63,8 @@ public class WeaponAttack : MonoBehaviour {
 			if (curWeapon.activeInHierarchy == false) {
 				if (Input.GetMouseButtonDown (1) && changingWeapon == false && CutsceneDisplay.anyCutsceneDisplaying == false) {
 					dropWeapon ();
-				}
+                    
+                }
 			}
 		}
 
@@ -137,11 +138,21 @@ public class WeaponAttack : MonoBehaviour {
 
                     else
                     {
-						Instantiate (shotgunBullet, oneHandSpawn.transform.position, this.transform.rotation);
+						//Instantiate (shotgunBullet, oneHandSpawn.transform.position, this.transform.rotation); Linea comentada para prueba
+                        //Comienzo prueba
+                        GameObject go = Instantiate(shotgunBullet, oneHandSpawn.transform.position, this.transform.rotation);
+                        Bullet[] bullets = go.GetComponentsInChildren<Bullet>();
 
-					}
+                        foreach (Bullet b in bullets)
+                        {
+                        b.arma = curWepScr.name; // o el arma que sea                        
+                        Debug.Log("El arma del player es: " + b.arma);
+                        ContarMuertos.armaPlayer = b.arma;
+                        }                                                
+                        //Finaliza prueba
+                }
 
-					curWeapon.GetComponent<WeaponPickup> ().ammo--;
+                curWeapon.GetComponent<WeaponPickup> ().ammo--;
 					//FindObjectOfType<LevelEscapeController> ().shotFired (); Comentado para que se pueda disparar
 			}
             else
@@ -155,9 +166,20 @@ public class WeaponAttack : MonoBehaviour {
                 }
                 else
                 {
-						Instantiate (shotgunBullet, twoHandSpawn.transform.position, this.transform.rotation);
-				}
-					curWeapon.GetComponent<WeaponPickup> ().ammo--;
+						//Instantiate (shotgunBullet, twoHandSpawn.transform.position, this.transform.rotation);
+                        //Comienzo prueba
+                        GameObject go = Instantiate(shotgunBullet, oneHandSpawn.transform.position, this.transform.rotation);
+                        Bullet[] bullets = go.GetComponentsInChildren<Bullet>();
+
+                        foreach (Bullet b in bullets)
+                        {
+                            b.arma = curWepScr.name; // o el arma que sea                        
+                            Debug.Log("El arma del player es: " + b.arma);
+                            ContarMuertos.armaPlayer = b.arma;
+                        }
+                        //Finaliza prueba
+                }
+                curWeapon.GetComponent<WeaponPickup> ().ammo--;
 					FindObjectOfType<LevelEscapeController> ().shotFired ();
 			}
 			decideSFX ();
@@ -197,8 +219,17 @@ public class WeaponAttack : MonoBehaviour {
                     {
                         //new for execute
 						ray.collider.gameObject.GetComponent<EnemyAttacked> ().execute (); 
-                        ContarMuertos.armaPlayer = "sin arma";
-                        Debug.Log("Enemigo murio " + ContarMuertos.armaPlayer);
+                        if (curWepScr == null)
+                        {
+                            ContarMuertos.armaPlayer = "sin arma";
+                            Debug.Log("Enemigo murio " + ContarMuertos.armaPlayer);
+                        }
+                        else if (curWepScr != null)
+                        {
+                            ContarMuertos.armaPlayer = curWepScr.name;
+                            Debug.Log("Enemigo murio con arma: " + ContarMuertos.armaPlayer);
+                        }
+                        
                         
                         decideSFX ();
 					}
@@ -250,13 +281,33 @@ public class WeaponAttack : MonoBehaviour {
 						
 						if (ray.collider.isTrigger == true && ray.collider.gameObject.tag == "Enemy")
                         {
-							ray.collider.gameObject.GetComponent<EnemyAttacked> ().execute ();                            
-						}
+							ray.collider.gameObject.GetComponent<EnemyAttacked> ().execute ();
+                            if (curWepScr == null)
+                            {
+                                ContarMuertos.armaPlayer = "sin arma";
+                                Debug.Log("Enemigo murio " + ContarMuertos.armaPlayer);
+                            }
+                            else if (curWepScr != null)
+                            {
+                                ContarMuertos.armaPlayer = curWepScr.name;
+                                Debug.Log("Enemigo murio con arma: " + ContarMuertos.armaPlayer);
+                            }
+                        }
 
                         else
                         {
 							EnemyAttacked ea = ray.collider.gameObject.GetComponent<EnemyAttacked> ();                            
                             ea.killMelee ();
+                            if (curWepScr == null)
+                            {
+                                ContarMuertos.armaPlayer = "sin arma";
+                                Debug.Log("Enemigo murio " + ContarMuertos.armaPlayer);
+                            }
+                            else if (curWepScr != null)
+                            {
+                                ContarMuertos.armaPlayer = curWepScr.name;
+                                Debug.Log("Enemigo murio con arma: " + ContarMuertos.armaPlayer);
+                            }
                             decideSFX ();
 						}
 					}
@@ -300,6 +351,9 @@ public class WeaponAttack : MonoBehaviour {
 			curWeapon.SetActive (true);
 			setWeapon (null, "", 0.5f, false,false,false);
 			pa.resetSprites ();
+            curWepScr = null;
+            
+            
 		}
 
 	}

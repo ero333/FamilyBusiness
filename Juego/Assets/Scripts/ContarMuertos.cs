@@ -67,22 +67,21 @@ public class ContarMuertos : MonoBehaviour {
                 Debug.Log("enemigo de Matar " + deadName[x]);
                 Debug.Log("arma de Matar " + armaPlayer);
                 Debug.Log("tiempo de Matar " + deadTime[x]);                
-                Debug.Log("Insertar evento de Matar aqui");
-
-                 //PROBLEMA CON EL ARMA PORQUE DA NULL SI ES SHOTGUN
+                Debug.Log("Insertar evento de Matar aqui");                 
 
                 Analytics.CustomEvent("Matar", new Dictionary<string, object>
                 {  { "nivel", level },
                    { "enemigo", deadName[x] },
-                   //{ "Arma", armaPlayer },
+                   { "Arma", armaPlayer },
                    { "tiempo", deadTime[x] },
 
                 }
                 );
-                //armaPlayer = null;
+                armaPlayer = null;
 
-
+                
             }
+
         }
     }
 
