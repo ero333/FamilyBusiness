@@ -191,7 +191,7 @@ public class EnemyAI : MonoBehaviour {
 					Vector3 dir = weapons[x].transform.position - transform.position;
 					RaycastHit2D wepCheck = Physics2D.Raycast(new Vector2(this.transform.position.x, this.transform.position.y), new Vector2(dir.x,dir.y ), distance,layerMask);
 				
-					if (wepCheck.collider.gameObject.tag == "Weapon") {
+					if (wepCheck == true && wepCheck.collider.gameObject.tag == "Weapon" ) {
 						setWeaponToGoTo (weapons [x]);
 					}
 

@@ -8,7 +8,7 @@ public class Elevator : MonoBehaviour {
     float timeLeft = 10;
 	public static bool canTravel = true;
     
-	//float timer=1.0f;
+	float timer=1.0f;
 	// Use this for initialization
 	void Start () {
         
@@ -27,7 +27,7 @@ public class Elevator : MonoBehaviour {
             }
         }
       
-        //timerCountdown ();
+        timerCountdown ();
         
 	}
     
@@ -52,7 +52,7 @@ public class Elevator : MonoBehaviour {
         
         return true;
 	}
-    /*
+    
 	void timerCountdown()
 	{
 		if (canTravel == false) {
@@ -64,5 +64,5 @@ public class Elevator : MonoBehaviour {
 		}
 
 
-	}*/
+	}
 }
