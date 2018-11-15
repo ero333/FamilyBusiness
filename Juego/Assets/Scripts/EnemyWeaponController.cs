@@ -159,8 +159,7 @@ public class EnemyWeaponController : MonoBehaviour {
                     foreach (Bullet b in bullets)
                     {
                         b.arma = arma; // o el arma que sea          
-                        b.asesino = this.gameObject.name;
-                        
+                        b.asesino = this.gameObject.name;                        
                         Debug.Log("El arma del enemigo es: " + b.arma);
                         Debug.Log("El enemigo es: " + b.asesino);
 

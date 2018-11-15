@@ -96,7 +96,7 @@ public class Bullet : MonoBehaviour {
 
                 Analytics.CustomEvent("Morir", new Dictionary<string, object>
                 {   { "nivel", level },
-                    { "enemigo", this.gameObject.name },
+                    { "enemigo", asesino },
                     { "tiempo", Time.timeSinceLevelLoad },
                     { "CordenadasX", col.gameObject.transform.position.x },
                     { "CordenadasY", col.gameObject.transform.position.y },
