@@ -115,10 +115,47 @@ public class VideoPlay : MonoBehaviour {
 
                 if (Input.GetKeyDown(KeyCode.Mouse0) || showoOne)
                 {
-
+					
                     if (!showoOne )
                     {
                         // mandar el evento de salter
+
+						switch (sceneName)
+						{
+						case "Tutorial":
+							Analytics.CustomEvent("SaltarCutScene", new Dictionary<string, object> {{ "nivel", 0 }});
+							break;
+						case "Level1":
+							Analytics.CustomEvent("SaltarCutScene", new Dictionary<string, object> {{ "nivel", 1 }});
+							break;
+						case "Level2":
+							Analytics.CustomEvent("SaltarCutScene", new Dictionary<string, object> {{ "nivel", 2 }});
+							break;
+						case "Level3":
+							Analytics.CustomEvent("SaltarCutScene", new Dictionary<string, object> {{ "nivel", 3 }});
+							break;
+						case "Level4":
+							Analytics.CustomEvent("SaltarCutScene", new Dictionary<string, object> {{ "nivel", 4 }});
+							break;
+						case "Level5":
+							Analytics.CustomEvent("SaltarCutScene", new Dictionary<string, object> {{ "nivel", 5 }});
+							break;
+						case "Level6":
+							Analytics.CustomEvent("SaltarCutScene", new Dictionary<string, object> {{ "nivel", 6 }});
+							break;
+						case "Level7":
+							Analytics.CustomEvent("SaltarCutScene", new Dictionary<string, object> {{ "nivel", 7 }});
+							break;
+						case "Level8":
+							Analytics.CustomEvent("SaltarCutScene", new Dictionary<string, object> {{ "nivel", 8 }});
+							break;
+						case "Level9":
+							Analytics.CustomEvent("SaltarCutScene", new Dictionary<string, object> {{ "nivel", 9 }});
+							break;
+						case "Level10":
+							Analytics.CustomEvent("SaltarCutScene", new Dictionary<string, object> {{ "nivel", 19 }});
+							break;
+						}
                     }
                        
                     
@@ -146,36 +183,47 @@ public class VideoPlay : MonoBehaviour {
                 {
                     case "Tutorial":
                         GameManager.SaltearNivel0 = true;
+						Analytics.CustomEvent("VerCutScene", new Dictionary<string, object> {{ "nivel", 0 }});
                         break;
                     case "Level1":
                         GameManager.SaltearNivel1 = true;
-                        break;
+						Analytics.CustomEvent("VerCutScene", new Dictionary<string, object> {{ "nivel", 1 }});
+						break;
                     case "Level2":
                         GameManager.SaltearNivel2 = true;
+						Analytics.CustomEvent("VerCutScene", new Dictionary<string, object> {{ "nivel", 2 }});
                         break;
                     case "Level3":
                         GameManager.SaltearNivel3 = true;
+						Analytics.CustomEvent("VerCutScene", new Dictionary<string, object> {{ "nivel", 3 }});
                         break;
                     case "Level4":
                         GameManager.SaltearNivel4 = true;
+						Analytics.CustomEvent("VerCutScene", new Dictionary<string, object> {{ "nivel", 4 }});
                         break;
                     case "Level5":
                         GameManager.SaltearNivel5 = true;
+						Analytics.CustomEvent("VerCutScene", new Dictionary<string, object> {{ "nivel", 5 }});
                         break;
                     case "Level6":
                         GameManager.SaltearNivel6 = true;
+						Analytics.CustomEvent("VerCutScene", new Dictionary<string, object> {{ "nivel", 6 }});
                         break;
                     case "Level7":
                         GameManager.SaltearNivel7 = true;
+						Analytics.CustomEvent("VerCutScene", new Dictionary<string, object> {{ "nivel", 7 }});
                         break;
                     case "Level8":
                         GameManager.SaltearNivel8 = true;
+						Analytics.CustomEvent("VerCutScene", new Dictionary<string, object> {{ "nivel", 8 }});
                         break;
                     case "Level9":
                         GameManager.SaltearNivel9 = true;
-                        break;
+						Analytics.CustomEvent("VerCutScene", new Dictionary<string, object> {{ "nivel", 9 }});
+						break;
                     case "Level10":
                         GameManager.SaltearNivel10 = true;
+						Analytics.CustomEvent("VerCutScene", new Dictionary<string, object> {{ "nivel", 19 }});
                         break;
                 }
 
