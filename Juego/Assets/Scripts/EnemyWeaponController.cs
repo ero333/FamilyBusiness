@@ -151,9 +151,21 @@ public class EnemyWeaponController : MonoBehaviour {
 
                     Instantiate (bullet, oneHandSpawn.transform.position, this.transform.rotation);
 				} else {
-                    
-                    Instantiate (shotgunBullet, oneHandSpawn.transform.position, this.transform.rotation);
-				}
+
+                    //Instantiate (shotgunBullet, oneHandSpawn.transform.position, this.transform.rotation);
+                    GameObject go = Instantiate(shotgunBullet, oneHandSpawn.transform.position, this.transform.rotation);
+                    Bullet[] bullets = go.GetComponentsInChildren<Bullet>();
+
+                    foreach (Bullet b in bullets)
+                    {
+                        b.arma = arma; // o el arma que sea          
+                        b.asesino = this.gameObject.name;
+                        
+                        Debug.Log("El arma del enemigo es: " + b.arma);
+                        Debug.Log("El enemigo es: " + b.asesino);
+
+                    }
+                }
 				decideSFX ();
 			}
 			else{
@@ -163,8 +175,17 @@ public class EnemyWeaponController : MonoBehaviour {
                     Debug.Log("El arma del enemigo es: " + bl.arma);
                     Instantiate (bullet, twoHandSpawn.transform.position, this.transform.rotation);
 				} else {
-					Instantiate (shotgunBullet, twoHandSpawn.transform.position, this.transform.rotation);
-				}
+                    //Instantiate (shotgunBullet, twoHandSpawn.transform.position, this.transform.rotation);
+                    GameObject go = Instantiate(shotgunBullet, oneHandSpawn.transform.position, this.transform.rotation);
+                    Bullet[] bullets = go.GetComponentsInChildren<Bullet>();
+
+                    foreach (Bullet b in bullets)
+                    {
+                        b.arma = arma; // o el arma que sea                        
+                        Debug.Log("El arma del enemigo es: " + b.arma);
+
+                    }
+                }
 				decideSFX ();
 			}
 			timer = timerReset;

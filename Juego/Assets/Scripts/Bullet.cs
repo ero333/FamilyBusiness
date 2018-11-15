@@ -100,7 +100,7 @@ public class Bullet : MonoBehaviour {
                     { "tiempo", Time.timeSinceLevelLoad },
                     { "CordenadasX", col.gameObject.transform.position.x },
                     { "CordenadasY", col.gameObject.transform.position.y },
-                    //{ "Arma", arma }
+                    { "Arma", arma }
                 }
                 );
 
