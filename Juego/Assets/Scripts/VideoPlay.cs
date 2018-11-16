@@ -153,7 +153,7 @@ public class VideoPlay : MonoBehaviour {
 							Analytics.CustomEvent("SaltarCutScene", new Dictionary<string, object> {{ "nivel", 9 }});
 							break;
 						case "Level10":
-							Analytics.CustomEvent("SaltarCutScene", new Dictionary<string, object> {{ "nivel", 19 }});
+							Analytics.CustomEvent("SaltarCutScene", new Dictionary<string, object> {{ "nivel", 10 }});
 							break;
 						}
                     }
